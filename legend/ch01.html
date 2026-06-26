@@ -43,9 +43,24 @@
     font-style: italic;
   }
   .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #cbb896;
+  }
+  .nav a {
+    background: rgba(255,255,255,0.8);
+    border: 1.5px solid #cbb896;
+    border-radius: 4px 4px 12px 4px;
+    color: #7a1f1f;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-family: inherit;
+  }
+  .nav a:hover {
+    background: rgba(255,255,255,0.95);
   }
 </style>
 </head>
@@ -105,10 +120,8 @@
   </div>
 
   <div class="nav">
-    <p>📖 第一章完 · 約 1,200 字</p>
     <a href="/empire-chronicle/legend/index.html">📚 返回 legend 目錄</a>
-    <br>
-    <a href="/empire-chronicle/legend/ch02.html">下一章：飢荒之路 ▶</a>
+    <a href="/empire-chronicle/legend/ch02.html">下一章：鐵幕降臨 ▶</a>
   </div>
 </div>
 </body>
