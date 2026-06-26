@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Regenerate 365 daily reports with date navigation controls."""
+"""Regenerate 365 daily reports with date navigation controls and global report."""
 from pathlib import Path
 from datetime import datetime, timedelta
+import json
 import random
 
 random.seed(42)
@@ -16,6 +17,19 @@ projects = [
     "王國學校興建", "煉金塔改建", "皇家糧倉擴建", "水井系統更新",
     "城西市場重建", "燈火系統改造", "皇家書庫整修",
 ]
+
+# 天下全局常設庫
+KINGDOMS = ["大明", "大秦", "大漢", "大周", "大楚", "大趙"]
+RELATIONS = ["同盟", "交好", "中立", "互防", "交惡", "邊境衝突", "戰事進行中"]
+WARS = [
+    ("大明", "大秦"), ("大楚", "大周"), ("大明", "大楚"),
+    ("大秦", "大漢"), ("大周", "大趙"), ("大漢", "大周"),
+]
+WEATHERS = ["晴", "多雲", "微雨", "雷陣雨", "颳風", "霧", "下雪", "艷陽"]
+GOLD_MOVE = ["持穩", "微漲", "上漲", "急漲", "微跌", "下跌", "急跌", "崩盤"]
+VISIT_PAIRS = [(a, b) for a in KINGDOMS for b in KINGDOMS if a != b]
+EXPORTS = ["糧食", "絲綢", "瓷器", "茶葉", "鐵器", "馬匹", "香料", "藥材"]
+IMPORTS = ["鐵礦", "羊毛", "木材", "玉石", "象牙", "珊瑚", "硝石", "染料"]
 
 def gen_economy(date: datetime):
     season_factor = 1.0
@@ -56,6 +70,42 @@ def gen_military():
 
 def fmt_num(n):
     return f"{n:,}"
+
+def pick_war_update(date):
+    active = []
+    # 用固定日期種子讓戰線有延續性
+    day_seed = date.toordinal()
+    rng = random.Random(day_seed)
+    for a, b in WARS:
+        state = rng.choice(RELATIONS)
+        if state in ("交惡", "邊境衝突", "戰事進行中"):
+            active.append((a, b, state))
+    return active
+
+def pick_diplo_visit(date):
+    day_seed = date.toordinal() + 7
+    rng = random.Random(day_seed)
+    pair = rng.choice(VISIT_PAIRS)
+    # 只有奉行那國稱王國，不然就叫帝國
+    def realm(name): return "王國" if name in ("大楚", "大明") else "帝國"
+    return f"{pair[0]}{realm(pair[0])}特使訪問{pair[1]}{realm(pair[1])}"
+
+def pick_weather(date):
+    day_seed = date.toordinal() + 13
+    rng = random.Random(day_seed)
+    return rng.choice(WEATHERS)
+
+def pick_gold(date):
+    day_seed = date.toordinal() + 19
+    rng = random.Random(day_seed)
+    return rng.choice(GOLD_MOVE)
+
+def pick_trade():
+    day_seed = random.randint(0, 9999)
+    rng = random.Random(day_seed)
+    e = rng.choice(EXPORTS)
+    i = rng.choice(IMPORTS)
+    return f"出口：{e}，進口：{i}"
 
 start = datetime(2025, 6, 27)
 end = datetime(2026, 6, 25)
@@ -119,6 +169,22 @@ while cur <= end:
     day_events.append(f"建設：{proj_name} — {proj_status}")
     if mil_ops:
         day_events.append(f"軍事：{mil_ops}，花費 {fmt_num(mil_cost)} 金幣")
+
+    # 乾坤外報由四段固定組成
+    wars = pick_war_update(cur)
+    war_lines = []
+    if wars:
+        war_lines += [f"戰報：{a} 與 {b} 處於{bp}，前線烽煙四起。" for a, b, bp in wars]
+    else:
+        war_lines.append("戰報：天下無事。")
+    war_lines.append(f"金價：今朝金價{pick_gold(cur)}。")
+    war_lines.append(f"外交：{pick_diplo_visit(cur)}。")
+    war_lines.append(f"天氣：全國各地{pick_weather(cur)}。")
+
+    # 外報寫入 data.json events，前端 tag 以便分類
+    global_events = [f"[全局]{ln}" for ln in war_lines]
+
+    day_events += war_lines
     day_events.append(random.choice([
         "今日王國風調雨順，百姓安居樂業。",
         "城內市場熱鬧非凡，商旅絡繹不絕。",
