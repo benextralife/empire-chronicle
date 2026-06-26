@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📜 王國日報總目錄</title>
+<style>
+  body {
+    font-family: "Noto Serif TC", "Songti TC", serif;
+    background: #f5e6d3;
+    color: #2b2318;
+    margin: 0;
+    padding: 0;
+  }
+  .wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header {
+    border: 2px solid #cbb896;
+    border-radius: 4px 4px 24px 4px;
+    background: rgba(255,255,255,0.5);
+    padding: 36px;
+    margin-bottom: 32px;
+  }
+  h1 {
+    font-size: 1.8rem;
+    color: #7a1f1f;
+    margin: 0;
+  }
+  .index {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 10px;
+    margin-top: 18px;
+  }
+  .index a {
+    display: block;
+    padding: 10px 12px;
+    background: rgba(255,255,255,0.7);
+    border: 1px solid #cbb896;
+    border-radius: 4px 4px 12px 4px;
+    color: #7a1f1f;
+    text-decoration: none;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  .index a:hover {
+    background: rgba(255,255,255,0.95);
+  }
+  .year {
+    font-size: 1.1rem;
+    color: #7a1f1f;
+    margin: 28px 0 10px;
+    letter-spacing: 0.2em;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📜 王國日報總目錄</h1>
+    <p>共 365 天，從 2025-06-27 到 2026-06-25</p>
+  </header>
+
+  <div class="year">2025</div>
+  <div class="index" id="y2025"></div>
+
+  <div class="year">2026</div>
+  <div class="index" id="y2026"></div>
+
+  <p style="margin-top:40px;"><a href="/empire-chronicle/">🏰 返回年鑑首頁</a></p>
+</div>
+
+<script>
+(function(){
+  const start = new Date('2025-06-27');
+  const end = new Date('2026-06-25');
+  const a2025 = document.getElementById('y2025');
+  const a2026 = document.getElementById('y2026');
+  const cur = new Date(start);
+  while (cur <= end) {
+    const y = cur.getFullYear();
+    const m = String(cur.getMonth()+1).padStart(2,'0');
+    const d = String(cur.getDate()).padStart(2,'0');
+    const dateStr = cur.toISOString().slice(0,10);
+    const a = document.createElement('a');
+    a.href = '/empire-chronicle/daily/' + dateStr + '.html';
+    a.textContent = dateStr;
+    (y === 2025 ? a2025 : a2026).appendChild(a);
+    cur.setDate(cur.getDate()+1);
+  }
+})();
+</script>
+</body>
+</html>
