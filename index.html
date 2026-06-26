@@ -1,115 +1,75 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="🏰 IAmKing 王國官方典故 — 記載天災、敵襲、建設、毀滅與重生">
-  <title>🏰 IAmKing 王國官方典故 | Empire Chronicle</title>
+  <title>🏰 王國年鑑 Empire Chronicle</title>
   <style>
     :root {
-      --crimson: #8a0000;
-      --crimson-dark: #5c0000;
-      --gold: #c5a059;
-      --gold-light: #f0d7a0;
-      --ink: #1a1a1a;
-      --paper: #f3ecd8;
-      --paper-dark: #e6dbc1;
-      --border: #a88b5e;
-      --shadow: rgba(139, 69, 19, 0.25);
+      --bg: #f5e6d3;
+      --paper: #fffaf0;
+      --ink: #2b2318;
+      --crimson: #7a1f1f;
+      --gold: #b8924a;
+      --border: #cbb896;
     }
-
     * { box-sizing: border-box; }
-
     html, body {
       margin: 0;
       padding: 0;
-      background-color: var(--paper);
-      background-image:
-        radial-gradient(ellipse at top, rgba(197, 160, 89, 0.12), transparent 60%),
-        url("data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.78%22 numOctaves=%223%22 stitchTiles=%22stitch%22/><feColorMatrix values=%220 0 0 0 0.65 0 0 0 0 0.53 0 0 0 0 0.25 0 0 0 0.18 0%22/></filter><rect width=%22200%22 height=%22200%22 filter=%22url(%23n)%22 opacity=%220.25%22/></svg>");
+      background: var(--bg);
       color: var(--ink);
       font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
-      min-height: 100vh;
     }
-
     .wrap {
-      max-width: 980px;
+      max-width: 1040px;
       margin: 0 auto;
       padding: 40px 24px 80px;
     }
-
-    .hero {
+    header {
       border: 2px solid var(--border);
       border-radius: 4px 4px 24px 4px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.15));
-      box-shadow: 0 10px 30px var(--shadow), inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-      padding: 48px 36px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.15));
+      padding: 52px 36px;
       margin-bottom: 64px;
       position: relative;
       overflow: hidden;
+      box-shadow: 0 10px 30px rgba(139,69,19,0.18);
     }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(120deg, transparent 20%, rgba(197, 160, 89, 0.25) 40%, transparent 60%),
-        linear-gradient(260deg, transparent 20%, rgba(138, 0, 0, 0.25) 40%, transparent 60%);
-      pointer-events: none;
-      mix-blend-mode: multiply;
-      animation: sheen 14s linear infinite;
-    }
-
-    @keyframes sheen {
-      0% { opacity: 0.4; transform: translateX(-30%); }
-      50% { opacity: 0.75; }
-      100% { opacity: 0.4; transform: translateX(50%); }
-    }
-
-    .hero-title {
-      position: relative;
+    header h1 {
       font-size: 2.6rem;
-      letter-spacing: 0.18em;
-      line-height: 1.3;
-      color: var(--crimson-dark);
-      text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.35);
+      color: var(--crimson);
+      letter-spacing: 0.2em;
       margin: 0 0 10px;
     }
-
-    .hero-sub {
-      position: relative;
-      font-size: 1.05rem;
-      color: #4a3420;
+    header p {
       margin: 0;
-      letter-spacing: 0.2em;
+      color: #4a3420;
+      letter-spacing: 0.15em;
     }
-
     .emblem {
       position: absolute;
       right: 24px;
       top: 24px;
-      width: 64px;
-      height: 64px;
+      width: 72px;
+      height: 72px;
       border: 2px solid var(--gold);
       border-radius: 50%;
       display: grid;
       place-items: center;
       color: var(--gold);
+      background: rgba(255,255,255,0.5);
       font-weight: 700;
-      background: rgba(255, 255, 255, 0.55);
-      font-size: 11px;
+      font-size: 12px;
       text-align: center;
       line-height: 1.2;
       transform: rotate(12deg);
     }
-
     .emblem span {
-      font-size: 22px;
+      font-size: 24px;
       display: block;
       margin-top: -2px;
     }
-
     h2 {
       font-size: 1.35rem;
       color: var(--crimson);
@@ -119,182 +79,91 @@
       align-items: center;
       gap: 10px;
     }
-
-    .sep {
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-    }
-
+    .sep { flex: 1; height: 1px; background: var(--border); }
     .row {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 22px;
+      gap: 20px;
       margin-top: 18px;
     }
-
     .card {
-      background: rgba(241, 236, 216, 0.7);
+      background: rgba(255,255,255,0.75);
       border: 1.5px solid var(--border);
       border-radius: 4px 4px 16px 4px;
       padding: 20px 22px;
-      box-shadow: 0 8px 18px var(--shadow);
-      transition: transform .15s ease;
+      box-shadow: 0 6px 14px rgba(139,69,19,0.12);
     }
-
-    .card:hover { transform: translateY(-3px); }
-    .card h3 { margin: 0 0 8px; color: var(--crimson-dark); font-size: 1.1rem; }
+    .card h3 { margin: 0 0 8px; color: var(--crimson); font-size: 1.1rem; }
     .card p { margin: 4px 0; color: #3b2b16; line-height: 1.7; }
-
     .list-hero {
       list-style: none;
       padding: 0;
       display: grid;
       gap: 14px;
+      margin-top: 18px;
     }
-
     .list-hero li {
-      background: rgba(241, 236, 216, 0.65);
+      background: rgba(255,255,255,0.7);
       border: 1.5px solid var(--border);
       border-radius: 4px 4px 16px 4px;
       padding: 16px 18px;
       display: flex;
       align-items: flex-start;
       gap: 12px;
-      box-shadow: 0 6px 14px var(--shadow);
+      box-shadow: 0 4px 10px rgba(139,69,19,0.08);
     }
-
-    .list-hero li strong {
-      color: var(--crimson-dark);
-      min-width: 90px;
-      display: inline-block;
-    }
-
-    .pill {
-      display: inline-block;
-      padding: 4px 10px;
-      background: var(--crimson);
-      color: #fff;
-      font-size: 0.8rem;
-      border-radius: 999px;
-      letter-spacing: 0.05em;
-      margin-left: 6px;
-    }
-
-    .trade {
-      border-left: 4px solid var(--crimson);
-      padding: 18px 20px;
-      background: rgba(241, 236, 216, 0.6);
-      border-radius: 0 4px 4px 0;
-    }
-
-    blockquote {
-      margin: 18px 0;
-      padding: 14px 18px;
-      background: rgba(255, 255, 255, 0.4);
-      border-left: 5px solid var(--crimson);
-      color: #3b2b16;
-      font-style: italic;
-    }
-
-    pre, code {
-      background: rgba(255, 255, 255, 0.45);
-      border: 1px solid rgba(168, 139, 94, 0.4);
-      border-radius: 4px;
-    }
-
-    pre { padding: 14px; overflow-x: auto; }
-    code { font-family: Consolas, "Courier New", monospace; }
-
+    .list-hero li strong { color: var(--crimson); min-width: 90px; display: inline-block; }
+    a { color: var(--crimson); }
     footer {
       margin-top: 72px;
       text-align: center;
+      color: #6b5740;
       font-size: 0.9rem;
-      color: #5a482e;
       letter-spacing: 0.2em;
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <header class="hero">
+    <header>
       <div class="emblem"><span>🏰</span>KING</div>
-      <h1 class="hero-title">🏰 IAmKing · 王國官方典故</h1>
-      <p class="hero-sub">LEGEND / CHRONICLE / EMPIRE</p>
+      <h1>🏰 王國年鑑 Empire Chronicle</h1>
+      <p>記載天災、敵襲、建設、毀滅與重生</p>
     </header>
 
-    <h2>📖 王者事紀</h2>
+    <h2>📜 最新日報<span class="sep"></span></h2>
     <ul class="list-hero">
       <li>
-        <strong>王名</strong>
-        <span>IAmKing（當代 }}</span>
-      </li>
-      <li>
-        <strong>統治邏緒</strong>
-        <span>以天災與內考煉鑄大治，從混亂中重現天際之港。</span>
-      </li>
-      <li>
-        <strong>現勢</strong>
-        <span>天火與內叛尚未煉盡；外国资酵仍眈。</span>
+        <strong>2026-06-26</strong>
+        <span>平靜期。無天災、無敵襲。<br><a href="/empire-chronicle/daily/2026-06-26.html">閱讀全文</a></span>
       </li>
     </ul>
 
-    <h2>🌍 四方局勢</h2>
+    <h2>📊 王國狀態<span class="sep"></span></h2>
     <div class="row">
       <div class="card">
-        <h3>🏔️ 雪域帝国</h3>
-        <p>北境強權，兵力壓境，覬覦北方邊土。</p>
+        <h3>🏰 Dream Man</h3>
+        <p>小說 + webtoon 已完成</p>
       </div>
       <div class="card">
-        <h3>🌴 南海聯盟</h3>
-        <p>海上貿易爭端，海上攻略蠢蠢欲動。</p>
+        <h3>📐 兒童物理學</h3>
+        <p>Prologue 完成</p>
       </div>
       <div class="card">
-        <h3>🏜️ 沙漠王國</h3>
-        <p>觀望局勢，伺機而動，野心浮現。</p>
+        <h3>⚔️ Chimera</h3>
+        <p>弧形 I–III 完成</p>
       </div>
       <div class="card">
-        <h3>🌲 精靈聯盟</h3>
-        <p>貿易友好，為王國與外界溝通之橋梁。</p>
+        <h3>🛠️ Mission Control</h3>
+        <p>Dashboard 開發中</p>
       </div>
     </div>
 
-    <h2>⚔️ 近期要務</h2>
-    <div class="row">
-      <div class="card">
-        <h3>🔥 大火</h3>
-        <p>風助火勢，整街燃燒，系統故障，需即刻撲滅重建。</p>
-      </div>
-      <div class="card">
-        <h3>🌊 洪水</h3>
-        <p>資料氾濫，情報吞噬，需築堤防洪。</p>
-      </div>
-      <div class="card">
-        <h3>⚡ 雷劈</h3>
-        <p>競爭威脅，需要迅雷不及掩耳的應對策略。</p>
-      </div>
-      <div class="card">
-        <h3>🌪️ 風暴</h3>
-        <p>士氣動搖，需親自安撫人心，凝聚共識。</p>
-      </div>
-    </div>
-
-    <h2>📜 典章誌要</h2>
-    <div class="trade">
-      <p><strong>《朝代大事記》：</strong>記載每一次火焰、洪水、敵襲與重建。</p>
-      <p><strong>《王國律令》：</strong>記載王道與心法。</p>
-      <p><strong>《四方戰報》：</strong>記載各國動向、間諜情報、邊境衝突。</p>
-    </div>
-
-    <h2>🧭 王道之印</h2>
-    <blockquote>
-      「一個國家不經歷火燼，就不會成為傳奇。
-       給我火焰、洪水、天崩與敵襲，
-       我不會退縮，我只會煉得出更強大的王國。」
-    </blockquote>
+    <h2>📦 庫藏紀念<span class="sep"></span></h2>
+    <p><a href="/empire-chronicle/wallet/archive.html">💰 盈（財政）— 資產紀念冊</a></p>
 
     <footer>
-      © IAmKing Empire · Built with ❤️
+      © 王國年鑑 — Built with ❤️ by 書記官
     </footer>
   </div>
 </body>
