@@ -128,7 +128,7 @@
 const DATA = [];
 fetch('/empire-chronicle/daily/data.json').then(r=>r.json()).then(d=>{
   window.DATA = d;
-  show(new Date('2025-06-27'));
+  show(new Date('2026-06-25'));
 });
 function show(d){
   const ds = d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
@@ -159,9 +159,9 @@ function fmt(d){
 }
 function season(d){
   const m = d.getMonth()+1;
-  if (m in [12,1,2]) return '冬';
-  if (m in [3,4,5]) return '春';
-  if (m in [6,7,8]) return '夏';
+  if ([12,1,2].includes(m)) return '冬';
+  if ([3,4,5].includes(m)) return '春';
+  if ([6,7,8].includes(m)) return '夏';
   return '秋';
 }
 function dayOfYear(d){
