@@ -128,14 +128,23 @@
 const DATA = [];
 fetch('/empire-chronicle/daily/data.json').then(r=>r.json()).then(d=>{
   window.DATA = d;
-  show(new Date('2026-06-25'));
+  showDateStr('2026-06-25');
 });
-function show(d){
-  const ds = d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+
+function parseDate(s){
+  const p = s.split('-').map(Number);
+  return {y:p[0], m:p[1], d:p[2]};
+}
+function fmtDate(o){
+  return o.y+'-'+String(o.m).padStart(2,'0')+'-'+String(o.d).padStart(2,'0');
+}
+function showDateStr(s){
+  const {y,m,d} = parseDate(s);
+  const ds = fmtDate({y,m,d});
   const rec = window.DATA.find(x=>x.date===ds);
   if (!rec) return;
-  document.getElementById('title').textContent = ds + ' · ' + season(d);
-  document.getElementById('meta').textContent = '第 ' + dayOfYear(d) + ' 天';
+  document.getElementById('title').textContent = ds + ' · ' + season(m);
+  document.getElementById('meta').textContent = '第 ' + dayOfYear(y,m,d) + ' 天';
   const ul = document.getElementById('report');
   ul.innerHTML = '';
   (rec.events||[]).forEach(ev=>{
@@ -146,27 +155,29 @@ function show(d){
   document.getElementById('goto').value = ds;
 }
 function change(delta){
-  const cur = new Date(document.getElementById('goto').value);
-  cur.setDate(cur.getDate() + delta);
-  document.getElementById('goto').value = fmt(cur);
-  show(cur);
+  const cur = parseDate(document.getElementById('goto').value);
+  cur.d += delta;
+  const tmp = new Date(cur.y, cur.m-1, cur.d);
+  cur.y = tmp.getFullYear();
+  cur.m = tmp.getMonth()+1;
+  cur.d = tmp.getDate();
+  const ds = fmtDate(cur);
+  document.getElementById('goto').value = ds;
+  showDateStr(ds);
 }
 function go(){
-  show(new Date(document.getElementById('goto').value));
+  showDateStr(document.getElementById('goto').value);
 }
-function fmt(d){
-  return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
-}
-function season(d){
-  const m = d.getMonth()+1;
+function season(m){
   if ([12,1,2].includes(m)) return '冬';
   if ([3,4,5].includes(m)) return '春';
   if ([6,7,8].includes(m)) return '夏';
   return '秋';
 }
-function dayOfYear(d){
-  const start = new Date(d.getFullYear(),0,0);
-  const diff = d - start;
+function dayOfYear(y,m,d){
+  const start = new Date(y,0,0);
+  const cur = new Date(y,m-1,d);
+  const diff = cur - start;
   return Math.floor(diff / (1000 * 60 * 60 * 24));
 }
 </script>
