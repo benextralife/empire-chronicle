@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📖 棄明王之亂 · 王國年鑑</title>
+<style>
+  body {
+    font-family: "Noto Serif TC", "Songti TC", serif;
+    background: #f5e6d3;
+    color: #2b2318;
+    margin: 0; padding: 0;
+  }
+  .wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  .topbar {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 28px;
+  }
+  .topbar a { color: #7a1f1f; text-decoration: none; }
+  header {
+    border: 2px solid #cbb896;
+    border-radius: 4px 4px 24px 4px;
+    background: rgba(255,255,255,0.6);
+    padding: 36px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  h1 { color: #7a1f1f; margin: 0 0 8px; }
+  .subtitle { color: #5a3a1f; letter-spacing: 0.2em; }
+  .chapters {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .chapters a {
+    display: block;
+    padding: 12px;
+    background: rgba(255,255,255,0.8);
+    border: 1.5px solid #cbb896;
+    border-radius: 4px 4px 14px 4px;
+    color: #7a1f1f;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  .chapters a:hover { background: rgba(255,255,255,0.95); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div></div>
+    <a href="/empire-chronicle/">🏰 返回年鑑首頁</a>
+  </div>
+  <header>
+    <h1>📖 棄明王之亂</h1>
+    <div class="subtitle">帝國史詩 · 共 50 章</div>
+  </header>
+  <div class="chapters" id="chapters"></div>
+  <script>
+    const list = [
+      'ch01.html',
+      'ch02.html', 'ch03.html', 'ch04.html', 'ch05.html',
+      'ch06.html', 'ch07.html', 'ch08.html', 'ch09.html', 'ch10.html',
+      'ch11.html', 'ch12.html', 'ch13.html', 'ch14.html', 'ch15.html',
+      'ch16.html', 'ch17.html', 'ch18.html', 'ch19.html', 'ch20.html',
+      'ch21.html', 'ch22.html', 'ch23.html', 'ch24.html', 'ch25.html',
+      'ch26.html', 'ch27.html', 'ch28.html', 'ch29.html', 'ch30.html',
+      'ch31.html', 'ch32.html', 'ch33.html', 'ch34.html', 'ch35.html',
+      'ch36.html', 'ch37.html', 'ch38.html', 'ch39.html', 'ch40.html',
+      'ch41.html', 'ch42.html', 'ch43.html', 'ch44.html', 'ch45.html',
+      'ch46.html', 'ch47.html', 'ch48.html', 'ch49.html', 'ch50.html'
+    ];
+    const box = document.getElementById('chapters');
+    list.forEach(f => {
+      const a = document.createElement('a');
+      a.href = f;
+      const m = f.match(/ch(\d+)/);
+      a.textContent = '第 ' + (m ? m[1] : '?') + ' 章';
+      box.appendChild(a);
+    });
+  </script>
+</div>
+</body>
+</html>
