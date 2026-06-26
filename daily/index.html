@@ -23,11 +23,38 @@
     background: rgba(255,255,255,0.5);
     padding: 36px;
     margin-bottom: 32px;
+    text-align: center;
   }
   h1 {
     font-size: 1.8rem;
     color: #7a1f1f;
     margin: 0;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 24px 0;
+    flex-wrap: wrap;
+  }
+  .nav a, .nav button {
+    background: rgba(255,255,255,0.8);
+    border: 1.5px solid #cbb896;
+    border-radius: 4px 4px 12px 4px;
+    color: #7a1f1f;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .nav input {
+    padding: 10px 12px;
+    border: 1.5px solid #cbb896;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.9);
+    color: #2b2318;
+    font-family: inherit;
   }
   .index {
     display: grid;
@@ -64,16 +91,24 @@
     <p>共 365 天，從 2025-06-27 到 2026-06-25</p>
   </header>
 
+  <div class="nav">
+    <a href="/empire-chronicle/">🏰 回首頁</a>
+    <input type="date" id="goto" min="2025-06-27" max="2026-06-25" value="2025-07-01">
+    <button onclick="go()">前往</button>
+  </div>
+
   <div class="year">2025</div>
   <div class="index" id="y2025"></div>
-
   <div class="year">2026</div>
   <div class="index" id="y2026"></div>
-
-  <p style="margin-top:40px;"><a href="/empire-chronicle/">🏰 返回年鑑首頁</a></p>
 </div>
 
 <script>
+function go() {
+  const v = document.getElementById('goto').value;
+  if (!v) return;
+  location.href = '/empire-chronicle/daily/' + v + '.html';
+}
 (function(){
   const start = new Date('2025-06-27');
   const end = new Date('2026-06-25');
