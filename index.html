@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🏰 王國年鑑 Empire Chronicle</title>
+  <title>🏰 王國年鑑</title>
   <style>
     :root {
       --bg: #f5e6d3;
@@ -15,8 +15,7 @@
     }
     * { box-sizing: border-box; }
     html, body {
-      margin: 0;
-      padding: 0;
+      margin: 0; padding: 0;
       background: var(--bg);
       color: var(--ink);
       font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
@@ -49,10 +48,8 @@
     }
     .emblem {
       position: absolute;
-      right: 24px;
-      top: 24px;
-      width: 72px;
-      height: 72px;
+      right: 24px; top: 24px;
+      width: 72px; height: 72px;
       border: 2px solid var(--gold);
       border-radius: 50%;
       display: grid;
@@ -80,21 +77,6 @@
       gap: 10px;
     }
     .sep { flex: 1; height: 1px; background: var(--border); }
-    .row {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      margin-top: 18px;
-    }
-    .card {
-      background: rgba(255,255,255,0.75);
-      border: 1.5px solid var(--border);
-      border-radius: 4px 4px 16px 4px;
-      padding: 20px 22px;
-      box-shadow: 0 6px 14px rgba(139,69,19,0.12);
-    }
-    .card h3 { margin: 0 0 8px; color: var(--crimson); font-size: 1.1rem; }
-    .card p { margin: 4px 0; color: #3b2b16; line-height: 1.7; }
     .list-hero {
       list-style: none;
       padding: 0;
@@ -114,11 +96,31 @@
     }
     .list-hero li strong { color: var(--crimson); min-width: 90px; display: inline-block; }
     a { color: var(--crimson); }
-    footer {
-      margin-top: 72px;
-      text-align: center;
-      color: #6b5740;
-      font-size: 0.9rem;
+
+    /* 逸看日報區 */
+    .daily-index {
+      background: rgba(255,255,255,0.6);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 20px 22px;
+    }
+    .daily-index h3 {
+      margin: 0 0 8px;
+      color: var(--crimson);
+      font-size: 1.1rem;
+    }
+    .daily-prefix {
+      width: 100%;
+      height: 260px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      background: rgba(255,255,255,0.5);
+      margin: 10px 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--crimson);
       letter-spacing: 0.2em;
     }
   </style>
@@ -130,41 +132,23 @@
       <h1>🏰 王國年鑑 Empire Chronicle</h1>
       <p>記載天災、敵襲、建設、毀滅與重生</p>
     </header>
-
-    <h2>📜 最新日報<span class="sep"></span></h2>
+ 
+    <h2>📜 最新日報</h2>
     <ul class="list-hero">
       <li>
         <strong>2026-06-26</strong>
-        <span>平靜期。無天災、無敵襲。<br><a href="/empire-chronicle/daily/2026-06-26.html">閱讀全文</a>
-        <br><a href="/empire-chronicle/status/index.html">王國狀態</a></span>
+        <span>平靜期。無天災、無敵襲。
+          <br><a href="/empire-chronicle/daily/2026-06-26.html">閱覽全文</a>
+          <br><a href="/empire-chronicle/status/index.html">王國狀態</a>
+        </span>
       </li>
     </ul>
 
-    <h2>📊 王國狀態<span class="sep"></span></h2>
-    <div class="row">
-      <div class="card">
-        <h3>🏰 Dream Man</h3>
-        <p>小說 + webtoon 已完成</p>
-      </div>
-      <div class="card">
-        <h3>📐 兒童物理學</h3>
-        <p>Prologue 完成</p>
-      </div>
-      <div class="card">
-        <h3>⚔️ Chimera</h3>
-        <p>弧形 I–III 完成</p>
-      </div>
-      <div class="card">
-        <h3>🛠️ Mission Control</h3>
-        <p>Dashboard 開發中</p>
-      </div>
-    </div>
-
-    <h2>📦 庫藏紀念<span class="sep"></span></h2>
+    <h2>📦 庫藏紀念</h2>
     <p><a href="/empire-chronicle/wallet/archive.html">💰 盈（財政）— 資產紀念冊</a></p>
 
     <footer>
-      © 王國年鑑 — Built with ❤️ by 書記官
+      © 王國年鑑 — Built by 小愛
     </footer>
   </div>
 </body>
