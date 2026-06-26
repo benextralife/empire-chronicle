@@ -142,7 +142,19 @@ function showDateStr(s){
   const {y,m,d} = parseDate(s);
   const ds = fmtDate({y,m,d});
   const rec = window.DATA.find(x=>x.date===ds);
-  if (!rec) return;
+  if (!rec) {
+    document.getElementById('title').textContent = ds + ' · ' + season(m);
+    document.getElementById('meta').textContent = '第 ' + dayOfYear(y,m,d) + ' 天';
+    const ul = document.getElementById('report');
+    ul.innerHTML = '';
+    const notice = document.createElement('li');
+    notice.textContent = '此日尚無紀錄，請選擇其他日期查閱。';
+    notice.style.color = '#9a3a3a';
+    notice.style.fontStyle = 'italic';
+    ul.appendChild(notice);
+    document.getElementById('goto').value = ds;
+    return;
+  }
   document.getElementById('title').textContent = ds + ' · ' + season(m);
   document.getElementById('meta').textContent = '第 ' + dayOfYear(y,m,d) + ' 天';
   const ul = document.getElementById('report');
