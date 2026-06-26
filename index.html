@@ -4,122 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>🏰 王國年鑑 Empire Chronicle</title>
-<style>
-  body {
-    font-family: "Microsoft JhengHei", "PingFang TC", system-ui, -apple-system, sans-serif;
-    background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b7 100%);
-    color: #2b2b2b;
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
-  header {
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 30px 20px;
-    background: rgba(255,255,255,0.6);
-    border-radius: 16px;
-    backdrop-filter: blur(6px);
-    border: 1px solid rgba(183,164,122,0.3);
-  }
-  h1 {
-    font-size: 2.2rem;
-    margin: 0 0 8px;
-    letter-spacing: 0.5px;
-  }
-  .subtitle {
-    color: #6b5e44;
-    font-size: 1.05rem;
-    margin: 4px 0 0;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 18px;
-    margin-top: 24px;
-  }
-  .card {
-    background: rgba(255,255,255,0.72);
-    border-radius: 14px;
-    padding: 18px 20px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
-    transition: transform .15s ease;
-  }
-  .card:hover { transform: translateY(-2px); }
-  .card h2 {
-    margin: 0 0 10px;
-    font-size: 1.1rem;
-    color: #3a2e1f;
-  }
-  .card ul {
-    padding-left: 18px;
-    margin: 6px 0 0;
-    line-height: 1.7;
-  }
-  .card li { margin: 2px 0; }
-  a { color: #3a5fa0; text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .record-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    background: #3a5fa0;
-    color: #fff;
-    border-radius: 8px;
-    font-size: 0.95rem;
-  }
-  .record-link:hover { background: #2a4d8a; color: #fff; }
-  footer {
-    margin-top: 40px;
-    text-align: center;
-    color: #7a6e5a;
-    font-size: 0.9rem;
-  }
-  .meta {
-    margin-top: 6px;
-    color: #6b5e44;
-    font-size: 0.9rem;
-  }
-</style>
+<link rel="stylesheet" href="/empire-chronicle/styles.css">
 </head>
 <body>
-<header>
+<div class="page">
+  <div class="topbar">
+    <div></div>
+    <a href="/empire-chronicle/">🏰 返回年鑑首頁</a>
+  </div>
   <h1>🏰 王國年鑑 Empire Chronicle</h1>
-  <p class="subtitle">記錄王國每一天：天災、敵襲、建設、毀滅、重生。從混亂中煉出傳奇。</p>
-  <p class="meta">Repo：<a href="https://github.com/benextralife/empire-chronicle" target="_blank">benextralife/empire-chronicle</a></p>
-</header>
-
-<div class="grid">
-  <div class="card">
-    <h2>📚 王國資產</h2>
-    <ul>
-      <li>🏰 Dream Man（小說 + webtoon）— 已完成</li>
-      <li>📐 兒童物理學 — Prologue 完成</li>
-      <li>🛠️ Mission Control Dashboard — 開發中</li>
-      <li>⚔️ Chimera — 弧形 I–III 完成</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>📜 最新日報</h2>
-    <ul>
-      <li><a class="record-link" href="daily/2026-06-26.md">2026-06-26 王國日報</a></li>
-    </ul>
-    <p class="meta">日報每日 18:00 自動更新</p>
-  </div>
-
-  <div class="card">
-    <h2>📦 庫藏紀念</h2>
-    <ul>
-      <li>💰 盈（財政）— 資產紀念冊</li>
-      <li>🎯 原則：只記目標與風險</li>
-    </ul>
-    <a class="record-link" href="wallet/archive.md">查看庫藏紀念</a>
-  </div>
+  <p>記錄王國每一天：天災、敵襲、建設、毀滅、重生。從混亂中煉出傳奇。</p>
+  <h2>📚 王國資產</h2>
+  <ul>
+    <li>🏰 Dream Man（小說 + webtoon）— 已完成</li>
+    <li>📐 兒童物理學 — Prologue 完成</li>
+    <li>🛠️ Mission Control Dashboard — 開發中</li>
+    <li>⚔️ Chimera — 弧形 I–III 完成</li>
+  </ul>
+  <h2>📜 最新日報</h2>
+  <ul>
+    <li><a href="/empire-chronicle/daily/2026-06-26.html">2026-06-26 王國日報</a></li>
+  </ul>
+  <p class="meta">日報每日 18:00 自動更新</p>
+  <h2>📦 庫藏紀念</h2>
+  <ul>
+    <li>💰 盈（財政）— 資產紀念冊</li>
+    <li>🎯 原則：只記目標與風險</li>
+  </ul>
+  <a class="meta" href="/empire-chronicle/wallet/archive.html">查看庫藏紀念</a>
 </div>
-
-<footer>
-  Built with ❤️ — 書記官與王上 🏰
-</footer>
 </body>
 </html>
