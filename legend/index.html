@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>📖 棄明王之亂 · 王國年鑑</title>
+<title>📚 棄明王之亂 · 章節目錄</title>
 <style>
   body {
     font-family: "Noto Serif TC", "Songti TC", serif;
@@ -16,75 +16,75 @@
     margin: 0 auto;
     padding: 40px 24px 80px;
   }
-  .topbar {
-    display: flex; justify-content: space-between; align-items: center;
-    margin-bottom: 28px;
+  h1 {
+    color: #7a1f1f;
+    border-bottom: 2px solid #cbb896;
+    padding-bottom: 12px;
   }
-  .topbar a { color: #7a1f1f; text-decoration: none; }
-  header {
-    border: 2px solid #cbb896;
-    border-radius: 4px 4px 24px 4px;
-    background: rgba(255,255,255,0.6);
-    padding: 36px;
-    margin-bottom: 32px;
-    text-align: center;
+  .toc {
+    list-style: none;
+    padding: 0;
+    margin: 28px 0;
   }
-  h1 { color: #7a1f1f; margin: 0 0 8px; }
-  .subtitle { color: #5a3a1f; letter-spacing: 0.2em; }
-  .chapters {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 12px;
-    margin-top: 24px;
+  .toc li {
+    margin: 8px 0;
   }
-  .chapters a {
-    display: block;
-    padding: 12px;
+  .toc a {
+    display: inline-block;
     background: rgba(255,255,255,0.8);
     border: 1.5px solid #cbb896;
-    border-radius: 4px 4px 14px 4px;
+    border-radius: 4px 4px 12px 4px;
+    color: #7a1f1f;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-family: inherit;
+    min-width: 260px;
+  }
+  .toc a:hover {
+    background: rgba(255,255,255,0.95);
+  }
+  .back {
+    margin-top: 28px;
+  }
+  .back a {
     color: #7a1f1f;
     text-decoration: none;
-    text-align: center;
-    font-size: 0.95rem;
   }
-  .chapters a:hover { background: rgba(255,255,255,0.95); }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="topbar">
-    <div></div>
+  <h1>📚 棄明王之亂 · 章節目錄</h1>
+  <p style="color:#5a3a1f;">全書五十章， imperial epic in progress.</p>
+
+  <ul class="toc">
+    <li><a href="/empire-chronicle/legend/ch01.html">第一章 · 離鄉</a></li>
+    <li><a href="/empire-chronicle/legend/ch02.html">第二章 · 鐵幕降臨</a></li>
+    <li><a href="/empire-chronicle/legend/ch03.html">第三章 · 寒焰之誓</a></li>
+    <li><a href="/empire-chronicle/legend/ch04.html">第四章 · 鐵衣天涯</a></li>
+    <li><a href="/empire-chronicle/legend/ch05.html">第五章 · 雪夜誅心</a></li>
+    <li><a href="/empire-chronicle/legend/ch06.html">第六章 · 破曉之誓</a></li>
+    <li><a href="/empire-chronicle/legend/ch07.html">第七章 · 腥風血雨</a></li>
+    <li><a href="/empire-chronicle/legend/ch08.html">第八章 · 無名碑</a></li>
+    <li><a href="/empire-chronicle/legend/ch09.html">第九章 · 烽火連天</a></li>
+    <li><a href="/empire-chronicle/legend/ch10.html">第十章 · 天崩</a></li>
+    <li><a href="/empire-chronicle/legend/ch11.html">第十一章 · 亂世</a></li>
+    <li><a href="/empire-chronicle/legend/ch12.html">第十二章 · 霧鎖宮廷</a></li>
+    <li><a href="/empire-chronicle/legend/ch13.html">第十三章 · 懸疑</a></li>
+    <li><a href="/empire-chronicle/legend/ch14.html">第十四章 · 長城風雲</a></li>
+    <li><a href="/empire-chronicle/legend/ch15.html">第十五章 · 決戰前夜</a></li>
+    <li><a href="/empire-chronicle/legend/ch16.html">第十六章 · 血染山河</a></li>
+    <li><a href="/empire-chronicle/legend/ch17.html">第十七章 · 真相</a></li>
+    <li><a href="/empire-chronicle/legend/ch18.html">第十八章 · 終焉</a></li>
+    <li><a href="/empire-chronicle/legend/ch19.html">第十九章 · 風雲變色</a></li>
+    <li><a href="/empire-chronicle/legend/ch20.html">第二十章 · 逆襲</a></li>
+    <li><a href="/empire-chronicle/legend/ch21.html">第二十一章 · 真相大白</a></li>
+    <li><a href="/empire-chronicle/legend/ch22.html">第二十二章 · 黎明</a></li>
+  </ul>
+
+  <div class="back">
     <a href="/empire-chronicle/">🏰 返回年鑑首頁</a>
   </div>
-  <header>
-    <h1>📖 棄明王之亂</h1>
-    <div class="subtitle">帝國史詩 · 共 50 章</div>
-  </header>
-  <div class="chapters" id="chapters"></div>
-  <script>
-    const list = [
-      'ch01.html',
-      'ch02.html', 'ch03.html', 'ch04.html', 'ch05.html',
-      'ch06.html', 'ch07.html', 'ch08.html', 'ch09.html', 'ch10.html',
-      'ch11.html', 'ch12.html', 'ch13.html', 'ch14.html', 'ch15.html',
-      'ch16.html', 'ch17.html', 'ch18.html', 'ch19.html', 'ch20.html',
-      'ch21.html', 'ch22.html', 'ch23.html', 'ch24.html', 'ch25.html',
-      'ch26.html', 'ch27.html', 'ch28.html', 'ch29.html', 'ch30.html',
-      'ch31.html', 'ch32.html', 'ch33.html', 'ch34.html', 'ch35.html',
-      'ch36.html', 'ch37.html', 'ch38.html', 'ch39.html', 'ch40.html',
-      'ch41.html', 'ch42.html', 'ch43.html', 'ch44.html', 'ch45.html',
-      'ch46.html', 'ch47.html', 'ch48.html', 'ch49.html', 'ch50.html'
-    ];
-    const box = document.getElementById('chapters');
-    list.forEach(f => {
-      const a = document.createElement('a');
-      a.href = f;
-      const m = f.match(/ch(\d+)/);
-      a.textContent = '第 ' + (m ? m[1] : '?') + ' 章';
-      box.appendChild(a);
-    });
-  </script>
 </div>
 </body>
 </html>
