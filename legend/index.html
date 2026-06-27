@@ -25,12 +25,15 @@
     list-style: none;
     padding: 0;
     margin: 28px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
   }
   .toc li {
-    margin: 8px 0;
+    margin: 0;
   }
   .toc a {
-    display: inline-block;
+    display: block;
     background: rgba(255,255,255,0.8);
     border: 1.5px solid #cbb896;
     border-radius: 4px 4px 12px 4px;
@@ -38,7 +41,10 @@
     padding: 10px 14px;
     text-decoration: none;
     font-family: inherit;
-    min-width: 260px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .toc a:hover {
     background: rgba(255,255,255,0.95);
