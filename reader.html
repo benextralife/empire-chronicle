@@ -35,9 +35,9 @@
   const chapter = params.get('chapter') || '1';
   const root = '/empire-chronicle/';
   const map = {
-    legend: { base: '/empire-chronicle/stories/legend/', prefix: '' },
-    ufo:    { base: '/empire-chronicle/stories/ufo-war/', prefix: '' },
-    algo:   { base: '/empire-chronicle/stories/algorithmic-soul/', prefix: '' }
+    legend: { base: '/empire-chronicle/stories/legend/', prefix: 'ch' },
+    ufo:    { base: '/empire-chronicle/stories/ufo-war/', prefix: 'ch' },
+    algo:   { base: '/empire-chronicle/stories/algorithmic-soul/', prefix: 'ch' }
   };
   const cfg = map[story] || map.legend;
   const num = String(chapter).padStart(2, '0');
