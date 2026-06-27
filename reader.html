@@ -41,7 +41,15 @@
   };
   const cfg = map[story] || map.legend;
   const num = String(chapter).padStart(2, '0');
-  const file = cfg.base + (cfg.prefix ? cfg.prefix + num : num) + '.md';
+  let file = '';
+  if (story === 'legend') {
+    const resp = await fetch(cfg.base + 'manifest.json');
+    const manifest = resp.ok ? await resp.json() : [];
+    const entry = manifest.find(item => String(item.chapter).padStart(2, '0') === num);
+    file = entry ? cfg.base + entry.file : '';
+  } else {
+    file = cfg.base + (cfg.prefix ? cfg.prefix + num : num) + '.md';
+  }
   const res = await fetch(file);
   if (!res.ok) {
     document.getElementById('body').textContent = '本章尚未釋出或檔案不存在。';
