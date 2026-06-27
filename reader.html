@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📖 閱讀</title>
+<style>
+  body {
+    font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+    background: #f5e6d3;
+    color: #2b2318;
+    margin: 0;
+    padding: 24px;
+    line-height: 1.8;
+  }
+  .wrap { max-width: 800px; margin: 0 auto; }
+  .meta { color: #7a6a5a; font-size: 0.9rem; margin-bottom: 18px; }
+  .back { margin: 32px 0; }
+  .back a { color: #7a1f1f; text-decoration: none; }
+  #body { white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="back"><a href="/empire-chronicle/">🏰 返回年鑑首頁</a></div>
+  <h1 id="title"></h1>
+  <div class="meta" id="meta"></div>
+  <div id="body"></div>
+  <div class="back"><a href="/empire-chronicle/">🏰 返回年鑑首頁</a></div>
+</div>
+<script>
+(async () => {
+  const params = new URLSearchParams(location.search);
+  const story = params.get('story') || 'legend';
+  const chapter = params.get('chapter') || '1';
+  const root = '/empire-chronicle/';
+  const map = {
+    legend: { base: '/empire-chronicle/stories/legend/', prefix: '' },
+    ufo:    { base: '/empire-chronicle/stories/ufo-war/', prefix: '' },
+    algo:   { base: '/empire-chronicle/stories/algorithmic-soul/', prefix: '' }
+  };
+  const cfg = map[story] || map.legend;
+  const num = String(chapter).padStart(2, '0');
+  const file = cfg.base + (cfg.prefix ? cfg.prefix + num : num) + '.md';
+  const res = await fetch(file);
+  if (!res.ok) {
+    document.getElementById('body').textContent = '本章尚未釋出或檔案不存在。';
+    return;
+  }
+  const text = await res.text();
+  const lines = text.split('\n');
+  const title = lines.find(l => l.startsWith('# ')) || '';
+  document.getElementById('title').textContent = title.replace(/^# /, '');
+  document.getElementById('meta').textContent = file;
+  document.getElementById('body').textContent = lines.slice(lines.indexOf('---', lines.indexOf('---') + 1) + 1).join('\n').trim();
+})();
+</script>
+</body>
+</html>
