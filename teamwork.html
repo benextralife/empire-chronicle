@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teamwork Canvas</title>
+<style>
+  :root {
+    --bg: #0b0d10;
+    --panel: #13161b;
+    --panel-2: #1a1d23;
+    --border: #23272f;
+    --text: #e6e8eb;
+    --text-weak: #9aa0aa;
+    --accent: #5b7cfa;
+  }
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", sans-serif;
+    margin: 0;
+    padding: 24px;
+  }
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 18px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .col {
+    background: linear-gradient(180deg, #1c1f26, #14171d);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 16px;
+    min-height: 320px;
+  }
+  .col__title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-weak);
+    margin: 0 0 14px 2px;
+  }
+  .task {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+  }
+  .task h3 {
+    margin: 0 0 6px 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .task p {
+    margin: 0;
+    color: var(--text-weak);
+    font-size: 12px;
+    line-height: 1.45;
+  }
+  .pill {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 999px;
+    margin-top: 10px;
+    background: #1f2d44;
+    color: #9ab3ff;
+  }
+</style>
+</head>
+<body>
+  <div class="board">
+    <div class="col">
+      <div class="col__title">Queue</div>
+      <div class="task">
+        <h3>背叛式部署</h3>
+        <p>量化策略回测環境建置</p>
+        <span class="pill">Pending</span>
+      </div>
+      <div class="task">
+        <h3>策略參數優化</h3>
+        <p>使用 Grid Search / Optuna 進行參數搜尋</p>
+        <span class="pill">Pending</span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col__title">WIP</div>
+      <div class="task">
+        <h3>Teamwork Canvas 實作</h3>
+        <p>建立三名角色的任務看板介面</p>
+        <span class="pill">In progress</span>
+      </div>
+    </div>
+    <div class="col">
+      <div class="col__title">Done</div>
+      <div class="task">
+        <h3>角色建立</h3>
+        <p>王上、小愛、Sang 三個子代理已建立</p>
+        <span class="pill">Completed</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
