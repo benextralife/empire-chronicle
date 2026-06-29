@@ -1,27 +1,7 @@
-{
-  "chapter": 98,
-  "file": "test-ch2.md",
-  "title": "T2"
-},
-{
-  "chapter": 99,
-  "file": "test-ch3.md",
-  "title": "T3"
-},
-{
-  "chapter": 100,
-  "file": "test-ch10.md",
-  "title": "T10"
-},
-{
-  "chapter": 101,
-  "file": "test-chA.md",
-  "title": "TA"
-}
 [
   {
     "chapter": 1,
-    "file": "ch01.md",
+    "file": "legend-ch01.md",
     "title": "棄明王之亂 · 第一章：昏債的種子"
   },
   {
@@ -179,4 +159,4 @@
     "file": "2026-06-27-legend-ch58.md",
     "title": "棄明王之亂 · 第五十八章"
   }
-] 
+]
