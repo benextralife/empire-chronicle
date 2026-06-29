@@ -37,7 +37,7 @@
     const chapter = params.get('chapter') || '1';
     const root = '/empire-chronicle/';
     const map = {
-      legend: { base: '/empire-chronicle/stories/legend/', prefix: 'ch' },
+      legend: { base: '/empire-chronicle/stories/legend/', prefix: 'ch', use_json: '/empire-chronicle/stories/legend/chapters.json' },
       ufo:    { base: '/empire-chronicle/stories/ufo-war/', prefix: 'ch' },
       algo:   { base: '/empire-chronicle/stories/algorithmic-soul/', prefix: 'ch' },
       'quantum-pen': { base: '/empire-chronicle/stories/quantum-pen/', prefix: 'ch', use_json: '/empire-chronicle/stories/quantum-pen/chapters.json' },
@@ -48,11 +48,8 @@
     const cfg = map[story] || map.legend;
     const num = String(chapter).padStart(2, '0');
     let file = '';
-    if (story === 'legend') {
-      location.replace(`/empire-chronicle/legend/ch${num}.html`);
-      return;
-    } else if (story === 'quantum-pen') {
-      const resp = await fetch(cfg.base + 'chapters.json');
+    if (cfg.use_json) {
+      const resp = await fetch(cfg.use_json);
       const idx = resp.ok ? await resp.json() : [];
       const entry = idx.find(item => String(item.chapter).padStart(2, '0') === num);
       file = entry ? cfg.base + entry.file : '';
