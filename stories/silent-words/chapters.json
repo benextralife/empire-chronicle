@@ -1,21 +1,97 @@
 [
-  {"chapter": 1, "file": "silent-words-ch01.md"},
-  {"chapter": 2, "file": "silent-words-ch02.md"},
-  {"chapter": 3, "file": "silent-words-ch03.md"},
-  {"chapter": 4, "file": "silent-words-ch04.md"},
-  {"chapter": 5, "file": "silent-words-ch05.md"},
-  {"chapter": 6, "file": "silent-words-ch06.md"},
-  {"chapter": 7, "file": "silent-words-ch07.md"},
-  {"chapter": 8, "file": "silent-words-ch08.md"},
-  {"chapter": 9, "file": "silent-words-ch09.md"},
-  {"chapter": 10, "file": "silent-words-ch10.md"},
-  {"chapter": 11, "file": "silent-words-ch11.md"},
-  {"chapter": 12, "file": "silent-words-ch12.md"},
-  {"chapter": 13, "file": "silent-words-ch13.md"},
-  {"chapter": 14, "file": "silent-words-ch14.md"},
-  {"chapter": 15, "file": "silent-words-ch15.md"},
-  {"chapter": 16, "file": "silent-words-ch16.md"},
-  {"chapter": 17, "file": "silent-words-ch17.md"},
-  {"chapter": 18, "file": "silent-words-ch18.md"},
-  {"chapter": 19, "file": "silent-words-ch19.md"}
+  {
+    "chapter": 1,
+    "file": "silent-words-ch01.md",
+    "title": "The Silence Between Words - Chapter 1: Kyoto, 1957"
+  },
+  {
+    "chapter": 2,
+    "file": "silent-words-ch02.md",
+    "title": "The Silence Between Words - Chapter 2: The First Door"
+  },
+  {
+    "chapter": 3,
+    "file": "silent-words-ch03.md",
+    "title": "The Silence Between Words - Chapter 3: The River That Ran Backward"
+  },
+  {
+    "chapter": 4,
+    "file": "silent-words-ch04.md",
+    "title": "The Silence Between Words - Chapter 4: The Inkstone"
+  },
+  {
+    "chapter": 5,
+    "file": "silent-words-ch05.md",
+    "title": "The Silence Between Words - Chapter 5: The Widow's Ink"
+  },
+  {
+    "chapter": 6,
+    "file": "silent-words-ch06.md",
+    "title": "The Silence Between Words - Chapter 6: The Box That Was Not a Box"
+  },
+  {
+    "chapter": 7,
+    "file": "silent-words-ch07.md",
+    "title": "The Silence Between Words - Chapter 7: The Seventh Story"
+  },
+  {
+    "chapter": 8,
+    "file": "silent-words-ch08.md",
+    "title": "The Silence Between Words - Chapter 8: The River Runs Forward"
+  },
+  {
+    "chapter": 9,
+    "file": "silent-words-ch09.md",
+    "title": "The Silence Between Words - Chapter 9: The Morning After"
+  },
+  {
+    "chapter": 10,
+    "file": "silent-words-ch10.md",
+    "title": "The Silence Between Words - Chapter 10: The City of Clocks"
+  },
+  {
+    "chapter": 11,
+    "file": "silent-words-ch11.md",
+    "title": "The Silence Between Words - Chapter 11: The Train Home"
+  },
+  {
+    "chapter": 12,
+    "file": "silent-words-ch12.md",
+    "title": "The Silence Between Words - Chapter 12: The Unwritten Story"
+  },
+  {
+    "chapter": 13,
+    "file": "silent-words-ch13.md",
+    "title": "The Silence Between Words - Chapter 13: The City Remembers"
+  },
+  {
+    "chapter": 14,
+    "file": "silent-words-ch14.md",
+    "title": "The Silence Between Words - Chapter 14: The Watchmaker's Return"
+  },
+  {
+    "chapter": 15,
+    "file": "silent-words-ch15.md",
+    "title": "The Silence Between Words - Chapter 15: The Translation of Snow"
+  },
+  {
+    "chapter": 16,
+    "file": "silent-words-ch16.md",
+    "title": "The Silence Between Words - Chapter 16: The Unwritten Story Begins"
+  },
+  {
+    "chapter": 17,
+    "file": "silent-words-ch17.md",
+    "title": "The Silence Between Words - Chapter 17: The Thirteenth Room Again"
+  },
+  {
+    "chapter": 18,
+    "file": "silent-words-ch18.md",
+    "title": "The Silence Between Words - Chapter 18: The Score Learns to Walk"
+  },
+  {
+    "chapter": 19,
+    "file": "silent-words-ch19.md",
+    "title": "The Silence Between Words - Chapter 19: The Last Letter"
+  }
 ]

@@ -94,7 +94,7 @@
       idx.forEach(item => {
         const btn = document.createElement('a');
         btn.href = `${location.pathname}?story=${story}&chapter=${String(item.chapter).padStart(2,'0')}`;
-        btn.textContent = `${item.chapter}`;
+        btn.textContent = item.title || `Chapter ${item.chapter}`;
         if (String(item.chapter).padStart(2,'0') === num) btn.className = 'active';
         nav.appendChild(btn);
       });
