@@ -49,10 +49,8 @@
     const num = String(chapter).padStart(2, '0');
     let file = '';
     if (story === 'legend') {
-      const resp = await fetch(cfg.base + 'manifest.json');
-      const manifest = resp.ok ? await resp.json() : [];
-      const entry = manifest.find(item => String(item.chapter).padStart(2, '0') === num);
-      file = entry ? cfg.base + entry.file : '';
+      location.replace(`/empire-chronicle/legend/ch${num}.html`);
+      return;
     } else if (story === 'quantum-pen') {
       const resp = await fetch(cfg.base + 'chapters.json');
       const idx = resp.ok ? await resp.json() : [];
