@@ -83,17 +83,24 @@
     letter-spacing: 0.2em;
   }
 </style>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window,document,"clarity","script","xed5npfdea");
+</script>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>📜 王國日報總目錄</h1>
-    <p>共 365 天，從 2025-06-27 到 2026-06-25</p>
+    <p>共 365 天，從 2025-06-27 到 2026-06-29</p>
   </header>
 
   <div class="nav">
     <a href="/empire-chronicle/">🏰 回首頁</a>
-    <input type="date" id="goto" min="2025-06-27" max="2026-06-25" value="2025-07-01">
+    <input type="date" id="goto" min="2025-06-27" max="2026-06-29" value="2025-07-01">
     <button onclick="go()">前往</button>
   </div>
 
@@ -111,7 +118,7 @@ function go() {
 }
 (function(){
   const start = new Date('2025-06-27');
-  const end = new Date('2026-06-25');
+  const end = new Date('2026-06-29');
   const a2025 = document.getElementById('y2025');
   const a2026 = document.getElementById('y2026');
   const cur = new Date(start);
