@@ -98,6 +98,13 @@
     color: #4a3420;
   }
 </style>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window,document,"clarity","script","xed5npfdea");
+</script>
 </head>
 <body>
 <div class="wrap">
@@ -113,7 +120,7 @@
 
   <div class="nav">
     <button onclick="change(-1)">◀ 上一天</button>
-    <input type="date" id="goto" min="2025-06-27" max="2026-06-25" value="2025-06-27">
+    <input type="date" id="goto" min="2025-06-27" max="2026-06-29" value="2025-06-27">
     <button onclick="go()">前往</button>
     <button onclick="change(1)">下一天 ▶</button>
   </div>
@@ -128,7 +135,7 @@
 const DATA = [];
 fetch('/empire-chronicle/daily/data.json').then(r=>r.json()).then(d=>{
   window.DATA = d;
-  showDateStr('2026-06-25');
+  showDateStr('2026-06-29');
 });
 
 function parseDate(s){
