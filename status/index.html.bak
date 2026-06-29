@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>📊 王國狀態 — 王國年鑑</title>
+<style>
+  body {
+    font-family: "Noto Serif TC", "Songti TC", serif;
+    background: #f5e6d3;
+    color: #2b2318;
+    margin: 0;
+    padding: 0;
+  }
+  .wrap {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header {
+    border: 2px solid #cbb896;
+    border-radius: 4px 4px 24px 4px;
+    background: rgba(255,255,255,0.6);
+    padding: 36px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+    color: #7a1f1f;
+    margin: 0 0 8px;
+  }
+  .subtitle {
+    color: #5a3a1f;
+    font-size: 0.95rem;
+    letter-spacing: 0.2em;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 24px;
+  }
+  .card {
+    background: rgba(255,255,255,0.8);
+    border: 1.5px solid #cbb896;
+    border-radius: 4px 4px 16px 4px;
+    padding: 22px;
+    box-shadow: 0 4px 12px rgba(139,69,19,0.1);
+  }
+  .card h3 {
+    margin: 0 0 10px;
+    color: #7a1f1f;
+    font-size: 1.1rem;
+  }
+  .card p {
+    margin: 4px 0;
+    line-height: 1.7;
+    font-size: 0.95rem;
+  }
+  .big {
+    font-size: 2.2rem;
+    color: #7a1f1f;
+    font-weight: 700;
+    display: block;
+    margin: 6px 0;
+  }
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+  a {
+    color: #7a1f1f;
+    text-decoration: none;
+  }
+</style>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window,document,"clarity","script","xed5npfdea");
+</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <div></div>
+    <a href="/empire-chronicle/">🏰 返回年鑑首頁</a>
+  </div>
+
+  <header>
+    <h1>📊 王國狀態快照</h1>
+    <div class="subtitle">紀錄於 2026-06-26 · 平靜期</div>
+  </header>
+
+  <div class="grid">
+    <div class="card">
+      <h3>🏰 王國年資</h3>
+      <span class="big">365</span>
+      <p>天</p>
+      <p>日報紀錄</p>
+      <p style="margin-top:8px;"><a href="/empire-chronicle/daily/index.html">查看全年 →</a></p>
+    </div>
+    <div class="card">
+      <h3>📜 最新動態</h3>
+      <p>2026-06-26</p>
+      <p>平靜期。無天災、無敵襲。</p>
+      <p style="margin-top:8px;"><a href="/empire-chronicle/daily/2026-06-26.html">閱讀全文 →</a></p>
+    </div>
+    <div class="card">
+      <h3>💰 財政備註</h3>
+      <p>資產紀念冊建置中</p>
+      <p style="margin-top:8px;"><a href="/empire-chronicle/wallet/archive.html">查看資產 →</a></p>
+    </div>
+    <div class="card">
+      <h3>📈 王國展望</h3>
+      <p>持續記錄天災、敵襲、建設與重生</p>
+      <p>帝國 Still Stands Strong.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
