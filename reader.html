@@ -10,6 +10,9 @@
   .back { margin: 32px 0; }
   .back a { color:#7a1f1f; text-decoration:none; }
   #body { white-space: pre-wrap; }
+  #nav { display:flex; flex-wrap:wrap; gap:8px; margin: 16px 0 8px; }
+  #nav a { display:inline-block; padding:6px 14px; border-radius:18px; background:#e8d5c4; color:#7a1f1f; text-decoration:none; font-size:14px; }
+  #nav a.active { background:#c9a89a; }
 </style>
 <script type="text/javascript">
   (function(c,l,a,r,i,t,y){
@@ -23,6 +26,7 @@
   <div class="wrap">
     <div class="back"><a href="/empire-chronicle/">🏰 返回年鑑首頁</a></div>
     <h1 id="title"></h1>
+    <div id="nav"></div>
     <div id="body"></div>
     <div class="back"><a href="/empire-chronicle/">🏰 返回年鑑首頁</a></div>
   </div>
@@ -85,6 +89,18 @@
     }
     const body = bodyLines.join('\n').replace(/\n{3,}/g, '\n\n').trim();
     document.getElementById('body').textContent = body || '本篇尚無正文內容敬請期待。';
+    const nav = document.getElementById('nav');
+    const idxResp = await fetch(cfg.base + 'chapters.json');
+    if (idxResp.ok) {
+      const idx = await idxResp.json();
+      idx.forEach(item => {
+        const btn = document.createElement('a');
+        btn.href = `${location.pathname}?story=${story}&chapter=${String(item.chapter).padStart(2,'0')}`;
+        btn.textContent = `${item.chapter}`;
+        if (String(item.chapter).padStart(2,'0') === num) btn.className = 'active';
+        nav.appendChild(btn);
+      });
+    }
   })();
   </script>
 </body>
