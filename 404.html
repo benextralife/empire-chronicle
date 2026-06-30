@@ -31,7 +31,7 @@
       // e.g. /empire-chronicle/empire-chronicle/daily/report.html
       var m1 = path.match(/^\/empire-chronicle\/empire-chronicle(\/.*)/);
       if (m1) {
-        fixed = m1[1];
+        fixed = '/empire-chronicle' + m1[1];
       }
 
       // Pattern 2: anything followed by /empire-chronicle/ at end of stem
