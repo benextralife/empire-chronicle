@@ -1,68 +1,332 @@
 [
-  {"chapter": 1, "file": "ch01.md", "title": "棄明王之亂 · 第一章：昏債的種子"},
-  {"chapter": 2, "file": "ch02.md", "title": "棄明王之亂 · 第二章：鐵幕降臨"},
-  {"chapter": 3, "file": "ch03.md", "title": "棄明王之亂 · 第三章：寒焰之誓"},
-  {"chapter": 4, "file": "ch04.md", "title": "棄明王之亂 · 第四章：鐵衣天涯"},
-  {"chapter": 5, "file": "ch05.md", "title": "棄明王之亂 · 第五章：雪夜誅心"},
-  {"chapter": 6, "file": "ch06.md", "title": "棄明王之亂 · 第六章：破曉之誓"},
-  {"chapter": 7, "file": "ch07.md", "title": "棄明王之亂 · 第七章：腥風血雨"},
-  {"chapter": 8, "file": "ch08.md", "title": "棄明王之亂 · 第八章：無名碑"},
-  {"chapter": 9, "file": "ch09.md", "title": "棄明王之亂 · 第九章：烽火連天"},
-  {"chapter": 10, "file": "ch10.md", "title": "棄明王之亂 · 第十章：天崩"},
-  {"chapter": 11, "file": "ch11.md", "title": "棄明王之亂 · 第十一章：亂世"},
-  {"chapter": 12, "file": "ch12.md", "title": "棄明王之亂 · 第十二章：霧鎖宮廷"},
-  {"chapter": 13, "file": "ch13.md", "title": "棄明王之亂 · 第十三章：懸疑"},
-  {"chapter": 14, "file": "ch14.md", "title": "棄明王之亂 · 第十四章：長城風雲"},
-  {"chapter": 15, "file": "ch15.md", "title": "棄明王之亂 · 第十五章：決戰前夜"},
-  {"chapter": 16, "file": "ch16.md", "title": "棄明王之亂 · 第十六章：血染山河"},
-  {"chapter": 17, "file": "ch17.md", "title": "棄明王之亂 · 第十七章：真相"},
-  {"chapter": 18, "file": "ch18.md", "title": "棄明王之亂 · 第十八章：終焉"},
-  {"chapter": 19, "file": "ch19.md", "title": "棄明王之亂 · 第十九章：風雲變色"},
-  {"chapter": 20, "file": "ch20.md", "title": "棄明王之亂 · 第二十章：逆襲"},
-  {"chapter": 21, "file": "ch21.md", "title": "棄明王之亂 · 第二十一章：真相大白"},
-  {"chapter": 22, "file": "ch22.md", "title": "棄明王之亂 · 第二十二章：黎明"},
-  {"chapter": 23, "file": "ch23.md", "title": "棄明王之亂 · 第二十三章：重建"},
-  {"chapter": 24, "file": "ch24.md", "title": "棄明王之亂 · 第二十四章：風起"},
-  {"chapter": 25, "file": "ch25.md", "title": "棄明王之亂 · 第二十五章：邊關孤煙"},
-  {"chapter": 26, "file": "ch26.md", "title": "棄明王之亂 · 第二十六章：兵臨城下"},
-  {"chapter": 27, "file": "ch27.md", "title": "棄明王之亂 · 第二十七章：京城風雲"},
-  {"chapter": 28, "file": "ch28.md", "title": "棄明王之亂 · 第二十八章：暗戰"},
-  {"chapter": 29, "file": "ch29.md", "title": "棄明王之亂 · 第二十九章：生死一線"},
-  {"chapter": 30, "file": "ch30.md", "title": "棄明王之亂 · 第三十章：玉璽風波"},
-  {"chapter": 31, "file": "ch31.md", "title": "棄明王之亂 · 第三十一章：血戰臨陽"},
-  {"chapter": 32, "file": "ch32.md", "title": "棄明王之亂 · 第三十二章"},
-  {"chapter": 33, "file": "ch33.md", "title": "棄明王之亂 · 第三十三章：火燒連營"},
-  {"chapter": 34, "file": "ch34.md", "title": "棄明王之亂 · 第三十四章：黑龍現身"},
-  {"chapter": 35, "file": "ch35.md", "title": "棄明王之亂 · 第三十五章：雪夜誅心"},
-  {"chapter": 36, "file": "ch36.md", "title": "棄明王之亂 · 第三十六章：冰河之戰"},
-  {"chapter": 37, "file": "ch37.md", "title": "棄明王之亂 · 第三十七章：火燒連營"},
-  {"chapter": 38, "file": "ch38.md", "title": "棄明王之亂 · 第三十八章：勝與負之間"},
-  {"chapter": 39, "file": "ch39.md", "title": "棄明王之亂 · 第三十九章：新的聯盟"},
-  {"chapter": 40, "file": "ch40.md", "title": "棄明王之亂 · 第四十章：統帥出征"},
-  {"chapter": 41, "file": "ch41.md", "title": "棄明王之亂 · 第四十一章：決戰"},
-  {"chapter": 42, "file": "ch42.md", "title": "棄明王之亂 · 第四十二章：鐵與血"},
-  {"chapter": 43, "file": "ch43.md", "title": "棄明王之亂 · 第四十三章：落幕"},
-  {"chapter": 44, "file": "ch44.md", "title": "棄明王之亂 · 第四十四章：王都召見"},
-  {"chapter": 45, "file": "ch45.md", "title": "棄明王之亂 · 第四十五章：述職"},
-  {"chapter": 46, "file": "ch46.md", "title": "棄明王之亂 · 第四十六章：暗流"},
-  {"chapter": 47, "file": "ch47.md", "title": "棄明王之亂 · 第四十七章（補） · 風雲再起"},
-  {"chapter": 48, "file": "ch48.md", "title": "棄明王之亂 · 第四十八章：黎明前的黑暗"},
-  {"chapter": 49, "file": "ch49.md", "title": "棄明王之亂 · 第四十九章：血戰王都"},
-  {"chapter": 50, "file": "ch50.md", "title": "棄明王之亂 · 第五十章：終焉之戰"},
-  {"chapter": 51, "file": "ch51.md", "title": "棄明王之亂 · 第五十一章（新章） · 重建"},
-  {"chapter": 52, "file": "ch52.md", "title": "棄明王之亂 · 第五十二章：新秩序"},
-  {"chapter": 53, "file": "ch53.md", "title": "棄明王之亂 · 第五十三章：遠方"},
-  {"chapter": 54, "file": "ch54.md", "title": "棄明王之亂 · 第五十四章：邊關"},
-  {"chapter": 55, "file": "ch55.md", "title": "棄明王之亂 · 第五十五章：冰與火"},
-  {"chapter": 56, "file": "ch56.md", "title": "棄明王之亂 · 第五十六章：歸途"},
-  {"chapter": 57, "file": "ch57.md", "title": "棄明王之亂 · 第五十七章：天命"},
-  {"chapter": 58, "file": "ch58.md", "title": "棄明王之亂 · 第五十八章：天下"},
-  {"chapter": 59, "file": "ch59.md", "title": "棄明王之亂 · 南征"},
-  {"chapter": 60, "file": "ch60.md", "title": "棄明王之亂 · 凱旋回朝"},
-  {"chapter": 61, "file": "ch61.md", "title": "棄明王之亂 · 肅清殘黨"},
-  {"chapter": 62, "file": "ch62.md", "title": "棄明王之亂 · 遠方來信"},
-  {"chapter": 63, "file": "ch63.md", "title": "棄明王之亂 · 琥珀崗線索"},
-  {"chapter": 64, "file": "ch64.md", "title": "棄明王之亂 · 古廟探查"},
-  {"chapter": 65, "file": "ch65.md", "title": "棄明王之亂 · 歸途"},
-  {"chapter": 66, "file": "ch66.md", "title": "棄明王之亂 · 時間碎片"}
+  {
+    "chapter": 1,
+    "file": "ch01.md",
+    "title": "棄明王之亂 · 第一章：昏債的種子"
+  },
+  {
+    "chapter": 2,
+    "file": "ch02.md",
+    "title": "棄明王之亂 · 第二章：鐵幕降臨"
+  },
+  {
+    "chapter": 3,
+    "file": "ch03.md",
+    "title": "棄明王之亂 · 第三章：寒焰之誓"
+  },
+  {
+    "chapter": 4,
+    "file": "ch04.md",
+    "title": "棄明王之亂 · 第四章：鐵衣天涯"
+  },
+  {
+    "chapter": 5,
+    "file": "ch05.md",
+    "title": "棄明王之亂 · 第五章：雪夜誅心"
+  },
+  {
+    "chapter": 6,
+    "file": "ch06.md",
+    "title": "棄明王之亂 · 第六章：破曉之誓"
+  },
+  {
+    "chapter": 7,
+    "file": "ch07.md",
+    "title": "棄明王之亂 · 第七章：腥風血雨"
+  },
+  {
+    "chapter": 8,
+    "file": "ch08.md",
+    "title": "棄明王之亂 · 第八章：無名碑"
+  },
+  {
+    "chapter": 9,
+    "file": "ch09.md",
+    "title": "棄明王之亂 · 第九章：烽火連天"
+  },
+  {
+    "chapter": 10,
+    "file": "ch10.md",
+    "title": "棄明王之亂 · 第十章：天崩"
+  },
+  {
+    "chapter": 11,
+    "file": "ch11.md",
+    "title": "棄明王之亂 · 第十一章：亂世"
+  },
+  {
+    "chapter": 12,
+    "file": "ch12.md",
+    "title": "棄明王之亂 · 第十二章：霧鎖宮廷"
+  },
+  {
+    "chapter": 13,
+    "file": "ch13.md",
+    "title": "棄明王之亂 · 第十三章：懸疑"
+  },
+  {
+    "chapter": 14,
+    "file": "ch14.md",
+    "title": "棄明王之亂 · 第十四章：長城風雲"
+  },
+  {
+    "chapter": 15,
+    "file": "ch15.md",
+    "title": "棄明王之亂 · 第十五章：決戰前夜"
+  },
+  {
+    "chapter": 16,
+    "file": "ch16.md",
+    "title": "棄明王之亂 · 第十六章：血染山河"
+  },
+  {
+    "chapter": 17,
+    "file": "ch17.md",
+    "title": "棄明王之亂 · 第十七章：真相"
+  },
+  {
+    "chapter": 18,
+    "file": "ch18.md",
+    "title": "棄明王之亂 · 第十八章：終焉"
+  },
+  {
+    "chapter": 19,
+    "file": "ch19.md",
+    "title": "棄明王之亂 · 第十九章：風雲變色"
+  },
+  {
+    "chapter": 20,
+    "file": "ch20.md",
+    "title": "棄明王之亂 · 第二十章：逆襲"
+  },
+  {
+    "chapter": 21,
+    "file": "ch21.md",
+    "title": "棄明王之亂 · 第二十一章：真相大白"
+  },
+  {
+    "chapter": 22,
+    "file": "ch22.md",
+    "title": "棄明王之亂 · 第二十二章：黎明"
+  },
+  {
+    "chapter": 23,
+    "file": "ch23.md",
+    "title": "棄明王之亂 · 第二十三章：重建"
+  },
+  {
+    "chapter": 24,
+    "file": "ch24.md",
+    "title": "棄明王之亂 · 第二十四章：風起"
+  },
+  {
+    "chapter": 25,
+    "file": "ch25.md",
+    "title": "棄明王之亂 · 第二十五章：邊關孤煙"
+  },
+  {
+    "chapter": 26,
+    "file": "ch26.md",
+    "title": "棄明王之亂 · 第二十六章：兵臨城下"
+  },
+  {
+    "chapter": 27,
+    "file": "ch27.md",
+    "title": "棄明王之亂 · 第二十七章：京城風雲"
+  },
+  {
+    "chapter": 28,
+    "file": "ch28.md",
+    "title": "棄明王之亂 · 第二十八章：暗戰"
+  },
+  {
+    "chapter": 29,
+    "file": "ch29.md",
+    "title": "棄明王之亂 · 第二十九章：生死一線"
+  },
+  {
+    "chapter": 30,
+    "file": "ch30.md",
+    "title": "棄明王之亂 · 第三十章：玉璽風波"
+  },
+  {
+    "chapter": 31,
+    "file": "ch31.md",
+    "title": "棄明王之亂 · 第三十一章：血戰臨陽"
+  },
+  {
+    "chapter": 32,
+    "file": "ch32.md",
+    "title": "棄明王之亂 · 第三十二章"
+  },
+  {
+    "chapter": 33,
+    "file": "ch33.md",
+    "title": "棄明王之亂 · 第三十三章：火燒連營"
+  },
+  {
+    "chapter": 34,
+    "file": "ch34.md",
+    "title": "棄明王之亂 · 第三十四章：黑龍現身"
+  },
+  {
+    "chapter": 35,
+    "file": "ch35.md",
+    "title": "棄明王之亂 · 第三十五章：雪夜誅心"
+  },
+  {
+    "chapter": 36,
+    "file": "ch36.md",
+    "title": "棄明王之亂 · 第三十六章：冰河之戰"
+  },
+  {
+    "chapter": 37,
+    "file": "ch37.md",
+    "title": "棄明王之亂 · 第三十七章：火燒連營"
+  },
+  {
+    "chapter": 38,
+    "file": "ch38.md",
+    "title": "棄明王之亂 · 第三十八章：勝與負之間"
+  },
+  {
+    "chapter": 39,
+    "file": "ch39.md",
+    "title": "棄明王之亂 · 第三十九章：新的聯盟"
+  },
+  {
+    "chapter": 40,
+    "file": "ch40.md",
+    "title": "棄明王之亂 · 第四十章：統帥出征"
+  },
+  {
+    "chapter": 41,
+    "file": "ch41.md",
+    "title": "棄明王之亂 · 第四十一章：決戰"
+  },
+  {
+    "chapter": 42,
+    "file": "ch42.md",
+    "title": "棄明王之亂 · 第四十二章：鐵與血"
+  },
+  {
+    "chapter": 43,
+    "file": "ch43.md",
+    "title": "棄明王之亂 · 第四十三章：落幕"
+  },
+  {
+    "chapter": 44,
+    "file": "ch44.md",
+    "title": "棄明王之亂 · 第四十四章：王都召見"
+  },
+  {
+    "chapter": 45,
+    "file": "ch45.md",
+    "title": "棄明王之亂 · 第四十五章：述職"
+  },
+  {
+    "chapter": 46,
+    "file": "ch46.md",
+    "title": "棄明王之亂 · 第四十六章：暗流"
+  },
+  {
+    "chapter": 47,
+    "file": "ch47.md",
+    "title": "棄明王之亂 · 第四十七章（補） · 風雲再起"
+  },
+  {
+    "chapter": 48,
+    "file": "ch48.md",
+    "title": "棄明王之亂 · 第四十八章：黎明前的黑暗"
+  },
+  {
+    "chapter": 49,
+    "file": "ch49.md",
+    "title": "棄明王之亂 · 第四十九章：血戰王都"
+  },
+  {
+    "chapter": 50,
+    "file": "ch50.md",
+    "title": "棄明王之亂 · 第五十章：終焉之戰"
+  },
+  {
+    "chapter": 51,
+    "file": "ch51.md",
+    "title": "棄明王之亂 · 第五十一章（新章） · 重建"
+  },
+  {
+    "chapter": 52,
+    "file": "ch52.md",
+    "title": "棄明王之亂 · 第五十二章：新秩序"
+  },
+  {
+    "chapter": 53,
+    "file": "ch53.md",
+    "title": "棄明王之亂 · 第五十三章：遠方"
+  },
+  {
+    "chapter": 54,
+    "file": "ch54.md",
+    "title": "棄明王之亂 · 第五十四章：邊關"
+  },
+  {
+    "chapter": 55,
+    "file": "ch55.md",
+    "title": "棄明王之亂 · 第五十五章：冰與火"
+  },
+  {
+    "chapter": 56,
+    "file": "ch56.md",
+    "title": "棄明王之亂 · 第五十六章：歸途"
+  },
+  {
+    "chapter": 57,
+    "file": "ch57.md",
+    "title": "棄明王之亂 · 第五十七章：天命"
+  },
+  {
+    "chapter": 58,
+    "file": "ch58.md",
+    "title": "棄明王之亂 · 第五十八章：天下"
+  },
+  {
+    "chapter": 59,
+    "file": "ch59.md",
+    "title": "棄明王之亂 · 第五十九章：南征"
+  },
+  {
+    "chapter": 60,
+    "file": "ch60.md",
+    "title": "棄明王之亂 · 第六十章：凱旋回朝"
+  },
+  {
+    "chapter": 61,
+    "file": "ch61.md",
+    "title": "棄明王之亂 · 第六十一章：肅清殘黨"
+  },
+  {
+    "chapter": 62,
+    "file": "ch62.md",
+    "title": "棄明王之亂 · 第六十二章：遠方來信"
+  },
+  {
+    "chapter": 63,
+    "file": "ch63.md",
+    "title": "棄明王之亂 · 第六十三章：琥珀崗線索"
+  },
+  {
+    "chapter": 64,
+    "file": "ch64.md",
+    "title": "棄明王之亂 · 第六十四章：古廟探查"
+  },
+  {
+    "chapter": 65,
+    "file": "ch65.md",
+    "title": "棄明王之亂 · 第六十五章：歸途"
+  },
+  {
+    "chapter": 66,
+    "file": "ch66.md",
+    "title": "棄明王之亂 · 第六十六章：時間碎片"
+  }
 ]
