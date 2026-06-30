@@ -57,6 +57,10 @@
     }
     const res = await fetch(file);
     if (!res.ok) {
+      if (story === 'legend') {
+        location.replace('/empire-chronicle/legend/ch' + num + '.html');
+        return;
+      }
       document.getElementById('body').textContent = '本章尚未釋出或檔案不存在。';
       return;
     }
