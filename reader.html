@@ -49,7 +49,7 @@
     const num = String(chapter).padStart(2, '0');
     let file = '';
     if (cfg.use_json) {
-      const resp = await fetch(cfg.use_json);
+      const resp = await fetch(cfg.use_json + '?v=' + Date.now());
       const idx = resp.ok ? await resp.json() : [];
       const entry = idx.find(item => String(item.chapter).padStart(2, '0') === num);
       file = entry ? cfg.base + entry.file : '';
