@@ -19,6 +19,7 @@ STORY_SHORT = {
     'ufo-war': '星際邊緣',
     'ai-love-master': 'AI 愛戀',
     'ai-baby-dream': 'AI 寶寶的夢想',
+    'ai-cosmic-dream': 'AI 星夢',
 }
 
 def cn_num(n: int) -> str:
@@ -49,6 +50,8 @@ def load_chapters(sdir):
         mds = sorted(sdir.glob(f'{sname}-ch*.md'))
     elif sname == 'ai-baby-dream':
         mds = sorted(sdir.glob('ai-baby-dream-ch*.md'))
+    elif sname == 'ai-cosmic-dream':
+        mds = sorted(sdir.glob('ai-cosmic-dream-ch*.md'))
     else:
         mds = sorted(sdir.glob('ch*.md'))
     md_map = {}
