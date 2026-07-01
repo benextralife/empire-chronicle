@@ -33,10 +33,21 @@
       justify-content: center;
       gap: 10px;
       flex-wrap: wrap;
-      margin-bottom: 32px;
     }
-    .topbar { margin-bottom: 32px; }
+    .topbar { margin-bottom: 0; }
     .bottombar { margin-top: 40px; }
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .header-row .story-title {
+      text-align: center;
+      margin: 0;
+      flex: 1;
+    }
     .pill-btn {
       display: inline-block;
       padding: 10px 18px;
@@ -101,13 +112,12 @@
 </head>
 <body>
   <div class="page">
-    <div class="topbar">
+    <div class="header-row">
       <a class="pill-btn" href="/empire-chronicle/">🏰 年鑑首頁</a>
-    </div>
-
-    <div class="story-title">
-      <h1>Silent Chess</h1>
-      <p>章節目錄</p>
+      <div class="story-title">
+        <h1>Silent Chess</h1>
+        <p>章節目錄</p>
+      </div>
     </div>
 
     <ul class="toc">
