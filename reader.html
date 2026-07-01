@@ -157,6 +157,13 @@
     <div id="article">
       <div class="empty">載入中…</div>
     </div>
+    <script>
+      window.onerror = function(msg, url, line) {
+        var art = document.getElementById('article');
+        if (art) art.innerHTML = '<div class="error">載入失敗：' + msg + '<br><small>line ' + line + '</small></div>';
+        return true;
+      };
+    </script>
 
     <div id="nav"></div>
 
@@ -221,12 +228,18 @@
                    'ch';
     const fileName = prefix + String(chapterNum).padStart(2, '0') + '.md';
 
-    const res = await fetch('/empire-chronicle/stories/' + story + '/' + fileName + '?v=' + Date.now());
-    if (!res.ok) {
-      document.getElementById('article').textContent = '本章尚未釋出或檔案不存在。';
+    let text = '';
+    try {
+      const res = await fetch('/empire-chronicle/stories/' + story + '/' + fileName + '?v=' + Date.now());
+      if (!res.ok) {
+        document.getElementById('article').textContent = '本章尚未釋出或檔案不存在 (HTTP ' + res.status + ')';
+        return;
+      }
+      text = await res.text();
+    } catch (e) {
+      document.getElementById('article').textContent = '載入失敗 (fetch): ' + e.message;
       return;
     }
-    const text = await res.text();
 
     let body = text.replace(/^---[\s\S]*?---/, '').trim();
 
@@ -272,7 +285,11 @@
       }).join('');
     }
 
-    document.getElementById('article').innerHTML = mdToHtml(body) || '<div class="empty">本篇尚無正文內容敬請期待。</div>';
+    try {
+      document.getElementById('article').innerHTML = mdToHtml(body) || '<div class="empty">本篇尚無正文內容敬請期待。</div>';
+    } catch (e) {
+      document.getElementById('article').textContent = '渲染失敗: ' + e.message;
+    }
 
     const nav = document.getElementById('nav');
     const prevCh = chapters.find(c => parseInt(c.chapter, 10) === chapterNum - 1);
