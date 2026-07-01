@@ -232,13 +232,20 @@
     function cleanTitle(t) {
       if (!t || !t.trim()) return 'no title';
       t = t.trim();
-      // If title starts with chapter marker directly, no story prefix to strip
-      if (/^(第|Chapter\s)/i.test(t)) return t;
-      // Otherwise strip leading story-name prefix and return from first chapter marker
-      const m = t.match(/(第[^。
-]*章|Chapter\s+\d+)/i);
-      if (m) return t.substring(t.indexOf(m[0]));
-      return t;
+      // If title starts with chapter marker, return as-is
+      if (t.startsWith('第') || /^Chapter\s/i.test(t)) return t;
+      // Strip leading story-name prefix (everything before the first 第 or Chapter N)
+      var i = t.indexOf('第');
+      var j = t.search(/Chapter\s+\d+/i);
+      if (j >= 0 && (i < 0 || j < i)) i = j;
+      if (i >= 0) return t.substring(i);
+      // Fallback: strip up to first dot or colon
+      var s = t;
+      var dot = s.indexOf('·');
+      var colon = s.indexOf(':');
+      if (dot >= 0 && (colon < 0 || dot < colon)) s = s.substring(dot + 1).trim();
+      else if (colon >= 0) s = s.substring(colon + 1).trim();
+      return s || 'no title';
     }
 
     function mdToHtml(md) {
