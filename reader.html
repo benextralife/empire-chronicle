@@ -38,7 +38,9 @@
     const map = {
       legend: { base: '/empire-chronicle/stories/legend/', prefix: 'ch', use_json: '/empire-chronicle/stories/legend/chapters.json' },
       ufo:    { base: '/empire-chronicle/stories/ufo-war/', prefix: 'ch' },
+      'ufo-war': { base: '/empire-chronicle/stories/ufo-war/', prefix: 'ch' },
       algo:   { base: '/empire-chronicle/stories/algorithmic-soul/', prefix: 'ch' },
+      'algorithmic-soul': { base: '/empire-chronicle/stories/algorithmic-soul/', prefix: 'ch' },
       'quantum-pen': { base: '/empire-chronicle/stories/quantum-pen/', prefix: 'ch', use_json: '/empire-chronicle/stories/quantum-pen/chapters.json' },
       'lone-shadow': { base: '/empire-chronicle/stories/lone-shadow/', prefix: 'lone-shadow-ch' },
       'silent-chess': { base: '/empire-chronicle/stories/silent-chess/', prefix: 'silent-chess-ch' },
@@ -58,10 +60,6 @@
     }
     const res = await fetch(file);
     if (!res.ok) {
-      if (story === 'legend') {
-        location.replace('/empire-chronicle/legend/ch' + num + '.html');
-        return;
-      }
       document.getElementById('body').textContent = '本章尚未釋出或檔案不存在。';
       return;
     }
