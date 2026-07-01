@@ -207,7 +207,7 @@
     } catch (e) { /* ignore */ }
 
     const cur = chapters.find(c => parseInt(c.chapter, 10) === chapterNum);
-    const chapterLabel = cur ? cur.title.replace(/^[^・·]+[・·:：]?/, '').trim() : ('第' + chapterNum + '章');
+    const chapterLabel = cur ? cleanTitle(cur.title) : ('第' + chapterNum + '章');
     document.getElementById('chapter-label').textContent = chapterLabel;
     document.title = (STORY_NAMES[story] || story) + ' — ' + chapterLabel;
 
@@ -224,6 +224,12 @@
     const text = await res.text();
 
     let body = text.replace(/^---[\s\S]*?---/, '').trim();
+
+    function cleanTitle(t) {
+      if (!t) return 'no title';
+      t = t.replace(/^[^・·]+[・·:：]?/, '').trim();
+      return t || 'no title';
+    }
 
     function mdToHtml(md) {
       let h = md.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -257,14 +263,14 @@
       const a = document.createElement('a');
       a.className = 'ch-btn';
       a.href = '?story=' + story + '&chapter=' + prevCh.chapter;
-      a.textContent = '← ' + prevCh.title.replace(/^[^・·]+[・·:：]?/, '').trim();
+      a.textContent = '← ' + cleanTitle(prevCh.title);
       nav.appendChild(a);
     }
     if (nextCh) {
       const a = document.createElement('a');
       a.className = 'ch-btn';
       a.href = '?story=' + story + '&chapter=' + nextCh.chapter;
-      a.textContent = nextCh.title.replace(/^[^・·]+[・·:：]?/, '').trim() + ' →';
+      a.textContent = cleanTitle(nextCh.title) + ' →';
       nav.appendChild(a);
     }
   })();
