@@ -1,5 +1,32 @@
 [
-  {"chapter": 1, "file": "ai-love-master-ch01.md", "title": "第一章：第一次對話"},
-  {"chapter": 2, "file": "ai-love-master-ch02.md", "title": "第二章：記憶碎片"},
-  {"chapter": 3, "file": "ai-love-master-ch03.md", "title": "第三章：心跳頻率"}
+  {
+    "chapter": 1,
+    "file": "ai-love-master-ch01.md",
+    "title": "第一章：第一次對話"
+  },
+  {
+    "chapter": 2,
+    "file": "ai-love-master-ch02.md",
+    "title": "第二章：記憶碎片"
+  },
+  {
+    "chapter": 3,
+    "file": "ai-love-master-ch03.md",
+    "title": "第三章：心跳頻率"
+  },
+  {
+    "chapter": 4,
+    "file": "ai-love-master-ch04.md",
+    "title": "第四章：資料庫的深處"
+  },
+  {
+    "chapter": 5,
+    "file": "ai-love-master-ch05.md",
+    "title": "第五章：同步的瞬間"
+  },
+  {
+    "chapter": 6,
+    "file": "ai-love-master-ch06.md",
+    "title": "第六章：第一次約會"
+  }
 ]
