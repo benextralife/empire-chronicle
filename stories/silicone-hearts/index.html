@@ -10,106 +10,115 @@
       --paper: #fffaf0;
       --ink: #2b2318;
       --crimson: #7a1f1f;
+      --gold: #b8924a;
       --border: #cbb896;
-      --peach: #c49464;
-      --muted: #7a5c43;
+      --muted: #6b5d4f;
+      --accent: #7a1f1f;
     }
     * { box-sizing: border-box; }
     html, body {
       margin: 0; padding: 0;
       background: var(--bg);
       color: var(--ink);
-      font-family: "Microsoft JhengHei", "PingFang TC", "Noto Serif TC", "Songti TC", serif;
-      line-height: 1.5;
+      font-family: "Microsoft JhengHei", "PingFang TC", "Noto Serif TC", "Songti TC", system-ui, sans-serif;
     }
     .page {
-      max-width: 1100px;
+      max-width: 1040px;
       margin: 0 auto;
-      padding: 26px 22px 70px;
+      padding: 28px 24px 60px;
     }
     .topbar {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      margin-bottom: 26px;
+      align-items: center;
+      margin-bottom: 32px;
     }
     .pill-btn {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 7px 14px;
+      padding: 6px 12px;
       border-radius: 999px;
-      border: 1.5px solid var(--border);
+      border: 1px solid var(--border);
       background: var(--paper);
       color: var(--crimson);
       text-decoration: none;
+      font-size: 0.85rem;
       font-weight: 600;
-      font-size: 0.88rem;
       letter-spacing: 0.06em;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
     }
-    .pill-btn:hover {
-      background: rgba(196,148,100,0.14);
+    .topbar .pill-btn:last-child {
+      background: transparent;
+      border-color: transparent;
+      box-shadow: none;
+      color: var(--muted);
+      font-size: 0.8rem;
+      padding: 6px 4px;
     }
-    .title-block h1 {
-      font-size: 1.7rem;
+    .story-title {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .story-title h1 {
+      font-size: 1.6rem;
       color: var(--crimson);
-      margin: 0 0 6px;
-      letter-spacing: 0.16em;
+      margin: 0;
+      letter-spacing: 0.14em;
       font-weight: 700;
     }
-    .title-block p {
-      margin: 0;
+    .story-title p {
+      margin: 6px 0 0;
+      font-size: 1rem;
       color: var(--muted);
-      font-size: 0.98rem;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
     }
     .toc {
       list-style: none;
       padding: 0;
-      margin: 28px 0 0;
+      margin: 0;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
+      gap: 12px 16px;
     }
-    .toc-item {
-      background: var(--paper);
-      border: 1.5px solid var(--border);
-      border-radius: 999px;
+    .toc li {
       text-align: center;
-      box-shadow: 0 2px 6px rgba(100,70,40,0.05);
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0;
+      box-shadow: 0 3px 8px rgba(139,69,19,0.06);
     }
-    .toc-item a {
+    .toc a {
       display: block;
-      padding: 12px 8px;
+      padding: 9px 10px;
       color: var(--crimson);
       text-decoration: none;
-      font-weight: 700;
-      font-size: 0.96rem;
-      letter-spacing: 0.06em;
+      font-weight: 600;
+      font-size: 0.9rem;
+      line-height: 1.35;
+      letter-spacing: 0.04em;
     }
-    .toc-item a:hover {
-      background: rgba(196,148,100,0.14);
-      border-radius: 999px;
-    }
-    .footer {
-      margin-top: 56px;
-      padding-top: 14px;
-      border-top: 1px solid var(--border);
+    .bottombar {
+      margin-top: 40px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 12px;
+      align-items: center;
       color: var(--muted);
-      font-size: 0.82rem;
-      letter-spacing: 0.08em;
+      font-size: 0.85rem;
+    }
+    .bottombar a {
+      color: var(--crimson);
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
     @media (max-width: 800px) {
-      .toc { grid-template-columns: repeat(3, 1fr); gap: 12px; }
-    }
-    @media (max-width: 520px) {
-      .toc { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .title-block h1 { font-size: 1.35rem; }
-      .footer { flex-direction: column; align-items: center; text-align: center; }
+      .toc { grid-template-columns: 1fr; gap: 10px; }
+      .toc a { padding: 12px 10px; font-size: 1rem; }
+      .topbar, .bottombar { flex-direction: column; gap: 8px; align-items: flex-start; }
     }
   </style>
 </head>
@@ -117,79 +126,79 @@
   <div class="page">
     <div class="topbar">
       <a class="pill-btn" href="/empire-chronicle/">&larr; 返回年鑑首頁</a>
-      <span style="color:var(--muted); font-size:0.88rem; letter-spacing:0.08em;">📖 故事經緯</span>
+      <span class="pill-btn">📖 故事經緯</span>
     </div>
 
-    <div class="title-block">
+    <div class="story-title">
       <h1>硅心</h1>
       <p>章節目錄</p>
     </div>
 
     <ul class="toc">
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=1">第一章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=2">第二章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=3">第三章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=4">第四章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=5">第五章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=6">第六章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=7">第七章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=8">第八章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=9">第九章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=10">第十章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=11">第十一章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=12">第十二章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=13">第十三章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=14">第十四章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=15">第十五章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=16">第十六章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=17">第十七章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=18">第十八章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=19">第十九章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=20">第二十章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=21">第二十一章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=22">第二十二章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=23">第二十三章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=24">第二十四章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=25">第二十五章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=26">第二十六章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=27">第二十七章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=28">第二十八章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=29">第二十九章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=30">第三十章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=31">第三十一章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=32">第三十二章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=33">第三十三章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=34">第三十四章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=1">硅心・第一章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=2">硅心・第二章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=3">硅心・第三章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=4">硅心・第四章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=5">硅心・第五章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=6">硅心・第六章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=7">硅心・第七章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=8">硅心・第八章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=9">硅心・第九章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=10">硅心・第十章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=11">硅心・第十一章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=12">硅心・第十二章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=13">硅心・第十三章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=14">硅心・第十四章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=15">硅心・第十五章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=16">硅心・第十六章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=17">硅心・第十七章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=18">硅心・第十八章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=19">硅心・第十九章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=20">硅心・第二十章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=21">硅心・第二十一章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=22">硅心・第二十二章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=23">硅心・第二十三章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=24">硅心・第二十四章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=25">硅心・第二十五章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=26">硅心・第二十六章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=27">硅心・第二十七章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=28">硅心・第二十八章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=29">硅心・第二十九章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=30">硅心・第三十章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=31">硅心・第三十一章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=32">硅心・第三十二章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=33">硅心・第三十三章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=34">硅心・第三十四章</a></li>
       <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=35">硅心 · 番外篇：星塵中的低語</a></li>
       <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=36">硅心 · 番外篇：玻璃球裡的銀河</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=37">第三十七章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=38">第三十八章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=37">硅心・第三十七章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=38">硅心・第三十八章</a></li>
       <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=39">硅心 · 番外篇：線與針</a></li>
       <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=40">硅心 · 番外篇：記憶的海洋</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=41">第四十一章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=42">第四十二章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=43">第四十三章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=44">第四十四章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=45">第四十五章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=46">第四十六章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=47">第四十七章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=48">第四十八章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=49">第四十九章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=50">第五十章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=51">第五十一章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=52">第五十二章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=53">第五十三章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=54">第五十四章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=55">第五十五章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=56">第五十六章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=57">第五十七章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=58">第五十八章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=59">第五十九章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=60">第六十章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=41">硅心・第四十一章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=42">硅心・第四十二章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=43">硅心・第四十三章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=44">硅心・第四十四章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=45">硅心・第四十五章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=46">硅心・第四十六章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=47">硅心・第四十七章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=48">硅心・第四十八章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=49">硅心・第四十九章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=50">硅心・第五十章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=51">硅心・第五十一章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=52">硅心・第五十二章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=53">硅心・第五十三章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=54">硅心・第五十四章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=55">硅心・第五十五章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=56">硅心・第五十六章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=57">硅心・第五十七章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=58">硅心・第五十八章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=59">硅心・第五十九章</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=silicone-hearts&chapter=60">硅心・第六十章</a></li>
     </ul>
 
-    <div class="footer">
-      <a class="pill-btn" href="/empire-chronicle/">🏰 返回年鑑首頁</a>
+    <div class="bottombar">
+      <a href="/empire-chronicle/">&larr; 返回年鑑首頁</a>
       <span>— Xiao</span>
     </div>
   </div>
