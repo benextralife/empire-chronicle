@@ -87,8 +87,9 @@ def make_nav(chapters, story_key):
             label = ch['title'] or f'Chapter {ch_num}'
         else:
             raw = ch['title'] or f'第{cn_num(int(ch_num))}章'
-            label = re.sub(rf'^{re.escape(short)}[\s・·:：]+', '', raw)
-        parts.append(f'      <li><a href="/empire-chronicle/stories/{sname}/{fname}">{label}</a></li>')
+            m = re.search(r'第[^章]*章', raw)
+            label = m.group(0) if m else raw
+        parts.append(f'      <li><a href="/empire-chronicle/reader.html?story={sname}&chapter={ch_num}">{label}</a></li>')
     return '\n'.join(parts)
 
 # Process each story
@@ -101,10 +102,18 @@ for sdir in story_dirs:
         continue
     story_title = STORY_SHORT.get(sname, chapters[0]['title'].split('·')[0].strip())
     nav = make_nav(chapters, sname)
-    html = TMPL.replace('{title}', story_title).replace('{nav}', nav)
-    out = sdir / 'index.html'
-    out.write_text(html, encoding='utf-8')
-    print(f'OK {sname}: {len(chapters)} chapters -> {out}')
+
+    reader_tmpl = (STORIES / '_shared' / 'reader-template.html').read_text(encoding='utf-8')
+    reader = reader_tmpl.replace('{story}', sname).replace('{title}', story_title)
+
+    idx_out = sdir / 'index.html'
+    idx_html = TMPL.replace('{title}', story_title).replace('{nav}', nav)
+    idx_out.write_text(idx_html, encoding='utf-8')
+
+    rdr_out = REPO / 'reader.html'
+    rdr_out.write_text(reader, encoding='utf-8')
+
+    print(f'OK {sname}: {len(chapters)} chapters -> index + reader.html')
     for ch in chapters:
         cn = cn_num(int(ch['num']))
         print(f'   ch{ch["num"]:02d}: {cn}')
