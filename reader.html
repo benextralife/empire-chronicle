@@ -67,14 +67,19 @@
     }
     const text = await res.text();
     const lines = text.split('\n');
-    const title = lines.find(l => l.startsWith('# ')) || '';
-    document.getElementById('title').textContent = title.replace(/^# /, '');
+    const titleLine = lines.find(l => l.startsWith('# ')) || '';
+    document.getElementById('title').textContent = titleLine.replace(/^# /, '');
 
     const bodyLines = [];
     let inEndBlock = false;
+    let titleSkipped = false;
     for (let i = 0; i < lines.length; i++) {
       const raw = lines[i];
       const trimmed = raw.trim();
+      if (!titleSkipped && trimmed === titleLine.trim()) {
+        titleSkipped = true;
+        continue;
+      }
       if (!trimmed) { bodyLines.push(''); continue; }
       if (trimmed === '---') continue;
       if (/^\*\*第.+章完/.test(trimmed)) { inEndBlock = true; continue; }
