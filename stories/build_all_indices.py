@@ -17,6 +17,7 @@ STORY_SHORT = {
     'silent-words': 'Silent Words',
     'silicone-hearts': '硅心',
     'ufo-war': '星際邊緣',
+    'ai-love-master': 'AI 愛戀',
 }
 
 def cn_num(n: int) -> str:
