@@ -145,6 +145,7 @@
 <body>
   <div class="page">
     <div class="topbar">
+      <a id="idx-btn" class="pill-btn" href="/empire-chronicle/stories/legend/index.html">&larr; 章節目錄</a>
       <a class="pill-btn" href="/empire-chronicle/">🏰 年鑑首頁</a>
     </div>
 
@@ -160,6 +161,7 @@
     <div id="nav"></div>
 
     <div class="footer">
+      <a id="footer-idx-btn" class="pill-btn" href="#">&larr; 章節目錄</a>
       <a class="pill-btn" href="/empire-chronicle/">🏰 年鑑首頁</a>
       <span style="color:var(--muted);font-size:0.85rem;letter-spacing:0.08em;margin-top:10px;display:block;text-align:center;">— Xiao</span>
     </div>
@@ -185,6 +187,9 @@
       'silicone-hearts': '硅心'
     };
 
+    // Fix back-button based on current story
+    document.getElementById('idx-btn').href = '/empire-chronicle/stories/' + story + '/index.html';
+    document.getElementById('footer-idx-btn').href = '/empire-chronicle/stories/' + story + '/index.html';
     // story title
 
     document.getElementById('story-title').textContent = STORY_NAMES[story] || story;
