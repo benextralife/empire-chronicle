@@ -169,6 +169,7 @@
 
   <script>
   (async () => {
+    try {
     const params = new URLSearchParams(location.search);
     const story = params.get('story') || 'legend';
     const chapterNum = parseInt(params.get('chapter') || '1', 10);
