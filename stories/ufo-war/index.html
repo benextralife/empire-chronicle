@@ -24,10 +24,33 @@
     .wrap {
       max-width: 1040px;
       margin: 0 auto;
-      padding: 40px 24px 80px;
+      padding: 28px 24px 60px;
+    }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 28px;
+    }
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      background: var(--paper);
+      text-decoration: none;
+      color: var(--crimson);
+      font-weight: 600;
+      font-size: 0.88rem;
+      letter-spacing: 0.08em;
+    }
+    .back:hover {
+      background: rgba(196,148,100,0.12);
     }
     header {
-      margin-bottom: 36px;
+      margin-bottom: 32px;
     }
     header h1 {
       font-size: 1.6rem;
@@ -70,23 +93,14 @@
     .toc a:hover {
       background: rgba(196,148,100,0.12);
     }
-    .back {
-      margin-top: 40px;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      border: 1.5px solid var(--border);
-      background: var(--paper);
-      text-decoration: none;
-      color: var(--crimson);
-      font-weight: 600;
-      font-size: 0.92rem;
+    footer {
+      margin-top: 50px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: #8c6b52;
+      font-size: 0.82rem;
       letter-spacing: 0.08em;
-    }
-    .back:hover {
-      background: rgba(196,148,100,0.12);
     }
     @media (max-width: 800px) {
       .toc { grid-template-columns: repeat(3, 1fr); gap: 10px; }
@@ -100,6 +114,9 @@
 </head>
 <body>
   <div class="wrap">
+    <div class="top-bar">
+      <a class="back" href="/empire-chronicle/">&larr; 返回年鑑首頁</a>
+    </div>
     <header>
       <h1>星際邊緣</h1>
       <p>章節目錄</p>
@@ -133,7 +150,9 @@
       <li><a href="/empire-chronicle/stories/ufo-war/ch26.md">第二十六章</a></li>
       <li><a href="/empire-chronicle/stories/ufo-war/ch27.md">第二十七章</a></li>
     </ul>
-    <a class="back" href="/empire-chronicle/">&larr; 返回年鑑首頁</a>
+    <footer>
+      &copy; 王國年鑑 — Built by Xiao Ai
+    </footer>
   </div>
 </body>
 </html>
