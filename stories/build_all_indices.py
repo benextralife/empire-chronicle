@@ -65,11 +65,14 @@ def load_chapters(sdir):
     else:
         chapters = [{'num': k, 'file': v['file'], 'title': v['md_title'] or f'第{k}章'} for k, v in md_map.items()]
     chapters.sort(key=lambda x: x['num'])
+    # Persist chapters.json if it was missing (e.g. ufo-war)
+    if not (sdir / 'chapters.json').exists() and chapters:
+        with open(sdir / 'chapters.json', 'w', encoding='utf-8') as f:
+            json.dump([{'chapter': c['num'], 'file': c['file'], 'title': c['title']} for c in chapters], f, ensure_ascii=False, indent=2)
     return chapters
 
 def make_nav(chapters, story_key):
     parts = []
-    short = STORY_SHORT.get(story_key, story_key)
     is_en = story_key in ('silent-chess', 'silent-words')
     sname = story_key
     if sname == 'lone-shadow':
@@ -81,17 +84,19 @@ def make_nav(chapters, story_key):
     for ch in chapters:
         ch_num = ch['num']
         fname = ch.get('file') or f'{prefix}{int(ch_num):02d}.md'
+        raw = ch['title'] or f'第{cn_num(int(ch_num))}章'
         if ch_num == 0 or ch_num == '0':
             label = 'Prologue' if is_en else '序章'
         elif is_en:
-            label = ch['title'] or f'Chapter {ch_num}'
+            m2 = re.search(r'Chapter\s+\d+', raw, re.IGNORECASE)
+            label = m2.group(0) if m2 else (raw or f'Chapter {ch_num}')
         else:
-            raw = ch['title'] or f'第{cn_num(int(ch_num))}章'
-            label = re.sub(rf'^{re.escape(short)}[\s・·:：]+', '', raw)
+            m = re.search(r'第[^·:：]*[章篇][^:：]*', raw)
+            label = m.group(0) if m else (raw or f'第{cn_num(int(ch_num))}章')
         parts.append(f'      <li><a href="/empire-chronicle/reader.html?story={sname}&chapter={ch_num}">{label}</a></li>')
     return '\n'.join(parts)
 
-# Process each story
+
 story_dirs = sorted([d for d in STORIES.iterdir() if d.is_dir() and d.name != '_shared'])
 for sdir in story_dirs:
     sname = sdir.name

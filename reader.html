@@ -173,10 +173,13 @@
 
     const STORY_NAMES = {
       legend: '棄明王之亂',
-      ufo-war: '星際邊緣',
-      algorithmic-soul: '算法之魂',
+      ufo: '星際邊緣',
+      'ufo-war': '星際邊緣',
+      algorithmic: '算法之魂',
+      'algorithmic-soul': '算法之魂',
       'lone-shadow': '孤影',
-      quantum-pen: '量子筆記',
+      quantum: '量子筆記',
+      'quantum-pen': '量子筆記',
       'silent-chess': 'Silent Chess',
       'silent-words': 'Silent Words',
       'silicone-hearts': '硅心'
@@ -187,7 +190,15 @@
 
     document.getElementById('story-title').textContent = STORY_NAMES[story] || story;
 
-    const shortLabel = (t) => (t || '').replace(/^[^・·]+[・·:：]?\s*/, '').trim();
+    const shortLabel = (t) => {
+      if (!t) return '';
+      const s = String(t);
+      const m = s.match(/第[^·:：]*[章篇][^:：]*/);   // 抓中文「第X章/篇…」
+      if (m) return m[0];
+      const m2 = s.match(/\bChapter\s+\d+\b/i);       // 英文 Chapter N
+      if (m2) return m2[0];
+      return s;
+    };
 
     let chapters = [];
     try {
@@ -196,7 +207,7 @@
     } catch (e) { /* ignore */ }
 
     const cur = chapters.find(c => parseInt(c.chapter, 10) === chapterNum);
-    const chapterLabel = cur ? cur.title.replace(/^[^・·]+[・·:：]?/, '').trim() : ('Chapter ' + chapterNum);
+    const chapterLabel = cur ? shortLabel(cur.title) : ('第' + chapterNum + '章');
     document.getElementById('chapter-label').textContent = chapterLabel;
     document.title = (STORY_NAMES[story] || story) + ' — ' + chapterLabel;
 
