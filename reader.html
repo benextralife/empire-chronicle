@@ -231,8 +231,14 @@
 
     function cleanTitle(t) {
       if (!t || !t.trim()) return 'no title';
-      t = t.replace(/^[^・·:：]*[・·:：]\s*/, '').trim();
-      return t || 'no title';
+      t = t.trim();
+      // If title starts with chapter marker directly, no story prefix to strip
+      if (/^(第|Chapter\s)/i.test(t)) return t;
+      // Otherwise strip leading story-name prefix and return from first chapter marker
+      const m = t.match(/(第[^。
+]*章|Chapter\s+\d+)/i);
+      if (m) return t.substring(t.indexOf(m[0]));
+      return t;
     }
 
     function mdToHtml(md) {
