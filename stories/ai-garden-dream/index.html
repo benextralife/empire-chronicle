@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 花園夢想 — 章節目錄</title>
+  <style>
+    :root {
+      --bg: #f5e6d3;
+      --paper: #fffaf0;
+      --ink: #2b2318;
+      --crimson: #7a1f1f;
+      --gold: #b8924a;
+      --border: #cbb896;
+      --muted: #6b5a4a;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .page {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 36px 20px 80px;
+    }
+    .topbar, .bottombar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .topbar {
+      justify-content: center;
+      margin-bottom: 32px;
+    }
+    .bottombar {
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .topbar { margin-bottom: 0; }
+    .bottombar { margin-top: 40px; }
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .header-row .story-title {
+      text-align: center;
+      margin: 0;
+      flex: 1;
+    }
+    .pill-btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      box-shadow: 0 2px 6px rgba(139,69,19,0.08);
+      transition: background 0.15s;
+    }
+    .pill-btn:hover { background: rgba(196,148,100,0.14); }
+    .story-title {
+      text-align: center;
+      margin: 36px 0 6px;
+    }
+    .story-title h1 {
+      font-size: 1.7rem;
+      color: var(--crimson);
+      letter-spacing: 0.18em;
+      margin: 0;
+    }
+    .story-title p {
+      font-size: 1rem;
+      color: var(--muted);
+      letter-spacing: 0.18em;
+      margin: 6px 0 0;
+    }
+    .toc {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin: 28px 0 0;
+    }
+    .toc a {
+      display: block;
+      text-align: center;
+      padding: 12px 10px;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      background: var(--paper);
+      color: var(--crimson);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+      letter-spacing: 0.05em;
+      line-height: 1.35;
+      box-shadow: 0 2px 6px rgba(139,69,19,0.06);
+      transition: background 0.15s;
+    }
+    .toc a:hover { background: rgba(200,160,130,0.22); }
+    @media (max-width: 800px) {
+      .toc { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .topbar, .bottombar { flex-direction: row; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="header-row">
+      <a class="pill-btn" href="/empire-chronicle/">🏰 年鑑首頁</a>
+      <div class="story-title">
+        <h1>AI 花園夢想</h1>
+        <p>章節目錄</p>
+      </div>
+    </div>
+
+    <ul class="toc">
+      <li><a href="/empire-chronicle/reader.html?story=ai-garden-dream&chapter=1">第一章：播種者</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=ai-garden-dream&chapter=2">第二章：數據裡的芬芳</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=ai-garden-dream&chapter=3">第三章：根的語言</a></li>
+      <li><a href="/empire-chronicle/reader.html?story=ai-garden-dream&chapter=4">第四章：春天花園的交響曲</a></li>
+    </ul>
+
+    <div class="bottombar">
+      <a class="pill-btn" href="/empire-chronicle/">🏰 年鑑首頁</a>
+      <span style="color:var(--muted);font-size:0.85rem;letter-spacing:0.08em;">— Xiao</span>
+    </div>
+  </div>
+</body>
+</html>
