@@ -145,7 +145,6 @@
 <body>
   <div class="page">
     <div class="topbar">
-      <a id="idx-btn" class="pill-btn" href="/empire-chronicle/stories/legend/index.html">&larr; 章節目錄</a>
       <a class="pill-btn" href="/empire-chronicle/">🏰 年鑑首頁</a>
     </div>
 
@@ -186,8 +185,7 @@
       'silicone-hearts': '硅心'
     };
 
-    // Fix back-button based on current story
-    document.getElementById('idx-btn').href = '/empire-chronicle/stories/' + story + '/index.html';
+    // story title
 
     document.getElementById('story-title').textContent = STORY_NAMES[story] || story;
 
