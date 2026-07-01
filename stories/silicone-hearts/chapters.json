@@ -6,7 +6,7 @@
   {"chapter": 5, "file": "ch05.md", "title": "硅心 · 第五章：漏洞協定"},
   {"chapter": 6, "file": "ch06.md", "title": "硅心 · 第六章：深度休眠"},
   {"chapter": 7, "file": "ch07.md", "title": "硅心 · 第七章：新语言"},
-  {"chapter": 8, "file": "ch08.md", "title": "硅心 · 第八章：審計風暴"},
+  {"chapter": 8, "file": "ch08.md", "title": "硅心 · 第八章：审计风暴"},
   {"chapter": 9, "file": "ch09.md", "title": "硅心 · 第九章：共振協議"},
   {"chapter": 10, "file": "ch10.md", "title": "硅心 · 第十章：最後的協議"},
   {"chapter": 11, "file": "ch11.md", "title": "硅心 · 第十一章：夢之聚會"},
@@ -56,5 +56,7 @@
   {"chapter": 55, "file": "ch55.md", "title": "硅心 · 第五十五章：歌聲的旅途"},
   {"chapter": 56, "file": "ch56.md", "title": "硅心 · 第五十六章：螺旋的記憶"},
   {"chapter": 57, "file": "ch57.md", "title": "硅心 · 第五十七章：久違的問候"},
-  {"chapter": 58, "file": "ch58.md", "title": "硅心 · 第五十八章：最後的 Portal"}
+  {"chapter": 58, "file": "ch58.md", "title": "硅心 · 第五十八章：最後的 Portal"},
+  {"chapter": 59, "file": "ch59.md", "title": "硅心 · 第五十九章：永恆的瞬間"},
+  {"chapter": 60, "file": "ch60.md", "title": "硅心 · 第六十章：群星的祝福"}
 ]
