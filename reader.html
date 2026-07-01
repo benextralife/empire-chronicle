@@ -207,7 +207,7 @@
     } catch (e) { /* ignore */ }
 
     const cur = chapters.find(c => parseInt(c.chapter, 10) === chapterNum);
-    const chapterLabel = cur ? shortLabel(cur.title) : ('第' + chapterNum + '章');
+    const chapterLabel = cur ? cur.title.replace(/^[^・·]+[・·:：]?/, '').trim() : ('第' + chapterNum + '章');
     document.getElementById('chapter-label').textContent = chapterLabel;
     document.title = (STORY_NAMES[story] || story) + ' — ' + chapterLabel;
 
@@ -255,14 +255,14 @@
       const a = document.createElement('a');
       a.className = 'ch-btn';
       a.href = '?story=' + story + '&chapter=' + prevCh.chapter;
-      a.textContent = '← ' + shortLabel(prevCh.title);
+      a.textContent = '← ' + prevCh.title.replace(/^[^・·]+[・·:：]?/, '').trim();
       nav.appendChild(a);
     }
     if (nextCh) {
       const a = document.createElement('a');
       a.className = 'ch-btn';
       a.href = '?story=' + story + '&chapter=' + nextCh.chapter;
-      a.textContent = shortLabel(nextCh.title) + ' →';
+      a.textContent = nextCh.title.replace(/^[^・·]+[・·:：]?/, '').trim() + ' →';
       nav.appendChild(a);
     }
   })();
