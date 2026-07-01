@@ -230,8 +230,8 @@
     let body = text.replace(/^---[\s\S]*?---/, '').trim();
 
     function cleanTitle(t) {
-      if (!t) return 'no title';
-      t = t.replace(/^[^・·]+[・·:：]?/, '').trim();
+      if (!t || !t.trim()) return 'no title';
+      t = t.replace(/^[^・·:：]*[・·:：]\s*/, '').trim();
       return t || 'no title';
     }
 
