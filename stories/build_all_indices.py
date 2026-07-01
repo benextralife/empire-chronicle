@@ -1,21 +1,34 @@
 #!/usr/bin/env python3
 """Rebuild all story indices from markdown H1 titles."""
 import re
+import json
 from pathlib import Path
 
 REPO = Path(r'C:\Users\opc\empire-chronicle')
 STORIES = REPO / 'stories'
 TMPL = (STORIES / '_shared' / 'index-template.html').read_text(encoding='utf-8')
 
-NAME_OVERRIDE = {
+STORY_SHORT = {
     'algorithmic-soul': '算法之魂',
     'lone-shadow': '孤影',
+    'legend': '棄明王之亂',
     'quantum-pen': '量子筆記',
     'silent-chess': 'Silent Chess',
     'silent-words': 'Silent Words',
-    'silicone-hearts': '硅心 · Silicon Hearts',
+    'silicone-hearts': '硅心',
     'ufo-war': '星際邊緣',
 }
+
+def cn_num(n: int) -> str:
+    if n < 1:
+        return '零'
+    units = ['', '一', '二', '三', '四', '五', '六', '七', '八', '九']
+    if n < 10:
+        return units[n]
+    ten = n // 10
+    one = n % 10
+    lead = '十' if ten == 1 else units[ten] + '十'
+    return lead + (units[one] if one else '')
 
 def load_chapters(sdir):
     sname = sdir.name
@@ -28,7 +41,6 @@ def load_chapters(sdir):
             fname = item.get('file')
             title = item.get('title', '')
             chapters.append({'num': ch_num, 'file': fname, 'title': title})
-    # Fallback / supplement with md scan
     if sname == 'lone-shadow':
         mds = sorted(sdir.glob('lone-shadow-ch*.md'))
     elif sname in ('silent-chess', 'silent-words'):
@@ -43,7 +55,6 @@ def load_chapters(sdir):
         first_line = mf.read_text(encoding='utf-8').splitlines()[0]
         md_title = first_line.lstrip('#').strip() if first_line.startswith('#') else ''
         md_map[ch_num] = {'num': ch_num, 'file': fname, 'md_title': md_title}
-    # Merge
     if chapters:
         for ch in chapters:
             num = ch['num']
@@ -58,14 +69,28 @@ def load_chapters(sdir):
 
 def make_nav(chapters, story_key):
     parts = []
+    short = STORY_SHORT.get(story_key, story_key)
+    is_en = story_key in ('silent-chess', 'silent-words')
+    sname = story_key
+    if sname == 'lone-shadow':
+        prefix = 'lone-shadow-ch'
+    elif sname in ('silent-chess', 'silent-words'):
+        prefix = f'{sname}-ch'
+    else:
+        prefix = 'ch'
     for ch in chapters:
         ch_num = ch['num']
-        title = ch['title'] or f'第{ch_num}章'
-        parts.append(f'      <li><a href="/empire-chronicle/reader.html?story={story_key}&chapter={ch_num}">{title}</a></li>')
+        fname = ch.get('file') or f'{prefix}{int(ch_num):02d}.md'
+        if ch_num == 0 or ch_num == '0':
+            label = 'Prologue' if is_en else '序章'
+        elif is_en:
+            label = f'Chapter {ch_num}'
+        else:
+            label = f'第{cn_num(int(ch_num))}章'
+        parts.append(f'      <li><a href="/empire-chronicle/stories/{sname}/{fname}">{label}</a></li>')
     return '\n'.join(parts)
 
 # Process each story
-import json
 story_dirs = sorted([d for d in STORIES.iterdir() if d.is_dir() and d.name != '_shared'])
 for sdir in story_dirs:
     sname = sdir.name
@@ -73,13 +98,14 @@ for sdir in story_dirs:
     if not chapters:
         print(f'SKIP {sname}: no chapters')
         continue
-    story_title = NAME_OVERRIDE.get(sname, chapters[0]['title'].split('·')[0].strip())
+    story_title = STORY_SHORT.get(sname, chapters[0]['title'].split('·')[0].strip())
     nav = make_nav(chapters, sname)
     html = TMPL.replace('{title}', story_title).replace('{nav}', nav)
     out = sdir / 'index.html'
     out.write_text(html, encoding='utf-8')
     print(f'OK {sname}: {len(chapters)} chapters -> {out}')
     for ch in chapters:
-        print(f'   ch{ch["num"]:02d}: {ch["title"]}')
+        cn = cn_num(int(ch['num']))
+        print(f'   ch{ch["num"]:02d}: {cn}')
 
 print('ALL DONE')

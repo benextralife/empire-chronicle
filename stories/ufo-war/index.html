@@ -12,90 +12,128 @@
       --crimson: #7a1f1f;
       --gold: #b8924a;
       --border: #cbb896;
+      --peach: #c49464;
     }
     * { box-sizing: border-box; }
     html, body {
       margin: 0; padding: 0;
       background: var(--bg);
       color: var(--ink);
-      font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+      font-family: "Microsoft JhengHei", "PingFang TC", "Noto Serif TC", "Songti TC", serif;
     }
     .wrap {
       max-width: 1040px;
       margin: 0 auto;
       padding: 40px 24px 80px;
     }
-    h1 {
+    header {
+      margin-bottom: 36px;
+    }
+    header h1 {
       font-size: 1.6rem;
       color: var(--crimson);
-      margin: 0 0 10px;
-      letter-spacing: 0.15em;
+      margin: 0 0 6px;
+      letter-spacing: 0.18em;
+      font-weight: 700;
+    }
+    header p {
+      margin: 0;
+      color: #5a3e2b;
+      font-size: 0.95rem;
+      letter-spacing: 0.1em;
     }
     .toc {
       list-style: none;
       padding: 0;
+      margin: 0;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      margin-top: 18px;
+      gap: 14px;
     }
     .toc li {
-      background: rgba(255,255,255,0.7);
+      background: var(--paper);
       border: 1.5px solid var(--border);
-      border-radius: 4px 4px 16px 4px;
-      padding: 14px 18px;
-      box-shadow: 0 4px 10px rgba(139,69,19,0.08);
+      border-radius: 999px;
+      box-shadow: 0 2px 6px rgba(139,69,19,0.06);
+      text-align: center;
     }
     .toc a {
+      display: block;
+      padding: 12px 10px;
       color: var(--crimson);
       text-decoration: none;
       font-weight: 600;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      letter-spacing: 0.08em;
+    }
+    .toc a:hover {
+      background: rgba(196,148,100,0.12);
     }
     .back {
       margin-top: 40px;
-    }
-    .back a {
-      color: var(--crimson);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      background: var(--paper);
       text-decoration: none;
+      color: var(--crimson);
       font-weight: 600;
+      font-size: 0.92rem;
+      letter-spacing: 0.08em;
+    }
+    .back:hover {
+      background: rgba(196,148,100,0.12);
+    }
+    @media (max-width: 800px) {
+      .toc { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+      .toc a { padding: 10px 8px; font-size: 0.92rem; }
+    }
+    @media (max-width: 520px) {
+      .toc { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      header h1 { font-size: 1.35rem; }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>📚 星際邊緣 · 章節目錄</h1>
+    <header>
+      <h1>星際邊緣</h1>
+      <p>章節目錄</p>
+    </header>
     <ul class="toc">
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=1">星際邊緣 · 第一章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=2">星際邊緣 · 第二章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=3">星際邊緣 · 第三章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=4">星際邊緣 · 第四章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=5">星際邊緣 · 第五章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=6">星際邊緣 · 第六章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=7">星際邊緣 · 第七章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=8">星際邊緣 · 第八章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=9">星際邊緣 · 第九章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=10">星際邊緣 · 第十章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=11">星際邊緣 · 第十一章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=12">星際邊緣 · 第十二章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=13">星際邊緣 · 第十三章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=14">星際邊緣 · 第十四章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=15">星際邊緣 · 第十五章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=16">星際邊緣 · 第十六章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=17">星際邊緣 · 第十七章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=18">星際邊緣 · 第十八章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=19">星際邊緣 · 第十九章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=20">星際邊緣 · 第二十章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=21">星際邊緣 · 第二十一章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=22">星際邊緣 · 第二十二章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=23">星際邊緣 · 第二十三章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=24">星際邊緣 · 第二十四章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=25">星際邊緣 · 第二十五章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=26">星際邊緣 · 第二十六章</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=ufo-war&chapter=27">星際邊緣 · 第二十七章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch01.md">第一章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch02.md">第二章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch03.md">第三章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch04.md">第四章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch05.md">第五章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch06.md">第六章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch07.md">第七章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch08.md">第八章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch09.md">第九章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch10.md">第十章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch11.md">第十一章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch12.md">第十二章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch13.md">第十三章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch14.md">第十四章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch15.md">第十五章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch16.md">第十六章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch17.md">第十七章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch18.md">第十八章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch19.md">第十九章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch20.md">第二十章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch21.md">第二十一章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch22.md">第二十二章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch23.md">第二十三章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch24.md">第二十四章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch25.md">第二十五章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch26.md">第二十六章</a></li>
+      <li><a href="/empire-chronicle/stories/ufo-war/ch27.md">第二十七章</a></li>
     </ul>
-    <div class="back">
-      <a href="/empire-chronicle/">🏰 返回年鑑首頁</a>
-    </div>
+    <a class="back" href="/empire-chronicle/">&larr; 返回年鑑首頁</a>
   </div>
 </body>
 </html>

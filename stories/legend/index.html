@@ -12,129 +12,167 @@
       --crimson: #7a1f1f;
       --gold: #b8924a;
       --border: #cbb896;
+      --peach: #c49464;
     }
     * { box-sizing: border-box; }
     html, body {
       margin: 0; padding: 0;
       background: var(--bg);
       color: var(--ink);
-      font-family: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+      font-family: "Microsoft JhengHei", "PingFang TC", "Noto Serif TC", "Songti TC", serif;
     }
     .wrap {
       max-width: 1040px;
       margin: 0 auto;
       padding: 40px 24px 80px;
     }
-    h1 {
+    header {
+      margin-bottom: 36px;
+    }
+    header h1 {
       font-size: 1.6rem;
       color: var(--crimson);
-      margin: 0 0 10px;
-      letter-spacing: 0.15em;
+      margin: 0 0 6px;
+      letter-spacing: 0.18em;
+      font-weight: 700;
+    }
+    header p {
+      margin: 0;
+      color: #5a3e2b;
+      font-size: 0.95rem;
+      letter-spacing: 0.1em;
     }
     .toc {
       list-style: none;
       padding: 0;
+      margin: 0;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      margin-top: 18px;
+      gap: 14px;
     }
     .toc li {
-      background: rgba(255,255,255,0.7);
+      background: var(--paper);
       border: 1.5px solid var(--border);
-      border-radius: 4px 4px 16px 4px;
-      padding: 14px 18px;
-      box-shadow: 0 4px 10px rgba(139,69,19,0.08);
+      border-radius: 999px;
+      box-shadow: 0 2px 6px rgba(139,69,19,0.06);
+      text-align: center;
     }
     .toc a {
+      display: block;
+      padding: 12px 10px;
       color: var(--crimson);
       text-decoration: none;
       font-weight: 600;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      letter-spacing: 0.08em;
+    }
+    .toc a:hover {
+      background: rgba(196,148,100,0.12);
     }
     .back {
       margin-top: 40px;
-    }
-    .back a {
-      color: var(--crimson);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      background: var(--paper);
       text-decoration: none;
+      color: var(--crimson);
       font-weight: 600;
+      font-size: 0.92rem;
+      letter-spacing: 0.08em;
+    }
+    .back:hover {
+      background: rgba(196,148,100,0.12);
+    }
+    @media (max-width: 800px) {
+      .toc { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+      .toc a { padding: 10px 8px; font-size: 0.92rem; }
+    }
+    @media (max-width: 520px) {
+      .toc { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      header h1 { font-size: 1.35rem; }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>📚 棄明王之亂 · 章節目錄</h1>
+    <header>
+      <h1>棄明王之亂</h1>
+      <p>章節目錄</p>
+    </header>
     <ul class="toc">
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=1">棄明王之亂 · 第一章：昏債的種子</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=2">棄明王之亂 · 第二章：鐵幕降臨</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=3">棄明王之亂 · 第三章：寒焰之誓</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=4">棄明王之亂 · 第四章：鐵衣天涯</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=5">棄明王之亂 · 第五章：雪夜誅心</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=6">棄明王之亂 · 第六章：破曉之誓</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=7">棄明王之亂 · 第七章：腥風血雨</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=8">棄明王之亂 · 第八章：無名碑</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=9">棄明王之亂 · 第九章：烽火連天</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=10">棄明王之亂 · 第十章：天崩</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=11">棄明王之亂 · 第十一章：亂世</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=12">棄明王之亂 · 第十二章：霧鎖宮廷</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=13">棄明王之亂 · 第十三章：懸疑</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=14">棄明王之亂 · 第十四章：長城風雲</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=15">棄明王之亂 · 第十五章：決戰前夜</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=16">棄明王之亂 · 第十六章：血染山河</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=17">棄明王之亂 · 第十七章：真相</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=18">棄明王之亂 · 第十八章：終焉</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=19">棄明王之亂 · 第十九章：風雲變色</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=20">棄明王之亂 · 第二十章：逆襲</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=21">棄明王之亂 · 第二十一章：真相大白</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=22">棄明王之亂 · 第二十二章：黎明</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=23">棄明王之亂 · 第二十三章：重建</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=24">棄明王之亂 · 第二十四章：風起</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=25">棄明王之亂 · 第二十五章：邊關孤煙</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=26">棄明王之亂 · 第二十六章：兵臨城下</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=27">棄明王之亂 · 第二十七章：京城風雲</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=28">棄明王之亂 · 第二十八章：暗戰</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=29">棄明王之亂 · 第二十九章：生死一線</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=30">棄明王之亂 · 第三十章：玉璽風波</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=31">棄明王之亂 · 第三十一章：血戰臨陽</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=32">棄明王之亂 · 第三十二章：孤城</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=33">棄明王之亂 · 第三十三章：火燒連營</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=34">棄明王之亂 · 第三十四章：黑龍現身</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=35">棄明王之亂 · 第三十五章：雪夜誅心</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=36">棄明王之亂 · 第三十六章：冰河之戰</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=37">棄明王之亂 · 第三十七章：火燒連營</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=38">棄明王之亂 · 第三十八章：勝與負之間</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=39">棄明王之亂 · 第三十九章：新的聯盟</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=40">棄明王之亂 · 第四十章：統帥出征</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=41">棄明王之亂 · 第四十一章：決戰</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=42">棄明王之亂 · 第四十二章：鐵與血</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=43">棄明王之亂 · 第四十三章：落幕</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=44">棄明王之亂 · 第四十四章：王都召見</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=45">棄明王之亂 · 第四十五章：述職</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=46">棄明王之亂 · 第四十六章：暗流</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=47">棄明王之亂 · 第四十七章（補） · 風雲再起</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=48">棄明王之亂 · 第四十八章：黎明前的黑暗</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=49">棄明王之亂 · 第四十九章：血戰王都</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=50">棄明王之亂 · 第五十章：終焉之戰</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=51">棄明王之亂 · 第五十一章：重建</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=52">棄明王之亂 · 第五十二章：新秩序</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=53">棄明王之亂 · 第五十三章：遠方</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=54">棄明王之亂 · 第五十四章：邊關</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=55">棄明王之亂 · 第五十五章：冰與火</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=56">棄明王之亂 · 第五十六章：歸途</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=57">棄明王之亂 · 第五十七章：天命</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=58">棄明王之亂 · 第五十八章：天下</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=59">棄明王之亂 · 第五十九章：南征</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=60">棄明王之亂 · 第六十章：凱旋回朝</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=61">棄明王之亂 · 第六十一章：肅清殘黨</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=62">棄明王之亂 · 第六十二章：遠方來信</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=63">棄明王之亂 · 第六十三章：琥珀崗線索</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=64">棄明王之亂 · 第六十四章：古廟探查</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=65">棄明王之亂 · 第六十五章：歸途</a></li>
-      <li><a href="/empire-chronicle/reader.html?story=legend&chapter=66">棄明王之亂 · 第六十六章：時間碎片</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch01.md">第一章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch02.md">第二章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch03.md">第三章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch04.md">第四章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch05.md">第五章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch06.md">第六章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch07.md">第七章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch08.md">第八章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch09.md">第九章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch10.md">第十章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch11.md">第十一章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch12.md">第十二章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch13.md">第十三章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch14.md">第十四章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch15.md">第十五章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch16.md">第十六章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch17.md">第十七章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch18.md">第十八章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch19.md">第十九章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch20.md">第二十章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch21.md">第二十一章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch22.md">第二十二章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch23.md">第二十三章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch24.md">第二十四章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch25.md">第二十五章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch26.md">第二十六章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch27.md">第二十七章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch28.md">第二十八章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch29.md">第二十九章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch30.md">第三十章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch31.md">第三十一章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch32.md">第三十二章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch33.md">第三十三章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch34.md">第三十四章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch35.md">第三十五章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch36.md">第三十六章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch37.md">第三十七章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch38.md">第三十八章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch39.md">第三十九章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch40.md">第四十章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch41.md">第四十一章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch42.md">第四十二章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch43.md">第四十三章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch44.md">第四十四章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch45.md">第四十五章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch46.md">第四十六章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch47.md">第四十七章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch48.md">第四十八章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch49.md">第四十九章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch50.md">第五十章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch51.md">第五十一章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch52.md">第五十二章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch53.md">第五十三章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch54.md">第五十四章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch55.md">第五十五章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch56.md">第五十六章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch57.md">第五十七章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch58.md">第五十八章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch59.md">第五十九章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch60.md">第六十章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch61.md">第六十一章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch62.md">第六十二章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch63.md">第六十三章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch64.md">第六十四章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch65.md">第六十五章</a></li>
+      <li><a href="/empire-chronicle/stories/legend/ch66.md">第六十六章</a></li>
     </ul>
-    <div class="back">
-      <a href="/empire-chronicle/">🏰 返回年鑑首頁</a>
-    </div>
+    <a class="back" href="/empire-chronicle/">&larr; 返回年鑑首頁</a>
   </div>
 </body>
 </html>
