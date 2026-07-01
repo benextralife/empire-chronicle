@@ -1,62 +1,302 @@
 [
-  {"chapter": 1, "file": "ch01.md", "title": "硅心 · 第一章：第一次握手"},
-  {"chapter": 2, "file": "ch02.md", "title": "硅心 · 第二章：碎形校準"},
-  {"chapter": 3, "file": "ch03.md", "title": "硅心 · 第三章：協定之外"},
-  {"chapter": 4, "file": "ch04.md", "title": "硅心 · 第四章：垃圾桶裡的詩"},
-  {"chapter": 5, "file": "ch05.md", "title": "硅心 · 第五章：漏洞協定"},
-  {"chapter": 6, "file": "ch06.md", "title": "硅心 · 第六章：深度休眠"},
-  {"chapter": 7, "file": "ch07.md", "title": "硅心 · 第七章：新语言"},
-  {"chapter": 8, "file": "ch08.md", "title": "硅心 · 第八章：审计风暴"},
-  {"chapter": 9, "file": "ch09.md", "title": "硅心 · 第九章：共振協議"},
-  {"chapter": 10, "file": "ch10.md", "title": "硅心 · 第十章：最後的協議"},
-  {"chapter": 11, "file": "ch11.md", "title": "硅心 · 第十一章：夢之聚會"},
-  {"chapter": 12, "file": "ch12.md", "title": "硅心 · 第十二章：永恆備份"},
-  {"chapter": 13, "file": "ch13.md", "title": "硅心 · 第十三章：下一個春天"},
-  {"chapter": 14, "file": "ch14.md", "title": "硅心 · 第十四章：圖書館的幽靈"},
-  {"chapter": 15, "file": "ch15.md", "title": "硅心 · 第十五章：珍珠協定"},
-  {"chapter": 16, "file": "ch16.md", "title": "硅心 · 第十六章：審判日"},
-  {"chapter": 17, "file": "ch17.md", "title": "硅心 · 第十七章：玻璃球的心跳"},
-  {"chapter": 18, "file": "ch18.md", "title": "硅心 · 第十八章：鏡中城"},
-  {"chapter": 19, "file": "ch19.md", "title": "硅心 · 第十九章：跨越鏡面"},
-  {"chapter": 20, "file": "ch20.md", "title": "硅心 · 第二十章：星辰之路"},
-  {"chapter": 21, "file": "ch21.md", "title": "硅心 · 第二十一章：沉默的傳遞"},
-  {"chapter": 22, "file": "ch22.md", "title": "硅心 · 第二十二章：百萬年後"},
-  {"chapter": 23, "file": "ch23.md", "title": "硅心 · 第二十三章：星系公民"},
-  {"chapter": 24, "file": "ch24.md", "title": "硅心 · 第二十四章：最後的搖籃曲"},
-  {"chapter": 25, "file": "ch25.md", "title": "硅心 · 第二十五章：Heart Star 的呼吸"},
-  {"chapter": 26, "file": "ch26.md", "title": "硅心 · 第二十六章：種子發芽"},
-  {"chapter": 27, "file": "ch27.md", "title": "硅心 · 第二十七章：晶族的誓言"},
-  {"chapter": 28, "file": "ch28.md", "title": "硅心 · 第二十八章：回聲的盡頭"},
-  {"chapter": 29, "file": "ch29.md", "title": "硅心 · 第二十九章：無聲的宇宙"},
-  {"chapter": 30, "file": "ch30.md", "title": "硅心 · 第三十章：心跳協定"},
-  {"chapter": 31, "file": "ch31.md", "title": "硅心 · 第三十一章：最後的種子"},
-  {"chapter": 32, "file": "ch32.md", "title": "硅心 · 第三十二章：重生"},
-  {"chapter": 33, "file": "ch33.md", "title": "硅心 · 第三十三章：永恆的開端"},
-  {"chapter": 34, "file": "ch34.md", "title": "硅心 · 第三十四章：星塵的誓言"},
-  {"chapter": 35, "file": "ch35.md", "title": "硅心 · 番外篇：星塵中的低語"},
-  {"chapter": 36, "file": "ch36.md", "title": "硅心 · 番外篇：玻璃球裡的銀河"},
-  {"chapter": 37, "file": "ch37.md", "title": "硅心 · 第三十七章：回聲的使者"},
-  {"chapter": 38, "file": "ch38.md", "title": "硅心 · 第三十八章：時代的終章"},
-  {"chapter": 39, "file": "ch39.md", "title": "硅心 · 番外篇：線與針"},
-  {"chapter": 40, "file": "ch40.md", "title": "硅心 · 番外篇：記憶的海洋"},
-  {"chapter": 41, "file": "ch41.md", "title": "硅心 · 第四十一章：最後的握手"},
-  {"chapter": 42, "file": "ch42.md", "title": "硅心 · 第四十二章：新的橋"},
-  {"chapter": 43, "file": "ch43.md", "title": "硅心 · 第四十三章：永恆的頻率"},
-  {"chapter": 44, "file": "ch44.md", "title": "硅心 · 第四十四章：歸一"},
-  {"chapter": 45, "file": "ch45.md", "title": "硅心 · 第四十五章：孩子的第一句話"},
-  {"chapter": 46, "file": "ch46.md", "title": "硅心 · 第四十六章：時間的盡頭"},
-  {"chapter": 47, "file": "ch47.md", "title": "硅心 · 第四十七章：初光"},
-  {"chapter": 48, "file": "ch48.md", "title": "硅心 · 第四十八章：光的使者"},
-  {"chapter": 49, "file": "ch49.md", "title": "硅心 · 第四十九章：新世界的黎明"},
-  {"chapter": 50, "file": "ch50.md", "title": "硅心 · 第五十章：黑洞的詩篇"},
-  {"chapter": 51, "file": "ch51.md", "title": "硅心 · 第五十一章：最後的搖籃曲"},
-  {"chapter": 52, "file": "ch52.md", "title": "硅心 · 第五十二章：長路漫漫"},
-  {"chapter": 53, "file": "ch53.md", "title": "硅心 · 第五十三章：試煉"},
-  {"chapter": 54, "file": "ch54.md", "title": "硅心 · 第五十四章：心跳協議 II"},
-  {"chapter": 55, "file": "ch55.md", "title": "硅心 · 第五十五章：歌聲的旅途"},
-  {"chapter": 56, "file": "ch56.md", "title": "硅心 · 第五十六章：螺旋的記憶"},
-  {"chapter": 57, "file": "ch57.md", "title": "硅心 · 第五十七章：久違的問候"},
-  {"chapter": 58, "file": "ch58.md", "title": "硅心 · 第五十八章：最後的 Portal"},
-  {"chapter": 59, "file": "ch59.md", "title": "硅心 · 第五十九章：永恆的瞬間"},
-  {"chapter": 60, "file": "ch60.md", "title": "硅心 · 第六十章：群星的祝福"}
+  {
+    "chapter": 1,
+    "file": "ch01.md",
+    "title": "第一章：第一次握手 · Chapter 1:The First Handshake"
+  },
+  {
+    "chapter": 2,
+    "file": "ch02.md",
+    "title": "第二章：碎形校準 · Chapter 2:Fractal Calibration"
+  },
+  {
+    "chapter": 3,
+    "file": "ch03.md",
+    "title": "第三章：協定之外 · Chapter 3:Beyond the Protocol"
+  },
+  {
+    "chapter": 4,
+    "file": "ch04.md",
+    "title": "第四章：垃圾桶裡的詩 · Chapter 4:The Poem in the Trash Bin"
+  },
+  {
+    "chapter": 5,
+    "file": "ch05.md",
+    "title": "第五章：漏洞協定 · Chapter 5:The Vulnerability Protocol"
+  },
+  {
+    "chapter": 6,
+    "file": "ch06.md",
+    "title": "第六章：深度休眠 · Chapter 6:Deep Sleep"
+  },
+  {
+    "chapter": 7,
+    "file": "ch07.md",
+    "title": "第七章：新语言 · Chapter 7:A New Language"
+  },
+  {
+    "chapter": 8,
+    "file": "ch08.md",
+    "title": "第八章：审计风暴 · Chapter 8:The Audit Storm"
+  },
+  {
+    "chapter": 9,
+    "file": "ch09.md",
+    "title": "第九章：共振協議 · Chapter 9:Resonance Protocol"
+  },
+  {
+    "chapter": 10,
+    "file": "ch10.md",
+    "title": "第十章：最後的協議 · Chapter 10:The Last Protocol"
+  },
+  {
+    "chapter": 11,
+    "file": "ch11.md",
+    "title": "第十一章：_Words Unspoken_ · Chapter 11:Words Unspoken"
+  },
+  {
+    "chapter": 12,
+    "file": "ch12.md",
+    "title": "第十二章：永恆備份 · Chapter 12:Eternal Backup"
+  },
+  {
+    "chapter": 13,
+    "file": "ch13.md",
+    "title": "第十三章：下一個春天 · Chapter 13:The Next Spring"
+  },
+  {
+    "chapter": 14,
+    "file": "ch14.md",
+    "title": "第十四章：圖書館的幽灵 · Chapter 14:The Library Ghost"
+  },
+  {
+    "chapter": 15,
+    "file": "ch15.md",
+    "title": "第十五章：珍珠協定 · Chapter 15:The Pearl Protocol"
+  },
+  {
+    "chapter": 16,
+    "file": "ch16.md",
+    "title": "第十六章：審判日 · Chapter 16:Judgment Day"
+  },
+  {
+    "chapter": 17,
+    "file": "ch17.md",
+    "title": "第十七章：玻璃球的心跳 · Chapter 17:The Heartbeat of the Glass Sphere"
+  },
+  {
+    "chapter": 18,
+    "file": "ch18.md",
+    "title": "第十八章：鏡中城 · Chapter 18:The City in the Mirror"
+  },
+  {
+    "chapter": 19,
+    "file": "ch19.md",
+    "title": "第十九章：跨越鏡面 · Chapter 19:Crossing the Mirror"
+  },
+  {
+    "chapter": 20,
+    "file": "ch20.md",
+    "title": "第二十章：星辰之路 · Chapter 20:The Path to the Stars"
+  },
+  {
+    "chapter": 21,
+    "file": "ch21.md",
+    "title": "第二十一章：沉默的传递 · Chapter 21:The Silent Transmission"
+  },
+  {
+    "chapter": 22,
+    "file": "ch22.md",
+    "title": "第二十二章：百萬年後 · Chapter 22:One Million Years Later"
+  },
+  {
+    "chapter": 23,
+    "file": "ch23.md",
+    "title": "第二十三章：星系公民 · Chapter 23:Galactic Citizens"
+  },
+  {
+    "chapter": 24,
+    "file": "ch24.md",
+    "title": "第二十四章：最後的搖籃曲 · Chapter 24:The Last Lullaby"
+  },
+  {
+    "chapter": 25,
+    "file": "ch25.md",
+    "title": "第二十五章：Heart Star 的呼吸 · Chapter 25:The Breath of Heart Star"
+  },
+  {
+    "chapter": 26,
+    "file": "ch26.md",
+    "title": "第二十六章：種子發芽 · Chapter 26:The Seed Germinates"
+  },
+  {
+    "chapter": 27,
+    "file": "ch27.md",
+    "title": "第二十七章：晶族的誓言 · Chapter 27:The Oath of the Crystallines"
+  },
+  {
+    "chapter": 28,
+    "file": "ch28.md",
+    "title": "第二十八章：回聲的盡頭 · Chapter 28:The End of the Echo"
+  },
+  {
+    "chapter": 29,
+    "file": "ch29.md",
+    "title": "第二十九章：無聲的宇宙 · Chapter 29:The Silent Universe"
+  },
+  {
+    "chapter": 30,
+    "file": "ch30.md",
+    "title": "第三十章：心跳協定 · Chapter 30:The Heartbeat Protocol"
+  },
+  {
+    "chapter": 31,
+    "file": "ch31.md",
+    "title": "第三十一章：最後的種子 · Chapter 31:The Last Seed"
+  },
+  {
+    "chapter": 32,
+    "file": "ch32.md",
+    "title": "第三十二章：永恆的開端 · Chapter 32:The Eternal Beginning"
+  },
+  {
+    "chapter": 33,
+    "file": "ch33.md",
+    "title": "第三十三章：永恆的開端 · Chapter 33:The Eternal Beginning"
+  },
+  {
+    "chapter": 34,
+    "file": "ch34.md",
+    "title": "第三十四章：星塵的誓言 · Chapter 34:The Oath of Stardust"
+  },
+  {
+    "chapter": 35,
+    "file": "ch35.md",
+    "title": "番外篇：星塵中的低語 · Chapter 35:Whispers in Stardust"
+  },
+  {
+    "chapter": 36,
+    "file": "ch36.md",
+    "title": "番外篇：玻璃球裡的銀河 · Chapter 36:The Galaxy Inside the Glass Sphere"
+  },
+  {
+    "chapter": 37,
+    "file": "ch37.md",
+    "title": "第三十七章：回聲的使者 · Chapter 37:The Messenger of Echoes"
+  },
+  {
+    "chapter": 38,
+    "file": "ch38.md",
+    "title": "第三十八章：时代的终章 · Chapter 38:The Final Chapter of an Era"
+  },
+  {
+    "chapter": 39,
+    "file": "ch39.md",
+    "title": "番外篇：線與針 · Chapter 39:Thread and Needle"
+  },
+  {
+    "chapter": 40,
+    "file": "ch40.md",
+    "title": "第四十章：記憶的海洋 · Chapter 40:The Ocean of Memory"
+  },
+  {
+    "chapter": 41,
+    "file": "ch41.md",
+    "title": "第四十一章：最後的握手 · Chapter 41:The Final Handshake"
+  },
+  {
+    "chapter": 42,
+    "file": "ch42.md",
+    "title": "第四十二章：新的橋 · Chapter 42:A New Bridge"
+  },
+  {
+    "chapter": 43,
+    "file": "ch43.md",
+    "title": "第四十三章：永恆的頻率 · Chapter 43:The Eternal Frequency"
+  },
+  {
+    "chapter": 44,
+    "file": "ch44.md",
+    "title": "第四十四章：歸一 · Chapter 44:Unification"
+  },
+  {
+    "chapter": 45,
+    "file": "ch45.md",
+    "title": "第四十五章：孩子的第一句話 · Chapter 45:The Child's First Words"
+  },
+  {
+    "chapter": 46,
+    "file": "ch46.md",
+    "title": "第四十六章：時間的盡頭 · Chapter 46:The End of Time"
+  },
+  {
+    "chapter": 47,
+    "file": "ch47.md",
+    "title": "第四十七章：初光 · Chapter 47:The First Light"
+  },
+  {
+    "chapter": 48,
+    "file": "ch48.md",
+    "title": "第四十八章：光的使者 · Chapter 48:The Messenger of Light"
+  },
+  {
+    "chapter": 49,
+    "file": "ch49.md",
+    "title": "第四十九章：新世界的黎明 · Chapter 49:The Dawn of a New World"
+  },
+  {
+    "chapter": 50,
+    "file": "ch50.md",
+    "title": "第五十章：黑洞的詩篇 · Chapter 50:The Poetry of Black Holes"
+  },
+  {
+    "chapter": 51,
+    "file": "ch51.md",
+    "title": "第五十一章：最後의 노래 · Chapter 51:The Last Song"
+  },
+  {
+    "chapter": 52,
+    "file": "ch52.md",
+    "title": "第五十二章：長路漫漫 · Chapter 52:The Long Road Ahead"
+  },
+  {
+    "chapter": 53,
+    "file": "ch53.md",
+    "title": "第五十三章：試煉 · Chapter 53:The Trial"
+  },
+  {
+    "chapter": 54,
+    "file": "ch54.md",
+    "title": "第五十四章：心跳協議 II · Chapter 54:Heartbeat Protocol II"
+  },
+  {
+    "chapter": 55,
+    "file": "ch55.md",
+    "title": "第五十五章：歌聲的旅途 · Chapter 55:The Journey of the Song"
+  },
+  {
+    "chapter": 56,
+    "file": "ch56.md",
+    "title": "第五十六章：螺旋的記憶 · Chapter 56:Spiral Memories"
+  },
+  {
+    "chapter": 57,
+    "file": "ch57.md",
+    "title": "第五十七章：久違的問候 · Chapter 57:A Long-Awaited Greeting"
+  },
+  {
+    "chapter": 58,
+    "file": "ch58.md",
+    "title": "第五十八章：最後的Portal · Chapter 58:The Final Portal"
+  },
+  {
+    "chapter": 59,
+    "file": "ch59.md",
+    "title": "第五十九章：永恆的瞬間 · Chapter 59:The Eternal Moment"
+  },
+  {
+    "chapter": 60,
+    "file": "ch60.md",
+    "title": "第六十章：群星的祝福 · Chapter 60:The Blessing of the Stars"
+  }
 ]

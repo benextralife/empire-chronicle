@@ -81,9 +81,9 @@ def make_nav(chapters, story_key):
             # Side story: keep full title including story prefix
             label = title
         elif is_en:
-            label = f'{short} · Chapter {ch_num}'
+            label = title or f'{short} · Chapter {ch_num}'
         else:
-            label = f'{short}・第{cn_num(int(ch_num))}章'
+            label = title or f'{short}・第{cn_num(int(ch_num))}章'
         parts.append(f'      <li><a href="/empire-chronicle/reader.html?story={story_key}&chapter={ch_num}">{label}</a></li>')
     return '\n'.join(parts)
 
