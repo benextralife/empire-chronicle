@@ -84,9 +84,9 @@ def make_nav(chapters, story_key):
         if ch_num == 0 or ch_num == '0':
             label = 'Prologue' if is_en else '序章'
         elif is_en:
-            label = f'Chapter {ch_num}'
+            label = ch['title'] or f'Chapter {ch_num}'
         else:
-            label = f'第{cn_num(int(ch_num))}章'
+            label = ch['title'] or f'第{cn_num(int(ch_num))}章'
         parts.append(f'      <li><a href="/empire-chronicle/stories/{sname}/{fname}">{label}</a></li>')
     return '\n'.join(parts)
 
