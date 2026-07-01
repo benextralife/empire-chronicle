@@ -1,5 +1,5 @@
 [
-  {"chapter": 0, "file": "ch00.md"},
-  {"chapter": 1, "file": "ch01.md"},
-  {"chapter": 2, "file": "ch02.md"}
+  {"chapter": 0, "file": "ch00.md", "title": "量子之筆 · 序章"},
+  {"chapter": 1, "file": "ch01.md", "title": "量子之筆 · 第一章：每種選擇都有一個你記住了它"},
+  {"chapter": 2, "file": "ch02.md", "title": "量子之筆 · 第二章：被改寫的視線"}
 ]
