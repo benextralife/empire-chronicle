@@ -207,7 +207,7 @@
     } catch (e) { /* ignore */ }
 
     const cur = chapters.find(c => parseInt(c.chapter, 10) === chapterNum);
-    const chapterLabel = cur ? cleanTitle(cur.title) : ('第' + chapterNum + '章');
+    const chapterLabel = cur ? cleanTitle(cur.title) : 'no title';
     document.getElementById('chapter-label').textContent = chapterLabel;
     document.title = (STORY_NAMES[story] || story) + ' — ' + chapterLabel;
 
