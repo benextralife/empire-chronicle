@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>星際邊緣 — 閱讀器</title>
+  <title>{title} — 閱讀器</title>
   <style>
     :root {
       --bg: #f5e6d3;
@@ -145,7 +145,7 @@
 <body>
   <div class="page">
     <div class="topbar">
-      <a class="pill-btn" href="/empire-chronicle/stories/ufo-war/index.html">&larr; 章節目錄</a>
+      <a id="idx-btn" class="pill-btn" href="/empire-chronicle/stories/legend/index.html">&larr; 章節目錄</a>
       <a class="pill-btn" href="/empire-chronicle/">🏰 年鑑首頁</a>
     </div>
 
@@ -173,16 +173,21 @@
 
     const STORY_NAMES = {
       legend: '棄明王之亂',
-      'ufo-war': '星際邊緣',
-      'algorithmic-soul': '算法之魂',
+      ufo-war: '星際邊緣',
+      algorithmic-soul: '算法之魂',
       'lone-shadow': '孤影',
-      'quantum-pen': '量子筆記',
+      quantum-pen: '量子筆記',
       'silent-chess': 'Silent Chess',
       'silent-words': 'Silent Words',
       'silicone-hearts': '硅心'
     };
 
+    // Fix back-button based on current story
+    document.getElementById('idx-btn').href = '/empire-chronicle/stories/' + story + '/index.html';
+
     document.getElementById('story-title').textContent = STORY_NAMES[story] || story;
+
+    const shortLabel = (t) => (t || '').replace(/^[^・·]+[・·:：]?\s*/, '').trim();
 
     let chapters = [];
     try {
@@ -191,13 +196,13 @@
     } catch (e) { /* ignore */ }
 
     const cur = chapters.find(c => parseInt(c.chapter, 10) === chapterNum);
-    const shortLabel = (t) => (t || '').replace(/^[^・·]+[・·:：]?\s*/, '').trim();
-    const chapterLabel = cur ? shortLabel(cur.title) : ('Chapter ' + chapterNum);
+    const chapterLabel = cur ? cur.title.replace(/^[^・·]+[・·:：]?/, '').trim() : ('Chapter ' + chapterNum);
     document.getElementById('chapter-label').textContent = chapterLabel;
     document.title = (STORY_NAMES[story] || story) + ' — ' + chapterLabel;
 
     const prefix = story === 'lone-shadow' ? 'lone-shadow-ch' :
-                   (story === 'silent-chess' || story === 'silent-words') ? story + '-ch' : 'ch';
+                   (story === 'silent-chess' || story === 'silent-words') ? story + '-ch' :
+                   story === 'silicone-hearts' ? 'ch' : 'ch';
     const fileName = prefix + String(chapterNum).padStart(2, '0') + '.md';
 
     const res = await fetch('/empire-chronicle/stories/' + story + '/' + fileName + '?v=' + Date.now());

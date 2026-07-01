@@ -102,17 +102,11 @@ for sdir in story_dirs:
     story_title = STORY_SHORT.get(sname, chapters[0]['title'].split('·')[0].strip())
     nav = make_nav(chapters, sname)
 
-    reader_tmpl = (STORIES / '_shared' / 'reader-template.html').read_text(encoding='utf-8')
-    reader = reader_tmpl.replace('{story}', sname).replace('{title}', story_title)
-
     idx_out = sdir / 'index.html'
     idx_html = TMPL.replace('{title}', story_title).replace('{nav}', nav)
     idx_out.write_text(idx_html, encoding='utf-8')
 
-    rdr_out = REPO / 'reader.html'
-    rdr_out.write_text(reader, encoding='utf-8')
-
-    print(f'OK {sname}: {len(chapters)} chapters -> index + reader.html')
+    print(f'OK {sname}: {len(chapters)} chapters -> {idx_out}')
     for ch in chapters:
         cn = cn_num(int(ch['num']))
         print(f'   ch{ch["num"]:02d}: {cn}')
