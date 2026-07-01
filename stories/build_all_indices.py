@@ -87,8 +87,7 @@ def make_nav(chapters, story_key):
             label = ch['title'] or f'Chapter {ch_num}'
         else:
             raw = ch['title'] or f'第{cn_num(int(ch_num))}章'
-            m = re.search(r'第[^章]*章', raw)
-            label = m.group(0) if m else raw
+            label = re.sub(rf'^{re.escape(short)}[\s・·:：]+', '', raw)
         parts.append(f'      <li><a href="/empire-chronicle/reader.html?story={sname}&chapter={ch_num}">{label}</a></li>')
     return '\n'.join(parts)
 
