@@ -216,8 +216,8 @@
     document.title = (STORY_NAMES[story] || story) + ' — ' + chapterLabel;
 
     const prefix = story === 'lone-shadow' ? 'lone-shadow-ch' :
-                   (story === 'silent-chess' || story === 'silent-words') ? story + '-ch' :
-                   story === 'silicone-hearts' ? 'ch' : 'ch';
+                   (story === 'silent-chess' || story === 'silent-words' || story === 'ai-love-master') ? story + '-ch' :
+                   'ch';
     const fileName = prefix + String(chapterNum).padStart(2, '0') + '.md';
 
     const res = await fetch('/empire-chronicle/stories/' + story + '/' + fileName + '?v=' + Date.now());
