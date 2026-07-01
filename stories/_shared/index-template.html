@@ -29,7 +29,7 @@
     }
     .topbar {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       margin-bottom: 32px;
     }
@@ -102,7 +102,7 @@
     .bottombar {
       margin-top: 40px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       color: var(--muted);
       font-size: 0.85rem;
@@ -118,7 +118,7 @@
     @media (max-width: 800px) {
       .toc { grid-template-columns: 1fr; gap: 10px; }
       .toc a { padding: 12px 10px; font-size: 1rem; }
-      .topbar, .bottombar { flex-direction: column; gap: 8px; align-items: flex-start; }
+      .topbar, .bottombar { flex-direction: column; gap: 8px; align-items: center; }
     }
   </style>
 </head>
@@ -126,7 +126,6 @@
   <div class="page">
     <div class="topbar">
       <a class="pill-btn" href="/empire-chronicle/">&larr; 返回年鑑首頁</a>
-      <span class="pill-btn">📖 故事經緯</span>
     </div>
 
     <div class="story-title">
@@ -138,9 +137,8 @@
 {nav}
     </ul>
 
-    <div class="topbar">
+    <div class="bottombar">
       <a class="pill-btn" href="/empire-chronicle/">&larr; 返回年鑑首頁</a>
-      <span class="pill-btn">📖 故事經緯</span>
     </div>
   </div>
 </body>
