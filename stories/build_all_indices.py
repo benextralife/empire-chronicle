@@ -67,16 +67,49 @@ def load_chapters(sdir):
     chapters.sort(key=lambda x: x['num'])
     return chapters
 
+def sanitize_title(title):
+    if not title:
+        return ''
+    for sep in [' · ', ' - ', ' — ']:
+        if sep in title:
+            parts = title.split(sep, 1)
+            left, right = parts[0], parts[1]
+            left_cn = any('一' <= c <= '鿿' for c in left)
+            right_cn = any('一' <= c <= '鿿' for c in right)
+            left_has = '章' in left or 'Chapter' in left
+            right_has = '章' in right or 'Chapter' in right
+            # side story
+            if '番外篇' in right:
+                return right.strip()
+            if '番外篇' in left:
+                return left.strip()
+            # both sides have chapter markers -> prefer CJK
+            if left_has and right_has:
+                return left.strip() if left_cn else right.strip()
+            if left_has:
+                return left.strip()
+            if right_has:
+                return right.strip()
+            # both CJK without explicit marker -> right is chapter label
+            if left_cn and right_cn:
+                return right.strip()
+            if right_cn:
+                return right.strip()
+            return left.strip()
+    return title
+
 def make_nav(chapters, story_key):
     parts = []
     for ch in chapters:
         ch_num = ch['num']
-        title = ch.get('title', '')
+        raw = ch.get('title', '')
+        # Strip story-name prefix: '算法之魂 · 第四章' -> '第四章'
+        title = sanitize_title(raw)
         # Determine label
         if ch_num == 0 or ch_num == '0':
             label = '序章'
         elif '番外篇' in str(title):
-            # Side story: keep full title
+            # Side story but prefix already stripped
             label = title
         elif title:
             label = title
