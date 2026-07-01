@@ -10,9 +10,9 @@
       --paper: #fffaf0;
       --ink: #2b2318;
       --crimson: #7a1f1f;
-      --gold: #b8924a;
       --border: #cbb896;
       --peach: #c49464;
+      --muted: #7a5c43;
     }
     * { box-sizing: border-box; }
     html, body {
@@ -20,19 +20,20 @@
       background: var(--bg);
       color: var(--ink);
       font-family: "Microsoft JhengHei", "PingFang TC", "Noto Serif TC", "Songti TC", serif;
+      line-height: 1.5;
     }
-    .wrap {
-      max-width: 1040px;
+    .page {
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 28px 24px 60px;
+      padding: 26px 22px 70px;
     }
-    .top-bar {
+    .topbar {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 28px;
+      margin-bottom: 26px;
     }
-    .back {
+    .pill-btn {
       display: inline-flex;
       align-items: center;
       gap: 6px;
@@ -40,87 +41,90 @@
       border-radius: 999px;
       border: 1.5px solid var(--border);
       background: var(--paper);
-      text-decoration: none;
       color: var(--crimson);
+      text-decoration: none;
       font-weight: 600;
       font-size: 0.88rem;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.06em;
     }
-    .back:hover {
-      background: rgba(196,148,100,0.12);
+    .pill-btn:hover {
+      background: rgba(196,148,100,0.14);
     }
-    header {
-      margin-bottom: 32px;
-    }
-    header h1 {
-      font-size: 1.6rem;
+    .title-block h1 {
+      font-size: 1.7rem;
       color: var(--crimson);
       margin: 0 0 6px;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.16em;
       font-weight: 700;
     }
-    header p {
+    .title-block p {
       margin: 0;
-      color: #5a3e2b;
-      font-size: 0.95rem;
+      color: var(--muted);
+      font-size: 0.98rem;
       letter-spacing: 0.1em;
     }
     .toc {
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin: 28px 0 0;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 14px;
     }
-    .toc li {
+    .toc-item {
       background: var(--paper);
       border: 1.5px solid var(--border);
       border-radius: 999px;
-      box-shadow: 0 2px 6px rgba(139,69,19,0.06);
       text-align: center;
+      box-shadow: 0 2px 6px rgba(100,70,40,0.05);
     }
-    .toc a {
+    .toc-item a {
       display: block;
-      padding: 12px 10px;
+      padding: 12px 8px;
       color: var(--crimson);
       text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-      line-height: 1.4;
-      letter-spacing: 0.08em;
+      font-weight: 700;
+      font-size: 0.96rem;
+      letter-spacing: 0.06em;
     }
-    .toc a:hover {
-      background: rgba(196,148,100,0.12);
+    .toc-item a:hover {
+      background: rgba(196,148,100,0.14);
+      border-radius: 999px;
     }
-    footer {
-      margin-top: 50px;
-      padding-top: 16px;
+    .footer {
+      margin-top: 56px;
+      padding-top: 14px;
       border-top: 1px solid var(--border);
-      text-align: center;
-      color: #8c6b52;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
       font-size: 0.82rem;
       letter-spacing: 0.08em;
     }
     @media (max-width: 800px) {
-      .toc { grid-template-columns: repeat(3, 1fr); gap: 10px; }
-      .toc a { padding: 10px 8px; font-size: 0.92rem; }
+      .toc { grid-template-columns: repeat(3, 1fr); gap: 12px; }
     }
     @media (max-width: 520px) {
-      .toc { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-      header h1 { font-size: 1.35rem; }
+      .toc { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .title-block h1 { font-size: 1.35rem; }
+      .footer { flex-direction: column; align-items: center; text-align: center; }
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="top-bar">
-      <a class="back" href="/empire-chronicle/">&larr; 返回年鑑首頁</a>
+  <div class="page">
+    <div class="topbar">
+      <a class="pill-btn" href="/empire-chronicle/">&larr; 返回年鑑首頁</a>
+      <span style="color:var(--muted); font-size:0.88rem; letter-spacing:0.08em;">📖 故事經緯</span>
     </div>
-    <header>
+
+    <div class="title-block">
       <h1>硅心</h1>
       <p>章節目錄</p>
-    </header>
+    </div>
+
     <ul class="toc">
       <li><a href="/empire-chronicle/stories/silicone-hearts/ch01.md">第一章</a></li>
       <li><a href="/empire-chronicle/stories/silicone-hearts/ch02.md">第二章</a></li>
@@ -183,11 +187,11 @@
       <li><a href="/empire-chronicle/stories/silicone-hearts/ch59.md">第五十九章</a></li>
       <li><a href="/empire-chronicle/stories/silicone-hearts/ch60.md">第六十章</a></li>
     </ul>
-    <footer>
-      <a class="back" href="/empire-chronicle/">&larr; 返回年鑑首頁</a>
-      <br>
-      &copy; 王國年鑑 — Built by Xiao Ai
-    </footer>
+
+    <div class="footer">
+      <a class="pill-btn" href="/empire-chronicle/">🏰 返回年鑑首頁</a>
+      <span>&copy; 王國年鑑 — Built by Xiao Ai</span>
+    </div>
   </div>
 </body>
 </html>
