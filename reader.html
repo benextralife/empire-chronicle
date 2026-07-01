@@ -291,6 +291,11 @@
       a.textContent = cleanTitle(nextCh.title) + ' →';
       nav.appendChild(a);
     }
+    } catch (err) {
+      const art = document.getElementById('article');
+      if (art) art.textContent = 'Error: ' + err.message;
+      console.error(err);
+    }
   })();
   </script>
 </body>
