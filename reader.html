@@ -230,7 +230,7 @@
 
     let text = '';
     try {
-      const res = await fetch('/empire-chronicle/stories/' + story + '/' + fileName + '?v=' + Date.now());
+      const res = await fetch('https://raw.githubusercontent.com/benextralife/empire-chronicle/main/stories/' + story + '/' + fileName + '?v=' + Date.now());
       if (!res.ok) {
         document.getElementById('article').textContent = '本章尚未釋出或檔案不存在 (HTTP ' + res.status + ')';
         return;
