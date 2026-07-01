@@ -231,8 +231,8 @@
       h = h.replace(/^## (.+)$/gm, '<h2>$1</h2>');
       h = h.replace(/^# (.+)$/gm, '<h1>$1</h1>');
       h = h.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-      // author uses *X* as word-rhythm punctuation: strip quotes but keep the word + space
-      h = h.replace(/\*([^*\n]+?)\*/g, '$1 ');
+      // author uses *X* as word-rhythm punctuation: strip quotes, no extra space
+      h = h.replace(/\*([^*\n]+?)\*/g, '$1'); // strip *word*, no extra space
       h = h.replace(/^---$/gm, '<hr>');
       h = h.replace(/^> (.+)$/gm, '<blockquote>$1</blockquote>');
       h = h.replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>');

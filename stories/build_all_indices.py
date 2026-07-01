@@ -69,21 +69,19 @@ def load_chapters(sdir):
 
 def make_nav(chapters, story_key):
     parts = []
-    short = STORY_SHORT.get(story_key, story_key)
-    is_en = story_key in ('silent-chess', 'silent-words')
     for ch in chapters:
         ch_num = ch['num']
         title = ch.get('title', '')
         # Determine label
         if ch_num == 0 or ch_num == '0':
-            label = 'Prologue' if is_en else '序章'
+            label = '序章'
         elif '番外篇' in str(title):
-            # Side story: keep full title including story prefix
+            # Side story: keep full title
             label = title
-        elif is_en:
-            label = title or f'{short} · Chapter {ch_num}'
+        elif title:
+            label = title
         else:
-            label = title or f'{short}・第{cn_num(int(ch_num))}章'
+            label = f'第{cn_num(int(ch_num))}章'
         parts.append(f'      <li><a href="/empire-chronicle/reader.html?story={story_key}&chapter={ch_num}">{label}</a></li>')
     return '\n'.join(parts)
 
@@ -97,7 +95,7 @@ for sdir in story_dirs:
         continue
     story_title = STORY_SHORT.get(sname, chapters[0]['title'].split('·')[0].strip())
     nav = make_nav(chapters, sname)
-    html = TMPL.replace('{title}', story_title).replace('{nav}', nav)
+    html = TMPL.replace('{story}', sname).replace('{title}', story_title).replace('{nav}', nav)
     out = sdir / 'index.html'
     out.write_text(html, encoding='utf-8')
     print(f'OK {sname}: {len(chapters)} chapters -> {out}')
