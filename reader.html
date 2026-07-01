@@ -224,7 +224,10 @@
     document.title = (STORY_NAMES[story] || story) + ' — ' + chapterLabel;
 
     const prefix = story === 'lone-shadow' ? 'lone-shadow-ch' :
-                   (story === 'silent-chess' || story === 'silent-words' || story === 'ai-love-master') ? story + '-ch' :
+                   (story === 'silent-chess' || story === 'silent-words' || story === 'ai-love-master' ||
+                    story === 'ai-baby-dream' || story === 'ai-cosmic-dream' ||
+                    story === 'ai-music-dream' || story === 'ai-art-dream' ||
+                    story === 'ai-philosophy-dream' || story === 'ai-garden-dream') ? story + '-ch' :
                    'ch';
     const fileName = prefix + String(chapterNum).padStart(2, '0') + '.md';
 

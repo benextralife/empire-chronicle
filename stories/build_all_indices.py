@@ -24,6 +24,7 @@ STORY_SHORT = {
     'ai-art-dream': 'AI 藝術夢想',
     'ai-philosophy-dream': 'AI 哲學夢想',
     'ai-garden-dream': 'AI 花園夢想',
+    'xiao-ying-dream': '小盈的夢想',
 }
 
 def cn_num(n: int) -> str:
@@ -64,6 +65,8 @@ def load_chapters(sdir):
         mds = sorted(sdir.glob('ai-philosophy-dream-ch*.md'))
     elif sname == 'ai-garden-dream':
         mds = sorted(sdir.glob('ai-garden-dream-ch*.md'))
+    elif sname == 'xiao-ying-dream':
+        mds = sorted(sdir.glob('xiao-ying-dream-ch*.md'))
     else:
         mds = sorted(sdir.glob('ch*.md'))
     md_map = {}
