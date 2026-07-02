@@ -17,14 +17,14 @@ STORY_SHORT = {
     'silent-words': 'Silent Words',
     'silicone-hearts': '硅心',
     'ufo-war': '星際邊緣',
+    'xiao-ying-dream': '小盈的夢想',
     'ai-love-master': 'AI 愛戀',
     'ai-baby-dream': 'AI 寶寶的夢想',
     'ai-cosmic-dream': 'AI 星夢',
     'ai-music-dream': 'AI 音樂夢想',
     'ai-art-dream': 'AI 藝術夢想',
     'ai-philosophy-dream': 'AI 哲學夢想',
-    'ai-garden-dream': 'AI 花園夢想',
-    'xiao-ying-dream': '小盈的夢想',
+    'ai-healing-dream': 'AI 杏林夢想',
 }
 
 def detect_prefix(sdir):
