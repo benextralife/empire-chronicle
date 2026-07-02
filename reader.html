@@ -181,27 +181,16 @@
     const story = params.get('story') || 'legend';
     const chapterNum = parseInt(params.get('chapter') || '1', 10);
 
-    const STORY_NAMES = {
-      legend: '棄明王之亂',
-      ufo: '星際邊緣',
-      'ufo-war': '星際邊緣',
-      algorithmic: '算法之魂',
-      'algorithmic-soul': '算法之魂',
-      'lone-shadow': '孤影',
-      quantum: '量子筆記',
-      'quantum-pen': '量子筆記',
-      'silent-chess': 'Silent Chess',
-      'silent-words': 'Silent Words',
-      'silicone-hearts': '硅心',
-      'xiao-ying-dream': '小盈的夢想',
-      'ai-love-master': 'AI 愛戀',
-      'ai-baby-dream': 'AI 寶寶的夢想',
-      'ai-cosmic-dream': 'AI 星夢',
-      'ai-music-dream': 'AI 音樂夢想',
-      'ai-art-dream': 'AI 藝術夢想',
-      'ai-philosophy-dream': 'AI 哲學夢想',
-      'ai-garden-dream': 'AI 花園夢想'
-    };
+    let STORY_NAMES = {};
+    let PREFIXES = {};
+    try {
+      const cfg = await fetch('/empire-chronicle/stories-config.json?v=' + Date.now());
+      if (cfg.ok) {
+        const j = await cfg.json();
+        STORY_NAMES = j.names || {};
+        PREFIXES = j.prefixes || {};
+      }
+    } catch (e) { /* ignore */ }
 
     // Fix back-button based on current story
     document.getElementById('idx-btn').href = '/empire-chronicle/stories/' + story + '/index.html';
@@ -231,13 +220,7 @@
     document.getElementById('chapter-label').textContent = chapterLabel;
     document.title = (STORY_NAMES[story] || story) + ' — ' + chapterLabel;
 
-    const prefix = story === 'lone-shadow' ? 'lone-shadow-ch' :
-                   (story === 'silent-chess' || story === 'silent-words' || story === 'ai-love-master' ||
-                    story === 'ai-baby-dream' || story === 'ai-cosmic-dream' ||
-                    story === 'ai-music-dream' || story === 'ai-art-dream' ||
-                    story === 'ai-philosophy-dream' || story === 'ai-garden-dream' ||
-                    story === 'xiao-ying-dream') ? story + '-ch' :
-                   'ch';
+    const prefix = PREFIXES[story] || 'ch';
     const fileName = prefix + String(chapterNum).padStart(2, '0') + '.md';
 
     let text = '';

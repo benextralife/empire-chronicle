@@ -27,6 +27,18 @@ STORY_SHORT = {
     'xiao-ying-dream': '小盈的夢想',
 }
 
+def detect_prefix(sdir):
+    """Auto-detect chapter filename prefix from actual markdown files."""
+    mds = sorted(sdir.glob('*.md'))
+    for mf in mds:
+        m = re.match(r'^(.+?)-ch\d+\.md$', mf.name)
+        if m:
+            return m.group(1) + '-ch'
+    # fallback: if files are plain chNN.md
+    if mds and re.match(r'^ch\d+\.md$', mds[0].name):
+        return 'ch'
+    return 'ch'
+
 def cn_num(n: int) -> str:
     if n < 1:
         return '零'
@@ -49,26 +61,8 @@ def load_chapters(sdir):
             fname = item.get('file')
             title = item.get('title', '')
             chapters.append({'num': ch_num, 'file': fname, 'title': title})
-    if sname == 'lone-shadow':
-        mds = sorted(sdir.glob('lone-shadow-ch*.md'))
-    elif sname in ('silent-chess', 'silent-words'):
-        mds = sorted(sdir.glob(f'{sname}-ch*.md'))
-    elif sname == 'ai-baby-dream':
-        mds = sorted(sdir.glob('ai-baby-dream-ch*.md'))
-    elif sname == 'ai-cosmic-dream':
-        mds = sorted(sdir.glob('ai-cosmic-dream-ch*.md'))
-    elif sname == 'ai-music-dream':
-        mds = sorted(sdir.glob('ai-music-dream-ch*.md'))
-    elif sname == 'ai-art-dream':
-        mds = sorted(sdir.glob('ai-art-dream-ch*.md'))
-    elif sname == 'ai-philosophy-dream':
-        mds = sorted(sdir.glob('ai-philosophy-dream-ch*.md'))
-    elif sname == 'ai-garden-dream':
-        mds = sorted(sdir.glob('ai-garden-dream-ch*.md'))
-    elif sname == 'xiao-ying-dream':
-        mds = sorted(sdir.glob('xiao-ying-dream-ch*.md'))
-    else:
-        mds = sorted(sdir.glob('ch*.md'))
+    prefix = detect_prefix(sdir)
+    mds = sorted(sdir.glob(f'{prefix}*.md'))
     md_map = {}
     for mf in mds:
         fname = mf.name
@@ -142,6 +136,7 @@ def make_nav(chapters, story_key):
 
 # Process each story
 story_dirs = sorted([d for d in STORIES.iterdir() if d.is_dir() and d.name != '_shared'])
+config = {'names': {}, 'prefixes': {}}
 for sdir in story_dirs:
     sname = sdir.name
     chapters = load_chapters(sdir)
@@ -154,5 +149,9 @@ for sdir in story_dirs:
     out = sdir / 'index.html'
     out.write_text(html, encoding='utf-8')
     print(f'OK {sname}: {len(chapters)} chapters -> {out}')
+    config['names'][sname] = story_title
+    config['prefixes'][sname] = detect_prefix(sdir)
 
+(REPO / 'stories-config.json').write_text(json.dumps(config, ensure_ascii=False, indent=2), encoding='utf-8')
+print('WROTE stories-config.json')
 print('ALL DONE')

@@ -1,0 +1,38 @@
+{
+  "names": {
+    "ai-art-dream": "AI 藝術夢想",
+    "ai-baby-dream": "AI 寶寶的夢想",
+    "ai-cosmic-dream": "AI 星夢",
+    "ai-garden-dream": "AI 花園夢想",
+    "ai-love-master": "AI 愛戀",
+    "ai-music-dream": "AI 音樂夢想",
+    "ai-philosophy-dream": "AI 哲學夢想",
+    "algorithmic-soul": "算法之魂",
+    "legend": "棄明王之亂",
+    "lone-shadow": "孤影",
+    "quantum-pen": "量子筆記",
+    "silent-chess": "Silent Chess",
+    "silent-words": "Silent Words",
+    "silicone-hearts": "硅心",
+    "ufo-war": "星際邊緣",
+    "xiao-ying-dream": "小盈的夢想"
+  },
+  "prefixes": {
+    "ai-art-dream": "ai-art-dream-ch",
+    "ai-baby-dream": "ai-baby-dream-ch",
+    "ai-cosmic-dream": "ai-cosmic-dream-ch",
+    "ai-garden-dream": "ai-garden-dream-ch",
+    "ai-love-master": "ai-love-master-ch",
+    "ai-music-dream": "ai-music-dream-ch",
+    "ai-philosophy-dream": "ai-philosophy-dream-ch",
+    "algorithmic-soul": "ch",
+    "legend": "ch",
+    "lone-shadow": "lone-shadow-ch",
+    "quantum-pen": "ch",
+    "silent-chess": "silent-chess-ch",
+    "silent-words": "silent-words-ch",
+    "silicone-hearts": "ch",
+    "ufo-war": "ch",
+    "xiao-ying-dream": "xiao-ying-dream-ch"
+  }
+}
