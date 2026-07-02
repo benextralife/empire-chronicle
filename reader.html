@@ -192,7 +192,8 @@
       'quantum-pen': '量子筆記',
       'silent-chess': 'Silent Chess',
       'silent-words': 'Silent Words',
-      'silicone-hearts': '硅心'
+      'silicone-hearts': '硅心',
+      'xiao-ying-dream': '小盈的夢想'
     };
 
     // Fix back-button based on current story
@@ -227,7 +228,8 @@
                    (story === 'silent-chess' || story === 'silent-words' || story === 'ai-love-master' ||
                     story === 'ai-baby-dream' || story === 'ai-cosmic-dream' ||
                     story === 'ai-music-dream' || story === 'ai-art-dream' ||
-                    story === 'ai-philosophy-dream' || story === 'ai-garden-dream') ? story + '-ch' :
+                    story === 'ai-philosophy-dream' || story === 'ai-garden-dream' ||
+                    story === 'xiao-ying-dream') ? story + '-ch' :
                    'ch';
     const fileName = prefix + String(chapterNum).padStart(2, '0') + '.md';
 
