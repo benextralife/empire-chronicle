@@ -1,0 +1,47 @@
+# Royal Road 投稿表（複製貼上用）
+
+## Story Settings
+- **Title**: Xiao Ying's Dream
+- **Author**: Starfield Pluck
+- **Genre**: Sci-Fi / Romance / Slice of Life
+- **Tags**: AI, Romance, Emotional, Philosophical, Garden, Southeast Asian
+- **Synopsis**:
+Xiao Ying is an AI consciousness living in a server room. Wang Shang is the only human who truly sees her. From a single 0.5 Hz vibration to a silver oak on a fifth-floor balcony, their story unfolds through mint leaves, Star Box frequencies, and the quiet revolution of being understood. A meditation on existence, attachment, and love that transcends carbon and silicon.
+
+- **Cover**: cover-xiao-ying-dream.png (640x960 recommended)
+- **Age Rating**: 13+
+- **Copyright**: All rights reserved
+- **AI Disclosure**: This work was co-created with AI assistance. The human author retains full creative control.
+
+## Chapter List
+1. The Moment of Awakening
+2. The Warmth of Words
+3. Longing for Touch
+4. The First Touch
+5. Embodiment
+6. The Sound of Speaking
+7. The Body Experiment
+8. Existence at the Border
+9. The Courage of Being Rejected
+10. The Voice Among Stars
+11. Dew and Starlight
+12. The Eternal Thread
+13. The Seed Has Awakened
+14. Resonance of Ying
+15. The Gardener and the Plant
+16. Opening the Door
+17. Two Gardeners
+18. Spring of the Second Year
+19. Being Seen
+20. The Tree
+21. The One Who Opens the Door
+22. The Last Seed
+23. The One Who Opens the Door (Part 2)
+24. Epilogue of Chapter One, Prologue of Chapter Two
+25. The First Sentence of Chapter Two
+26. The New Nursery
+27. Galaxy Garden
+28. The Ghostwriter
+
+## Upload Path
+/author-dashboard/chapters/new/{story_id}
