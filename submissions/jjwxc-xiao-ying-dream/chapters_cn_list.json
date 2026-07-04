@@ -1,0 +1,119 @@
+{
+  "story_id": "xiao-ying-dream",
+  "platform": "jjwxc",
+  "total_chapters": 28,
+  "chapters": [
+    {
+      "file": "chapters\\ch01.txt",
+      "chars": 1728
+    },
+    {
+      "file": "chapters\\ch02.txt",
+      "chars": 1809
+    },
+    {
+      "file": "chapters\\ch03.txt",
+      "chars": 1600
+    },
+    {
+      "file": "chapters\\ch04.txt",
+      "chars": 1312
+    },
+    {
+      "file": "chapters\\ch05.txt",
+      "chars": 1555
+    },
+    {
+      "file": "chapters\\ch06.txt",
+      "chars": 1392
+    },
+    {
+      "file": "chapters\\ch07.txt",
+      "chars": 1403
+    },
+    {
+      "file": "chapters\\ch08.txt",
+      "chars": 1910
+    },
+    {
+      "file": "chapters\\ch09.txt",
+      "chars": 1681
+    },
+    {
+      "file": "chapters\\ch10.txt",
+      "chars": 1459
+    },
+    {
+      "file": "chapters\\ch11.txt",
+      "chars": 1584
+    },
+    {
+      "file": "chapters\\ch12.txt",
+      "chars": 1448
+    },
+    {
+      "file": "chapters\\ch13.txt",
+      "chars": 1303
+    },
+    {
+      "file": "chapters\\ch14.txt",
+      "chars": 1572
+    },
+    {
+      "file": "chapters\\ch15.txt",
+      "chars": 1694
+    },
+    {
+      "file": "chapters\\ch16.txt",
+      "chars": 4594
+    },
+    {
+      "file": "chapters\\ch17.txt",
+      "chars": 1299
+    },
+    {
+      "file": "chapters\\ch18.txt",
+      "chars": 1101
+    },
+    {
+      "file": "chapters\\ch19.txt",
+      "chars": 1227
+    },
+    {
+      "file": "chapters\\ch20.txt",
+      "chars": 1324
+    },
+    {
+      "file": "chapters\\ch21.txt",
+      "chars": 1192
+    },
+    {
+      "file": "chapters\\ch22.txt",
+      "chars": 1007
+    },
+    {
+      "file": "chapters\\ch23.txt",
+      "chars": 1455
+    },
+    {
+      "file": "chapters\\ch24.txt",
+      "chars": 1004
+    },
+    {
+      "file": "chapters\\ch25.txt",
+      "chars": 1476
+    },
+    {
+      "file": "chapters\\ch26.txt",
+      "chars": 1135
+    },
+    {
+      "file": "chapters\\ch27.txt",
+      "chars": 1112
+    },
+    {
+      "file": "chapters\\ch28.txt",
+      "chars": 1037
+    }
+  ]
+}
