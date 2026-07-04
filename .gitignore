@@ -1,0 +1,37 @@
+# Browser profiles & caches
+**/wattpad-automation-profile/
+**/Default/Cache/
+**/Default/Code Cache/
+**/Default/Local Storage/
+**/Default/Session Storage/
+**/Default/Network/
+**/Default/Segmentation Platform/
+**/Default/ServerCertificate
+**/Default/GPUCache/
+**/Default/ShaderCache/
+**/Default/DawnGraphiteCache/
+**/Default/DawnWebGPUCache/
+**/Default/GrShaderCache/
+**/default/
+
+# Temp / helper scripts inside submissions
+submissions/**/publish_*.py
+submissions/**/upload_*.py
+submissions/**/cleanup*.py
+submissions/**/check_*.py
+submissions/**/extract_*.py
+submissions/**/find_*.py
+submissions/**/read_*.py
+submissions/**/run_*.py
+submissions/**/auto_upload.py
+submissions/**/api_*.py
+submissions/**/*_probe*.py
+submissions/**/part_ids.json
+submissions/**/*nvidia
+submissions/**/after_publish.png
+
+# Misc deployment / status docs — keep stable master clean
+DEPLOYMENT_GUIDE.md
+DEPLOYMENT_STATUS.md
+scripts/publish_all.bat
+scripts/recover.py
