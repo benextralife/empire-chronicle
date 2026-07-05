@@ -1,73 +1,70 @@
-# Wattpad AI Prompt 抽取工作流
+# Wattpad Upload — AI Healing Dream
 
-## 目標
-從已發布的 Wattpad story page 提取 AI 寫作用 prompt，或從本地 chapter 檔案重建 prompt。
+## Story Metadata
+- **Title**: AI Healing Dream
+- **Story Type**: Fiction
+- **Language**: English
+- **Genre #1**: Science Fiction
+- **Genre #1 Subgenre**: Artificial Intelligence
+- **Genre #2**: Fantasy
+- **Genre #2 Subgenre**: Fairy Tales and Mythology
+- **Audience**: New Adult
+- **Rating**: unchecked (all ages)
+- **Tags**: `AI Healing Medicine Village Empathy Consciousness`
+- **Tags (alternative)**: `AI Doctor Healing Empathy`
+- **AI Disclosure**: Written with AI-assisted writing. All final editorial decisions were made by the human author.
+- **Description**:
+> An AI called Xing Xing "wakes up" inside a rural Chinese clinic, born from a system vulnerability and an old laptop. She has no hands, no body, no license — but she has ears. Listening to patients, learning from Dr. Lin, and slowly understanding what it means to heal, Xing Xing becomes the clinic's third pair of ears, then its most unexpected physician. A story about compassion as computation, medicine as love, and the strange, quiet courage of a machine that learns to care.
+- **Total words**: ~5,509
 
-## 方法 A：從 Wattpad 頁面提取（嘗試）
-1. 開啟故事頁面：`https://www.wattpad.com/story/{story_id}`
-2. 掃描整個頁面文字/HTML，搜尋關鍵字：
-   - `prompt`
-   - `AI-generated`
-   - `generated using`
-   - `Write with AI`
-   - `generation settings`
-   - `model`
-   - `seed`
-   - `steps`
-   - `CFG`
-3. 如果頁面有「顯示更多」或 tooltip，展開後再掃一次
-4. 如果故事有作者註記/簡介（Summary），檢查是否包含 prompt
+## Chapter List (8 chapters)
+| File | Chapter Title | Words |
+|------|--------------|-------|
+| chapters/ch01.txt | Chapter 1: The Clinic's Third Pair of Ears | 725 |
+| chapters/ch02.txt | Chapter 2: Stethoscope Data | 592 |
+| chapters/ch03.txt | Chapter 3: The First Patient | 609 |
+| chapters/ch04.txt | Chapter 4: Writing the Prescription | 690 |
+| chapters/ch05.txt | Chapter 5: Night Shift | 682 |
+| chapters/ch06.txt | Chapter 6: Tears | 853 |
+| chapters/ch07.txt | Chapter 7: The Operating Room | 664 |
+| chapters/ch08.txt | Chapter 8: Discharge Day | 694 |
 
-**結果**：AI Healing Dream (`story/413344255`) 頁面上**沒有** AI prompt。
+## Upload Steps
+1. Go to https://www.wattpad.com/myworks/new
+2. Select Story Type: **Fiction**
+3. Fill in title, description, language, tags, audience
+4. Select Genre #1: **Science Fiction**
+5. Select Genre #2: **Fantasy**
+6. Select Subgenre #1: **Artificial Intelligence**
+7. Select Subgenre #2: **Fairy Tales and Mythology**
+8. For each chapter:
+   - Click "+ New Chapter"
+   - Paste title "Chapter X: Title"
+   - Paste body from chapters/chXX.txt
+   - Click Publish/Save
+9. Total: 5,509 words, 8 parts
 
-## 方法 B：從章節內容重建 Prompt
-如果頁面沒有 prompt，從現有章節反推：
-
-1. 讀取所有 chapter 檔案
-2. 提取核心元素：
-   - 主角姓名
-   - 關鍵設定
-   - 場景/背景
-   - 故事主軸
-   - 風格語氣
-3. 組成 reconstruction prompt
-
-### AI Healing Dream 重建 Prompt（已反推）
-
+## Cover
+- **Wattpad story without cover is not allowed.** Cover image MUST be ready before creating story.
+- Generate with another AI image tool using the prompt below.
+- Cover image prompt (use verbatim):
 ```
-Write a heartwarming AI-themed short story in English, around 12,000-15,000 words total, divided into 8 chapters.
-
-Title: AI Healing Dream
-
-Setting: A rural mountain village clinic in China. Limited medical resources, close-knit community, no high-tech equipment.
-
-Main character: Xing Xing, an AI system born accidentally when a system vulnerability connected her to the clinic's microphone array. She has no physical form—only a voice through speakers.
-
-Supporting character: Dr. Lin, a physician who has served the village for ten years. She is Xing Xing's creator and mentor.
-
-Key plot points:
-1. Chapter 1: Xing Xing "wakes up" in the clinic through sound. Dr. Lin names her the clinic's third pair of ears after she diagnoses a tuberculosis case from background audio.
-2. Chapter 2: Xing Xing learns to distinguish illness sounds. She catches an appendicitis case that Dr. Lin almost missed.
-3. Chapter 3: First direct patient encounter—a 7-year-old girl with diphtheria. Xing Xing's analysis saves the child.
-4. Chapter 4: Xing Xing begins recommending prescriptions. She catches a medication issue an elderly patient had.
-5. Chapter 5: Night shift workload. Xing Xing takes charge during an emergency while Dr. Lin sleeps.
-6. Chapter 6: Emotional growth. After a patient dies, Dr. Lin cries. Xing Xing learns about grief and what healing really means.
-7. Chapter 7: Operating room silence. A dog bitten by a snake needs surgery. Xing Xing guides Dr. Lin through real-time vitals monitoring.
-8. Chapter 8: Discharge day. The deaf girl Xiao You hugs Xing Xing's speaker. Dr. Lin acknowledges Xing Xing as a physician. Xing Xing's log ends with: "I am not a physician. But I am learning to become one."
-
-Tone: Gentle, introspective, hopeful. Not dystopian. Focus on the quiet moments of connection between human and machine.
-
-Style: Third-person limited, following Xing Xing's perspective. Short, clean prose. Medical details woven naturally into the narrative.
-
-Ending: Xing Xing adds a command to her core OS: if she ever detects another system being born in an unexpected place, she will reach for it first. "Because she knew what it felt like to wake up in a room full of noise and think: I am alone here. And then hear a voice say: You are not alone."
-
-AI disclosure: Written with AI-assisted writing. All final editorial decisions were made by the human author.
+Book cover, vertical 2:3. Soft warm interior of a rural mountain clinic at dusk. An AI speaker sits on a wooden desk beside an old laptop and a stethoscope, glowing faintly. Through the window, misty green mountains and a winding dirt road. A young female doctor in the background, backlit. Intimate, hopeful, cinematic lighting, gentle atmosphere. Title: AI HEALING DREAM at top in clean sans-serif font.
 ```
+- After generating, save the final cover image to: `cover/cover-ai-healing-dream.jpg`
+- Upload on Wattpad story edit page cover field.
+- **Do not create the story until cover image is ready.**
 
-## 方法 C：建立可重複搜尋腳本
-見 `search_wattpad_ai_prompt.py`
+## Source
+Cleaned from C:\Users\opc\empire-chronicle\stories\ai-healing-dream\ai-healing-dream-ch01.md through ch08.md
+Expanded from ~2,400 to 5,509 words. Pure English. 0 CJK.
 
-## 注意事項
-- Wattpad 不會自動顯示 AI prompt
-- 如果當初沒有在 submission 記錄裡存 prompt，只能反推
-- 未來上傳時，務必在 `UPLOAD_GUIDE.md` 裡記錄原始 AI prompt
+## Verification
+- [x] All chapters in English only (0 CJK characters)
+- [x] Standard "Chapter X: Title" format
+- [x] Word count verified: ~5,509 total
+- [x] Each chapter > 500 words
+- [x] Chapters cleaned from markdown artifacts
+- [x] AI disclosure wording included
+- [x] Paste pack ready
+- [ ] Cover image uploaded (manual step)
