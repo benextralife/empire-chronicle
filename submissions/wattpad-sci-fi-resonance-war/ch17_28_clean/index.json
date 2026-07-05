@@ -1,0 +1,74 @@
+[
+  {
+    "num": 17,
+    "title": "The New Chorus",
+    "words": 490,
+    "file": "ch17_The_New_Chorus.txt"
+  },
+  {
+    "num": 18,
+    "title": "The Architects' Song (Epilogue)",
+    "words": 529,
+    "file": "ch18_The_Architects_Song_Epilogue.txt"
+  },
+  {
+    "num": 19,
+    "title": "The Return",
+    "words": 327,
+    "file": "ch19_The_Return.txt"
+  },
+  {
+    "num": 20,
+    "title": "The Shadow Reform",
+    "words": 393,
+    "file": "ch20_The_Shadow_Reform.txt"
+  },
+  {
+    "num": 21,
+    "title": "The Un-sung",
+    "words": 416,
+    "file": "ch21_The_Un-sung.txt"
+  },
+  {
+    "num": 22,
+    "title": "The Veyra Memorial",
+    "words": 464,
+    "file": "ch22_The_Veyra_Memorial.txt"
+  },
+  {
+    "num": 23,
+    "title": "The Long Peace",
+    "words": 524,
+    "file": "ch23_The_Long_Peace.txt"
+  },
+  {
+    "num": 24,
+    "title": "A Song for All Worlds",
+    "words": 535,
+    "file": "ch24_A_Song_for_All_Worlds.txt"
+  },
+  {
+    "num": 25,
+    "title": "The Un-sung's Choice",
+    "words": 391,
+    "file": "ch25_The_Un-sungs_Choice.txt"
+  },
+  {
+    "num": 26,
+    "title": "The New Directorate",
+    "words": 386,
+    "file": "ch26_The_New_Directorate.txt"
+  },
+  {
+    "num": 27,
+    "title": "The First Note of Tomorrow",
+    "words": 342,
+    "file": "ch27_The_First_Note_of_Tomorrow.txt"
+  },
+  {
+    "num": 28,
+    "title": "The Remembrance",
+    "words": 606,
+    "file": "ch28_The_Remembrance.txt"
+  }
+]

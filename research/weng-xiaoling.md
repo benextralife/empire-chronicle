@@ -1,10 +1,56 @@
-# 翁曉玲（Weng Hsiao-Ling）— Internet Research Report
+# 翁曉玲（Weng Hsiao-Ling）— Intelligence Research Report
 
-**Date:** 2026-07-04  
-**Source:** Public internet (Wikipedia, news outlets, legislative records)  
+**Date:** 2026-07-05 (updated from 2026-07-04)
+**Source:** Public internet (Wikipedia, news outlets, legislative records)
 **Purpose:** Context research requested by user; not a story character — real Taiwanese politician
 
 ---
+
+## Latest Intelligence (2026-07-03 to 2025-12-18)
+
+### 1. Budget Slashing Escalation: 13 Ministries + Social Media Backlash (July 2–3, 2026)
+- On July 2, within the Education & Culture Committee review, Weng proposed deleting the entire **NT$47.38M Ministry of Culture media promotion budget** for FY115.
+- She escalated to slashing media promotion budgets across **13 ministries/government agencies**, using template-style copy-paste arguments claiming all are "non-essential expenditures."
+- After passage, she posted on **Threads and Facebook** bragging she "stepped on DPP's pain points" and "I did the right thing." The posts drew **over 2,000 comments** calling her "trash legislator" (垃圾立委) and worse.
+- **New and concerning:** Weng used her account to threaten netizens with legal action, citing a **December 2025 defamation verdict** in which a 66-year-old man was prosecuted for calling her "the other woman who interfered with someone else's marriage." She warned commenters: "曉玲不會寬待造謠抹黑行為" (Xiaoling will not tolerate defamation). This is a legislator using official-sounding threats against private citizens.
+- DPP legislator Wu Szu-yao (吳思瑤) nicknamed her **"翁亂玲"** (Weng Chaos Girl), highlighting the cross-ministry scope.
+- **Assessment:** This represents a concerning escalation in both tactics (threatening ordinary netizens) and scope (13 ministries). Her justification "last year the budget was zero and culture promotion still worked" reveals deliberate performative disruption rather than fiscal conservatism.
+
+### 2. Nie Yongzhen Logo Errors (June 2026)
+- Weng attacked designer **Nie Yongzhen (聶永真)** and his studio "Yongzhen Jizhi" (永真急制設計工作室) for winning a NT$1.48M **Tourism Bureau visual identity design tender** in 2024 (FY112), framing it as DPP patronage.
+- After apologizing for mischaracterizing the tender, Weng used an **incorrect logo** to make her point, and Nie had to correct her **a second time**. This pattern reinforces the "shoot first, verify never" approach.
+
+### 3. Husband's Rebuttal — Zhang Dunhan Quotes Chen Chunsheng (December 18, 2025)
+- During a special committee inquiry on whether the Executive Yuan should co-sign the **teacher pension cut suspension bill**, Weng aggressively demanded Secretary-General Zhang Dunhan state the cabinet's position.
+- Zhang responded by reading from **Weng's own husband Chen Chunsheng's** Constitutional Interpretation No. 717 concurring opinion, which stated that legislative fiscal decisions must consider **fiscal sustainability, intergenerational justice, and generational contracts**.
+- Weng, visibly flustered, shot back: "What's the difference between my husband's statement and what we're discussing?" The clip went viral. Finance expert Hsu Hsüan-huang joked: "Probably won't affect their marital relationship."
+- **Assessment:** This incident demonstrates that Weng's own ideological framework (her husband's jurisprudential philosophy) contradicts her performative populist budget-slashing stance.
+
+### 4. CNA Report: Weng Denies Meeting Xiamen Taiwan Affairs Officials (December 21, 2025)
+- In a **Central News Agency** report, Weng explicitly stated she **did not meet with Xiamen Taiwan Affairs Office (台辦) officials** during the December 20 Xiamen trip — a more categorical denial than earlier reports suggested. She posted a photo with **former KMT vice chairman Jiang Xiao-yan (蔣孝嚴)** on Facebook.
+- **Reconciliation note:** Some earlier reporting implied she admitted to chatting with Xiamen Taiwan Affairs Office officials; the CNA record shows she categorically denied it. The most reliable record is the CNA report.ref `[CNA, Dec 21 2025]`.
+
+### 5. Updated Financial Disclosure Data (December 28, 2025)
+- Source: Control Yuan property declaration — **legislator-wealth.tw** »ref 1«
+- **33 securities** totaling **NT$62,812,323** (~US$2M)
+  - TSMC (2330): ~41.4% (NT$27,647,440) — largest holding
+  - Hon Hai/Foxconn (2317): 20,000 shares, NT$4,780,000 (held by spouse Chen Chunsheng, declared value NT$200,000)
+  - Nanya (1303): 8,000 shares, NT$1,576,000
+  - Yuanta/P-shares High Dividend ETF (0050): NT$789,000
+  - Yuantai High Dividend ETF (0056): 15,000 shares, NT$789,000
+  - Ta Chong Financial Leasing KY: NT$355,740
+  - Taoyuan HSR: 12,000 shares, NT$316,800
+  - Other ETFs: CTBC Select High Dividend (10,000 units, NT$320,800)
+- **Real estate:** Banqiao District building (~NT$7M, highest declared property)
+- No overseas assets. No company ownership or government contract ties for relatives disclosed.
+- **Note:** Hon Hai declared value (NT$200,000) vs. market value (NT$4.78M) shows significant unrealized gain — this is notable given Hon Hai/Foxconn's massive China supply chain exposure, which intersects with Weng's frequent pro-cross-strait-trade legislative agenda.
+
+### 6. Cousin Weng Ruibin's Public Reckoning (2025)
+- Cousin **Weng Ruibin (翁瑞彬)** — part-time associate professor at Soochow University — publicly warned Weng on Threads: "Don't forget your roots." He revealed the family's elite history (grandfather's Japanese-Keio/WWII-era merchant background, father's military-academic career) but questioned her current political trajectory.
+
+---
+
+*End of Latest Intelligence — continues with established sections below*
 
 ## Basic Profile
 
