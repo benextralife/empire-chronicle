@@ -4,26 +4,24 @@
 - **Title**: The Emotion Cartographer
 - **Story Type**: Fiction
 - **Genre**: Literary Fiction / Romance
-- **Tags**: emotional, grief, healing, letters, cartography, slow-burn romance, found family, SF Bay Area
-- **Rating**: Not mature (no explicit content)
-- **Cover**: Right-side version (conductor baton pose, floating sheet music, melancholic tone)
-
-## Description
-A cartographer of absences finds a hollow book that maps the geography of goodbye. What follows is an eleven-month collaboration — not to finish the letters, but to continue them.
-
-## AI Disclosure
-This story was written with AI assistance. Human author retains final editorial control.
-
-## Chapter Upload Order
-- ch01: The Hollow Book
-- ch02: The Thursday Dusk
-- ch03: The Cartographer's Apprentice
-- ch04: The Unmarked Letters
-- ch05: The Thursday Dusk
-- ch06: The Cartographer's Apprentice
+- **Tags**: emotional, grief, healing, cartography, letters, loss, hope, literary, heartbreak, friendship
+- **Description**: A cartographer discovers a hollow book containing a stranger's twenty-three-year map of goodbye. Together with the author's daughter, she learns that grief has its own geography—and that the hardest maps are not the ones we draw alone.
+- **AI Disclosure**: This story was written with AI assistance. Human author retains final editorial control. Contains emotional themes of grief, loss, and healing.
 
 ## Upload Notes
-- Use `PASTE_ALL_CHAPTERS_EN.txt` for full story paste.
-- Use `PASTE_CH02_06.txt` for ch2–ch6 only (if ch1 is already published).
-- Each chapter must be uploaded as a separate Part in Wattpad editor.
-- Beta read: no CJK, 7,549 words total, all chapters ≥1,000 words.
+- Total: 6 chapters, 7,045 words, 0 CJK
+- All chapters >= 1000 words
+- Story language: English only
+- Chapter format: "Chapter X: Title" followed by double line breaks between paragraphs
+
+## Chapter List
+1. Chapter 1: The Hollow Book
+2. Chapter 2: The Thursday Dusk
+3. Chapter 3: The Cartographer's Apprentice
+4. Chapter 4: The Unmarked Letters
+5. Chapter 5: The Thursday Dusk
+6. Chapter 6: The Cartographer's Apprentice
+
+## Cover
+- Filename: cover-emotion-cartographer.jpg
+- Recommended: Use right-side version from comparison (conductor baton pose, symphony theme)
