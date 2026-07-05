@@ -1,50 +1,89 @@
-Chapter 1: The Hollow Book
+from pathlib import Path
+import re
 
-Maren found the first letter inside a hollowed-out copy of *The Little Prince*. She was restocking the children's section of the Mars City Library, moving through fluorescent-lit aisles with a cart of paperbacks that smelled of dust and recycled air, when the book slipped from her hand.
+BASE = Path(r"C:\Users\opc\empire-chronicle\submissions\wattpad-emotion-cartographer\chapters")
 
-It fell open along a spine that had been cut deep — not torn, not worn, but deliberately, precisely severed, forming a cavity the size of an envelope. Inside the cavity a folded cream-colored envelope waited, pressed flat by years of shelf weight, the paper soft as fabric, the edges worn to the texture of felt. No name. No return address. Only a date in blue ink: 12 October 2087.
+chapters = {
+    "ch01.txt": r"""Chapter 1: The Hollow Book
 
-Maren's fingers brushed the paper. It was warm. Not room-temperature warm — alive warm, as if the hand that had folded it had been there minutes ago, though the handwriting was fifty-six years old.
+Maren Voss found the hollow book on a Tuesday, in a shop on Haight Street that smelled of dust and old glue. It was wedged between a 1927 edition of Rilke and a paperback copy of The Great Gatsby whose pages had swollen from someone leaving it on a windowsill in the rain. The spine was cracked. The leather was the colour of a bruise that had almost healed.
 
-She looked around. The library was empty except for the hum of the recyclers and the wind pressing against the dome — a sound she had lived with her whole life and still could not get used to: the sound of a planet trying to get in. In twenty-three years on Mars, she had never found anything hidden. The domes were transparent. The archives were catalogued. The world had been mapped, measured, and explained down to the last isotope. People did not hide things here.
+She pulled it out. It was lighter than it looked.
 
-But Thomas Voss had hidden something.
+The shopkeeper did not look up. He was behind the counter, scraping a price sticker off a hardcover with a fingernail that needed cutting. "That one's been there a while," he said. "If you want it, twelve dollars. No returns."
 
-She tucked the envelope into her pocket. It pressed against her hip, warm through the fabric of her trousers, a small weight that should have been nothing — paper, ink — but felt like holding a bird that had just died.
+Maren opened it. The pages were blank — or almost blank. In the centre of the book, someone had hollowed out a cavity roughly the size of a human heart. The edges were rough, cut with something sharp and impatient. At the bottom of the cavity lay a single sheet of paper, folded twice, with four sentences written in ink the colour of dried violets:
 
-That evening, in her small apartment above the library, she read it by the light of a single desk lamp. The handwriting was careful, each letter formed with the precision of a man who planned everything, who understood that words were the only things that could survive a dust storm. The ink was slightly faded — iron gall, she realized, the kind that browns with age, the kind archivists handled with gloves.
+I have been mapping the geography of goodbye for twenty-three years.
+The map is not accurate. Maps never are.
+The territory did not cooperate.
+I am sorry.
 
-> My dearest Lira,
-> If you ever find this, I want you to know that I understood. I should have said it sooner, but I was never good at saying the things that mattered. The domes are safe. The harvest is good. I am sorry for the year I spent angry at the quiet. I hear you now in the wind. Yours, always — Thomas
+She bought it. Not because she believed in ghosts. Because she was a cartographer, and the idea of someone mapping goodbye — an emotion that by definition has no cartography, no scale, no north — struck her as the most honest thing she had read all year.
 
-Maren read it twice. A third time. She sat very still, the lamp buzzing behind her, and listened to the wind and for the first time in her life she thought she understood what it meant to be spoken to across time. The letter was not remarkable for its words. It was remarkable for its hiding — the care it had taken to cut the spine, to slip the envelope inside, to place the book back on the shelf with the rest of the children's stories, waiting. A man had folded his heart into a fairy tale and left it for someone who would not come for eleven years.
+That night she sat on the floor of her studio apartment with the book in her lap and a glass of pinot that had gone warm while she read the page again and again. The city outside was loud — sirens on Geary, music from the apartment below, the neighbour's dog barking at something no one else could hear. But inside her apartment, the silence was different. It was not empty. It was held. She understood something then she could not have articulated before: grief does not get smaller. It gets more articulate. It learns how to speak in the language of the person who left.
 
-She thought of Thomas: farmer, botanist, a man who had lived in the northern fields and died in the Third Dust Storm. She had heard his name in passing — a footnote in a geology lecture, a man who had stayed in the field too long because he refused to abandon his crops. She had never thought of him as someone who wrote love letters.
+She should have left the book on her shelf and forgotten it. Instead, she sat at her desk with a fresh notebook — real paper, Moleskine, the kind with the elastic band that holds it closed — and copied the four sentences onto the first page. Then she wrote beneath them: "I am not mapping goodbye. I am mapping the space that goodbye left behind."
 
-Maren went to the archive the next morning. Her hands were still shaking when she pulled the circulation records and found Thomas Voss — T. Voss — listed under twelve checkouts over eight years. Lira Voss — L. Voss — had checked out the same books, year after year, after he was gone: *The Little Prince*. Rumi. A cello method book. A field guide to Martian plants.
+She underlined the sentence twice.
 
-They had been borrowing the same books, from the same shelf, separated by years.
+The next morning, at the café where she wrote every day from eight to noon, a woman at the next table was crying into her latte. Maren watched her for a full minute — the way her shoulders shook, the way her hand hovered over her phone without touching it, the way the foam on her drink dissolved into a brown smear while she tried to decide whether to call someone who would not answer. Maren reached across the gap between their tables and placed a napkin beside the woman's cup. The woman looked up, startled, then nodded. She did not speak. She did not need to. The napkin said what words could not.
 
-The realization hit her in the chest like a hand. She leaned against the microfiche reader, her breath catching, and for a moment she could not tell whose grief was hers — Thomas's, Lira's, or her own mother's, who had died when Maren was eight and left behind a half-finished scarf and a drawer of pressed flowers and no voice Maren could remember.
+Maren wrote in her notebook: "Day One. I offered a napkin. It was not enough. It was also everything."
 
-She tagged the hollow book with a special notation and placed it in the conservation queue. The drawer stuck. She had to pull hard. When she closed it, her hands were shaking. She did not know why. The letter was not hers. It had not been written to her. But something in its quiet certainty had reached across the decades and touched a part of her she had kept carefully sealed — the part that wanted to be found, the part that wanted to leave something behind that would outlast the silence.
+She had been mapping absences professionally for five years — the gaps in census records, the empty lots where buildings had stood, the streets whose names had been changed and forgotten. But this was different. This was not cartography as documentation. This was cartography as witness. She closed her notebook, looked out at the café window, and understood that she had been doing the wrong kind of map her entire career. The territory mattered. But the space between territories — the silence between buildings, the gap between census counts, the pause before someone says goodbye — that was where the real geography lived.
 
-That afternoon, Ralph found her at the return bins. He was holding a cup of tea that had gone cold an hour ago, his glasses askew, his eyes bright behind cracked lenses.
+She went home early. She sat on the floor with the hollow book and the Moleskine open side by side. She wrote: "The hollow book is not empty. It contains the shape of whatever was removed. That shape is the map."
 
-"You found the hollow book," he said.
+She underlined it three times.
 
-Maren tensed. Protocol said: leave archived items where they are, notify the archivist, do not investigate personal artifacts. She had violated protocol the moment she read the letter.
+That night, she dreamed of a city made entirely of corridors — rooms without doors, hallways that doubled back on themselves, staircases that descended into rooms she had already been in. In the dream, she was carrying the hollow book. She kept putting it down and finding it again, in a different corridor, with the same four sentences waiting inside, as if the book were teaching her that loss is not a destination but a labyrinth — and that the way out is not forward but inward.
+
+She woke at four in the morning. The city was quiet. She wrote the dream into her notebook. Then she wrote beneath it: "I am afraid this story is going to hurt. I think that is why it must be told." """,
+
+    "ch02.txt": r"""Chapter 2: The Thursday Dusk
+
+She went to the café on Valencia because the return address said Valencia, because Thursday at dusk was the only time the sun came through the front window at an angle that turned the espresso machines bronze, because she had nothing better to do and everything to find.
+
+The café had been there since before she moved to the city. It was the kind of place where the tables were wobbly, the chairs had been stitched in three places, and the espresso was strong enough to strip paint. The owner, a woman named Rosa who had immigrated from Valencia thirty years earlier and named the café after the neighbourhood she had left, always put a small glass of water on the table before the coffee arrived. She did this without asking. She had done it for Maren every Thursday for six months, as if she knew that Maren was the kind of person who needed to be given something before she could receive anything else.
+
+Elias sat in the corner, his back to the door, reading a newspaper printed in a language Maren did not recognise. He was older than she had expected — seventy, perhaps, with white hair that fell across his forehead in a way that suggested he had stopped cutting it at some point in the last decade and never resumed. He wore a grey cardigan with fraying cuffs. On the table beside him sat a wooden flute case, the varnish worn to the colour of tobacco.
+
+She stood in the doorway for a full minute, holding the hollow book against her chest, and felt the peculiar lightness of someone who is about to meet the author of something that has been haunting them for three weeks. Her hands were steady. Her breath was even. The book was heavier than leather and paper should be, as if it contained not letters but gravity.
+
+He looked up. He put down the paper. He smiled — not with his mouth, but with the crinkles around his eyes, the way people smile when they have been expecting you for a long time without knowing your name.
+
+"You brought it," he said.
 
 "I did."
 
-"Thirty-two of them." He was not surprised. He had been waiting for this. "I've been collecting them for eleven years. Thirty-two hollow books, thirty-two letters, hidden by a man who knew he was going to die in a dust storm." He paused, his voice softening. "Lira never found the last one. She died last winter without ever knowing he said the things he couldn't say out loud."
+He gestured to the chair opposite him. She sat. The book felt heavier on the table, as if it knew it was home.
 
-Maren stared at him. "How do you know?"
+"Three years," Elias said. "I left it in a bookshop on Haight Street once a week for six months. The shopkeeper told me no one had touched it. I almost gave up. Then you walked in."
 
-"Because I found them all. I just never found the right person to tell." He smiled — crooked, tired, the smile of a man who had carried a secret for eleven years and was finally setting it down. "I think that person might be you."
+"I was looking for poetry," Maren said.
 
-The wind pressed harder against the dome, a deep, hollow sound that resonated in the floor and in Maren's chest. She thought of Thomas in his field hut, writing by lamplight while the planet tried to get in. She thought of Lira, coming to the library every Sunday, searching for something she could not name.
+"I know. The shopkeeper said you browsed the Victorian section for twenty minutes, left, came back, picked up three different books, put them down, and then walked to the back shelf where I had placed the notebook. He said you had the face of someone who was not looking for anything specific but would know it when they found it."
 
-She thought of the letter, safe now in her pocket, its words still warm.
+She did not know how to respond. The truth — that she had been mapping absences professionally for five years, that she had developed a habit of noticing what was missing from spaces before she noticed what was present — seemed too intimate for a first meeting, too close to the kind of honesty Elias had spent twenty-three years perfecting in the letters she had read.
 
-"Show me," she said.
+Instead, she opened the book. She turned to the four sentences. She read them again. The ink was faded in spots, as if the pen had been running dry, as if the writer's hand had been trembling.
+
+Elias reached across the table and touched the corner of the page with his index finger — a gesture so gentle it might have been a caress. "I wrote that in February. The month my wife learned she had six months to live. She asked me not to tell anyone. I told her I would honour that by writing to her instead of speaking. The letters became our last conversation — not because she read them, but because they kept her alive in the only way I knew how: by refusing to let her absence be silent."
+
+Maren understood then. The hollow book was not a suicide note. It was a love letter written in the language of endurance. Elias had not been saying goodbye. He had been saying: I am still here. I am still loving. I am still mapping the space you left behind, because to stop mapping would be to let the space disappear.
+
+She closed the book and looked at him.
+
+"Can I finish it?" she asked.
+
+He was quiet for a long time. The café's espresso machine hissed. A group of students laughed at the counter. Outside, a cyclist rang a bell. The sun moved across the window and touched the flute case with a stripe of gold, illuminating the crack in the varnish where the wood had split and been repaired with something darker than the original finish.
+
+"I have been writing to her for three years," Elias said. "I do not know how to stop. But I also do not know how to do it alone."
+
+"Then we will do it together," Maren said. It was the first time she had spoken the words "we" in any context other than a classroom or a conference room. It tasted strange. It tasted right.
+
+Rosa came with the coffee. She did not interrupt them. She set the cups down, added water to Maren's glass, and went back to the counter. The gesture was small. It was the first kindness anyone had shown them in what felt like a very long time. """,
+}
+
+# Continue appending remainders with additional logic omitted here for brevity. Use ch03-ch... Continue rest of chapter texts as subsequent write_file chunks then build PASTE_ALL_CHAPTERS_EN.txt and push.
