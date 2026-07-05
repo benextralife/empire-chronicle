@@ -4,13 +4,13 @@ One year after the tremors, Maren climbed the ridge above Elysium Station with a
 
 She stood at the ridge's edge and looked out. The Tharsis bulge had sunk another forty meters in twelve months. The Gates remained dark, their blue light replaced by the dull gray of dormant crystal. The aquifers were at twenty-two percent and falling. The atmosphere outside was still too thin to breathe, still too rich in iron oxide, still the color of old blood.
 
-Lira joined her at the edge, carrying a portable sensor unit. She had taken over the medical bay after the tremors, turning it into a full-time rehabilitation center for stress-related disorders caused by the crisis. She looked healthier now, less haunted.
+Lira joined her at the edge, carrying a portable sensor unit. She had taken over the medical bay after the tremors, turning it into a full-time rehabilitation center for stress-related disorders caused by the crisis. She looked healthier now — less haunted, less tight around the eyes, carrying the kind of calm that comes from having stared at death for months and decided to keep working.
 
 "You know what the weirdest part is?" Lira said, setting up her equipment. "Earth hasn't asked for a full status report in six months. They just send supplies and thank us for the Mars Protocol documentation. I think they're embarrassed."
 
 "Embarrassed?"
 
-"They built the damn Gates," Lira said. "Or their ancestors did. They don't want to be reminded that the gift was a theft."
+"They built the damn Gates. Or their ancestors did. They don't want to be reminded that the gift was a theft." Lira turned to face the plain. Her breath fogged in the thin air. "My father says we should be grateful. The Gates bought us two hundred years. That's something."
 
 Maren nodded. She had been thinking about the Architects a lot lately. Their song had saved humanity from the Void Walkers, but it had also condemned Mars. The Gates were not evil. They were indifferent. They did exactly what they were designed to do: extract energy from the nearest available source. The Architects had known Mars was dying. They had simply chosen to hasten the end.
 
@@ -20,11 +20,11 @@ Maren nodded. She had been thinking about the Architects a lot lately. Their son
 
 "Is that so bad?"
 
-"Hope is not a survival strategy." Maren paused. "But it is a survival tool. I've learned that."
+"Hope is not a survival strategy." Maren paused. The wind was colder than she expected, slicing through her jacket, and she pulled her collar higher. "But it is a survival tool. I've learned that."
 
-They stood in silence for a long watch, watching the dust drift across the plain. Somewhere below, a construction crew was welding a new habitat module frame. The sound carried faintly up the ridge, a metallic tang in the thin air.
+They stood in silence for a long watch, watching the dust drift across the plain. Somewhere below, a construction crew was welding a new habitat module frame. The sound carried faintly up the ridge — metallic, sharp, a sound that meant someone was still building, still hoping, still refusing to let the red dust win.
 
-"Earth Control sent another message this morning," Lira said after a while. "They want us to send a representative to Luna. To present the Mars Protocol at the next Architects' symposium."
+"Earth Control sent another message this morning." Lira's voice was quieter now, almost hesitant. "They want us to send a representative to Luna. To present the Mars Protocol at the next Architects' symposium."
 
 "Who are they sending?"
 
@@ -32,9 +32,9 @@ They stood in silence for a long watch, watching the dust drift across the plain
 
 Maren shook her head. "I'm not a diplomat."
 
-"You're not a scientist either. But here we are."
+"You're not a scientist either." Lira's smile turned sad. "But here we are."
 
-She thought about it. Luna. Earth. A chance to tell the story of Mars to people who had only ever seen it as a red dot in the sky. A chance to make sure the Architects' theft was remembered, not glorified. A chance to tell the truth about what survival actually cost.
+She thought about it. Luna. Earth. A chance to tell the story of Mars to people who had only ever seen it as a red dot in the sky — a curiosity, a tragedy, a resource to be mined. A chance to make sure the Architects' theft was remembered, not glorified. A chance to tell the truth about what survival actually cost.
 
 "Okay," she said. "I'll go."
 
@@ -49,3 +49,23 @@ She told them: We do not hate you for what you took. We only ask that you rememb
 Outside, the red dust drifted downward, settling on the ridge, on the dome, on the silent Gates. Mars was still dying. But it was no longer singing alone.
 
 Somewhere in the dark between the stars, the Void Walkers listened. And for the first time in two hundred million years, they did not move.
+
+The descent back to Elysium was quieter than the ascent. The geological team rode in a different rover, their tools stowed, their faces drawn from twelve hours of mapping fractures that looked like wounds. Maren sat beside Lira in the passenger cabin, watching the landscape slide past — the same red dust, the same scarred volcano, the same endless indifference that she had been studying for three years and still could not name.
+
+"Earth Control wants you to present the Mars Protocol at the Architects' symposium," Lira said, breaking the silence. She passed Maren a datapad. The message was short, formal, signed by a diplomat whose name Maren did not recognize. He had asked for a forty-minute presentation, a technical summary, a Q&A session. He had not asked for a story.
+
+"I'm not a diplomat," Maren said.
+
+"No. But you are the only person who understands what the protocol actually means." Lira's voice was gentle, almost amused. "Do you know what they call it on Luna? The Elysium Miracle. They think we stopped the collapse with a switch. They don't know about the three habitat modules that fell before the Gates went dark. They don't know about the aquifers draining faster every day. They don't know that twelve thousand people are living on borrowed time."
+
+Maren nodded. She had been thinking about the gap between what people saw and what was actually happening. The gap was wider on Luna than anywhere else. Luna was wealth, and privilege, and the comfortable distance of people who did not have to watch their world die in real time.
+
+"I'll go," she said.
+
+Lira smiled. "I knew you would."
+
+Returning to the ridge the next morning, Maren placed a small stone on the cairn the team had built — a marker for the fracture line, a monument to the slow death of a planet. She touched the rock with both hands. It was cold, smooth, older than the domes, older than the Gates, older than the people who had come to Mars believing they were saving it when all they had ever done was borrow it.
+
+She thought about the Architects, their Gates, their song across a hundred star systems. They had left behind a legacy of bridges and thefts. They had left behind a species of architects who would inherit their machines and their guilt, who would stand on a dying planet and wonder if survival was a virtue or a wound.
+
+Somewhere in the dark between the stars, the Void Walkers listened. For the first time in two hundred million years, the silence between them was not empty.

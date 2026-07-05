@@ -2,17 +2,19 @@ Chapter 1: The Dust Reports
 
 The first sign that Mars was dying came from the atmospheric sensors at Elysium Station, where seventeen-year-old Maren Voss worked the midnight watch. Her job was mostly routine: monitor particulate counts, log pressure differentials, forward anomalies to Earth Command. Mars had been dying for centuries. Everyone knew that. The question was whether this night would be the night it finished.
 
-She sipped her coffee and stared at the main display. The colony's atmospheric recyclers hummed their steady, reassuring song, processing the thin Martian air into something breathable for twelve thousand people. Outside the dome, the real Mars waited — cold, red, and utterly indifferent to human survival. Maren had grown up with the story of the Founding Fathers, the brave pioneers who had turned a dead world into a home. She had never questioned that story until tonight.
+She sipped her coffee. It had gone cold at 03:00 and reheated twice since, each pass through the dispenser stripping away more flavor, leaving something brown and bitter that tasted of the plastic it sat in. She stared at the main display. The colony's atmospheric recyclers hummed their steady, reassuring song, processing the thin Martian air into something breathable for twelve thousand people. The hum was so constant she no longer heard it — until it changed, which it never did, which was the problem.
 
-The particulate count in the northern hemisphere spiked by forty percent in six hours. Not a dust storm — those were common, tracked, predictable. This was something else: microscopic iron oxide particles lofted by seismic activity, not wind. The ground was shaking itself apart.
+Outside the dome, the real Mars waited. Cold. Red. Utterly indifferent to human survival. Maren had grown up with the story of the Founding Fathers — the brave pioneers who had turned a dead world into a home. She had never questioned that story until tonight, when the numbers on her screen started telling a different one.
+
+The particulate count in the northern hemisphere spiked by forty percent in six hours. Not a dust storm — those were common, tracked, predictable, arriving with the precision of a scheduled train. This was something else: microscopic iron oxide particles lofted by seismic activity, not wind. The ground was shaking itself apart.
 
 Maren pulled up the geological overlay. Tharsis bulge was showing anomalous readings across three separate monitoring stations. The pattern was wrong — isolated tremors, not a spreading wave. Something was focusing the energy, concentrating it like a fist around the planet's broken heart.
 
-She crossed the room to the seismic station and zoomed in on the raw data. The readings were unmistakable: mantle displacement, crustal stress, and a recurring harmonic signature that matched nothing in her reference database. It was not natural. Or rather, it was not natural anymore. The natural balance had been disrupted so long ago that the new normal had become invisible, like a fish not noticing the water until it starts to burn.
+She crossed the room to the seismic station and zoomed in on the raw data. The readings were unmistakable: mantle displacement, crustal stress, and a recurring harmonic signature that matched nothing in her reference database. It was not natural. Or rather, it was not natural anymore. The natural balance had been disrupted so long ago that the new normal had become invisible — like a fish not noticing the water until it starts to burn.
 
 Her comm badge buzzed. "Maren? Earth Control. We see your readings. Come online."
 
-She touched the badge. "I see them too. It's not atmospheric. It's lithospheric. The particles are pure surface material, lofted by seismic activity, not wind. Something is grinding the crust."
+She touched the badge. The metal was cold against her temple. "I see them too. It's not atmospheric. It's lithospheric. The particles are pure surface material, lofted by seismic activity, not wind. Something is grinding the crust."
 
 Silence. Then: "Explain the pattern."
 
@@ -20,19 +22,33 @@ Silence. Then: "Explain the pattern."
 
 "Cascading failure mode," Earth Control said. "Notify Director Hale immediately."
 
-"Noted." Maren stayed on the line for another ten minutes, answering questions, defending her methodology, sending raw data packets. When the transmission ended, she sat back in her chair. The dome's life-support hummed reassuringly, a reminder that most people preferred not to think about what happened if the hum stopped. Mars had taught humanity two brutal lessons: that planets could die, and that survival was a choice made every single morning.
+"Noted."
+
+Maren stayed on the line for another ten minutes, answering questions, defending her methodology, sending raw data packets. When the transmission ended, she sat back in her chair. The dome's life-support hummed reassuringly, a reminder that most people preferred not to think about what happened if the hum stopped. Mars had taught humanity two brutal lessons: that planets could die, and that survival was a choice made every single morning.
 
 She opened the incident log and began typing. She described the particle distribution, the seismic pattern, the harmonic signature that should not exist. Outside, the dust swirled thicker across the red plain, and the soil sang its final song — a low, grinding vibration that only the sensors could hear, a sound so deep it registered more as pressure than noise, as if the planet itself were clearing its throat.
 
 At the end of her shift, Maren stood at the observation window and looked out at Olympus Mons, barely visible through the dust. The ancient volcano loomed like a sleeping giant, its flanks scarred by time and gravity. She had visited the Gate once as a child, on a school field trip. The blue light had pulsed gently then, almost peacefully. Now she wondered what it was really doing down there, pumping energy from a core that could no longer sustain the theft.
 
+She touched the cold glass. Her reflection looked back at her — tired, twenty-three, a woman who had spent her whole life learning to read the language of rocks. She wondered if Thomas Voss had stood at this same window, looking at the same mountain, feeling the same weight. She wondered if he had known, back then, that the Gate was not a gift.
+
+She pushed off the window and went home.
+
+She thought of the Founders' stories — the brave ones who had landed on this rusted rock with nothing but willpower and a few tonnes of pressurised steel. Mission videos showed them waving at cameras, their breath visible in the dome air, their eyes bright with the certainty of pioneers. Mission textbooks called it the turning point in human history. Maren had called it a PR campaign. The Founders hadn't been brave, not really. They'd been desperate. Running out of options on a planet that had been dying for centuries.
+
+The observatory dome had a scratch across the transparency that dated back to the First Storm, a faint white line running from the north edge to the center like a judgement. Maren ran her finger along it occasionally when no one was looking, feeling the roughness of the diamond-glass where the sand had scoured it. It was the only place on Mars where the planet's violence was still visible — every other surface had been repaired, polished, smoothed into compliance. The scratch said: I was here first. I will be here after.
+
+She pushed off the glass and went to the staff room. The coffee machine was already humming, its interior lights glowing behind the plastic, the pot half-empty from the night shift workers. She poured a fresh cup, added exactly one measure of sweetener, and sat at a table near the window where she could watch the dust storm arrive. It would be here in ninety minutes. The preview screens showed it already — a brown wall moving across the plain with the patience of something that knew it would swallow everything eventually.
+
+Maren had a notebook. It was the only thing she had brought from Earth, the only thing that was truly hers, filled with pressed samples of Martian rock, sketches of mineral formations, and notes written in a handwriting her mother had once said was too precise for a child who wanted to climb mountains. She opened it now, to the last page, and wrote the date: 17 October 2187. Below it, in the margin, she drew a line. A breath mark. Like music. Like waiting.
+
 Chapter 2: Director Hale
 
-Director Hale read the seismic report twice before he called Maren to his office. His office was a converted storage closet on Level 3, crammed with datapads, geological surveys, and a single framed photograph of Earth's coastlines — blue and green, designed to remind anyone who looked at it that there had once been a choice, that the universe had not always narrowed down to red dust and recycled air.
+Director Hale's office was a converted storage closet on Level 3, crammed with datapads, geological surveys, and a single framed photograph of Earth's coastlines — blue and green, designed to remind anyone who looked at it that there had once been a choice, that the universe had not always narrowed down to red dust and recycled air. The frame was cracked. The glass had a smudge in the corner. Maren had seen Hale stare at that photograph for long minutes during meetings, seeing something she could not.
 
 "Maren." He did not stand. He gestured at the empty chair opposite his desk. "You wrote this?"
 
-She nodded.
+She nodded. Her hands were still cold from the walk down the corridor — the dome's climate control was always a few degrees too low after midnight, a concession to the machinery that ran hot.
 
 "I want you to walk me through it."
 
@@ -42,69 +58,69 @@ He listened without interrupting, his face growing grimmer with each sentence. W
 
 "How long?" he asked.
 
-"Best estimate: three days before the domes start experiencing structural stress. Seven days before the atmospheric pressure exceeds safe operating limits. Two weeks before the aquifers become undrinkable." Maren paused. "If the seismic activity continues at this rate."
+"Best estimate: three days before the domes start experiencing structural stress. Seven days before atmospheric pressure exceeds safe operating limits. Two weeks before the aquifers become undrinkable." She paused. "If the seismic activity continues at this rate."
 
 Hale turned. "It will continue. Geological momentum is not something we can stop with a vote or a prayer."
 
 "Then we evacuate."
 
-"To where?" Hale's voice was not cruel, merely factual. He had asked himself this question a hundred times, she realized, and still had no answer. "Earth? The Belt? Luna? We have no ships large enough to move twelve thousand people safely. And even if we did, no one is going to accept twelve thousand refugees with no resources and no welcome. Mars was supposed to be the future. No one wants the past showing up on their doorstep."
+"To where?" Hale's voice was not cruel, merely factual. He had asked himself this question a hundred times, Maren realized, and still had no answer. "Earth? The Belt? Luna? We have no ships large enough to move twelve thousand people safely. And even if we did, no one is going to accept twelve thousand refugees with no resources and no welcome. Mars was supposed to be the future. No one wants the past showing up on their doorstep."
 
 Maren felt a coldness that had nothing to do with the dome's regulated temperature. She had grown up on Mars, like everyone her age. Earth was a photograph, a story, a myth. Luna was for rich tourists. The Belt was for criminals and engineers. There was nowhere to go.
 
 "Then we fix it," she said.
 
-Hale laughed, short and sharp. "Fix a planet? We built a few domes and drilled a few wells. We don't fix planets. We don't even understand them."
+Hale laughed, short and sharp, the kind of laugh that comes from a man who has heard every option and rejected them all. "Fix a planet? We built a few domes and drilled a few wells. We don't fix planets. We don't even understand them."
 
-He sat back down and pulled up a screen. "Your data confirmed what I already suspected. The Tharsis event is not a quake. It's a collapse. The mantle beneath the bulge is draining into the core, causing the crust to subside. It's been happening for millennia, but the rate has accelerated since the Gates opened."
+He sat back down and pulled up a screen. The data scrolled — layer upon layer of seismic projections, thermal maps, basin models. "Your data confirmed what I already suspected. The Tharsis event is not a quake. It's a collapse. The mantle beneath the bulge is draining into the core, causing the crust to subside. It's been happening for millennia, but the rate has accelerated since the Gates opened."
 
 Maren frowned. "The Gates?"
 
-"You know about the Architects." Hale's voice dropped. "The Gates they left on Mars are not just doorways. They're pumps. The Architects were drawing energy from the planet's core — enough to power interstellar travel for millions of years. They depleted it. Mars didn't die of natural causes. It was bled dry."
+"Ask your father," Hale said. He did not say more.
 
-The room felt very small. Maren thought of the blue Gates, pulsing with harmonic light near Olympus Mons, beautiful and terrible and completely out of human control. She had been raised to believe the Gates were humanity's greatest inheritance. Now she understood they were its executioner.
+Maren left the office with more questions than answers. In the corridor, she met Lira — Hale's daughter — coming out of the medical bay with a stack of charts and the same tight expression Maren had seen on Hale's face. Lira had been Maren's closest friend since childhood. They had grown up together in the Elysium Academy dorms, shared a dorm room for six years, studied geology and medicine side by side.
 
-"How long?" she asked again.
+"Earth's sending a fleet," Lira said before Maren could speak. "Not to evacuate. To assess. They want to know if Mars is still worth saving."
 
-Hale looked at the seismic readout. "Two weeks until the first dome breaches. Three until this entire region becomes uninhabitable."
+"Save it from what?"
 
-"Then we tell them. The colony. We give everyone a choice."
+"From itself."
 
-Hale shook his head. "Panic kills more people than geology. I cannot allow that."
+The silence after Hale's question stretched thin. Maren stood in the doorway, her badge still buzzing faintly in her palm, and watched the man she had once admired from a distance — the Director who survived the Third Storm, who negotiated with Belt syndicates while his colony starved, who had kept Elysium alive for twenty-two years — become something very small and very human in the harsh task-light of his office.
 
-"People deserve to know."
+She turned to leave. At the door, she paused. The photograph on the wall had caught her eye for the first time — not the once-green coastlines she had seen a hundred times before, but the crack in the glass, running diagonally across the Atlantic, as if the planet itself had been a wound even before the Architects. She wondered when Hale had stopped looking at it. Whether he had stopped yet.
 
-"People deserve to survive." Hale leaned forward. "I need you on my team, Maren. Not because you're my daughter's friend. Because you understand what's happening better than any of my senior staff. Help me manage the crisis. Quietly. Protocol by protocol."
+Outside, the corridor was colder than usual. The dome's climate control had been fighting dust infiltration for weeks, and the recycled air carried a faint metallic tang she had learned to recognize as the first sign of a seal failure somewhere deep in the western quadrant. She walked past the medical bay, where a nurse was unloading supplies from a supply drone, past the hydroponics level, where the tomato plants were wilting from the stress, past the children's dormitory, where a group of eight-year-olds were playing a game called "Dust Storm" that involved rolling themselves in blankets and screaming.
 
-Maren looked at the framed photograph of Earth on his wall. She thought of her own family, buried in the domes of Elysium, who believed Mars would outlive them. She thought of the red dust outside, singing its song of collapse. She thought of Hale's eyes, pleading and terrified behind the Director's mask.
+She found Lira coming out of her office, holding a stack of medical reports and wearing the same brown cardigan she had worn every day since the tremors began. Lira was forty-two, ten years Maren's senior, a woman who had raised a child on Mars and managed a medical bay full of people who were scared of the dark. Her hands were steady. Her face was calm. Her eyes were not.
 
-She nodded. "I'll help."
+"Earth's sending a fleet," Lira said before Maren could speak. "Not to evacuate. To assess. They want to know if Mars is still worth saving."
+
+"Save it from what?"
+
+"From itself."
 
 Chapter 3: The Aquifer
 
 They found the aquifer dying on the fifth day.
 
-It was Maren's idea to push the seismic imaging deeper, past the crust and into the mantle shear zones. The data was messy — Mars had not been mapped with this precision before — but she saw the pattern before Hale did. A vast pocket of water, left over from the planet's wet youth, was draining into a fracture network that extended all the way to the Gates.
+It was Maren's idea to push the seismic imaging deeper, past the crust and into the mantle shear zones. The data was messy — Mars had not been mapped with this precision before, every reading a guess layered on top of another guess — but she saw the pattern before Hale did. A vast pocket of water, left over from the planet's wet youth, was draining into a fracture network that extended all the way to the Gates.
 
-"It's not just the surface," she said, showing Hale the three-dimensional model. "The water is being drawn down, faster than the Gates can use it. Something is accelerating the draw. A resonance pump, maybe. The Architects designed their machines to last millions of years, but they assumed the planet would remain intact. Now the planet is collapsing, and the Gates are pulling harder to compensate, like a dying heart beating faster and faster until it stops."
+She pulled up the three-dimensional model on the main screen. The aquifer appeared as a blue vein spreading across the northern basin, fragile and vast, its edges already receding. The fracture points glowed red where the water was escaping. There were twelve of them. All leading toward Olympus Mons.
 
-Hale stared at the model. "How much water is left?"
+"It's not just the surface," she said, her voice quieter than she intended. "The water is being drawn down. Faster than the Gates can use it. Something is accelerating the draw. A resonance pump, maybe. The Architects designed their machines to last millions of years, but they assumed the planet would remain intact. Now the planet is collapsing, and the Gates are pulling harder to compensate — like a dying heart beating faster and faster until it stops."
 
-"Forty percent of what we started with. And the rate is increasing. Within a month, the aquifers will be at thirty percent. By then, the recycling systems won't be able to keep up with demand. The dome atmosphere will start degrading within another month after that."
+Hale stared at the model. His reflection was superimposed over the dying aquifer — a man watching his world disappear in blue and red. "How much water is left?"
 
-Hale's jaw tightened. "And the evacuation plan?"
+"Forty percent of what we started with. And the rate is increasing. Within a month, the aquifers will be at thirty percent. By then, the recycling systems won't keep up with demand. The dome atmosphere will start degrading within another month after that."
+
+Hale's jaw tightened. A muscle jumped in his cheek. "And the evacuation plan?"
 
 "We have identified four ships that can carry two thousand people each. That's eight thousand. We're twelve thousand. We can leave four thousand."
 
 "We're not leaving anyone." Hale's voice was iron. "Find another way."
 
-"There is no other way. The mathematics of survival are not subject to negotiation. You cannot fit twelve thousand people into eight thousand seats. No amount of engineering changes that."
-
-"Then build one."
-
-Maren stared at him. She had respected Hale for his calm, his precision, his refusal to panic. Now she saw something else beneath the composure: a man who had spent twenty years pretending the future was manageable, that Mars was just another problem to be solved with enough will and enough data. Geology did not care about will. It cared about thermodynamics, and thermodynamics always won.
-
-"Director," she said carefully, "the aquifers are already compromised. The atmospheric pressure is rising. The dome seals will fail in twelve days if the seismic activity doesn't stop. And there is no force on Earth or Mars that can stop it. You cannot engineer your way out of a planet's death."
+"Director." Maren kept her voice level, though her hands had started shaking. "The aquifers are already compromised. The atmospheric pressure is rising. The dome seals will fail in twelve days if the seismic activity doesn't stop. And there is no force on Earth or Mars that can stop it. You cannot engineer your way out of a planet's death."
 
 Hale was silent for a long time. Outside the window, a mining crawler moved across the plain, its headlights cutting through the perpetual twilight of the dome's inner world. Somewhere in the distance, a compressor kicked on, part of the endless machinery that kept the air breathable. The sound was comforting and maddening at the same time — proof that life persisted, proof that persistence required constant work.
 
@@ -112,49 +128,75 @@ Hale was silent for a long time. Outside the window, a mining crawler moved acro
 
 "The Council will leak it within hours. People will panic. There will be a rush on the ships. The domes will fail faster because of the chaos. We need to control the message."
 
-"Then we tell the colony ourselves. Together. Control the narrative, control the outcome."
+"Then we tell the colony ourselves. Together." Hale looked at her, and Maren saw the exhaustion beneath the Director's mask — the tiredness of a man who had carried twelve thousand lives on his shoulders for two decades. "Control the narrative, control the outcome."
 
-Maren felt a flicker of something she had not expected: hope. Hale was right. Panic would kill people. But secrecy would kill them too, just more slowly. The only honest choice was the hard one: tell everyone the truth and let them decide how to spend their remaining days.
+Maren felt a flicker of something she had not expected: hope. Hale was right. Panic would kill people. But secrecy would kill them too, just more slowly. The only honest choice was the hardest one: tell everyone the truth and let them decide how to spend their remaining days.
 
-"When?" Maren asked.
+"When?"
 
 "Tomorrow. The Council session at dawn."
 
-She nodded and left the office. In the corridor, she met Director Hale's daughter, Lira, who was coming out of her own meeting with a stack of medical reports and the same grim expression Maren had seen on her father's face.
+She nodded and left the office. In the corridor, she met Lira, coming out of the medical bay with a stack of reports and the same grim expression.
 
 "Earth's sending a fleet," Lira said before Maren could speak. "Not to evacuate. To assess. They want to know if Mars is still worth saving."
 
-"Save it from what?" Maren asked.
+"Save it from what?"
 
 "From itself."
+
+Maren set the three-dimensional model to spin. The aquifer appeared as a blue vein spreading across the northern basin, fragile and vast, its edges already receding. The fracture points glowed red where the water was escaping. Twelve of them. All pointing toward Olympus Mons like arrows drawn by an invisible hand.
+
+She watched the fracture network expand over the last forty years of data. The rate was not constant — it was accelerating. In the first decade after the Gates opened, the aquifer lost two percent. In the second decade, four percent. Now, in the third decade, eight percent a month. The curve was exponential. The planet was not dying gently. It was dying fast.
+
+"It's not just the surface," she said, her voice quieter than she intended. "The water is being drawn down. Faster than the Gates can use it. Something is accelerating the draw. A resonance pump, maybe. The Architects designed their machines to last millions of years, but they assumed the planet would remain intact. Now the planet is collapsing, and the Gates are pulling harder to compensate — like a dying heart beating faster and faster until it stops."
+
+She could hear the hum of the recyclers in the corridor. It was getting louder lately, a sign that the system was working harder, straining to meet demand. In another month, it would be screaming.
+
+Lira looked at the model. She had a habit of tilting her head when she concentrated, the way a bird does before taking flight. "What would happen if we sealed the fractures?"
+
+"We'd need to stop the tectonic activity first. Which means stopping the Gates. Which means ending interstellar travel. Earth won't allow that. The Belt syndicates won't allow it. Half the colony won't allow it — they think the Gates are their birthright."
+
+"And the other half?"
+
+"Are already packing bags."
+
+The truth hung between them — unspoken, unavoidable: the people who understood what was happening were already choosing sides. Lira had seen it in the medical bay. People facing a terminal diagnosis did not all respond the same way. Some fought. Some withdrew. Some simply stopped speaking, as if silence could stop the clock.
+
+She turned to the data screen and pointed at a date she had circled in red. "This is when the pressure in the western dome seal crossed the threshold. This is when the recycling system will require maintenance we can't perform because the dust is too thick. This is when we run out of choices."
+
+"How long?" Hale asked again, as if the answer might have changed.
+
+"Look at the dates," Maren said. "Then look at what we have."
 
 Chapter 4: The Council Session
 
 The Council chamber was built for four hundred people. On the morning of the seismic crisis, it held every soul who could fit inside, plus another thousand crowding the corridors and stairwells, listening on speakers, watching on screens, desperate for any news that wasn't already in their heads. The air smelled of sweat, recycled oxygen, and the kind of fear that only comes when a community realizes its leaders have been lying.
 
-Director Hale stood at the podium. He looked older than Maren had ever seen him. His hands shook slightly as he adjusted the microphone, just once, as if trying to steady himself before he said the thing that would end the world as they knew it.
+Maren stood near the back. Her hands were cold. The chamber's air recyclers couldn't keep up with the crowd, and the air felt thick, humid, the way it did before a dust storm when the pressure dropped and the body sensed something the mind hadn't yet named.
 
-"People of Elysium," he began. "I have called this session to address the events of the past week. The tremors. The dust. The aquifer readings."
+Director Hale stood at the podium. He looked older than Maren had ever seen him. Not just tired — diminished, as if the weight of twelve thousand lives had started pressing him into the floor. His hands shook slightly as he adjusted the microphone, just once, as if trying to steady himself before he said the thing that would end the world as they knew it.
 
-The room was silent. A few people coughed. The ventilation system hummed.
+"People of Elysium." His voice was steady, but the microphone picked up the tremor underneath it. "I have called this session to address the events of the past week. The tremors. The dust. The aquifer readings."
 
-"We have completed our analysis." Hale's voice was steady. "The Tharsis plateau is undergoing structural collapse. The cause is the Architects' Gates, which have been drawing thermal energy from Mars's core for two hundred million years. That energy is now depleted. The mantle is destabilizing. The crust is moving. Within fourteen days, this dome will no longer be habitable."
+The room was silent. A few people coughed. The ventilation system hummed. Somewhere in the corridor, a child cried once, then was hushed.
 
-The silence broke into chaos. People shouted. Someone fainted. A woman near the front began screaming at Hale to do something, anything, to stop it. A man in the back started praying out loud, his voice rising over the cacophony like smoke. Maren pressed her back against the wall and watched, her hands trembling, as the colony unraveled in real time.
+"We have completed our analysis." Hale leaned into the microphone. "The Tharsis plateau is undergoing structural collapse. The cause is the Architects' Gates, which have been drawing thermal energy from Mars's core for two hundred million years. That energy is now depleted. The mantle is destabilizing. The crust is moving. Within fourteen days, this dome will no longer be habitable."
 
-Hale waited. When the noise subsided to a manageable murmur, he continued, his voice barely audible over the ragged breathing of twelve thousand frightened people.
+The silence broke into chaos. People shouted. Someone fainted — a woman in the third row, her face going white, her hands flying to her mouth. A man near the front began screaming at Hale to do something, anything, to stop it. Another man in the back started praying out loud, his voice rising over the cacophony like smoke. Maren pressed her back against the wall and watched, her hands trembling, as the colony unraveled in real time.
+
+Hale waited. When the noise subsided to a manageable murmur, ragged breathing replacing shouting, he continued. His voice was barely audible over the sound of twelve thousand frightened people.
 
 "We have identified four transport vessels that can evacuate approximately eight thousand people. Our current population is twelve thousand."
 
-More shouting. A man threw something — a datapad, Maren thought — that struck the podium with a crack. Security moved in. Hale held up a hand, and they stopped.
+More shouting. A man threw something — a datapad — that struck the podium with a crack. Security moved in. Hale held up a hand, and they stopped.
 
-"We are not leaving anyone behind if we can help it." Hale leaned into the microphone. "We are requesting assistance from Earth, Luna, and the Belt. We are also exploring alternative solutions, including temporary habitat expansion and emergency aquifer drilling. We will build twelve new modules before the dome collapses if we have to work around the clock to do it."
+"We are not leaving anyone behind if we can help it." He leaned into the microphone, and his voice changed — hardened, became something older and colder than the man Maren had watched carve pumpkins with the Academy children every autumn. "We are requesting assistance from Earth, Luna, and the Belt. We are also exploring alternative solutions, including temporary habitat expansion and emergency aquifer drilling. We will build twelve new modules before this dome collapses if we have to work around the clock to do it."
 
-Alternative solutions. Maren knew what he meant. Drilling into the mantle, reinforcing the crust, building new domes fast enough to matter. It was technically possible, but it would require every hand on Mars working eighteen-hour days for two weeks straight, with no guarantee of success. She also knew Hale would attempt it. He would rather die trying than admit defeat.
+Alternative solutions. Maren knew what he meant. Drilling into the mantle, reinforcing the crust, building new domes fast enough to matter. Technically possible, but requiring every hand on Mars working eighteen-hour days for two weeks straight, with no guarantee of success. She also knew Hale would attempt it. He would rather die trying than admit defeat.
 
-When the session finally ended, the Council had agreed to begin emergency construction on twelve new habitat modules, using prefabricated materials stockpiled for expansion. The work would start at dawn. No one spoke about the evacuation ships. No one mentioned that eight thousand was a hard ceiling.
+When the session finally ended, the Council had agreed to begin emergency construction at dawn. No one spoke about the evacuation ships. No one mentioned that eight thousand was a hard ceiling. The silence around that number was louder than any speech.
 
-Maren found Lira in the medical bay, supervising the sorting of emergency supplies. Lira looked up when Maren entered, her face tight with the controlled fear of someone who had spent her whole life preparing for exactly this kind of crisis.
+Maren found Lira in the medical bay, supervising the sorting of emergency supplies. Lira looked up when Maren entered, her face tight with the controlled fear of someone who had spent her whole life preparing for exactly this kind of crisis — first as a doctor, now as the daughter of the man who had just told twelve thousand people they might die.
 
 "He told them," Lira said.
 
@@ -164,65 +206,89 @@ Maren found Lira in the medical bay, supervising the sorting of emergency suppli
 
 "Of course they agreed." Maren looked around the bay. Nurses moved with efficient urgency. Respirators were stacked in crates. A row of med-bots hummed in the corner, their lights blinking soft green. "What else could they do?"
 
-"Rebel." Lira closed the datapad in her hand. "Panic. Run. Give up. Some of the outer domes are already being abandoned. People are choosing to leave rather than wait for a miracle that might never come."
+"Rebel." Lira closed the datapad in her hand. "Panic, run, give up. Some of the outer domes are already being abandoned. People are choosing to leave rather than wait for a miracle that might never come."
 
-"Can you blame them?" Maren asked.
+"Can you blame them?"
 
 "No." Lira hesitated, then reached across the distance between them and placed her hand on Maren's arm. Her touch was warm, human, and utterly insufficient against the weight of what was coming. "Neither can I. We have fourteen days. Maybe less. Build the domes, or bury the ones we have."
+
+The moment after Hale said "we are not leaving anyone behind if we can help it" was the moment Maren understood what the next two weeks would cost him. She saw it in his eyes — not the iron certainty of a man who had made a hard choice, but the quiet devastation of a man who already knew he might have to break his own promise.
+
+She watched the Council chamber empty. The crowd dispersed slowly, in clusters, in knots of families who had looked at each other across the silence and seen their own fear reflected back. A woman near the front hugged the man beside her and did not let go for a long time. A teacher she recognized from the Academy held two children by the hand and walked them toward the exit, their faces blank with something Maren could not name — shock, perhaps, or the terrible clarity of understanding too much too fast.
+
+Maren stayed at the back. She was not part of the Council. She was a junior geologist, a sensor operator, an assistant who had found something she could not unsee. But as she watched the people file out — some angry, some quiet, some already shouting into their comms about ships and plans and the future — she understood that she had done this. Her data. Her report. Her fifteen minutes with Hale that had triggered the chain of events leading to this moment. She had told the truth. The truth had set things in motion. And now twelve thousand people had to live with the consequences.
+
+Lira found her by the exit. She had been in the medical bay during the session, monitoring triage lines and emergency stockpiles, but she had seen enough on the monitors in her office to know what had happened. She looked tired. Not exhausted — that was a physical state. This was something older, something worn into the bones by years of working on Mars, by years of knowing the planet could break at any moment and choosing to stay anyway.
+
+"He told them everything," Lira said.
+
+"Everything."
+
+"And they voted to work."
+
+"Of course they voted." Maren looked at the crowd still thinning in the corridor. Some people were already carrying tools toward the construction bays, their faces set, their movements efficient. They had known what was coming for years. The silence around the eight-thousand number had told them everything they needed to know. "What else would they do?"
+
+Lira didn't answer immediately. She was looking at the crowd with the careful attention of a physician reading symptoms in a room full of patients. "Some of the outer domes are already evacuating. People on the perimeter chose not to wait for a miracle that might never come."
+
+"Can you blame them?"
+
+"No." Lira hesitated. Her hand reached out, then stopped, as if she were not sure whether touch was appropriate in this precise, devastated moment. Then she placed her palm on Maren's forearm. Her skin was warm from the medical bay's heaters. "Neither can I. Fourteen days. Maybe less. We build the domes or we bury the ones we have."
 
 Chapter 5: The Night of Tremors
 
 The tremors began at 03:00 ship time.
 
-Maren was in the operations center, reviewing the latest aquifer maps, when the floor lurched beneath her chair. Sensors screamed. She grabbed the console and held on, watching the seismograph trace a jagged red line across the screen — violent, deep, and centered directly beneath Elysium Station. The floor bucked again, harder, and a stack of datapads slid off the counter and shattered on the metal floor.
+Maren was in the operations center, reviewing the latest aquifer maps, when the floor lurched beneath her chair. Sensors screamed. She grabbed the console and held on, watching the seismograph trace a jagged red line across the screen — violent, deep, centered directly beneath Elysium Station. The floor bucked again, harder, and a stack of datapads slid off the counter and shattered on the metal floor. One of them was her presentation for the academy students. She watched its edges crumple and did not move to pick it up.
 
-"This is it," she said into the comm. "All units, report status."
+"This is it," she said into the comm. Her voice was steady, which surprised her. "All units, report status."
 
 Static. Then Hale's voice, tight with controlled panic. "Central Dome integrity at eighty-seven percent. We have micro-fractures in the western seal. Three habitat modules have already collapsed."
+
+Maren's stomach dropped. Those three modules had housed three hundred and forty people.
 
 External teams chimed in. Two more modules were showing critical structural stress. The aquifer pressure gauge dropped another two percent in ten minutes. Every second, more water was leaving the aquifer than the recycling systems could replace. The system was not just failing — it was accelerating, as if the planet were impatient to be rid of them.
 
 Then the lights went out.
 
-Emergency lighting came on immediately, amber and dim, but the main power was gone. The dome's fusion generator had been damaged by a micro-fracture in the intake shaft caused by the latest tremor. The hum that had been the colony's heartbeat for forty years was gone, replaced by the whine of backup batteries and the softer, more desperate sound of twelve thousand people breathing in the dark.
+Emergency lighting came on immediately — amber, dim, insufficient. The main power was gone. The dome's fusion generator had been damaged by a micro-fracture in the intake shaft caused by the latest tremor. The hum that had been the colony's heartbeat for forty years was gone, replaced by the whine of backup batteries and the softer, more desperate sound of twelve thousand people breathing in the dark.
 
-"Initiating backup protocols," someone shouted from the corridor. "Life support on auxiliary. Estimated runtime: seventy-two hours."
+"Initiating backup protocols." The shout came from the corridor. Maren recognized the engineer's voice — Tanaka, who had designed the dome's power redundancy. "Life support on auxiliary. Estimated runtime: seventy-two hours."
 
 Seventy-two hours. If they didn't restore main power, they would suffocate in three days — even if the dome held against the pressure.
 
-Maren ran to the seismic station. The tremors were not stopping. Each one released more dust, more heat, more water into the dying atmosphere. She pulled up the Gates data and watched the harmonic readout. The Gates were drawing power at maximum output, their blue glow visible from the surface. They were trying to compensate for the mantle collapse, but they were only making it worse — pulling more thermal energy, accelerating the draw-down, fighting a losing battle against physics.
+Maren ran to the seismic station. The tremors were not stopping. Each one released more dust, more heat, more water into the dying atmosphere. She pulled up the Gates data and watched the harmonic readout. The Gates were drawing power at maximum output, their blue glow visible from the surface even through the dust. They were trying to compensate for the mantle collapse, but they were only making it worse — pulling more thermal energy, accelerating the draw-down, fighting a losing battle against physics.
+
+She wrote the correlation in three lines. The numbers were clear. Every tremor spike matched a power surge at the Olympus Gate with a delay of four point seven seconds. The Gates were not drawing energy FROM the mantle. They were pulling AT it, stimulating it, like a finger pressing on a bruise.
 
 "Director." She found Hale in the corridor, shouting orders at a team of engineers who were trying to stabilize the fusion generator's intake shaft. The air was thick with dust and panic. "We need to shut down the Gates."
 
-Hale froze. "What?"
+Hale froze. He was covered in grease, his face streaked with it, his eyebrows white with dust. "What?"
 
-"The Gates are amplifying the seismic activity. I ran the correlation. Every tremor spike correlates with a power surge at the Olympus Gate. The Gates are pulling thermal energy from the mantle to maintain their harmonic fields. If we can deactivate them, the mantle will stabilize. Maybe not permanently, but long enough to finish the evacuation."
+"The Gates are amplifying the seismic activity. I ran the correlation. Every tremor spike correlates with a power surge at the Olympus Gate. The Gates are pulling thermal energy from the mantle to maintain their harmonic fields. If we deactivate them, the mantle will stabilize. Maybe not permanently, but long enough for the evacuation."
 
-Hale turned to her slowly. "Shut down the Gates. That is the only reason humanity has survived on Mars. The Stillness Highway. The Chorus. The entire network depends on them."
+Hale stared at her. She saw the calculation in his eyes — the distance from the Gate to the dome, the time the trip would take, the state of the rover fleet after three major tremors, the probability of reaching the control room before the next big one.
 
-"If we don't, no one survives to use them."
+"How long until the next surge?"
 
-He stared at her for a heartbeat longer. Then he nodded, once, sharp and decisive. "Get me a team. We're going to the Olympus Gate. We have until the next big tremor or the backup power dies. That gives us six hours."
+"Six hours. Based on the pulse interval."
 
-The team assembled in the airlock within twenty minutes: Hale, Maren, three engineers, and a squad of Alliance security who had been stationed at the Gate for six months. They suited up in silence. The airlock cycled. Outside, the dust was thick enough to taste, red and metallic on Maren's tongue, and the ground shuddered beneath her boots.
+He turned to the engineers. "Get a rover fueled and ready. We're going to the Olympus Gate."
 
-The rover ride to Olympus Mons took four hours through terrain that buckled and rolled like something alive. They passed three collapsed habitat modules, their hulls crumpled like discarded toys. A family of survivors waved from the doorway of a makeshift shelter, their faces smeared with red dust and terror. Hale did not slow down. There was no time to stop.
+The team assembled in the airlock within twenty minutes: Hale, Maren, three engineers, and a squad of Alliance security who had been stationed at the Gate for six months. They suited up in silence. The airlock cycled. Outside, the dust was thick enough to taste — red, metallic, alkaline — and the ground shuddered beneath Maren's boots with the persistence of a headache.
+
+The rover ride to Olympus Mons took four hours through terrain that buckled and rolled like something alive. They passed three collapsed habitat modules, their hulls crumpled like discarded toys, their airlocks gaping like mouths. A family of survivors waved from the doorway of a makeshift shelter, their faces smeared with red dust and terror. Hale did not slow down. There was no time to stop.
 
 They arrived at the Gate complex to find the entrance already cracked, the harmonic field flickering in time with the tremors. The Architects' beautiful, deadly machine was dying right along with the planet it had bled dry. The blue glow pulsed erratically, dimming and flaring like a dying heartbeat.
 
-Hale led them inside, past corridors of humming crystal, into the central chamber. The Gate itself towered above them, three glowing rings rotating slowly, casting blue shadows on the walls. The hum was so intense Maren felt it in her teeth, in her bones, in the hollow of her chest.
+Hale led them inside, past corridors of humming crystal, into the central chamber. The Gate itself towered above them — three glowing rings rotating slowly, casting blue shadows on the walls. The hum was so intense Maren felt it in her teeth, in her bones, in the hollow of her chest.
 
 "How do we deactivate it?" she asked over the noise.
 
-"The task has a manual override." An engineer pointed at a control panel half-buried in the crystal floor. "But it's a cascade sequence. Once we initiate, every Gate in the system goes dark. All twelve Gates, including the ones on Earth and Luna."
+"The task has a manual override." An engineer named Reyes pointed at a control panel half-buried in the crystal floor. "But it's a cascade sequence. Once we initiate, every Gate in the system goes dark. All twelve Gates, including the ones on Earth and Luna."
 
-Hale looked at the engineer, then at Maren. His face was set, unreadable. "Do it."
+Hale looked at the engineer, then at Maren. His face was set, unreadable. The tremor that passed through the chamber at that moment made the rings stutter, and for a second Maren thought the Gate would collapse on top of them. It didn't.
 
-The engineer knelt and began entering codes. The Gates hummed louder, then stuttered. A deep, resonant tone rolled through the chamber, dropping through registers until it was below hearing, felt only in the bones. The blue light flared once, blinding, then faded to gray. The hum died.
-
-Maren watched the seismic monitor on her wrist. The red line flattened. The tremors stopped.
-
-The silence that followed was absolute.
+"Do it," Hale said.
 
 Chapter 6: Aftermath
 
@@ -234,19 +300,21 @@ But Mars was not saved. It was merely granted a reprieve.
 
 Maren sat in the operations center three weeks after the tremors, watching the long-term projections. The Gates were dark. The mantle was stabilizing. But the aquifers were still declining, the atmosphere still thickening, the crust still inching toward catastrophe. She had stopped the acceleration, not the collapse. The math had not changed. It had only slowed down.
 
-"Earth Control congratulated us," Hale said, leaning in her doorway. He looked exhausted. The gray in his beard had multiplied since the tremors. "They want us to document the Gate shutdown procedure. They're calling it the Mars Protocol now."
+"Earth Control congratulated us." Hale leaned in her doorway. He looked exhausted. The gray in his beard had multiplied since the tremors. He was carrying a thermal mug that never left his right hand. "They want us to document the Gate shutdown procedure. They're calling it the Mars Protocol now."
 
-Maren did not look up from the screen. "We didn't save Mars. We just postponed the end. The aquifer is still draining. The crust is still moving. In twenty years, maybe thirty, we'll be back in the same position. Except without the Gates to shut down."
+Maren did not look up from the screen. She was running simulations. Every scenario ended the same way: eventually, the aquifers ran dry. Eventually, the crust collapsed. Eventually, the dome failed. The only variable was time. "We didn't save Mars. We just postponed the end. The aquifer is still draining. The crust is still moving. In twenty years, maybe thirty, we'll be back in the same position. Except without the Gates to shut down."
 
 "Some people would call that a victory." Hale sat across from her. "Twelve thousand people are alive because of what you did."
 
 "They're alive. They're also trapped on a dying planet with no water, no power, and a future that measures in decades, not centuries." Maren turned to face him. "You should have taken the evacuation. Some of those people should have left. The four ships could have carried children who would have lived full lives on Earth."
 
-"I am not abandoning my colony." Hale's voice was steel, but his eyes were wet. "And I am not abandoning Mars. There are still options. The Gates can be reactivated — carefully, with controlled draw-down limits. The Engineers from Luna have already proposed a schema. We can stabilize the mantle indefinitely."
+"I am not abandoning my colony." Hale's voice was steel, but his eyes were wet. The photograph of Earth on his wall was behind him now, out of view, and Maren wondered if he had stopped looking at it. "And I am not abandoning Mars. There are still options. The Gates can be reactivated — carefully, with controlled draw-down limits. The Engineers from Luna have already proposed a schema. We can stabilize the mantle indefinitely."
 
-"If the Gates work," Maren said. "But what if they don't? What if this was just a delay, and the next collapse comes when we're not ready?"
+"If the Gates work." Maren said nothing more. She had seen the Luna schema. It required precision engineering on a scale that human civilization had never attempted, using machines they barely understood, to fix a problem they had discovered only weeks ago.
 
-Hale was quiet. "Then we find another way. Or we build one."
+"What if they don't?" Hale asked. He had heard the doubt in her voice. "What if this was just a delay, and the next collapse comes when we're not ready?"
+
+"Then we find another way. Or we build one."
 
 He left, and Maren was alone with the projections. The numbers glowed on the screen, cold and indifferent. She pulled up the seismic data from the night of the tremors, the exact moment the Gates went silent, and watched the red line flatten into peace. For a few seconds, the planet had stopped dying. It had been the most beautiful thing she had ever seen.
 
@@ -254,9 +322,7 @@ She thought of the Architects, who had built Gates across a hundred star systems
 
 But there was no move on. Not for twelve thousand people who had nowhere else to go.
 
-Maren opened a new file and began typing. Not a report. A letter — to the engineers, the scientists, the architects of the future, anyone who would read it after Mars had finally finished dying. She described the tremors, the aquifer, the Gates, the long, beautiful, futile effort to save something that had been terminal for three billion years.
-
-She wrote for three hours, her fingers cramping, her eyes burning. At the bottom of the page, she wrote one sentence:
+Maren opened a new file and began typing. Not a report. A letter — to the engineers, the scientists, the architects of the future, anyone who would read it after Mars had finally finished dying. She described the tremors, the aquifer, the Gates, the long, beautiful, futile effort to save something that had been terminal for three billion years. She wrote with her hands shaking, her eyes burning, her coffee-cold and bitter. At the bottom of the page, she wrote one sentence:
 
 Mars did not die because we failed. Mars died because we loved it enough to stay.
 
@@ -270,19 +336,29 @@ Maren returned to her desk and opened a new document. This time, it was a propos
 
 Outside, Mars continued to die. Inside the dome, humanity continued to live. The contradiction was not a flaw. It was the entire point. For the first time since discovering the Gates, Maren understood what survival actually meant. It was not about winning. It was about refusing to lose.
 
+That evening, Maren went to the observation deck alone. The dome lights were dimmed for the scheduled sleep cycle, and the interior of Elysium looked like a seabed — corridors lit by bioluminescent strips, the suspended gardens glowing green, people moving between the levels like divers in a deep-sea station. The air smelled of artificial lemon and the faint, ever-present mineral tang of the air recyclers.
+
+She stood at the window for a long time. Outside, the red dust drifted in slow curtains, catching the dome's amber light and making the plain look almost warm, almost habitable. It was a trick of the light. Beneath the surface, the crust was still shifting. Beneath the crust, the mantle was still draining. The planet was dying in slow motion, and the dome was holding, but only barely, only with constant effort, only because twelve thousand people chose to keep the hum going.
+
+Maren thought about Hale in his office, surrounded by schematics and flags and the weight of impossible decisions. She thought about Lira in the medical bay, sorting supplies, counting bandages, preparing for a contingency that would test everything they had. She thought about the families who had boarded the evacuation ships, waving through the viewports, their children pressing hands against the glass, not understanding why they were leaving.
+
+She thought about Mars — not the dead planet of the textbooks, not the red dot in Earth's sky, but the living thing beneath her feet, still breathing, still trying, still carrying the memory of what it had been. Rivers. Forests. A sky the color of her mother's eyes. All gone now, buried under iron oxide and time, leaving behind only the faintest signatures — a mineral deposit here, a fossilised seed there, the chemical echo of water in a rock sample.
+
+Maren opened her notebook. She drew another breath mark. Then another. Then she wrote a single sentence in the margin: We are the memory of this place now. It is enough.
+
 Chapter 7: The Long Silence
 
 One year after the tremors, Maren climbed the ridge above Elysium Station with a geological survey team. The purpose was routine: map the new fracture patterns, assess long-term dome stability, document the planet's continued collapse for Earth Control. The truth was that Maren needed to see Mars the way it had been before the domes, before the Gates, before humanity had decided to make a home on a corpse.
 
 She stood at the ridge's edge and looked out. The Tharsis bulge had sunk another forty meters in twelve months. The Gates remained dark, their blue light replaced by the dull gray of dormant crystal. The aquifers were at twenty-two percent and falling. The atmosphere outside was still too thin to breathe, still too rich in iron oxide, still the color of old blood.
 
-Lira joined her at the edge, carrying a portable sensor unit. She had taken over the medical bay after the tremors, turning it into a full-time rehabilitation center for stress-related disorders caused by the crisis. She looked healthier now, less haunted.
+Lira joined her at the edge, carrying a portable sensor unit. She had taken over the medical bay after the tremors, turning it into a full-time rehabilitation center for stress-related disorders caused by the crisis. She looked healthier now — less haunted, less tight around the eyes, carrying the kind of calm that comes from having stared at death for months and decided to keep working.
 
 "You know what the weirdest part is?" Lira said, setting up her equipment. "Earth hasn't asked for a full status report in six months. They just send supplies and thank us for the Mars Protocol documentation. I think they're embarrassed."
 
 "Embarrassed?"
 
-"They built the damn Gates," Lira said. "Or their ancestors did. They don't want to be reminded that the gift was a theft."
+"They built the damn Gates. Or their ancestors did. They don't want to be reminded that the gift was a theft." Lira turned to face the plain. Her breath fogged in the thin air. "My father says we should be grateful. The Gates bought us two hundred years. That's something."
 
 Maren nodded. She had been thinking about the Architects a lot lately. Their song had saved humanity from the Void Walkers, but it had also condemned Mars. The Gates were not evil. They were indifferent. They did exactly what they were designed to do: extract energy from the nearest available source. The Architects had known Mars was dying. They had simply chosen to hasten the end.
 
@@ -292,11 +368,11 @@ Maren nodded. She had been thinking about the Architects a lot lately. Their son
 
 "Is that so bad?"
 
-"Hope is not a survival strategy." Maren paused. "But it is a survival tool. I've learned that."
+"Hope is not a survival strategy." Maren paused. The wind was colder than she expected, slicing through her jacket, and she pulled her collar higher. "But it is a survival tool. I've learned that."
 
-They stood in silence for a long watch, watching the dust drift across the plain. Somewhere below, a construction crew was welding a new habitat module frame. The sound carried faintly up the ridge, a metallic tang in the thin air.
+They stood in silence for a long watch, watching the dust drift across the plain. Somewhere below, a construction crew was welding a new habitat module frame. The sound carried faintly up the ridge — metallic, sharp, a sound that meant someone was still building, still hoping, still refusing to let the red dust win.
 
-"Earth Control sent another message this morning," Lira said after a while. "They want us to send a representative to Luna. To present the Mars Protocol at the next Architects' symposium."
+"Earth Control sent another message this morning." Lira's voice was quieter now, almost hesitant. "They want us to send a representative to Luna. To present the Mars Protocol at the next Architects' symposium."
 
 "Who are they sending?"
 
@@ -304,9 +380,9 @@ They stood in silence for a long watch, watching the dust drift across the plain
 
 Maren shook her head. "I'm not a diplomat."
 
-"You're not a scientist either. But here we are."
+"You're not a scientist either." Lira's smile turned sad. "But here we are."
 
-She thought about it. Luna. Earth. A chance to tell the story of Mars to people who had only ever seen it as a red dot in the sky. A chance to make sure the Architects' theft was remembered, not glorified. A chance to tell the truth about what survival actually cost.
+She thought about it. Luna. Earth. A chance to tell the story of Mars to people who had only ever seen it as a red dot in the sky — a curiosity, a tragedy, a resource to be mined. A chance to make sure the Architects' theft was remembered, not glorified. A chance to tell the truth about what survival actually cost.
 
 "Okay," she said. "I'll go."
 
@@ -321,3 +397,23 @@ She told them: We do not hate you for what you took. We only ask that you rememb
 Outside, the red dust drifted downward, settling on the ridge, on the dome, on the silent Gates. Mars was still dying. But it was no longer singing alone.
 
 Somewhere in the dark between the stars, the Void Walkers listened. And for the first time in two hundred million years, they did not move.
+
+The descent back to Elysium was quieter than the ascent. The geological team rode in a different rover, their tools stowed, their faces drawn from twelve hours of mapping fractures that looked like wounds. Maren sat beside Lira in the passenger cabin, watching the landscape slide past — the same red dust, the same scarred volcano, the same endless indifference that she had been studying for three years and still could not name.
+
+"Earth Control wants you to present the Mars Protocol at the Architects' symposium," Lira said, breaking the silence. She passed Maren a datapad. The message was short, formal, signed by a diplomat whose name Maren did not recognize. He had asked for a forty-minute presentation, a technical summary, a Q&A session. He had not asked for a story.
+
+"I'm not a diplomat," Maren said.
+
+"No. But you are the only person who understands what the protocol actually means." Lira's voice was gentle, almost amused. "Do you know what they call it on Luna? The Elysium Miracle. They think we stopped the collapse with a switch. They don't know about the three habitat modules that fell before the Gates went dark. They don't know about the aquifers draining faster every day. They don't know that twelve thousand people are living on borrowed time."
+
+Maren nodded. She had been thinking about the gap between what people saw and what was actually happening. The gap was wider on Luna than anywhere else. Luna was wealth, and privilege, and the comfortable distance of people who did not have to watch their world die in real time.
+
+"I'll go," she said.
+
+Lira smiled. "I knew you would."
+
+Returning to the ridge the next morning, Maren placed a small stone on the cairn the team had built — a marker for the fracture line, a monument to the slow death of a planet. She touched the rock with both hands. It was cold, smooth, older than the domes, older than the Gates, older than the people who had come to Mars believing they were saving it when all they had ever done was borrow it.
+
+She thought about the Architects, their Gates, their song across a hundred star systems. They had left behind a legacy of bridges and thefts. They had left behind a species of architects who would inherit their machines and their guilt, who would stand on a dying planet and wonder if survival was a virtue or a wound.
+
+Somewhere in the dark between the stars, the Void Walkers listened. For the first time in two hundred million years, the silence between them was not empty.

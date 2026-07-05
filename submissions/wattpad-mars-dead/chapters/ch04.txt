@@ -2,29 +2,31 @@ Chapter 4: The Council Session
 
 The Council chamber was built for four hundred people. On the morning of the seismic crisis, it held every soul who could fit inside, plus another thousand crowding the corridors and stairwells, listening on speakers, watching on screens, desperate for any news that wasn't already in their heads. The air smelled of sweat, recycled oxygen, and the kind of fear that only comes when a community realizes its leaders have been lying.
 
-Director Hale stood at the podium. He looked older than Maren had ever seen him. His hands shook slightly as he adjusted the microphone, just once, as if trying to steady himself before he said the thing that would end the world as they knew it.
+Maren stood near the back. Her hands were cold. The chamber's air recyclers couldn't keep up with the crowd, and the air felt thick, humid, the way it did before a dust storm when the pressure dropped and the body sensed something the mind hadn't yet named.
 
-"People of Elysium," he began. "I have called this session to address the events of the past week. The tremors. The dust. The aquifer readings."
+Director Hale stood at the podium. He looked older than Maren had ever seen him. Not just tired — diminished, as if the weight of twelve thousand lives had started pressing him into the floor. His hands shook slightly as he adjusted the microphone, just once, as if trying to steady himself before he said the thing that would end the world as they knew it.
 
-The room was silent. A few people coughed. The ventilation system hummed.
+"People of Elysium." His voice was steady, but the microphone picked up the tremor underneath it. "I have called this session to address the events of the past week. The tremors. The dust. The aquifer readings."
 
-"We have completed our analysis." Hale's voice was steady. "The Tharsis plateau is undergoing structural collapse. The cause is the Architects' Gates, which have been drawing thermal energy from Mars's core for two hundred million years. That energy is now depleted. The mantle is destabilizing. The crust is moving. Within fourteen days, this dome will no longer be habitable."
+The room was silent. A few people coughed. The ventilation system hummed. Somewhere in the corridor, a child cried once, then was hushed.
 
-The silence broke into chaos. People shouted. Someone fainted. A woman near the front began screaming at Hale to do something, anything, to stop it. A man in the back started praying out loud, his voice rising over the cacophony like smoke. Maren pressed her back against the wall and watched, her hands trembling, as the colony unraveled in real time.
+"We have completed our analysis." Hale leaned into the microphone. "The Tharsis plateau is undergoing structural collapse. The cause is the Architects' Gates, which have been drawing thermal energy from Mars's core for two hundred million years. That energy is now depleted. The mantle is destabilizing. The crust is moving. Within fourteen days, this dome will no longer be habitable."
 
-Hale waited. When the noise subsided to a manageable murmur, he continued, his voice barely audible over the ragged breathing of twelve thousand frightened people.
+The silence broke into chaos. People shouted. Someone fainted — a woman in the third row, her face going white, her hands flying to her mouth. A man near the front began screaming at Hale to do something, anything, to stop it. Another man in the back started praying out loud, his voice rising over the cacophony like smoke. Maren pressed her back against the wall and watched, her hands trembling, as the colony unraveled in real time.
+
+Hale waited. When the noise subsided to a manageable murmur, ragged breathing replacing shouting, he continued. His voice was barely audible over the sound of twelve thousand frightened people.
 
 "We have identified four transport vessels that can evacuate approximately eight thousand people. Our current population is twelve thousand."
 
-More shouting. A man threw something — a datapad, Maren thought — that struck the podium with a crack. Security moved in. Hale held up a hand, and they stopped.
+More shouting. A man threw something — a datapad — that struck the podium with a crack. Security moved in. Hale held up a hand, and they stopped.
 
-"We are not leaving anyone behind if we can help it." Hale leaned into the microphone. "We are requesting assistance from Earth, Luna, and the Belt. We are also exploring alternative solutions, including temporary habitat expansion and emergency aquifer drilling. We will build twelve new modules before the dome collapses if we have to work around the clock to do it."
+"We are not leaving anyone behind if we can help it." He leaned into the microphone, and his voice changed — hardened, became something older and colder than the man Maren had watched carve pumpkins with the Academy children every autumn. "We are requesting assistance from Earth, Luna, and the Belt. We are also exploring alternative solutions, including temporary habitat expansion and emergency aquifer drilling. We will build twelve new modules before this dome collapses if we have to work around the clock to do it."
 
-Alternative solutions. Maren knew what he meant. Drilling into the mantle, reinforcing the crust, building new domes fast enough to matter. It was technically possible, but it would require every hand on Mars working eighteen-hour days for two weeks straight, with no guarantee of success. She also knew Hale would attempt it. He would rather die trying than admit defeat.
+Alternative solutions. Maren knew what he meant. Drilling into the mantle, reinforcing the crust, building new domes fast enough to matter. Technically possible, but requiring every hand on Mars working eighteen-hour days for two weeks straight, with no guarantee of success. She also knew Hale would attempt it. He would rather die trying than admit defeat.
 
-When the session finally ended, the Council had agreed to begin emergency construction on twelve new habitat modules, using prefabricated materials stockpiled for expansion. The work would start at dawn. No one spoke about the evacuation ships. No one mentioned that eight thousand was a hard ceiling.
+When the session finally ended, the Council had agreed to begin emergency construction at dawn. No one spoke about the evacuation ships. No one mentioned that eight thousand was a hard ceiling. The silence around that number was louder than any speech.
 
-Maren found Lira in the medical bay, supervising the sorting of emergency supplies. Lira looked up when Maren entered, her face tight with the controlled fear of someone who had spent her whole life preparing for exactly this kind of crisis.
+Maren found Lira in the medical bay, supervising the sorting of emergency supplies. Lira looked up when Maren entered, her face tight with the controlled fear of someone who had spent her whole life preparing for exactly this kind of crisis — first as a doctor, now as the daughter of the man who had just told twelve thousand people they might die.
 
 "He told them," Lira said.
 
@@ -34,8 +36,30 @@ Maren found Lira in the medical bay, supervising the sorting of emergency suppli
 
 "Of course they agreed." Maren looked around the bay. Nurses moved with efficient urgency. Respirators were stacked in crates. A row of med-bots hummed in the corner, their lights blinking soft green. "What else could they do?"
 
-"Rebel." Lira closed the datapad in her hand. "Panic. Run. Give up. Some of the outer domes are already being abandoned. People are choosing to leave rather than wait for a miracle that might never come."
+"Rebel." Lira closed the datapad in her hand. "Panic, run, give up. Some of the outer domes are already being abandoned. People are choosing to leave rather than wait for a miracle that might never come."
 
-"Can you blame them?" Maren asked.
+"Can you blame them?"
 
 "No." Lira hesitated, then reached across the distance between them and placed her hand on Maren's arm. Her touch was warm, human, and utterly insufficient against the weight of what was coming. "Neither can I. We have fourteen days. Maybe less. Build the domes, or bury the ones we have."
+
+The moment after Hale said "we are not leaving anyone behind if we can help it" was the moment Maren understood what the next two weeks would cost him. She saw it in his eyes — not the iron certainty of a man who had made a hard choice, but the quiet devastation of a man who already knew he might have to break his own promise.
+
+She watched the Council chamber empty. The crowd dispersed slowly, in clusters, in knots of families who had looked at each other across the silence and seen their own fear reflected back. A woman near the front hugged the man beside her and did not let go for a long time. A teacher she recognized from the Academy held two children by the hand and walked them toward the exit, their faces blank with something Maren could not name — shock, perhaps, or the terrible clarity of understanding too much too fast.
+
+Maren stayed at the back. She was not part of the Council. She was a junior geologist, a sensor operator, an assistant who had found something she could not unsee. But as she watched the people file out — some angry, some quiet, some already shouting into their comms about ships and plans and the future — she understood that she had done this. Her data. Her report. Her fifteen minutes with Hale that had triggered the chain of events leading to this moment. She had told the truth. The truth had set things in motion. And now twelve thousand people had to live with the consequences.
+
+Lira found her by the exit. She had been in the medical bay during the session, monitoring triage lines and emergency stockpiles, but she had seen enough on the monitors in her office to know what had happened. She looked tired. Not exhausted — that was a physical state. This was something older, something worn into the bones by years of working on Mars, by years of knowing the planet could break at any moment and choosing to stay anyway.
+
+"He told them everything," Lira said.
+
+"Everything."
+
+"And they voted to work."
+
+"Of course they voted." Maren looked at the crowd still thinning in the corridor. Some people were already carrying tools toward the construction bays, their faces set, their movements efficient. They had known what was coming for years. The silence around the eight-thousand number had told them everything they needed to know. "What else would they do?"
+
+Lira didn't answer immediately. She was looking at the crowd with the careful attention of a physician reading symptoms in a room full of patients. "Some of the outer domes are already evacuating. People on the perimeter chose not to wait for a miracle that might never come."
+
+"Can you blame them?"
+
+"No." Lira hesitated. Her hand reached out, then stopped, as if she were not sure whether touch was appropriate in this precise, devastated moment. Then she placed her palm on Maren's forearm. Her skin was warm from the medical bay's heaters. "Neither can I. Fourteen days. Maybe less. We build the domes or we bury the ones we have."

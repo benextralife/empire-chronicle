@@ -2,52 +2,54 @@ Chapter 5: The Night of Tremors
 
 The tremors began at 03:00 ship time.
 
-Maren was in the operations center, reviewing the latest aquifer maps, when the floor lurched beneath her chair. Sensors screamed. She grabbed the console and held on, watching the seismograph trace a jagged red line across the screen — violent, deep, and centered directly beneath Elysium Station. The floor bucked again, harder, and a stack of datapads slid off the counter and shattered on the metal floor.
+Maren was in the operations center, reviewing the latest aquifer maps, when the floor lurched beneath her chair. Sensors screamed. She grabbed the console and held on, watching the seismograph trace a jagged red line across the screen — violent, deep, centered directly beneath Elysium Station. The floor bucked again, harder, and a stack of datapads slid off the counter and shattered on the metal floor. One of them was her presentation for the academy students. She watched its edges crumple and did not move to pick it up.
 
-"This is it," she said into the comm. "All units, report status."
+"This is it," she said into the comm. Her voice was steady, which surprised her. "All units, report status."
 
 Static. Then Hale's voice, tight with controlled panic. "Central Dome integrity at eighty-seven percent. We have micro-fractures in the western seal. Three habitat modules have already collapsed."
+
+Maren's stomach dropped. Those three modules had housed three hundred and forty people.
 
 External teams chimed in. Two more modules were showing critical structural stress. The aquifer pressure gauge dropped another two percent in ten minutes. Every second, more water was leaving the aquifer than the recycling systems could replace. The system was not just failing — it was accelerating, as if the planet were impatient to be rid of them.
 
 Then the lights went out.
 
-Emergency lighting came on immediately, amber and dim, but the main power was gone. The dome's fusion generator had been damaged by a micro-fracture in the intake shaft caused by the latest tremor. The hum that had been the colony's heartbeat for forty years was gone, replaced by the whine of backup batteries and the softer, more desperate sound of twelve thousand people breathing in the dark.
+Emergency lighting came on immediately — amber, dim, insufficient. The main power was gone. The dome's fusion generator had been damaged by a micro-fracture in the intake shaft caused by the latest tremor. The hum that had been the colony's heartbeat for forty years was gone, replaced by the whine of backup batteries and the softer, more desperate sound of twelve thousand people breathing in the dark.
 
-"Initiating backup protocols," someone shouted from the corridor. "Life support on auxiliary. Estimated runtime: seventy-two hours."
+"Initiating backup protocols." The shout came from the corridor. Maren recognized the engineer's voice — Tanaka, who had designed the dome's power redundancy. "Life support on auxiliary. Estimated runtime: seventy-two hours."
 
 Seventy-two hours. If they didn't restore main power, they would suffocate in three days — even if the dome held against the pressure.
 
-Maren ran to the seismic station. The tremors were not stopping. Each one released more dust, more heat, more water into the dying atmosphere. She pulled up the Gates data and watched the harmonic readout. The Gates were drawing power at maximum output, their blue glow visible from the surface. They were trying to compensate for the mantle collapse, but they were only making it worse — pulling more thermal energy, accelerating the draw-down, fighting a losing battle against physics.
+Maren ran to the seismic station. The tremors were not stopping. Each one released more dust, more heat, more water into the dying atmosphere. She pulled up the Gates data and watched the harmonic readout. The Gates were drawing power at maximum output, their blue glow visible from the surface even through the dust. They were trying to compensate for the mantle collapse, but they were only making it worse — pulling more thermal energy, accelerating the draw-down, fighting a losing battle against physics.
+
+She wrote the correlation in three lines. The numbers were clear. Every tremor spike matched a power surge at the Olympus Gate with a delay of four point seven seconds. The Gates were not drawing energy FROM the mantle. They were pulling AT it, stimulating it, like a finger pressing on a bruise.
 
 "Director." She found Hale in the corridor, shouting orders at a team of engineers who were trying to stabilize the fusion generator's intake shaft. The air was thick with dust and panic. "We need to shut down the Gates."
 
-Hale froze. "What?"
+Hale froze. He was covered in grease, his face streaked with it, his eyebrows white with dust. "What?"
 
-"The Gates are amplifying the seismic activity. I ran the correlation. Every tremor spike correlates with a power surge at the Olympus Gate. The Gates are pulling thermal energy from the mantle to maintain their harmonic fields. If we can deactivate them, the mantle will stabilize. Maybe not permanently, but long enough to finish the evacuation."
+"The Gates are amplifying the seismic activity. I ran the correlation. Every tremor spike correlates with a power surge at the Olympus Gate. The Gates are pulling thermal energy from the mantle to maintain their harmonic fields. If we deactivate them, the mantle will stabilize. Maybe not permanently, but long enough for the evacuation."
 
-Hale turned to her slowly. "Shut down the Gates. That is the only reason humanity has survived on Mars. The Stillness Highway. The Chorus. The entire network depends on them."
+Hale stared at her. She saw the calculation in his eyes — the distance from the Gate to the dome, the time the trip would take, the state of the rover fleet after three major tremors, the probability of reaching the control room before the next big one.
 
-"If we don't, no one survives to use them."
+"How long until the next surge?"
 
-He stared at her for a heartbeat longer. Then he nodded, once, sharp and decisive. "Get me a team. We're going to the Olympus Gate. We have until the next big tremor or the backup power dies. That gives us six hours."
+"Six hours. Based on the pulse interval."
 
-The team assembled in the airlock within twenty minutes: Hale, Maren, three engineers, and a squad of Alliance security who had been stationed at the Gate for six months. They suited up in silence. The airlock cycled. Outside, the dust was thick enough to taste, red and metallic on Maren's tongue, and the ground shuddered beneath her boots.
+He turned to the engineers. "Get a rover fueled and ready. We're going to the Olympus Gate."
 
-The rover ride to Olympus Mons took four hours through terrain that buckled and rolled like something alive. They passed three collapsed habitat modules, their hulls crumpled like discarded toys. A family of survivors waved from the doorway of a makeshift shelter, their faces smeared with red dust and terror. Hale did not slow down. There was no time to stop.
+The team assembled in the airlock within twenty minutes: Hale, Maren, three engineers, and a squad of Alliance security who had been stationed at the Gate for six months. They suited up in silence. The airlock cycled. Outside, the dust was thick enough to taste — red, metallic, alkaline — and the ground shuddered beneath Maren's boots with the persistence of a headache.
+
+The rover ride to Olympus Mons took four hours through terrain that buckled and rolled like something alive. They passed three collapsed habitat modules, their hulls crumpled like discarded toys, their airlocks gaping like mouths. A family of survivors waved from the doorway of a makeshift shelter, their faces smeared with red dust and terror. Hale did not slow down. There was no time to stop.
 
 They arrived at the Gate complex to find the entrance already cracked, the harmonic field flickering in time with the tremors. The Architects' beautiful, deadly machine was dying right along with the planet it had bled dry. The blue glow pulsed erratically, dimming and flaring like a dying heartbeat.
 
-Hale led them inside, past corridors of humming crystal, into the central chamber. The Gate itself towered above them, three glowing rings rotating slowly, casting blue shadows on the walls. The hum was so intense Maren felt it in her teeth, in her bones, in the hollow of her chest.
+Hale led them inside, past corridors of humming crystal, into the central chamber. The Gate itself towered above them — three glowing rings rotating slowly, casting blue shadows on the walls. The hum was so intense Maren felt it in her teeth, in her bones, in the hollow of her chest.
 
 "How do we deactivate it?" she asked over the noise.
 
-"The task has a manual override." An engineer pointed at a control panel half-buried in the crystal floor. "But it's a cascade sequence. Once we initiate, every Gate in the system goes dark. All twelve Gates, including the ones on Earth and Luna."
+"The task has a manual override." An engineer named Reyes pointed at a control panel half-buried in the crystal floor. "But it's a cascade sequence. Once we initiate, every Gate in the system goes dark. All twelve Gates, including the ones on Earth and Luna."
 
-Hale looked at the engineer, then at Maren. His face was set, unreadable. "Do it."
+Hale looked at the engineer, then at Maren. His face was set, unreadable. The tremor that passed through the chamber at that moment made the rings stutter, and for a second Maren thought the Gate would collapse on top of them. It didn't.
 
-The engineer knelt and began entering codes. The Gates hummed louder, then stuttered. A deep, resonant tone rolled through the chamber, dropping through registers until it was below hearing, felt only in the bones. The blue light flared once, blinding, then faded to gray. The hum died.
-
-Maren watched the seismic monitor on her wrist. The red line flattened. The tremors stopped.
-
-The silence that followed was absolute.
+"Do it," Hale said.

@@ -8,19 +8,21 @@ But Mars was not saved. It was merely granted a reprieve.
 
 Maren sat in the operations center three weeks after the tremors, watching the long-term projections. The Gates were dark. The mantle was stabilizing. But the aquifers were still declining, the atmosphere still thickening, the crust still inching toward catastrophe. She had stopped the acceleration, not the collapse. The math had not changed. It had only slowed down.
 
-"Earth Control congratulated us," Hale said, leaning in her doorway. He looked exhausted. The gray in his beard had multiplied since the tremors. "They want us to document the Gate shutdown procedure. They're calling it the Mars Protocol now."
+"Earth Control congratulated us." Hale leaned in her doorway. He looked exhausted. The gray in his beard had multiplied since the tremors. He was carrying a thermal mug that never left his right hand. "They want us to document the Gate shutdown procedure. They're calling it the Mars Protocol now."
 
-Maren did not look up from the screen. "We didn't save Mars. We just postponed the end. The aquifer is still draining. The crust is still moving. In twenty years, maybe thirty, we'll be back in the same position. Except without the Gates to shut down."
+Maren did not look up from the screen. She was running simulations. Every scenario ended the same way: eventually, the aquifers ran dry. Eventually, the crust collapsed. Eventually, the dome failed. The only variable was time. "We didn't save Mars. We just postponed the end. The aquifer is still draining. The crust is still moving. In twenty years, maybe thirty, we'll be back in the same position. Except without the Gates to shut down."
 
 "Some people would call that a victory." Hale sat across from her. "Twelve thousand people are alive because of what you did."
 
 "They're alive. They're also trapped on a dying planet with no water, no power, and a future that measures in decades, not centuries." Maren turned to face him. "You should have taken the evacuation. Some of those people should have left. The four ships could have carried children who would have lived full lives on Earth."
 
-"I am not abandoning my colony." Hale's voice was steel, but his eyes were wet. "And I am not abandoning Mars. There are still options. The Gates can be reactivated — carefully, with controlled draw-down limits. The Engineers from Luna have already proposed a schema. We can stabilize the mantle indefinitely."
+"I am not abandoning my colony." Hale's voice was steel, but his eyes were wet. The photograph of Earth on his wall was behind him now, out of view, and Maren wondered if he had stopped looking at it. "And I am not abandoning Mars. There are still options. The Gates can be reactivated — carefully, with controlled draw-down limits. The Engineers from Luna have already proposed a schema. We can stabilize the mantle indefinitely."
 
-"If the Gates work," Maren said. "But what if they don't? What if this was just a delay, and the next collapse comes when we're not ready?"
+"If the Gates work." Maren said nothing more. She had seen the Luna schema. It required precision engineering on a scale that human civilization had never attempted, using machines they barely understood, to fix a problem they had discovered only weeks ago.
 
-Hale was quiet. "Then we find another way. Or we build one."
+"What if they don't?" Hale asked. He had heard the doubt in her voice. "What if this was just a delay, and the next collapse comes when we're not ready?"
+
+"Then we find another way. Or we build one."
 
 He left, and Maren was alone with the projections. The numbers glowed on the screen, cold and indifferent. She pulled up the seismic data from the night of the tremors, the exact moment the Gates went silent, and watched the red line flatten into peace. For a few seconds, the planet had stopped dying. It had been the most beautiful thing she had ever seen.
 
@@ -28,9 +30,7 @@ She thought of the Architects, who had built Gates across a hundred star systems
 
 But there was no move on. Not for twelve thousand people who had nowhere else to go.
 
-Maren opened a new file and began typing. Not a report. A letter — to the engineers, the scientists, the architects of the future, anyone who would read it after Mars had finally finished dying. She described the tremors, the aquifer, the Gates, the long, beautiful, futile effort to save something that had been terminal for three billion years.
-
-She wrote for three hours, her fingers cramping, her eyes burning. At the bottom of the page, she wrote one sentence:
+Maren opened a new file and began typing. Not a report. A letter — to the engineers, the scientists, the architects of the future, anyone who would read it after Mars had finally finished dying. She described the tremors, the aquifer, the Gates, the long, beautiful, futile effort to save something that had been terminal for three billion years. She wrote with her hands shaking, her eyes burning, her coffee-cold and bitter. At the bottom of the page, she wrote one sentence:
 
 Mars did not die because we failed. Mars died because we loved it enough to stay.
 
@@ -43,3 +43,13 @@ She thought of the future, which was not a promise but a question.
 Maren returned to her desk and opened a new document. This time, it was a proposal: not for saving Mars, but for living with its death. She called it the Long-term Survival Schema, and she wrote it with the knowledge that it might never be implemented, that it might be ignored, that it might be too late. She wrote it anyway, because writing was the only honest thing left to do.
 
 Outside, Mars continued to die. Inside the dome, humanity continued to live. The contradiction was not a flaw. It was the entire point. For the first time since discovering the Gates, Maren understood what survival actually meant. It was not about winning. It was about refusing to lose.
+
+That evening, Maren went to the observation deck alone. The dome lights were dimmed for the scheduled sleep cycle, and the interior of Elysium looked like a seabed — corridors lit by bioluminescent strips, the suspended gardens glowing green, people moving between the levels like divers in a deep-sea station. The air smelled of artificial lemon and the faint, ever-present mineral tang of the air recyclers.
+
+She stood at the window for a long time. Outside, the red dust drifted in slow curtains, catching the dome's amber light and making the plain look almost warm, almost habitable. It was a trick of the light. Beneath the surface, the crust was still shifting. Beneath the crust, the mantle was still draining. The planet was dying in slow motion, and the dome was holding, but only barely, only with constant effort, only because twelve thousand people chose to keep the hum going.
+
+Maren thought about Hale in his office, surrounded by schematics and flags and the weight of impossible decisions. She thought about Lira in the medical bay, sorting supplies, counting bandages, preparing for a contingency that would test everything they had. She thought about the families who had boarded the evacuation ships, waving through the viewports, their children pressing hands against the glass, not understanding why they were leaving.
+
+She thought about Mars — not the dead planet of the textbooks, not the red dot in Earth's sky, but the living thing beneath her feet, still breathing, still trying, still carrying the memory of what it had been. Rivers. Forests. A sky the color of her mother's eyes. All gone now, buried under iron oxide and time, leaving behind only the faintest signatures — a mineral deposit here, a fossilised seed there, the chemical echo of water in a rock sample.
+
+Maren opened her notebook. She drew another breath mark. Then another. Then she wrote a single sentence in the margin: We are the memory of this place now. It is enough.
