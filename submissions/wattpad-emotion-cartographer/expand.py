@@ -1,4 +1,10 @@
-Chapter 1: The Hollow Book
+from pathlib import Path
+import re
+
+BASE = Path(r"C:\Users\opc\empire-chronicle\submissions\wattpad-emotion-cartographer\chapters")
+
+chapters = {
+    "ch01.txt": r"""Chapter 1: The Hollow Book
 
 Maren found the first letter inside a hollowed-out copy of *The Little Prince*. She was restocking the children's section of the Mars City Library, moving through fluorescent-lit aisles with a cart of paperbacks that smelled of dust and recycled air, when the book slipped from her hand.
 
@@ -48,8 +54,8 @@ The wind pressed harder against the dome, a deep, hollow sound that resonated in
 She thought of the letter, safe now in her pocket, its words still warm.
 
 "Show me," she said.
-
-Chapter 2: The Cartographer
+""",
+    "ch02.txt": r"""Chapter 2: The Cartographer
 
 Ralph's office was a converted storage closet on Level 3, lined with shelves that bowed under the weight of forty years of cataloguing. He unlocked a metal drawer beneath the microfiche reader — corroded at the hinges, humming faintly with age — and lifted out a wooden box that had been hand-carved, once upon a time, by someone with steady hands and a blade.
 
@@ -92,8 +98,8 @@ Maren pulled the file. The book had been checked out twice in the last decade �
 The woman's face shifted — not surprise, exactly, but recognition. The kind of recognition that comes from carrying a question for a long time and suddenly seeing the shape of the answer.
 
 "My name is Kaela," she said. "And I've been looking for something my whole life."
-
-Chapter 3: The Storm
+""",
+    "ch03.txt": r"""Chapter 3: The Storm
 
 The dust storm came on the seventh day.
 
@@ -140,8 +146,8 @@ Inside box fourteen, she found three handwritten manuscripts, two reel-to-reel t
 Maren sat on the archive floor and held the note. The paper was soft as skin. She thought of Lira sitting in this same spot, writing these words, knowing she would not be there to hear them read. She thought of Thomas somewhere in the fields, writing his letters, thinking of Lira, of love, of the things that outlasted the body.
 
 She sat in the dark and listened to the storm. Somewhere beneath the wind, she thought she could hear music — faint, distant, real as memory, real as grief.
-
-Chapter 4: The Rehearsal
+""",
+    "ch04.txt": r"""Chapter 4: The Rehearsal
 
 The dome was clean and the sensors were green by the time Kaela returned. She came on a Tuesday, three days after the storm, carrying a cello case and a leather satchel of sheet music, wearing a dust jacket and the look of someone who had been driving across the plain for hours and was not ready to stop.
 
@@ -194,8 +200,8 @@ She turned to Maren. "Will you come to the premiere?"
 "Neither did my mother. She said feeling was enough." Kaela smiled, and Maren saw Thomas's patience in it, the quality of waiting, of listening. "You found the door. You deserve to walk through it."
 
 Maren said yes. She did not know yet that the door would open more than she expected.
-
-Chapter 5: The First Letter
+""",
+    "ch05.txt": r"""Chapter 5: The First Letter
 
 A week after Kaela's visit, Maren found another letter.
 
@@ -233,8 +239,8 @@ Outside, Mars was patient. It had waited three billion years to be discovered. I
 Maren placed the first letter with the others — thirty-three now, complete — in a new conservation sleeve, number zero, where it belonged. She stood for a long time in the quiet of her room, listening to the wind, and felt, for the first time since childhood, that she understood the shape of something that was not there.
 
 She closed the journal. She did not write about what she had felt. Some things, she was learning, were not meant to be written down. They were meant to be carried — like the wind, like the letters, like the space between the notes where the real music lived.
-
-Chapter 6: The Premiere
+""",
+    "ch06.txt": r"""Chapter 6: The Premiere
 
 The symphony premiered on a Saturday.
 
@@ -283,3 +289,16 @@ Maren opened her journal. She did not write about what she had felt in the hall,
 She closed the journal and listened to the dome, and for the first time since she was a child, she did not feel empty. She felt full. Full of things she could not name — Thomas's handwriting, Lira's cello, Ralph's eleven years of silence, the weight of an envelope pressed against her hip in a dream she could not forget.
 
 She was a cartographer of spaces between words. And the map was just beginning.
+""",
+}
+
+for name, txt in chapters.items():
+    p = BASE / name
+    p.write_text(txt, encoding="utf-8", newline="\n")
+    wc = len(txt.split())
+    cjk = len(re.findall(r"[\u4e00-\u9fff]", txt))
+    print(f"{name}: {wc} words, CJK={cjk}")
+
+files = list(chapters.keys())
+total = sum(len((BASE / f).read_text(encoding="utf-8").split()) for f in files)
+print(f"TOTAL: {total} words")

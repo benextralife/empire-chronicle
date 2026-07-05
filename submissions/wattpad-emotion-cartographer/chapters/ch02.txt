@@ -2,15 +2,15 @@ Chapter 2: The Cartographer
 
 Ralph's office was a converted storage closet on Level 3, lined with shelves that bowed under the weight of forty years of cataloguing. He unlocked a metal drawer beneath the microfiche reader — corroded at the hinges, humming faintly with age — and lifted out a wooden box that had been hand-carved, once upon a time, by someone with steady hands and a blade.
 
-"Thirty-two letters," he said, setting the box on the desk. "Thirty-two hollow books, catalogued by date, by book, by emotion." He opened the box. Inside were thirty-two index cards, each handwritten, each with a location, a title, a date. "I started collecting them the year Thomas died. Lira came in looking for something — she never said what — and I watched her search for three hours. She left without finding anything. I went to the field archives that afternoon and found the first letter. I understood then what he had done."
+"Thirty-two letters," he said, setting it on the desk. "Thirty-two hollow books, catalogued by date, by book, by emotion." He opened the box. Inside were thirty-two index cards, each handwritten, each with a location, a title, a date. "I started collecting them the year Thomas died. Lira came in looking for something — she never said what — and I watched her search for three hours. She left without finding anything. I went to the field archives that afternoon and found the first letter. I understood then what he had done."
 
-Maren sat across from him. The room smelled of old paper and the chamomile tea Ralph brewed every morning in a dented metal pot. Outside, a child laughed in the story corner — a bright, sharp sound that made Maren think of Lira, young, hopeful, not yet knowing.
+Maren sat across from him. The room smelled of old paper and the chamomile tea Ralph brewed every morning in a dented metal pot. Outside, a child laughed in the story corner — a bright, sharp sound that made Maren think of Lira, young, hopeful, not yet knowing what the search would cost her.
 
 "Why didn't you tell her?" Maren asked.
 
-"Because she would have stopped looking." Ralph turned the index cards over in his fingers. "As long as the search continued, she had a reason to come back. A reason to believe. I wasn't protecting the letters. I was protecting the hope. Which sounds noble, until you realize it was also selfish — that I liked having her in the library, liked having a purpose that felt important."
+"Because she would have stopped looking." Ralph turned the index cards over in his fingers. The paper was soft, the edges frayed where his thumb had touched them a thousand times. "As long as the search continued, she had a reason to come back. A reason to believe. I wasn't protecting the letters. I was protecting the hope. Which sounds noble, until you realize it was also selfish — that I liked having her in the library, liked having a purpose that felt important."
 
-He looked up, as if bracing for Maren's judgment. She gave him none. She had spent enough time in the silence of the archive to understand that hope, like grief, was not a straight line. It doubled back. It hid in unexpected places. It survived on small, stubborn things.
+He looked up, bracing for judgment. Maren gave him none. She had spent enough time in the silence of the archive to understand that hope, like grief, was not a straight line. It doubled back. It hid in unexpected places. It survived on small, stubborn things.
 
 The index cards told a story Thomas had built over years — a deliberate, loving architecture of hidden words. *The Little Prince*, 12 October 2087. *Rumi: Selected Poems*, 3 November 2087. *The Martian Flower Guide*, 17 November 2087. Each letter placed in a book that mattered to both of them, each location chosen with a precision that made Maren's chest ache.
 
@@ -18,7 +18,7 @@ The index cards told a story Thomas had built over years — a deliberate, lovin
 
 "And now?"
 
-"And now Kaela is a geologist in the outer domes. She was eleven when Thomas died. Lira raised her alone, working two jobs, playing at every public event, always saying her husband was away on field duty. Kaela never knew about the letters. She only knew that her mother spent every Sunday searching the library for something she could never find."
+"Kaela is a geologist in the outer domes. She was eleven when Thomas died. Lira raised her alone, working two jobs, playing at every public event, always saying her husband was away on field duty. Kaela never knew about the letters. She only knew that her mother spent every Sunday searching the library for something she could never find."
 
 Maren thought of the gap in the shelves, the missing book, the letter still tucked in the hollow of *The Little Prince* where Kaela would never think to look. "Does she know now?"
 
@@ -26,9 +26,9 @@ Maren thought of the gap in the shelves, the missing book, the letter still tuck
 
 Maren did not answer. Some truths did not need to be useful. They only needed to be true.
 
-She began helping Ralph with the letters. They transcribed them, conserved them, built a full catalogue that went beyond the index cards — histories, annotations, context. She learned to read Thomas's handwriting, the way his C's tilted slightly left, the way his L's carried a long, deliberate loop that she realized must have been Lira's influence. She spent evenings in the archive, reading, arranging, protecting.
+She began helping Ralph with the letters. They transcribed them, conserved them, built a full catalogue that went beyond the index cards — histories, annotations, context. She learned to read Thomas's handwriting, the way his C's tilted slightly left, the way his L's carried a long, deliberate loop that she realized must have been Lira's influence. She spent evenings in the archive, reading, arranging, protecting, the climate control humming its steady nineteen-degree note around her.
 
-She started keeping her own notebook — a private cartographer's journal, mapping the spaces between what people said and what they meant. The way a child's hand curled around a book. The way the dome lights flickered at 05:00, when the night shift ended. The way the wind carried a new pitch after a storm, as if the planet itself were humming a different tune.
+She started keeping her own notebook — a private cartographer's journal, mapping the spaces between what people said and what they meant. The way a child's hand curled around a book. The way the dome lights flickered at 05:00, when the night shift ended, casting long blue shadows across the floor. The way the wind carried a new pitch after a storm, as if the planet itself were humming a different tune.
 
 One afternoon, a woman entered the library. She had Lira's eyes — gray-green, watchful, listening — and the kind of quiet confidence that came from working alone in the fields, far from the center of things. She asked for a book by Dr. Elias Voss: *The Physics of Breathing on Mars*.
 
