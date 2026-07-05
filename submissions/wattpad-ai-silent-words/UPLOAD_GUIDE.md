@@ -15,7 +15,7 @@
 - **AI Disclosure**: Written with AI-assisted writing. All final editorial decisions were made by the human author.
 - **Description**:
 > In Kyoto, 1957, an American translator receives a mysterious letter from a dead man's widow. The message leads Evelyn Reed to a garden behind an old torii gate, where a box of untranslated stories is waiting—stories that are not stories at all. As she reads, the boundary between words and silence begins to dissolve. What she translates will change what she believes about grief, identity, and the things that survive translation.
-- **Total words**: ~22,087
+- **Total words**: 24,226
 
 ## Chapter List (23 chapters)
 | File | Chapter Title | Words |
