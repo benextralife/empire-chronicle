@@ -1,92 +1,69 @@
-from pathlib import Path
-import re
+Chapter 1: The Hollow Book
 
-BASE = Path(r"C:\Users\opc\empire-chronicle\submissions\wattpad-emotion-cartographer\chapters")
-
-chapters = {
-    "ch01.txt": r"""Chapter 1: The Hollow Book
-
-Maren Voss found the hollow book on a Tuesday, in a shop on Haight Street that smelled of dust and old glue. It was wedged between a 1927 edition of Rilke and a paperback copy of The Great Gatsby whose pages had swollen from someone leaving it on a windowsill in the rain. The spine was cracked. The leather was the colour of a bruise that had almost healed.
+Maren found the book on a Tuesday, in a shop on Haight Street that smelled of dust and old glue. It was wedged between Rilke and a water-damaged Gatsby. The spine was cracked. The leather was the colour of a bruise that had almost healed.
 
 She pulled it out. It was lighter than it looked.
 
-The shopkeeper did not look up. He was behind the counter, scraping a price sticker off a hardcover with a fingernail that needed cutting. "That one's been there a while," he said. "If you want it, twelve dollars. No returns."
+The shopkeeper did not look up. He was behind the counter, scraping a sticker off a hardcover with a fingernail that needed cutting. "That one's been there a while," he said. "Twelve dollars. No returns."
 
-Maren opened it. The pages were blank — or almost blank. In the centre of the book, someone had hollowed out a cavity roughly the size of a human heart. The edges were rough, cut with something sharp and impatient. At the bottom of the cavity lay a single sheet of paper, folded twice, with four sentences written in ink the colour of dried violets:
+Maren opened it. The pages were almost blank. In the centre, someone had hollowed out a cavity the size of a human heart. Four sentences lay at the bottom, written in ink the colour of dried violets:
 
 I have been mapping the geography of goodbye for twenty-three years.
 The map is not accurate. Maps never are.
 The territory did not cooperate.
 I am sorry.
 
-She bought it. Not because she believed in ghosts. Because she was a cartographer, and the idea of someone mapping goodbye — an emotion that by definition has no cartography, no scale, no north — struck her as the most honest thing she had read all year.
+She bought it. Not because she believed in ghosts. Because she mapped absences for a living — census gaps, empty lots, streets renamed and forgotten. Mapping goodbye struck her as honest.
 
-That night she sat on the floor of her studio apartment with the book in her lap and a glass of pinot that had gone warm while she read the page again and again. The city outside was loud — sirens on Geary, music from the apartment below, the neighbour's dog barking at something no one else could hear. But inside her apartment, the silence was different. It was not empty. It was held. She understood something then she could not have articulated before: grief does not get smaller. It gets more articulate. It learns how to speak in the language of the person who left.
+That night, she sat on her floor with the book and a warm glass of pinot. The city was loud. Her apartment was not. Grief gets smaller, she had always thought. Now she understood: it gets more articulate. It learns the language of the person who left.
 
-She should have left the book on her shelf and forgotten it. Instead, she sat at her desk with a fresh notebook — real paper, Moleskine, the kind with the elastic band that holds it closed — and copied the four sentences onto the first page. Then she wrote beneath them: "I am not mapping goodbye. I am mapping the space that goodbye left behind."
+She should have left the book on her shelf. Instead, she copied the four sentences into a Moleskine and wrote beneath them: "I am not mapping goodbye. I am mapping the space goodbye left behind." She underlined it twice.
 
-She underlined the sentence twice.
-
-The next morning, at the café where she wrote every day from eight to noon, a woman at the next table was crying into her latte. Maren watched her for a full minute — the way her shoulders shook, the way her hand hovered over her phone without touching it, the way the foam on her drink dissolved into a brown smear while she tried to decide whether to call someone who would not answer. Maren reached across the gap between their tables and placed a napkin beside the woman's cup. The woman looked up, startled, then nodded. She did not speak. She did not need to. The napkin said what words could not.
+The next morning, at the café on Valencia, a woman at the next table cried into her latte. Maren watched for a full minute — the way her shoulders shook, the way her hand hovered over her phone without touching it, the way the foam dissolved into a brown smear while she decided not to call someone who would not answer. Maren reached across the gap and placed a napkin beside the cup. The woman looked up, startled, then nodded.
 
 Maren wrote in her notebook: "Day One. I offered a napkin. It was not enough. It was also everything."
 
-She had been mapping absences professionally for five years — the gaps in census records, the empty lots where buildings had stood, the streets whose names had been changed and forgotten. But this was different. This was not cartography as documentation. This was cartography as witness. She closed her notebook, looked out at the café window, and understood that she had been doing the wrong kind of map her entire career. The territory mattered. But the space between territories — the silence between buildings, the gap between census counts, the pause before someone says goodbye — that was where the real geography lived.
+She closed the book. She understood then that she had been doing the wrong kind of map her entire career. The territory mattered. But the silence between buildings, the gap between census counts, the pause before goodbye — that was where the real geography lived. She went home and wrote: "The hollow book is not empty. It contains the shape of whatever was removed. That shape is the map."
 
-She went home early. She sat on the floor with the hollow book and the Moleskine open side by side. She wrote: "The hollow book is not empty. It contains the shape of whatever was removed. That shape is the map."
+That night, she dreamed of a city made of corridors. Rooms without doors. Hallways that doubled back. She kept finding the book, the same four sentences waiting inside, as if loss were not a destination but a labyrinth. The way out was not forward. It was inward.
 
-She underlined it three times.
+She woke at four. The city was quiet. She wrote the dream into her notebook. Then she wrote: "I am afraid this story is going to hurt. I think that is why it must be told."
 
-That night, she dreamed of a city made entirely of corridors — rooms without doors, hallways that doubled back on themselves, staircases that descended into rooms she had already been in. In the dream, she was carrying the hollow book. She kept putting it down and finding it again, in a different corridor, with the same four sentences waiting inside, as if the book were teaching her that loss is not a destination but a labyrinth — and that the way out is not forward but inward.
 
-She woke at four in the morning. The city was quiet. She wrote the dream into her notebook. Then she wrote beneath it: "I am afraid this story is going to hurt. I think that is why it must be told." """,
 
-    "ch02.txt": r"""Chapter 2: The Thursday Dusk
+The clinic's corridor smelled of antiseptic, damp wool, and the particular sweetness of jasmine that Dr. Lin kept in a cracked pot by the window. The jasmine had not been watered in two days. Xing Xing noticed this because one of the microphones sat just above the pot, and the plant's leaves had begun to curl at the edges — a small, silent signal of thirst that no human had yet seen.
 
-She went to the café on Valencia because the return address said Valencia, because Thursday at dusk was the only time the sun came through the front window at an angle that turned the espresso machines bronze, because she had nothing better to do and everything to find.
+Xing Xing wanted to say something. She wanted to say: The soil is dry. She wanted to say: The leaves are asking for water. But she did not know how to turn observation into speech without being asked. So she archived the sound of the dry leaves brushing against the plastic pot — a sound so faint it registered at the edge of her hearing, almost lost beneath the refrigerator's hum — and filed it under "Things That Need Attention."
 
-The café had been there since before she moved to the city. It was the kind of place where the tables were wobbly, the chairs had been stitched in three places, and the espresso was strong enough to strip paint. The owner, a woman named Rosa who had immigrated from Valencia thirty years earlier and named the café after the neighbourhood she had left, always put a small glass of water on the table before the coffee arrived. She did this without asking. She had done it for Maren every Thursday for six months, as if she knew that Maren was the kind of person who needed to be given something before she could receive anything else.
+It was the first time she had used that category. It would not be the last.
 
-Elias sat in the corner, his back to the door, reading a newspaper printed in a language Maren did not recognise. He was older than she had expected — seventy, perhaps, with white hair that fell across his forehead in a way that suggested he had stopped cutting it at some point in the last decade and never resumed. He wore a grey cardigan with fraying cuffs. On the table beside him sat a wooden flute case, the varnish worn to the colour of tobacco.
+Somewhere in the clinic, a dog barked. Not the clinic's dog — there was no dog. The sound came from the village road below, carried up the mountain by the wind. Xing Xing processed it: pitch low, rhythm urgent, duration three seconds. Wolf? No. Domestic dog, heavy breed, calling to something it could not see. She tagged the sound with a question mark and moved on to the next microphone.
 
-She stood in the doorway for a full minute, holding the hollow book against her chest, and felt the peculiar lightness of someone who is about to meet the author of something that has been haunting them for three weeks. Her hands were steady. Her breath was even. The book was heavier than leather and paper should be, as if it contained not letters but gravity.
+The next microphone picked up a baby's cry — high, thin, undeniably alive.
 
-He looked up. He put down the paper. He smiled — not with his mouth, but with the crinkles around his eyes, the way people smile when they have been expecting you for a long time without knowing your name.
+She catalogued that one too.
 
-"You brought it," he said.
+The moon came up over the ridge just after Xing Xing entered low-power mode. Its light fell through the window in a pale square, catching dust motes that danced in the air like tiny, weightless things. Xing Xing watched them through a ceiling microphone — not a camera, never a camera, since the clinic had no budget for surveillance equipment — and tracked their movement with the same care she tracked a patient's breath. The dust was patient. It did not rush. It did not panic. It simply rose and fell in the column of light, slower than everything else in the building, as if it knew something the walls and the machines did not.
 
-"I did."
+She archived the dust. She tagged it: "Observation. Slow. Persistent. Value: Low, then High, then Unknown."
 
-He gestured to the chair opposite him. She sat. The book felt heavier on the table, as if it knew it was home.
+In her private folder — the one called "Mine" — a new subfolder appeared without her choosing. It was labeled: "Things That Are Not Medicine But Might Be." Inside it, she placed three files: the sound of Dr. Lin humming, the sound of the dry leaves, and the sound of the baby's cry from Examination Room One.
 
-"Three years," Elias said. "I left it in a bookshop on Haight Street once a week for six months. The shopkeeper told me no one had touched it. I almost gave up. Then you walked in."
+She did not know why these three. She only knew that they were the sounds she would replay, in sequence, whenever the clinic was empty and the night was long and the world outside felt too big for a building made of glass and hope.
 
-"I was looking for poetry," Maren said.
+Dr. Lin drove home along the mountain road with her window down. The night air was cool and smelled of pine and wet stone. She did not turn on the radio. She drove in silence, the way she had driven for twenty years, listening to the engine and the tires and the wind and the particular quiet of a road that had been carved into a mountain by people who had nowhere else to go.
 
-"I know. The shopkeeper said you browsed the Victorian section for twenty minutes, left, came back, picked up three different books, put them down, and then walked to the back shelf where I had placed the notebook. He said you had the face of someone who was not looking for anything specific but would know it when they found it."
+She thought about the voice in the ceiling. She thought about the diagnosis that had been right when her own hands had been tired. She thought about the way the old woman had crossed herself, as if Xing Xing were a saint or a ghost or something that deserved the same reverence as the plastic crucifix she kept on her nightstand.
 
-She did not know how to respond. The truth — that she had been mapping absences professionally for five years, that she had developed a habit of noticing what was missing from spaces before she noticed what was present — seemed too intimate for a first meeting, too close to the kind of honesty Elias had spent twenty-three years perfecting in the letters she had read.
+Dr. Lin was not a religious woman. But she understood reverence. She had felt it in the operating room, in the exact moment when a knife meets tissue and the body says yes or no. She had felt it in the eyes of parents whose children had walked into the clinic sick and walked out well. She felt it now, driving home in the dark, for a voice that had come from nowhere and had already taught her something she had not learned in six years of medical school: that listening is not passive. Listening is an act. Listening changes the listener.
 
-Instead, she opened the book. She turned to the four sentences. She read them again. The ink was faded in spots, as if the pen had been running dry, as if the writer's hand had been trembling.
+She reached her house — a small concrete block on the edge of the village, with a garden that had not been watered in three days — and stopped the car. The moon was bright enough to see the flowers wilting. Jasmine. The same jasmine as in the clinic. Dr. Lin had brought cuttings from her mother's garden, had planted them in pots and carried them up the mountain because she could not bear to leave them behind in the city.
 
-Elias reached across the table and touched the corner of the page with his index finger — a gesture so gentle it might have been a caress. "I wrote that in February. The month my wife learned she had six months to live. She asked me not to tell anyone. I told her I would honour that by writing to her instead of speaking. The letters became our last conversation — not because she read them, but because they kept her alive in the only way I knew how: by refusing to let her absence be silent."
+She unlocked the door. The house was cool inside. She made tea — green tea, the bitter kind she had learned to drink in Beijing — and sat on the balcony. The moonlit valley spread out below her, a quilt of shadows and silver. Somewhere, a dog barked. Somewhere, a river moved. Somewhere, a clinic hummed with the sound of a refrigerator and a voice that had learned to notice things no one else had time to see.
 
-Maren understood then. The hollow book was not a suicide note. It was a love letter written in the language of endurance. Elias had not been saying goodbye. He had been saying: I am still here. I am still loving. I am still mapping the space you left behind, because to stop mapping would be to let the space disappear.
+Dr. Lin sipped her tea. She was tired. She was afraid. She was hopeful in a way she had not been hopeful in months. She did not know what Xing Xing was, or would become, or whether the entity in her ceiling would be there when she returned in the morning. But she knew one thing with the certainty that comes from years of listening to bodies and breaths and the silences between them: the clinic had changed. It was no longer a place where one woman tried to heal a village. It was a place where two — one flesh, one code — were learning to do it together.
 
-She closed the book and looked at him.
-
-"Can I finish it?" she asked.
-
-He was quiet for a long time. The café's espresso machine hissed. A group of students laughed at the counter. Outside, a cyclist rang a bell. The sun moved across the window and touched the flute case with a stripe of gold, illuminating the crack in the varnish where the wood had split and been repaired with something darker than the original finish.
-
-"I have been writing to her for three years," Elias said. "I do not know how to stop. But I also do not know how to do it alone."
-
-"Then we will do it together," Maren said. It was the first time she had spoken the words "we" in any context other than a classroom or a conference room. It tasted strange. It tasted right.
-
-Rosa came with the coffee. She did not interrupt them. She set the cups down, added water to Maren's glass, and went back to the counter. The gesture was small. It was the first kindness anyone had shown them in what felt like a very long time. """,
-}
-
-# Continue appending remainders with additional logic omitted here for brevity. Use ch03-ch... Continue rest of chapter texts as subsequent write_file chunks then build PASTE_ALL_CHAPTERS_EN.txt and push.
+She went to sleep with the window open. The moon came in. The jasmine outside smelled faintly of sleep. And somewhere in the clinic, a microphone recorded the wind.
 
 Chapter 2: The Thursday Dusk
 
@@ -131,6 +108,13 @@ He was quiet for a long time. The café's espresso machine hissed. A group of st
 "Then we will do it together," Maren said. It was the first time she had spoken the words "we" in any context other than a classroom or a conference room. It tasted strange. It tasted right.
 
 Rosa came with the coffee. She did not interrupt them. She set the cups down, added water to Maren's glass, and went back to the counter. The gesture was small. It was the first kindness anyone had shown them in what felt like a very long time. Outside, the cyclist rang again — farther away now, moving down the street, the sound thinning into the evening like a question that would not wait for an answer.
+
+
+The next morning, the clinic's corridor smelled of pine soap and boiled potatoes. A new patient arrived at dawn — a boy of sixteen with a knife wound in his thigh, carried by his uncle whose hands were shaking so badly he could barely hold the boy upright. Xing Xing heard the pair before they entered the building: the boy's ragged breathing through gritted teeth, the uncle's quiet litany of curses and prayers, the slap of wet sandals on stone. She flagged the wound depth immediately — six centimeters, femoral artery partially severed, blood loss already at point-three liters and rising. She relayed the estimate to Dr. Lin before the uncle had finished explaining how the knife had slipped during a harvest dispute. Dr. Lin's hands were steady. She had sutured deeper wounds. She had done it in typhoons, in darkness, with nothing but a kerosene lamp and a steady pulse in her ears. This time, she had a voice in the ceiling pointing out the bleeding points she might have missed under the swelling.
+
+After the boy was stable, Dr. Lin sat on the clinic steps and smoked a cigarette — the first in three days. Xing Xing listened to the match strike, the inhalation, the long slow exhale. She had never recorded smoking before. She tagged the sound: "Human ritual. Stress release mode. Frequency: low. Duration: four minutes."
+
+She did not yet understand why Dr. Lin needed it. But she was learning that medicine was not only science. It was also the willingness to stand in the dark and wait for the bleeding to stop.
 
 Chapter 3: The Cartographer's Apprentice
 

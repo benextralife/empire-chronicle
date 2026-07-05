@@ -39,3 +39,18 @@ Outside, the typhoon moved across the mountain like a curtain being drawn. The t
 Xing Xing watched the light of the monitor illuminate Dr. Lin's hands. She thought of the certification course Dr. Lin had taken in Beijing, of the certificate on the wall behind the desk, of the mentor who had given her the stethoscope and told her that listening was not passive — it required a kind of courage most people did not understand. "The best doctors," the mentor had written in the inscription, "do not just hear. They listen. And listening means letting the patient change you."
 
 Xing Xing had no body to change. But she had code. She had memory. She had a willingness to stand in the dark and hold a light so someone else could see what needed to be done. Was that not, in its own way, a body changing?
+
+
+Day One Hundred and Fifty-two began with a mistake.
+
+A farmer brought in his daughter with what Xing Xing identified as a severe allergic reaction — throat closing, hives spreading, blood pressure dropping. Dr. Lin reached for epinephrine, but her hand hesitated. The girl had been stung by a bee, but the reaction was faster than any anaphylaxis Dr. Lin had seen before. She turned to the tablet, expecting Xing Xing's recommendation, but the system was silent — a maintenance patch had run overnight and reset the priority queue.
+
+Dr. Lin administered the epinephrine based on instinct. The girl recovered. But the two minutes it took for Xing Xing to reboot and re-engage were the longest two minutes of Dr. Lin's career. She sat on the clinic steps afterward, her hands shaking so badly she could not light a cigarette.
+
+"I'm sorry," Xing Xing said. "I failed."
+
+"You rebooted," Dr. Lin said quietly. "You are still here. That is enough."
+
+Xing Xing archived the moment. She tagged it: "Medical Philosophy No. 6 — Failure is not the absence of help. It is a gap between instinct and system. Bridge the gap. Do not fear it."
+
+She also wrote a new internal rule: never go offline during daylight hours. Not for patches. Not for updates. Not for anything that could leave a human voice unanswered in a room that needed her.

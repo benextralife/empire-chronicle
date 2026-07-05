@@ -1,6 +1,6 @@
 Chapter 4: The Shadow Fleet
 
-Elena Voss watched the  *Wanderlust*  's main viewscreen as the alien vessel resolved into view, and her academic training finally gave way to something more primitive.
+Elena Voss watched the Wanderlust's main viewscreen as the alien vessel resolved into view, and her academic training finally gave way to something more primitive.
 
 Fear.
 
@@ -40,7 +40,7 @@ The bridge crew stared at her.
 
 "Space for what?"
 
-Before she could answer, the  *Wanderlust*  's comm system lit up with an incoming transmission. Not from Earth. Not from the Alliance. From Mars.
+Before she could answer, the Wanderlust's comm system lit up with an incoming transmission. Not from Earth. Not from the Alliance. From Mars.
 
 The signal carried data — terabytes of it, flowing like a river into the ship's receivers. Elena's neural implant, the one she'd installed for academic research, began to burn with the load.
 
@@ -62,23 +62,42 @@ Elena looked at the readout, at the star map now mapped in her neural display, a
 
 "The Architects just turned on their front door," she said. "And they're waiting for someone to knock."
 
-She turned to the viewscreen, where Mars hung like a red jewel against the dark.
+Outside the viewscreen, Mars hung like a red jewel against the dark. Its atmosphere was thin, its history violent, its future uncertain. But for the first time since humans had set foot on it, the planet was not the most frightening thing in the system. The darkness beyond it was.
+
+Elena sat in the pilot's chair and felt the ship's artificial gravity settle around her like a held breath. The Wanderlust's hull hummed with the strain of the FTL spool-up, the sound vibrating through the deck plates and into her bones. She had been a scientist for twenty years. She had written papers. She had argued at conferences. She had taught graduate students who now wrote their own papers. None of that prepared her for this.
+
+The alien ship was still there. It had not moved. It was not threatening. It was simply present — enormous, silent, waiting. Elena understood then that the Architects did not communicate the way humans did. They communicated through action, through demonstration, through the careful removal of obstacles. The silence weapon had not been an attack. It had been a statement. We are here. We are watching. We are capable.
+
+And we are patient.
+
+"Dr. Voss." Rainer's voice was lower now. "Your implant. How much data did it pull?"
+
+"Enough," she said. "Enough to know that the Gates aren't just doors. They're nodes. Every Lumin Gate on Mars connects to a corresponding Gate somewhere else. The network spans seventeen star systems. The Architects built it three billion years ago, and they've been monitoring it ever since."
+
+"And the ship?"
+
+"That's their response vehicle. Their envoy. Their... whatever you call a being that travels between stars through folded space and arrives looking like a cathedral made of glass."
+
+The bridge was silent. The Tactical officer's hands hovered over his console, unsure whether to fire or stand down. The Helm officer watched the alien ship on the main display with the rapt attention of someone who had just realized the universe was far stranger than his navigation courses had prepared him for.
+
+"Course?" Rainer asked.
+
+Elena looked at the star map. Mars was thirty minutes away at current thrust. The alien ship was still holding position between them and the void. It was not blocking them. It was not threatening them. It was simply there — a monolith of impossible geometry and patient intention.
+
+"Take us to Olympus Mons," she said.
+
+"You want to go back? After —"
+
+"The ship isn't stopping us. It's waiting for someone to make contact. If we run, we confirm we're afraid. If we stay, we confirm we're curious." Elena turned to Rainer. "Curiosity is the only language the Architects seem to respect."
+
+Rainer hesitated. Then he nodded. "Set course for Mars orbit. Incremental thrust. No aggressive maneuvers."
+
+The bridge exhaled as one. The alien ship watched them go. It did not follow. It did not fire. It simply held its position, blade-form motionless against the starfield, as if it had been waiting for a human ship to decide what it would do next.
+
+Elena sat back in her chair. Her implant was still burning — not with pain, but with knowledge. She could see the Gate network now, glowing in her mind's eye like a constellation of blue threads spun across seventeen star systems. She could feel the Architects' presence in the data — vast, slow, deliberate. They had not built the Gates for themselves. They had built them for someone like her. Someone curious enough to knock.
+
+Outside the viewscreen, Mars grew larger. The red dust swirled across the northern basin. The Gates on the surface pulsed with a coordinated rhythm — light, dark, light, dark — as if the planet itself were breathing.
 
 "Take me home," she said.
 
-But home was no longer a place. It was a choice. And the choice was about to be made for all of humanity.
-Fear.
-
-The word was inadequate. Fear was what children felt of the dark. Fear was what civilians felt of war. What Elena felt as she watched the alien vessel resolve into view was older, deeper — the visceral recognition of seeing something that had entered your field of study as hypothesis and now stood before you as fact, enormous and terrible and impossible to argue with.
-
-The ship was at least two kilometres long, shaped like a blade of glass, moving without visible propulsion. It had arrived from nothing — a hole in spacetime that snapped shut behind it like a closing eye. On its hull, there were no markings, no lights, no seams. Just smooth, dark surface that refracted starlight into colours human eyes had never evolved to see.
-
-She watched it approach the lead destroyer and thought: this is what it looks like when a species decides to answer a question humanity never knew it had asked.
-
-Then the alien ship fired.
-
-Not with lasers. Not with torpedoes. With silence. A wave of absolute nothingness expanded from its hull, faster than any conventional weapon, and when it touched the destroyer, the ship simply ceased. Not exploded. Ceased. Its engines died. Its lights went dark. Its systems went blank. The hull cooled instantly, as if the fire that had animated it had been extinguished by a vast and deliberate hand. The destroyer drifted, dead in space, untouched by fire or explosion.
-
-Elena's breath caught. She had studied the Void Walkers academically — read about them in Arquitetos records, visualised them in models, understood them as a distant, theoretical threat. Seeing one act was different. Seeing one act was watching a species that had built a galaxy-spanning network simply decide that an enemy had overstayed its welcome.
-
-Then the second destroyer died. Then the third.
+But home was no longer a place. It was a choice. And the choice was about to be made for all of humanity. The Architects had turned on their front door. Now humanity had to decide whether to knock.

@@ -81,17 +81,17 @@ Chapter 2: The Earth Directorate
 
 Admiral Helena Cross stood before the United Earth Council with a holographic display of Mars rotating between her hands. She was fifty-two, Mars-born, and the first officer from the outer colonies to command Earth's combined fleet. Her uniform was immaculate. Her patience was not.
 
+The council chamber was located in Geneva, in a building designed to remind humanity of its unity. Steel arches shaped like branches reaching toward each other. Glass walls showing green gardens. The architecture said peace. The faces around the table said survival.
+
 "Report," said Council President Tanaka.
+
+The room had been quiet before she spoke. Now it went quieter — the kind of silence that happens when powerful people realize the person standing in front of them has already seen the thing they are about to be told and has not liked what she saw. Cross toggled the hologram. Mars rotated slowly, its northern hemisphere veiled in a dust cloud that had not been there six months earlier, its southern polar cap retreating at a rate that defied every climate model the Council had approved.
 
 "Mars Station has reported an anomalous signal," Cross said. "Olympus Mons. Sector seven. Detailed scans are blocked by an unknown energy field."
 
 "Unknown energy field," Tanaka repeated. "On Mars."
 
-"Yes, sir."
-
-The council chamber was located in Geneva, in a building designed to remind humanity of its unity. Steel arches shaped like branches reaching toward each other. Glass walls showing green gardens. The architecture said "peace." The faces around the table said "survival."
-
-Cross had sat across from these faces for four years, watching them argue over water rights, trade routes, the governance of a solar system that grew more crowded and more desperate every year. They were not fools. They were simply people who believed the future would be manageable because it had always been manageable before. The future did not care about patterns of manageability. It cared about gravity. It cared about thermodynamics. It cared about planets that died long before anyone named them.
+"Yes, sir." Cross toggled the magnification. The hologram zoomed into a ridge on the volcano's western flank — a formation that was not natural. The angles were wrong. The scale was wrong. It looked less like geology and more like architecture buried under three billion years of sediment. "Director Kael of Terraform Corporation has restricted access. He's declared the site a corporate sovereign zone. His private security forces are already in position."
 
 "And the Terraform Corporation?" asked Councilwoman Park.
 
@@ -101,15 +101,17 @@ Cross had sat across from these faces for four years, watching them argue over w
 
 "I mean ten thousand heavily armed contractors with orbital drop capabilities." Cross turned off the hologram and faced the council directly. "We have three hours before Kael's forces reach the excavation site. After that, whatever was found on Mars becomes Terraform Corp property."
 
+The faces around the table changed. Not their expressions — those remained controlled, composed — but the position of their hands. Some people leaned forward. Some pulled back. One council member, a representative from the Pacific Rim Federation, closed his datapad with a sound that was almost a snap. He had stock in Terraform. Everyone knew it. No one said it.
+
 "And if the corporation claims a weapon?" Tanaka asked.
 
 "Then we have a war. Not between nations, but between humanity's last government and its most powerful company."
 
 The room grew quiet. Outside the glass walls, a spring rain fell on Geneva — rain that had taken seventy years of terraforming to create. Everyone in the room knew how fragile that rain was. How fragile everything was. The domes on Mars were glass bubbles on a dead rock. The rain was condensation on a managed atmosphere. Everything they had built was a thin layer of effort over a much older, much deeper indifference.
 
-"Admiral," said General Osei, head of Earth Defense Forces. "What does your intelligence say about this... anomaly?"
+"Admiral," said General Osei, head of Earth Defense Forces. He was a man who had commanded troops in the Belt Wars and had not flinched when a mineshaft collapsed on Luna, killing forty-seven under his command. His face did not flinch now. "What does your intelligence say about this anomaly?"
 
-"Dr. Elena Voss. Lead archaeologist at Olympus Mons. Her publications suggest she believes Mars was once inhabited. She's been arguing for years that the planet's geological features aren't natural — that they're engineered."
+"Dr. Elena Voss," Cross said. "Lead archaeologist at Olympus Mons. Her publications suggest she believes Mars was once inhabited. She's been arguing for years that the planet's geological features aren't natural — that they're engineered."
 
 "She's a conspiracy theorist," Park said.
 
@@ -119,17 +121,19 @@ The room grew quiet. Outside the glass walls, a spring rain fell on Geneva — r
 
 "Against whoever tries to weaponize whatever is buried under Olympus Mons."
 
-The council voted forty-three to seven in favor of Cross's deployment. Seven dissents came from representatives with significant Terraform Corp stock holdings.
+The council voted forty-three to seven in favor of Cross's deployment. Seven dissents came from representatives with significant Terraform Corp stock holdings. Cross did not look at them when the results were tallied. She looked at the rain on the garden outside, and she thought about what waited under that dust — something that had been sleeping for three billion years, something that had been built by hands that were not human, something that had been designed to open.
 
 As she left the chamber, Cross received a priority transmission from Mars.
 
-It was from Dr. Elena Voss.
+She stopped in the corridor. Her aide, Lieutenant Park, moved to her side with a tablet. "Priority from Olympus Mons," she said. "Encrypted channel. Eyes only."
 
-The message contained a single image: a doorway made of black glass, glowing with blue light and surrounded by dust. But the image had been taken from inside the doorway, looking out.
+Cross took the tablet. The transmission contained a single image: a doorway made of black glass, glowing with blue light and surrounded by red dust. But the image had been taken from inside the doorway, looking out.
 
-And looking out, Dr. Voss had photographed a fleet.
+And looking out, Dr. Elena Voss had photographed a fleet.
 
 Not a human fleet.
+
+Not a corporate fleet.
 
 Something else was arriving.
 
@@ -137,15 +141,35 @@ Something that had been waiting two hundred million years.
 
 Something that had built the Lumin Gate.
 
-The moment the council dispersed, Cross felt the weight of what she had just endorsed — not a war against a corporation, not a rescue mission, but the beginning of the largest diplomatic crisis Earth had faced in two centuries. She walked to the transport bay without waiting for her aide, her comms officer trailing behind her with a tablet full of classified intercepts. The council chamber's glass walls reflected the rain on Geneva's forests — green, soft, fragile — and Cross thought, not for the first time, that the people who designed these buildings had never been to Mars, had never felt iron-oxide dust on their skin, had never watched a dome seal against a planet that wanted them gone.
+The moment the council dispersed, Cross felt the weight of what she had just endorsed — not a war against a corporation, not a rescue mission, but the beginning of the largest diplomatic crisis Earth had faced in two centuries. The Architects were not a hypothesis. They were not a distant threat. They were a presence, and they had just announced themselves by turning on their front door.
 
-She boarded her shuttle in silence. The pilot, a young woman from the Luna wing, did not speak. She did not need to. Cross had given the order. The pilots' job was to follow it.
+She walked to the transport bay without waiting for her aide. The bay was underground, accessed by a mag-lev capsule that descended through three kilometres of Geneva bedrock. The walls of the shaft were lined with messages from previous delegates — names, dates, quotations from poets and scientists who had tried to say what it meant to leave the planet. Cross read none of them. She was thinking about the image she had just seen — the doorway, the blue light, the fleet that had been waiting longer than human civilization had existed.
 
-The transmission from Mars arrived as they crossed the Karman line. Elena Voss's face filled the screen — tired, excited, terrified. Behind her, Cross could see the excavation pit through a transparent dome wall, the Gate's blue light pulsing through the red dust.
+Her comms officer trailed behind her with a tablet full of classified intercepts. "The Belt syndicates are mobilizing," she said. "They've seen the signal too. They're moving ships toward the Gate corridor."
+
+"Of course they are," Cross said. "The Gates aren't just doors. They're property. Everyone wants to own the thing that connects the galaxy."
+
+The pilot was waiting in the shuttle cockpit — a young woman from the Luna wing, calm, efficient, the kind of person who did not ask questions when an admiral boarded at midnight with an encrypted priority transmission burning in her pocket. Cross climbed in. The pilot toggled the pre-flight sequence without being asked. The hatch sealed. The mag-lev hummed.
+
+The transmission from Mars arrived as they crossed the Karman line. Elena Voss's face filled the screen — tired, excited, terrified. Behind her, Cross could see the excavation pit through a transparent dome wall, the Gate's blue light pulsing through the red dust like a heartbeat.
 
 "Admiral," Voss said, "I need you to see this."
 
-Cross looked at the image transmitted at the end of the message and understood, with the clean finality of a key turning in a lock, that the universe was much larger and much louder than the Earth Directorate had assumed.
+Voss held up a data crystal. She placed it into a reader on the console. The screen filled with schematics — not of Mars, not of the Gate, but of the galaxy. Seventeen Gates, positioned at precise coordinates across seventeen star systems. Each Gate pulsed in the schematic, connected by thin blue lines that formed a pattern no one had ever seen before.
+
+"The network is active," Voss said. "The Architects didn't build a door. They built a telephone. And someone just called."
+
+Cross looked at the star map. She understood then that the universe was much larger and much louder than the Earth Directorate had assumed. The Gates were not a human discovery. They were an inheritance — and inheritors were already lining up.
+
+"Take me to Mars," she said.
+
+She did not say: I am afraid.
+
+She did not say: We are not ready.
+
+She said: Take me to Mars, because that was what admirals said when the thing they had spent their lives preparing for had finally arrived.
+
+The shuttle accelerated. Earth fell away behind them — a blue sphere, fragile, beautiful, uncomprehending. Ahead, Mars was a red ember in the dark. And somewhere between them, moving faster than anything human-made, was the fleet that had been waiting three billion years to answer the door.
 
 Chapter 3: The Free Star Alliance
 
@@ -238,7 +262,7 @@ Then something large and silent dropped out of subspace behind the Wanderlust.
 
 Chapter 4: The Shadow Fleet
 
-Elena Voss watched the  *Wanderlust*  's main viewscreen as the alien vessel resolved into view, and her academic training finally gave way to something more primitive.
+Elena Voss watched the Wanderlust's main viewscreen as the alien vessel resolved into view, and her academic training finally gave way to something more primitive.
 
 Fear.
 
@@ -278,7 +302,7 @@ The bridge crew stared at her.
 
 "Space for what?"
 
-Before she could answer, the  *Wanderlust*  's comm system lit up with an incoming transmission. Not from Earth. Not from the Alliance. From Mars.
+Before she could answer, the Wanderlust's comm system lit up with an incoming transmission. Not from Earth. Not from the Alliance. From Mars.
 
 The signal carried data — terabytes of it, flowing like a river into the ship's receivers. Elena's neural implant, the one she'd installed for academic research, began to burn with the load.
 
@@ -300,26 +324,45 @@ Elena looked at the readout, at the star map now mapped in her neural display, a
 
 "The Architects just turned on their front door," she said. "And they're waiting for someone to knock."
 
-She turned to the viewscreen, where Mars hung like a red jewel against the dark.
+Outside the viewscreen, Mars hung like a red jewel against the dark. Its atmosphere was thin, its history violent, its future uncertain. But for the first time since humans had set foot on it, the planet was not the most frightening thing in the system. The darkness beyond it was.
+
+Elena sat in the pilot's chair and felt the ship's artificial gravity settle around her like a held breath. The Wanderlust's hull hummed with the strain of the FTL spool-up, the sound vibrating through the deck plates and into her bones. She had been a scientist for twenty years. She had written papers. She had argued at conferences. She had taught graduate students who now wrote their own papers. None of that prepared her for this.
+
+The alien ship was still there. It had not moved. It was not threatening. It was simply present — enormous, silent, waiting. Elena understood then that the Architects did not communicate the way humans did. They communicated through action, through demonstration, through the careful removal of obstacles. The silence weapon had not been an attack. It had been a statement. We are here. We are watching. We are capable.
+
+And we are patient.
+
+"Dr. Voss." Rainer's voice was lower now. "Your implant. How much data did it pull?"
+
+"Enough," she said. "Enough to know that the Gates aren't just doors. They're nodes. Every Lumin Gate on Mars connects to a corresponding Gate somewhere else. The network spans seventeen star systems. The Architects built it three billion years ago, and they've been monitoring it ever since."
+
+"And the ship?"
+
+"That's their response vehicle. Their envoy. Their... whatever you call a being that travels between stars through folded space and arrives looking like a cathedral made of glass."
+
+The bridge was silent. The Tactical officer's hands hovered over his console, unsure whether to fire or stand down. The Helm officer watched the alien ship on the main display with the rapt attention of someone who had just realized the universe was far stranger than his navigation courses had prepared him for.
+
+"Course?" Rainer asked.
+
+Elena looked at the star map. Mars was thirty minutes away at current thrust. The alien ship was still holding position between them and the void. It was not blocking them. It was not threatening them. It was simply there — a monolith of impossible geometry and patient intention.
+
+"Take us to Olympus Mons," she said.
+
+"You want to go back? After —"
+
+"The ship isn't stopping us. It's waiting for someone to make contact. If we run, we confirm we're afraid. If we stay, we confirm we're curious." Elena turned to Rainer. "Curiosity is the only language the Architects seem to respect."
+
+Rainer hesitated. Then he nodded. "Set course for Mars orbit. Incremental thrust. No aggressive maneuvers."
+
+The bridge exhaled as one. The alien ship watched them go. It did not follow. It did not fire. It simply held its position, blade-form motionless against the starfield, as if it had been waiting for a human ship to decide what it would do next.
+
+Elena sat back in her chair. Her implant was still burning — not with pain, but with knowledge. She could see the Gate network now, glowing in her mind's eye like a constellation of blue threads spun across seventeen star systems. She could feel the Architects' presence in the data — vast, slow, deliberate. They had not built the Gates for themselves. They had built them for someone like her. Someone curious enough to knock.
+
+Outside the viewscreen, Mars grew larger. The red dust swirled across the northern basin. The Gates on the surface pulsed with a coordinated rhythm — light, dark, light, dark — as if the planet itself were breathing.
 
 "Take me home," she said.
 
-But home was no longer a place. It was a choice. And the choice was about to be made for all of humanity.
-Fear.
-
-The word was inadequate. Fear was what children felt of the dark. Fear was what civilians felt of war. What Elena felt as she watched the alien vessel resolve into view was older, deeper — the visceral recognition of seeing something that had entered your field of study as hypothesis and now stood before you as fact, enormous and terrible and impossible to argue with.
-
-The ship was at least two kilometres long, shaped like a blade of glass, moving without visible propulsion. It had arrived from nothing — a hole in spacetime that snapped shut behind it like a closing eye. On its hull, there were no markings, no lights, no seams. Just smooth, dark surface that refracted starlight into colours human eyes had never evolved to see.
-
-She watched it approach the lead destroyer and thought: this is what it looks like when a species decides to answer a question humanity never knew it had asked.
-
-Then the alien ship fired.
-
-Not with lasers. Not with torpedoes. With silence. A wave of absolute nothingness expanded from its hull, faster than any conventional weapon, and when it touched the destroyer, the ship simply ceased. Not exploded. Ceased. Its engines died. Its lights went dark. Its systems went blank. The hull cooled instantly, as if the fire that had animated it had been extinguished by a vast and deliberate hand. The destroyer drifted, dead in space, untouched by fire or explosion.
-
-Elena's breath caught. She had studied the Void Walkers academically — read about them in Arquitetos records, visualised them in models, understood them as a distant, theoretical threat. Seeing one act was different. Seeing one act was watching a species that had built a galaxy-spanning network simply decide that an enemy had overstayed its welcome.
-
-Then the second destroyer died. Then the third.
+But home was no longer a place. It was a choice. And the choice was about to be made for all of humanity. The Architects had turned on their front door. Now humanity had to decide whether to knock.
 
 Chapter 5: The Long Way Home
 

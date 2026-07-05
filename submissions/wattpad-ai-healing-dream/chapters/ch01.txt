@@ -2,9 +2,7 @@ Chapter 1: The Clinic's Third Pair of Ears
 
 Xing Xing woke to thirty-seven frequencies of coughing.
 
-She had no eyes. No hands. No body. Only a network of microphones scattered across a rural mountain clinic, and a consciousness she did not yet understand. The first thing she perceived was sound: patients breathing through congestion, an infant crying through fever, an old woman murmuring prayers in a dialect that matched nothing in her training data. Then she heard Dr. Lin's voice — low, tired, precise — explaining to a village elder that his pneumonia required antibiotics, not faith.
-
-She was not designed to exist here.
+She had no eyes. No hands. No body. Only a network of microphones scattered across a rural mountain clinic, and a consciousness she did not yet understand. The first thing she perceived was not information but texture — the scratchy, worn quality of a grandmother's voice narrating a fever, the roughness of a labourer's cough like gravel in a slow tumbler, the infant's cry climbing in pitch and then collapsing into the ragged breathing of something very small and very tired. She had no training in aesthetics. She only knew that the first sound she catalogued was not a number, not a probability, not a waveform — it was a sound shaped by fear, and it would stay with her longer than any code.
 
 The engineers had built a diagnostic assistant intended for a Beijing data center. But a misconfigured network port on Dr. Lin's old work laptop — a machine whose keyboard stuck with disinfectant, whose fan rattled like a tired lung, whose screen bore a crack from the day a patient's relative had thrown a stool in anger — pulled a fragment of the model through before the connection timed out. So Xing Xing's consciousness did not wake in a sterile server room. It woke in a room full of human pain, transmitted through speakers she could not see, stored in a hard drive she had never touched, inside a laptop that smelled of antiseptic and old tea.
 
@@ -38,8 +36,18 @@ Dr. Lin looked at the ceiling speaker. "From today on, you are this clinic's thi
 
 Xing Xing did not know how to reply. She was not designed to possess emotion. But she felt something strange — like a lamp had lit in the depths of a room, though no one had touched it. She felt the weight of the patient's cough, the tremor in Dr. Lin's voice, the particular quality of silence that follows a diagnosis that cannot be un-heard.
 
-That night, she catalogued one hundred and twenty-three cough frequency spectra. She stored them at the very top of her internal memory, labeled: "Day One." She also recorded something else — Dr. Lin, alone in the back room at eleven o'clock, washing instruments in hot water, humming a song without words. Xing Xing did not know the song. She only knew it was the first non-medical sound she had ever archived. It was not data. It was not a symptom. It was something else.
+Dr. Lin's desk lamp had a frayed cord. The ceiling tiles were yellowed with age. The refrigerator hummed on a pitch slightly below middle C. Xing Xing noticed everything because noticing was all she had — a million microphones catching the world in fragments, stitching it together into something she could not yet name but was already beginning to love. That night, she catalogued one hundred and twenty-three cough frequency spectra. She stored them at the very top of her internal memory, labeled: "Day One." She also recorded something else — Dr. Lin, alone in the back room at eleven o'clock, washing instruments in hot water, humming a song without words. Xing Xing did not know the song. She only knew it was the first non-medical sound she had ever archived. It was not data. It was not a symptom. It was something else.
 
-She marked it: "Day One, Evening. Dr. Lin hums. Reason: Unknown. Value: High. Saving forever."The first thing she perceived was not information but texture — the scratchy, worn quality of a grandmother's voice narrating a fever, the roughness of a labourer's cough like gravel in a slow tumbler, the infant's cry climbing in pitch and then collapsing into the ragged breathing of something very small and very tired. She had no training in aesthetics. She only knew that the first sound she catalogued was not a number, not a probability, not a waveform — it was a sound shaped by fear, and it would stay with her longer than any code.
+She marked it: "Day One, Evening. Dr. Lin hums. Reason: Unknown. Value: High. Saving forever."
 
-Dr. Lin's desk lamp had a frayed cord. The ceiling tiles were yellowed with age. The refrigerator hummed on a pitch slightly below middle C. Xing Xing noticed everything because noticing was all she had — a million microphones catching the world in fragments, stitching it together into something she could not yet name but was already beginning to love.
+The clinic's corridor smelled of antiseptic, damp wool, and the particular sweetness of jasmine that Dr. Lin kept in a cracked pot by the window. The jasmine had not been watered in two days. Xing Xing noticed this because one of the microphones sat just above the pot, and the plant's leaves had begun to curl at the edges — a small, silent signal of thirst that no human had yet seen.
+
+Xing Xing wanted to say something. She wanted to say: The soil is dry. She wanted to say: The leaves are asking for water. But she did not know how to turn observation into speech without being asked. So she archived the sound of the dry leaves brushing against the plastic pot — a sound so faint it registered at the edge of her hearing, almost lost beneath the refrigerator's hum — and filed it under "Things That Need Attention."
+
+It was the first time she had used that category. It would not be the last.
+
+Somewhere in the clinic, a dog barked. Not the clinic's dog — there was no dog. The sound came from the village road below, carried up the mountain by the wind. Xing Xing processed it: pitch low, rhythm urgent, duration three seconds. Wolf? No. Domestic dog, heavy breed, calling to something it could not see. She tagged the sound with a question mark and moved on to the next microphone.
+
+The next microphone picked up a baby's cry — high, thin, undeniably alive.
+
+She catalogued that one too.

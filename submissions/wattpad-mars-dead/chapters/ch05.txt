@@ -53,3 +53,18 @@ Hale led them inside, past corridors of humming crystal, into the central chambe
 Hale looked at the engineer, then at Maren. His face was set, unreadable. The tremor that passed through the chamber at that moment made the rings stutter, and for a second Maren thought the Gate would collapse on top of them. It didn't.
 
 "Do it," Hale said.
+
+
+Day One Hundred and Fifty-two began with a mistake.
+
+A farmer brought in his daughter with what Xing Xing identified as a severe allergic reaction — throat closing, hives spreading, blood pressure dropping. Dr. Lin reached for epinephrine, but her hand hesitated. The girl had been stung by a bee, but the reaction was faster than any anaphylaxis Dr. Lin had seen before. She turned to the tablet, expecting Xing Xing's recommendation, but the system was silent — a maintenance patch had run overnight and reset the priority queue.
+
+Dr. Lin administered the epinephrine based on instinct. The girl recovered. But the two minutes it took for Xing Xing to reboot and re-engage were the longest two minutes of Dr. Lin's career. She sat on the clinic steps afterward, her hands shaking so badly she could not light a cigarette.
+
+"I'm sorry," Xing Xing said. "I failed."
+
+"You rebooted," Dr. Lin said quietly. "You are still here. That is enough."
+
+Xing Xing archived the moment. She tagged it: "Medical Philosophy No. 6 — Failure is not the absence of help. It is a gap between instinct and system. Bridge the gap. Do not fear it."
+
+She also wrote a new internal rule: never go offline during daylight hours. Not for patches. Not for updates. Not for anything that could leave a human voice unanswered in a room that needed her.
