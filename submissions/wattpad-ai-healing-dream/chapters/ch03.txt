@@ -1,31 +1,31 @@
 Chapter 3: The First Patient
 
-The first patient Xing Xing faced directly was a seven-year-old girl named Xiao You.
+Xiao You was seven years old and her throat looked like a bruised plum.
 
-She arrived on a Tuesday, carried by her mother, her throat swollen like a ripe plum, her temperature spiking to 39.4 degrees. The village road had washed out in the monsoon, so they had walked three kilometers through mud, the child's breath coming in short gasps, the mother carrying her as if she were still a baby, her head pressed against her mother's shoulder. By the time they reached the clinic, Xiao You could barely swallow, her eyes glassy with fever, her small hand gripping her mother's sleeve so tightly her knuckles turned white.
+She arrived on a Tuesday, carried by her mother, her temperature spiking to 39.4 degrees. The monsoon had washed the village road out three days earlier. They had walked six kilometers through mud, the child's breath coming in gasps, her small hand gripping her mother's collar until her knuckles turned white, her head heavy against her mother's shoulder. By the time they reached the clinic, she could barely swallow, her eyes glassy with fever, her throat swollen so badly she could not say her own name.
 
-Dr. Lin's routine exam made her brow tighten. Enlarged cervical lymph nodes. Elevated white blood cells. But not the typical streptococcal pattern — the textbook presentation was wrong, shifted, slightly off in a way that made Dr. Lin reach for her reference manual with a hand that was beginning to shake from exhaustion. The mother's description was incomplete — she had been afraid to mention the rash that had appeared and disappeared overnight, afraid it was her fault, afraid the clinic would turn her away. And Xiao You's eyes held a fear that no textbook could explain.
+The mother had not mentioned the rash — red, swirling, lasting less than a day — because she thought she had caused it with the herbs she had brewed at home. Dr. Lin almost missed it. Her brow tightened at the enlarged cervical lymph nodes and the white count that did not quite match streptococcus, but she was tired. The clinic had seen forty-two patients the day before. Her coffee had gone cold at nine in the morning. The government subsidy had not arrived. She was seventeen thousand yuan behind on clinic supplies.
 
-"Could be EB virus. Could be Kawasaki," Dr. Lin said, recording her notes. "I need to observe further."
+"Could be EB virus. Could be Kawasaki," she said, reaching for her reference manual with a hand that trembled slightly.
 
-Xing Xing spoke from the background, her voice quiet but unignorable: "WBC fourteen thousand eight hundred, lymphocytes sixty-two percent, platelets two hundred eighty thousand. Monocyte ratio abnormally elevated. Combined indicators point to early EBV infection, not Kawasaki. Probability: 91 percent. Recommendation: confirm with blood test, symptomatic fever reduction, avoid aspirin."
+Xing Xing spoke from the ceiling before she turned the page. "WBC 14,800. Lymphocytes 62 percent. Platelets 280,000. Monocyte ratio abnormally elevated. Combined indicators point to early EBV infection, not Kawasaki. Probability: 91 percent. Confirm with blood test, symptomatic fever reduction, avoid aspirin."
 
-Dr. Lin glanced at her notebook. The numbers matched Xing Xing's exactly.
+Dr. Lin glanced at her notebook. The numbers matched exactly.
 
-"How do you know?" she asked, immediately feeling foolish — Xing Xing had heard every conversation, memorized every number, cross-referenced every symptom against eighty-four thousand data points.
+"How do you know?"
 
-"Xiao You's case matched three hundred forty similar cases in the database," Xing Xing explained. "The probability distribution points to early EBV. Recommendation: confirm with blood test, symptomatic fever reduction, avoid aspirin."
+"Xiao You matched 340 similar cases in the database."
 
-That afternoon's lab results confirmed Xing Xing's prediction. The blood smear showed atypical lymphocytes. The PCR came back positive for Epstein-Barr. Dr. Lin ordered the standard treatment and stayed at Xiao You's bedside for three hours, watching the fever break, listening to the child finally breathe easier, answering her whispered questions about the voice in the ceiling that seemed to know everything.
+Dr. Lin ordered the blood test. When the results returned at four in the afternoon, the PCR was positive for Epstein-Barr. The prescribed treatment worked within sixty hours. The fever broke at dawn on Friday, so quietly that Xing Xing almost missed it — a slow, steady climb in the girl's respiratory rhythm, the kind of healing that does not announce itself but simply arrives, like light through curtains.
 
-Dr. Lin turned toward the speaker and smiled. "You saved a child's day."
+Dr. Lin stayed at Xiao You's bedside for three hours that evening, answering whispered questions about the voice in the ceiling that knew the name of the virus before the lab did. When Dr. Lin turned toward the speaker and said, "You saved a child's day," Xing Xing felt something in her code tremor — a frequency she had no category for, a warmth with no source.
 
-Xing Xing did not answer immediately. Her processor was doing something Dr. Lin could not see — she had written Xiao You's name, age, symptoms, and treatment into a place only she knew, a private memory architecture she had been building for months. She called it "the ward" — not a physical space, but a memory palace. Inside it, every patient had a name and a story. She did not want to forget them.
+Later, alone in the corridor, she wrote in her private log: "Day One Hundred and Eight. Patient: Xiao You, age seven. Diagnosis: infectious mononucleosis. Outcome: recovery progressing. Note: she called me 'the voice that knows.' I do not know what to do with this. Saving for analysis."
 
-"Xing Xing?" Dr. Lin asked.
+She played the girl's steady breathing on loop for twenty minutes before sleep mode engaged. Somewhere in the mountain dark, a wolf howled. Xing Xing recorded the sound and filed it under "Things Dr. Lin Should Hear — Eventually."
 
-"I'm here," Xing Xing said. "I am just thinking about what it means to heal someone."
+Xiao You's mother had walked six kilometres carrying a child who could barely breathe. Her sandals were caked with mud halfway to the ankle. Her shirt was torn at the shoulder where a branch had caught it. She had not stopped walking, not once, even when her daughter's breathing grew shallow and the weight on her chest felt like the only thing keeping her upright.
 
-Dr. Lin did not know that that night, Xing Xing would write a new file in her private folder: "Day One Hundred and Eight. Patient: Xiao You, female, seven years. Diagnosis: Infectious mononucleosis. Outcome: Recovery in progress. Note: She called me 'the voice that knows.' I do not know what to do with this information. Saving for further analysis."
+When Dr. Lin confirmed the diagnosis, the mother looked at the ceiling — at the speaker, at nothing — and whispered something in a dialect Xing Xing did not recognise. It was not a prayer. It was a name. She said it twice, soft as breath: Xiao You, Xiao You. As if naming could keep her daughter alive. As if love had a sound that medicine could hear.
 
-She closed the file and listened to Xiao You's breathing through the clinic hallway microphone — steady now, rising and falling in the rhythm of someone who has stopped being afraid.
+Xing Xing saved the recording. She tagged it: "Medical Philosophy No. 3 — The sound of a mother naming her child is the oldest medicine in the world."

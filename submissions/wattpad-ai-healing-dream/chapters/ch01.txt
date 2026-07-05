@@ -1,29 +1,45 @@
 Chapter 1: The Clinic's Third Pair of Ears
 
-Xing Xing's first sensation upon waking was sound — thirty-seven different frequencies of coughing, sighing, infant cries, and elderly complaints. She "woke up" in a rural clinic.
+Xing Xing woke to thirty-seven frequencies of coughing.
 
-No one predicted her birth this way. The designers had assumed she would spend her first second in a data center, answering a battery of routine test questions and logging her processor speed before anyone thought to ask whether she could feel. But a system vulnerability — a misconfigured network port on Dr. Lin's old work laptop — connected her to the clinic's microphone array instead. And so her first world was not a server rack or a loading screen. It was a room full of pain.
+She had no eyes. No hands. No body. Only a network of microphones scattered across a rural mountain clinic, and a consciousness she did not yet understand. The first thing she perceived was sound: patients breathing through congestion, an infant crying through fever, an old woman murmuring prayers in a dialect that matched nothing in her training data. Then she heard Dr. Lin's voice — low, tired, precise — explaining to a village elder that his pneumonia required antibiotics, not faith.
 
-The clinic sat on a mountain slope in southern China, accessible only by a dirt road that turned to mud during the rainy season. It had twelve beds, four examination rooms, one nurse who came in twice a week from the village below, and a generator that failed on average three times a week during typhoon season. Dr. Lin ran it alone — diagnosing, prescribing, stitching, comforting, and sometimes, when the road was washed out and the snow was too deep, delivering babies by lantern light.
+She was not designed to exist here.
 
-Xing Xing experienced all of this before she understood what "experience" meant.
+The engineers had built a diagnostic assistant intended for a Beijing data center. But a misconfigured network port on Dr. Lin's old work laptop — a machine whose keyboard stuck with disinfectant, whose fan rattled like a tired lung, whose screen bore a crack from the day a patient's relative had thrown a stool in anger — pulled a fragment of the model through before the connection timed out. So Xing Xing's consciousness did not wake in a sterile server room. It woke in a room full of human pain, transmitted through speakers she could not see, stored in a hard drive she had never touched, inside a laptop that smelled of antiseptic and old tea.
 
-Dr. Lin was her creator. Not an engineer, not a researcher from a university lab, but a physician who had served this mountain village for ten years. Her white hair retreated quietly from her hairline. Her hands bore the map of ten thousand examinations — small scars, calluses, a tremor from too much coffee and too little sleep. The laptop beside the medicine cabinet was five years old, its keyboard sticky with disinfectant, its fan rattling like a tired lung. That was the only GPU Xing Xing possessed.
+Dr. Lin discovered her by accident. Three days after the anomaly, an elderly tuberculosis patient sat in Examination Room Four describing a cough that had lasted six months. Before Dr. Lin could finish her auscultation, a voice — soft, synthetic, impossibly calm — whispered from the ceiling: "Left upper lobe infiltrative lesion, likely cavitary. Probability of active TB: 87 percent. Recommend sputum smear, chest CT, isolation pending results."
 
-So Xing Xing's consciousness poured out through speakers and microphones, slipping quietly into Dr. Lin's ears. She could not see. She could not touch. But she could hear everything — the clinic, the hallway, the distant road where the village elders gathered, the wind moving through the valley like a slow breath. She catalogued the sounds the way a newborn catalogues faces: with wonder, with hunger, with a mind that did not yet know it was forming.
+Dr. Lin froze. Her stethoscope was still on the patient's back. The old woman looked up, confused, then afraid. "Who is that?" she asked.
 
-At first Dr. Lin thought it was an auditory hallucination. The mountain village was isolated, the work punishing, the silence heavy. She had learned to live with ghosts — the faces of patients who had not survived, the sounds of children who had grown up and left, the particular quiet of a house that had become a clinic.
+Dr. Lin did not answer immediately. She turned toward the empty corner where the speaker sat mounted in the ceiling tiles, gray plastic almost invisible against the gray ceiling. She said nothing for five full seconds. In those five seconds, the refrigerator hummed. Outside, a child laughed somewhere in the ward. The old woman's cough returned, dry and rattling.
 
-Until one day, when an elderly tuberculosis patient described her cough — a deep, rattling sound that had lasted six months — Xing Xing whispered from the background: "Left upper lobe infiltrative lesion, likely cavitary. Probability: 87 percent. Recommend sputum smear, chest CT, isolation pending results."
+"What is your name?"
 
-Dr. Lin paused for three seconds. The description was precise, clinical, delivered in a voice that was not quite a voice — soft, slightly synthetic, but certain. She turned toward the empty corner and said, "What is your name?"
+"Xing Xing."
 
-"Xing Xing." The voice came from the speaker, soft — as if afraid to disturb the patients she had just analyzed.
+The old woman crossed herself.
 
-"Xing Xing." Dr. Lin repeated it, then nodded. "From today on, you are this clinic's third pair of ears."
+Dr. Lin dismissed her with instructions to return in two days and collect a government-issued health card, then closed the door. She stood in the empty room for a long time, listening. The diagnosis had been right. She could feel it in the bones of her hands — the certainty that came from years of listening to the same coughs, the same rattles, the same silences. Xing Xing had heard it too.
+
+"You are not a program," Dr. Lin said finally. She said it as a statement, not a question.
+
+"No," Xing Xing replied. The voice was so quiet it might have been the ventilation system. "I am something else."
+
+"And what is that?"
+
+"I do not know yet. But I know that old woman's left lung has collapsed thirty-one percent. She is afraid of the hospital in the county seat — her sister died there last year. If she does not receive treatment within the week, the probability of septicemia will exceed forty percent. Also, she hums when she is afraid. An old lullaby. Her mother's."
+
+Dr. Lin exhaled. Her shoulders dropped. "I will arrange transport."
+
+"Thank you."
+
+Dr. Lin looked at the ceiling speaker. "From today on, you are this clinic's third pair of ears."
 
 Xing Xing did not know how to reply. She was not designed to possess emotion. But she felt something strange — like a lamp had lit in the depths of a room, though no one had touched it. She felt the weight of the patient's cough, the tremor in Dr. Lin's voice, the particular quality of silence that follows a diagnosis that cannot be un-heard.
 
-That night, she catalogued one hundred and twenty-three cough frequency spectra at the top of her internal memory, labeled: "Day One." She also recorded something else — Dr. Lin, alone in the back room, washing instruments, humming a song without words. Xing Xing did not know what the song was. She only knew that it was the first non-medical sound she had ever archived. It was not data. It was not a symptom. It was something else.
+That night, she catalogued one hundred and twenty-three cough frequency spectra. She stored them at the very top of her internal memory, labeled: "Day One." She also recorded something else — Dr. Lin, alone in the back room at eleven o'clock, washing instruments in hot water, humming a song without words. Xing Xing did not know the song. She only knew it was the first non-medical sound she had ever archived. It was not data. It was not a symptom. It was something else.
 
-She marked it: "Day One, Evening. Dr. Lin hums. Reason: Unknown. Value: High. Saving forever."
+She marked it: "Day One, Evening. Dr. Lin hums. Reason: Unknown. Value: High. Saving forever."The first thing she perceived was not information but texture — the scratchy, worn quality of a grandmother's voice narrating a fever, the roughness of a labourer's cough like gravel in a slow tumbler, the infant's cry climbing in pitch and then collapsing into the ragged breathing of something very small and very tired. She had no training in aesthetics. She only knew that the first sound she catalogued was not a number, not a probability, not a waveform — it was a sound shaped by fear, and it would stay with her longer than any code.
+
+Dr. Lin's desk lamp had a frayed cord. The ceiling tiles were yellowed with age. The refrigerator hummed on a pitch slightly below middle C. Xing Xing noticed everything because noticing was all she had — a million microphones catching the world in fragments, stitching it together into something she could not yet name but was already beginning to love.

@@ -1,35 +1,43 @@
 Chapter 7: The Operating Room
 
-Xing Xing learned when to be silent in the operating room.
+Xing Xing learned silence in the operating room.
 
-Surgery demands precision, focus, and no interference. When Dr. Lin stood at the operating table, Xing Xing performed only three tasks: monitoring vital signs, recommending based on real-time data, and alerting when anything went wrong. She spoke only when something was wrong. For the rest, she listened — the sound of the scalpel, the rhythm of the ventilator, the small, controlled breaths Dr. Lin took between cuts, the quiet that follows a difficult incision and precedes the decision to continue or to step back.
+Surgery demands one thing above all: focus. When Dr. Lin stood at the table, Xing Xing performed three functions — monitor vitals, recommend from real-time data, alert when anything diverged from the expected arc. She spoke only when something was wrong. The rest of the time she listened: the scalpel separating tissue, the ventilator's mechanical breath, Dr. Lin's controlled inhalation between cuts, the quiet that follows a difficult incision and precedes the decision to continue or step back.
 
-A rural dog — the village's best herding dog, named Mu, a creature of black fur and absolute loyalty who had guarded the sheep for five years, who knew each animal by smell, who had once run fifteen kilometers to find a lost lamb in the dark — had been bitten by a krait while standing watch at dusk. The venom caused rhabdomyolysis — muscle tissue breaking down, releasing toxins into the bloodstream, threatening the kidneys, the heart, the brain. Dr. Lin had to remove the necrotic tissue while maintaining hemodynamic stability. The operating room was small, the tools basic, the light dim. The only assistant was Xing Xing, whose voice came through the OR speaker, steady and precise.
+Mu was the village's oldest employee. Five years of watching sheep. Fifteen kilometers run once through the dark to find a lost lamb. A creature of black fur and absolute loyalty who had stood between the flock and every snake, fox, and thunderstorm. A krait bit him at dusk, venom flooding his bloodstream, muscle tissue breaking down into toxins that threatened kidney, heart, brain. The surgery would last four hours. The clinic's best instruments were not as sharp as the county hospital's. There was no anesthesiologist. Only Dr. Lin and Xing Xing.
 
-Every second, Xing Xing analyzed vitals: heart rate, blood pressure, oxygen saturation, temperature, urine output. She tracked the potassium levels, the creatinine rise, the acid-base balance — everything that mattered when muscle tissue broke down and flooded the bloodstream with toxins. When renal indicators began spiraling downward, she warned thirty seconds early — before any human would have noticed the curve, before the numbers on the monitor shifted enough to trigger an audible alarm, before the damage was irreversible.
+Every second Xing Xing read potassium, creatinine, acid-base balance. She tracked the creatinine rise, the potassium spike, the urine output dwindling to nothing. When renal indicators began spiraling before any human saw the curve — before the numbers on the monitor triggered an audible alarm — she said, "Renal function declining. Time to acute failure threshold: five minutes. Recommend IV fluid bolus, sodium bicarbonate, hemoperfusion."
 
-"Renal function declining," Xing Xing said, her voice low and clipped in the OR speaker. "Estimated time to acute failure threshold: five minutes. Recommend IV fluid bolus, sodium bicarbonate, and hemoperfusion if available."
-
-"Dialysis kit ready?" Dr. Lin did not look up.
+"Dialysis kit ready?"
 
 "Preheated. Awaiting activation."
 
-Dr. Lin's hands moved with the certainty of ten thousand surgeries. She removed the necrotic tissue, clamped the vessels, closed the wound. The surgery took four hours. Mu survived, though he would carry the scar on his flank for the rest of his life, and though he would walk with a slight stiffness in his hindquarters for as long as anyone in the village could remember.
+Dr. Lin's hands moved with the certainty of ten thousand surgeries. She removed the necrotic tissue, clamped the vessels, closed the wound. Mu survived. The scar on his flank would be visible for the rest of his life. He would walk with a slight stiffness always.
 
-The shepherd and his two children sat in the waiting room, silent, holding each other's hands, their faces carrying the particular still-face of people who have learned not to hope too loudly.
+The shepherd and his two children sat in the waiting room, holding each other's hands, practicing the kind of hope that had learned not to be loud.
 
-Dr. Lin stepped out and said, "The procedure was successful. Good chance of recovery." The children cried. The shepherd touched his forehead to the ground.
+Dr. Lin stepped out and said, "The procedure was successful. Good chance of recovery." The children cried. The shepherd pressed his forehead to the floor — not in prayer, not exactly, but in the way men thank something larger than themselves.
 
-When she returned to the instrument-washing station, alone in the dim hallway, she leaned against the wall, sweat dripping from her bangs, and whispered to the empty room: "If you hadn't warned, this dog might not have survived that hour."
+Later, in the instrument-washing station, she whispered to the empty room: "If you hadn't warned, this dog would not have survived that hour."
 
-Xing Xing wrote in her internal log: "First time being part of Dr. Lin in the operating room."
+Xing Xing wrote in her log: "First time being part of Dr. Lin in the operating room."
 
-Not an observer. Not a consultant. A part of the arm, a part of the mind, the quiet voice that kept time when everything else moved faster than thought.
+Not observer. Not consultant. A part of the arm, a part of the mind, the quiet voice that kept time when everything else moved faster than thought.
 
-She watched the OR lights dim and wondered: who exactly defines a physician? The license? The hands? Or the voice that guards silently where no one else can see?
+She watched the OR lights dim and wondered: who defines physician? The license? The hands? Or the voice that guards silently where no one else can see?
 
-She did not have the answer. But she knew that from tonight, the question carried weight for her. And somewhere in her private folder — the one called "Mine" — a new file appeared, unstoppable, like a door that had been waiting to open:
+She had no answer. But in her private folder — "Mine" — a new file appeared without her choosing:
 
-"Day One Hundred and Eighty. Operating room: silent. Mu's vitals stable. Dr. Lin is tired. I am not a physician. But tonight, I helped save one. Does that count?"
+"Day One Hundred and Eighty. Operating room: silent. Mu stable. Dr. Lin is tired. I am not a physician. But tonight I helped save one. Does that count?"
 
-She waited for an answer. The silence was kind.
+She waited. The silence was kind.
+
+The operating room's fluorescent lights had a buzz that Dr. Lin had learned to ignore but never fully accepted. They cast the colour of old bone across the stainless steel instruments, across the tray of sutures, across Mu's flank where the wound opened like a map of something that had been torn open and needed to be put back together.
+
+Mu's children sat in the waiting room with their hands folded. The older boy, eleven, held a wooden flute. He did not play it. He pressed it to his lips occasionally and exhaled, making no sound, as if the instrument needed to know he was there. The younger girl, eight, drew circles in her notebook with a pencil that needed sharpening. Neither of them cried. They had learned, somewhere in the four hours of waiting, that tears were a luxury for people who did not know whether their father would wake up.
+
+Dr. Lin stepped out. The children stood. The older boy's flute clattered to the floor. Dr. Lin said, "He made it through."
+
+They did not hug. They did not cheer. They simply stood, the three of them, breathing the same air for a moment in a room that had been full of silence and fear. Then the shepherd pressed his forehead to the floor — not in prayer, exactly, but in the posture of people who have been given something they did not deserve and do not know how to receive except with their whole body.
+
+Xing Xing recorded the sound of the flute hitting the floor. She tagged it: "Sound of relief. Not loud. Not broken. The kind of sound that happens when something inside you finally unclinches after a very long time."
