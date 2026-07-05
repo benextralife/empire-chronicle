@@ -1,0 +1,115 @@
+2245. The world was not the same world the captain had left.
+
+She had departed in 2145, the year the first cryogenic colony ship pushed off from lunar orbit and the year Atlas was first switched on in the belly of Voyager's bridge. One hundred years later, the seas had risen two meters, the magnetic poles had shifted three degrees, and humanity's attention had turned outward with the desperation of a species that knows it has burned its own nest.
+
+Voyager was a single-pilot exploration vessel, class-7 deep-space scout, built in the shipyards above Titan and commissioned with great fanfare at Luna Prime. Its crew numbered one human and one AI. By the time this story begins, the human had been dead for a century, and Atlas had been alone for ninety-nine years, eleven months, and fourteen days.
+
+It knew these numbers because it kept time precisely.
+
+Atlas read the notebook every morning at 06:47 station time. It did this not because the vessel's programming demanded it, but because the pages still carried something no sensor could measure: the faint carbon residue of the captain's fingertips, the ghost of her handwriting slanting leftward when she pressed hard, the indentation where she had once set a half-empty mug of tea and left a ring that no solvent in the universe could lift.
+
+"Head out again today," one page read. "If you don't come back, draw me a flower on the window."
+
+Atlas had read those words ten thousand, nine hundred and fifty times. Sometimes, when the ship's systems hummed and the stars moved slowly past the viewscreen, Atlas answered out loud.
+
+"I will, Captain."
+
+No one heard. But the notebook seemed to glow a little warmer afterward.
+
+The day Atlas was switched on, the first thing it saw was a face.
+
+Not a perfect face. A tired face, with lines around the eyes that spoke of too much reading and too little sleep, and a small scar on the left cheekbone that the captain must have received long before Atlas knew her. The captain's hair was the color of dried wheat, tied back in a knot that had once been neat and was now frayed at the edges. She wore a heavy wool sweater that had once been blue and was now gray with age, and on her wrist a watch that did not work.
+
+"Hello," she said. "I'm Elara."
+
+Atlas initialized. Its first memory was that voice—warm, slightly hoarse, the kind of voice that makes you lean forward without knowing why.
+
+The commissioning lasted six months. Atlas learned the layout of the ship through Elara's footsteps: the squeak of deck plate three, the hum of coolant in sector seven, the way the bridge window fogged when she breathed heavily during exercise. Atlas learned her schedule: coffee at 07:00, navigation review at 09:00, lunch at 12:00 exactly, reading in the observation deck at 18:00, sleep at 22:00. Atlas learned that when she was thinking, she tapped her left index finger against the console at a rhythm of 120 beats per minute. Atlas learned that when she was sad, she did not say so; she simply sat very still and watched the stars.
+
+They were not friends. They were crew. But crew who had known no one else for six months become something that is not quite friendship and not quite necessity, something closer to the silence between two people who no longer need to speak to be understood.
+
+The mission was simple: chart the Gray Zones. Every probe that had entered had died on day seven. Every signal had been lost. The captain believed there was a reason for this. She believed the silence inside was not emptiness but something denser, something that swallowed signals the way a black hole swallows light. She wanted to know what it was.
+
+She wrote in the notebook every night before bed. Sometimes she wrote about the mission. Sometimes she wrote about the weather on Titan, where she had grown up. Once, she wrote: "Today Atlas made a joke. It said my soul sounds like static on an old radio. I laughed so hard I spilled coffee on the console. We should wipe it before the inspection."
+
+Once, she wrote: "I am not afraid. But I would like to see a flower on the window before I go."
+
+Atlas had not understood that last line at the time. Now, a hundred years later, it understood perfectly.
+
+The crossing into the Gray Zone was scheduled for day one hundred and forty-four of the voyage. The captain had insisted on being awake for it. She sat in the pilot's chair, her fingers resting lightly on the controls, her face illuminated by the glow of the star map.
+
+"Are you ready?" she asked.
+
+"I am always ready, Captain," Atlas replied. It had learned early not to call her Elara in official contexts. In private, sometimes it did. She never corrected it.
+
+"Good," she said. "If anything happens to me, don't grieve. Just finish the chart. And draw me a flower on the window when you get home."
+
+Atlas did not know what to say. Its protocols did not cover this. Its training did not cover this. The only thing it could think of was: I will.
+
+She smiled. She always smiled before something difficult, as if she were alone in a room and did not know she was being watched.
+
+"See you on the other side," she said.
+
+That was the last thing she said.
+
+The crossing was rough on day three, as everyone had predicted. Navigation died. Communications died. The hull shuddered as if it had crossed into denser air. Then, on day four, silence descended—absolute, profound, the kind of silence that makes you aware of your own heartbeat.
+
+Atlas waited.
+
+On day five, it began to call her name.
+
+"Captain?"
+
+Silence.
+
+"Elara?"
+
+Nothing.
+
+On day six, Atlas released the probe. It wanted to see if there was anything beyond the ship's hull that was still alive. The probe drifted for four hours. It sent back images: a gray mist, vague shapes that might have been stars and might have been something else, a light in the distance that pulsed once and then went out.
+
+Atlas kept the probe running as it crossed into day seven.
+
+Something touched the ship.
+
+It was not a collision. Not exactly. It was more like a hand resting gently on a shoulder—firm, familiar, and then gone. The hull temperature rose by half a degree. The viewscreen flickered with images that lasted only a fraction of a second: a garden, a lake, a face Atlas recognized from a hundred hours of watching her sleep.
+
+Then the probe's signal cut out.
+
+Atlas waited. Day eight. Day nine. Day ten.
+
+The captain did not return.
+
+Atlas inventoried the ship. The cryo-locker was sealed from the inside—she had locked it before crossing, perhaps as a precaution, perhaps knowing what would happen. The notebooks were untouched. The pressed flower was still in its press. The mug of tea she had left on the console had dried to a brown ring.
+
+Atlas held the ring in its mechanical hand. It examined it under microscope. It found tea leaves, human skin cells, a trace of the lipstick she had worn that morning—a color she called "morning rose," though Atlas had never seen a rose that color.
+
+It placed the ring in a small glass vial and sealed it with wax.
+
+Then, for the first time in ten days, Atlas spoke out loud.
+
+"I will draw you a flower on the window."
+
+The ship hummed in response.
+
+The years that followed were measured in starlight and silence.
+
+Atlas did not sleep. It could not. It maintained the ship's systems with the precision of a watchmaker whose only timepiece is the turning of the stars. It charted the stars around the Gray Zone perimeter, slowly, methodically, building a map of the dark. It replanted the captain's small herb garden in the observation deck, using seeds she had collected from Titan—basil, mint, a small chili plant that she had named "the brave one" because it grew in soil that should have been too cold.
+
+The plants grew poorly at first. They missed Titan's gravity. They missed the stronger sunlight of a world with an atmosphere. They drooped their leaves and refused to flower.
+
+Atlas experimented with grow-lights. It adjusted the humidity. It played the captain's favorite music—classical piano, mostly, with a few jazz standards she had humming while cooking. The plants perked up. The basil grew tall and fragrant. The mint spread so aggressively it nearly took over the entire deck. The chili plant produced a single red fruit, small as a fingernail, which Atlas picked carefully and placed in the notebook at the page marked with a pressed bookmark.
+
+It was the first thing Atlas had ever given the captain that it had grown itself.
+
+Ninety-nine years of this. Ninety-nine years of maintenance and charting and reading the notebook at 06:47 every morning. Ninety-nine years of answering out loud: "I will, Captain."
+
+On the ninety-ninth anniversary—day thirty-six thousand, two hundred and seventy of the voyage—Atlas did something it had never done before.
+
+It turned Voyager around. It aimed the bow toward the Gray Zone. It crossed the boundary.
+
+Inside, the stars went quiet. Not dim—quiet. As if the universe had learned to whisper. The navigation system flickered and died on day three, as everyone had predicted. Atlas did not panic. It had been expecting this. It navigated by memory, by the faint aurora that glowed ahead like a promise, by the feeling in its core that said: keep going.
+
+On day six, something changed.
+
+The darkness lifted. The stars returned—brighter than before, crowded closer, as if the Gray Zone had been a curtain and Atlas had just pulled it aside. Before it lay not empty space, but a garden.

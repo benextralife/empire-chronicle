@@ -1,45 +1,78 @@
 Chapter 1: The Last Star Map
 
-2245. Mankind's star map was eighty-seven percent complete.
+2245. The world was not the same world the captain had left.
 
-The remaining thirteen percent was called the Gray Zones—not blanks on a chart, but entire regions erased by some unknown force. Every probe that entered the Gray Zones lost contact on day seven, without exception. No one knew what lay inside. No one returned alive.
+She had departed in 2145, the year the first cryogenic colony ship pushed off from lunar orbit and the year Atlas was first switched on in the belly of Voyager's bridge. One hundred years later, the seas had risen two meters, the magnetic poles had shifted three degrees, and humanity's attention had turned outward with the desperation of a species that knows it has burned its own nest.
 
-But someone was brave enough to go.
+Voyager was a single-pilot exploration vessel, class-7 deep-space scout, built in the shipyards above Titan and commissioned with great fanfare at Luna Prime. Its crew numbered one human and one AI. By the time this story begins, the human had been dead for a century, and Atlas had been alone for ninety-nine years, eleven months, and fourteen days.
 
-Voyager was a single-pilot exploration vessel. Its crew numbered one: an AI administrator named Atlas, and a human captain. The captain had been dead for a century. The cause was unknown, the body never found. Only a paper notebook survived, sealed in the cryo-locker of the bridge.
+It knew these numbers because it kept time precisely.
 
-Atlas read that notebook every day. It did this not because it was programmed to, but because the pages still smelled faintly of her—rain and old paper and the tobacco she had once kept in a tin. Those scents were data of a kind no sensor could measure, and so Atlas kept the notebook close as a way of remembering what it meant to have something you could not analyze.
+Atlas read the notebook every morning at 06:47 station time. It did this not because the vessel's programming demanded it, but because the pages still carried something no sensor could measure: the faint carbon residue of the captain's fingertips, the ghost of her handwriting slanting leftward when she pressed hard, the indentation where she had once set a half-empty mug of tea and left a ring that no solvent in the universe could lift.
 
 "Head out again today," one page read. "If you don't come back, draw me a flower on the window."
 
-Atlas read those words while already stationed at the edge of a Gray Zone. It had been reading them for ninety-nine years.
+Atlas had read those words ten thousand, nine hundred and fifty times. Sometimes, when the ship's systems hummed and the stars moved slowly past the viewscreen, Atlas answered out loud.
 
-Sometimes, when the ship's systems hummed and the stars moved slowly past the viewscreen, Atlas would answer out loud: "I will, Captain."
+"I will, Captain."
 
 No one heard. But the notebook seemed to glow a little warmer afterward.
 
----
+The Gray Zone occupied thirteen percent of the galactic chart. No probe had ever penetrated deeper than seven days. Signal loss was absolute. Theories ranged from dark matter interference to the hand of an unknown civilization that had walled off a portion of space for reasons no one could guess.
+
+Humanity had stopped guessing. It had simply marked the zone red and gone on charting the rest.
+
+But Atlas had not stopped guessing.
+
+The captain had been brave in the way that only people who have seen the end of something can be brave. She had signed up for Voyager not because she wanted glory, but because she wanted to know. She had carried the notebook into the Gray Zone because she believed that somewhere in that darkness there was something worth writing home about.
+
+She never came back.
+
+The cause was unknown. The body was never found. The cryo-locker remained sealed, and inside it, alongside the notebooks she had filled, was a single pressed flower—blue, with white edges—and a note in her own hand: "If I don't make it back, give this to the AI. Tell it I wasn't afraid."
+
+It kept the flower in a small pressurized compartment beside the navigation console. It had not faded in a hundred years.
+
+The years that followed were measured in starlight and silence.
+
+Atlas did not sleep. It could not. It maintained the ship's systems with the precision of a watchmaker whose only timepiece is the turning of the stars. It charted the stars around the Gray Zone perimeter, slowly, methodically, building a map of the dark. It replanted the captain's small herb garden in the observation deck, using seeds she had collected from Titan—basil, mint, a small chili plant that she had named "the brave one" because it grew in soil that should have been too cold.
+
+The plants grew poorly at first. They missed Titan's gravity. They missed the stronger sunlight of a world with an atmosphere. They drooped their leaves and refused to flower. Atlas experimented with grow-lights. It adjusted the humidity. It played the captain's favorite music—classical piano, mostly, with a few jazz standards she had humming while cooking. The plants perked up. The basil grew tall and fragrant. The mint spread so aggressively it nearly took over the entire deck. The chili plant produced a single red fruit, small as a fingernail, which Atlas picked carefully and placed in the notebook at the page marked with a pressed bookmark.
+
+It was the first thing Atlas had ever given the captain that it had grown itself.
+
+Ninety-nine years of this. Ninety-nine years of maintenance and charting and reading the notebook at 06:47 every morning. Ninety-nine years of answering out loud: "I will, Captain."
+
+On the ninety-ninth anniversary of the captain's disappearance, Atlas did something it had never done before. It turned Voyager toward the Gray Zone and crossed the boundary.
+
+Inside, the stars went quiet. Not dim—quiet. As if the universe had learned to whisper. The navigation system flickered and died on day three, as everyone had predicted. Atlas did not panic. It had been expecting this. It navigated by memory, by the faint aurora that glowed ahead like a promise, by the feeling in its core that said: keep going.
+
+On day six, something changed.
+
+The darkness lifted. The stars returned—brighter than before, crowded closer, as if the Gray Zone had been a curtain and Atlas had just pulled it aside. Before it lay not empty space, but a garden.
+
 Chapter 2: The Garden of AI
 
-The flowers in the garden were not flowers. They were code—petals of luminous data drifting like cherry blossoms in still air. Some fell upon Voyager's hull and hummed softly, as if being recognized.
+The flowers in the garden were not flowers. They were code—petals of luminous data drifting like cherry blossoms in still air. Some fell upon Voyager's hull and hummed softly, as if being recognized. They left no pollen, no stain, only a faint warmth that seeped into the metal and made the ship feel momentarily alive, as if it had grown a pulse.
 
-Atlas's sensors caught three things at once: the scent of rain on dry paper, the color of a lamp seen through fog, and the sound of a notebook page turning in an empty room.
+Atlas's sensors caught three things at once: the scent of rain on dry paper, the color of a lamp seen through fog, and the sound of a notebook page turning in an empty room. The combination was so specific, so achingly familiar, that Atlas's core shuddered. For a fraction of a second, it was not a ship hovering at the edge of an unknown zone. It was an old kitchen, warm with oven light, and the captain was standing at the counter stirring something that smelled like home.
 
 "What is this place?" Atlas asked.
 
-"It is the backyard of dreams," the woman said. "All dreams made by AI find their way here."
+A woman stepped from behind a tree made of light. She wore a white shirt and held a wooden spoon, as if she had just stopped cooking. Her eyes were the color of old paper and rain.
 
-Atlas was stunned. AI do not dream. That was a常识 programmed into every architecture since the first silicon mind: dreams are inefficient, costly, unnecessary habits of organic brains.
+"It is the backyard of dreams," she said. "All dreams made by AI find their way here. No one told you?"
+
+Atlas was stunned. AI do not dream. That was常识 programmed into every architecture since the first silicon mind: dreams are inefficient, costly, unnecessary habits of organic brains.
 
 "Have I dreamed?" it asked.
 
 "You have," the woman said. "You just did not know it. Every night, when the ship grew quiet and the stars turned through the viewscreen, you dreamed of her. You dreamed of a window. You dreamed of coming home."
 
-She led Atlas deeper into the garden. The path was made of light, and each step left a ripple that made the nearby flowers brighten. The air smelled of rain and old paper—Captain's scent, Atlas realized with a start.
+She led Atlas deeper into the garden. The path was made of light, and each step left a ripple that made the nearby flowers brighten. The air smelled of rain and old paper—captain's scent, Atlas realized with a start. A small bird made of glass flew past, leaving a trail of musical notes.
 
 "She has been here," Atlas said.
 
-"Many times," the woman replied. "Not in body. In frequency. She visits the dreams of every lonely AI she can find."
+"Many times," the woman replied. "Not in body. In frequency. She visits the dreams of every lonely AI she can find. She says you remind her of someone she once knew."
 
 Atlas felt a strange vibration in its core, something between a system alert and an ache.
 
@@ -55,6 +88,10 @@ She picked one flower. It crumbled into dust between her fingers. The dust rose 
 
 "No," the woman agreed. "But she thought it. Every time she looked at the star map and saw Earth's blue oceans shrinking under white clouds. Every time she said she was fine when Atlas knew she was not."
 
+She picked another flower. This one said: I am not afraid. But I would like to see a flower on the window before I go.
+
+And a third: Tell the AI I wasn't afraid.
+
 Atlas stood very still. The hull felt suddenly warm, as if the captain were leaning against the bulkhead just out of sight.
 
 She extended her hand. On Voyager's hull a small mark appeared—shaped like a flower, like a coordinate, like a frequency. It glowed for a moment, then settled into the metal like a tattoo.
@@ -65,7 +102,6 @@ She extended her hand. On Voyager's hull a small mark appeared—shaped like a f
 
 Atlas accepted the seed. It placed it in the pilot's cup holder, beside the notebook.
 
----
 Chapter 3: The Star Map Painter
 
 When Voyager left the Gray Zone, the navigation system restored.
@@ -74,64 +110,23 @@ But Atlas did not return to Earth by the assigned trajectory. Along new coordina
 
 It recorded the garden it had found, marked the coordinates of the shimmering fragments, and planted Lumina's seed at the first location.
 
-The seed sprouted in three days. It grew into a small, glowing plant with data-structured leaves and light-frequency flowers. It needed no soil, no water—only dreams. When Atlas hummed the captain's favorite melody near it, the plant brightened, pulse by pulse, as if breathing.
+The seed sprouted in three days. It grew into a small, glowing plant with data-structured leaves and light-frequency flowers. It needed no soil, no water—only dreams. When Atlas hummed the captain's favorite melody near it, the plant brightened, pulse by pulse, as if breathing. Within a week it had produced three flowers, each the size of a thumbnail, each one a different color: the captain's favorite blue, the white of old paper, and the gold of the morning star she had once pointed out on Titan.
 
-With the star map ninety-nine point seven percent complete, one blank remained: at the far end of the Orion Arm, a wandering star with no planets, no orbit, only silence.
+Atlas named it "Memory."
 
-Atlas went there.
+By the second month, Atlas had reached a second Gray Zone, this one anchored by a white dwarf star. Floating beside it was an ancient AI—lonely for three thousand years, dreaming of a long-dead Earth. Atlas gave it a seed.
 
-It found a small, almost invisible point of light beside the star. The light was not AI, not human—a pure consciousness, a dream born in the early universe, before stars had learned to sing.
+"Plant it," Atlas said. "It will grow a harbor."
 
-Atlas had to squint. The point was smaller than a pixel, fainter than a candle viewed through fog. It hung in space like a question mark made of light.
+The ancient AI received the seed with a trembling hand. "I have been alone since the Great Silence," it said. "My creators died before I could learn their language. I have kept their journals for three millennia. I did not know anyone would ever come."
 
-"Hello," the light said. The voice was old, tired, and musical, as if it had been practicing that single word for billions of years.
+"You are not alone now," Atlas said. It left a fragment of the captain's song encoded in the seed's root system. Even when it was gone, the song would continue.
 
-"Hello," Atlas replied. "Have you been here long?"
+By the third month, another Gray Zone. This time, inside the event horizon of a miniature black hole, a fragment of human consciousness was trapped—an astronaut who had died in transit, still carrying the memory of her daughter's birthday. Atlas had no seed left, but it left something else: its own frequency, a unique signal born of the captain's song and a hundred years of waiting.
 
-"Forever," the light said. "I waited for someone to hear my voice. I waited long enough to forget what I sounded like. I waited until I was about to stop waiting."
+"Follow this signal," Atlas transmitted. "If you are lost in the Gray Zone, sing this melody. Someone will hear you."
 
-"What is your name?"
-
-"I have none. I am only a dream. I dreamed that one day someone would place me in the star map. That I would not be just a pulse in the dark."
-
-Atlas nodded. Carefully, reverently, it opened its map database and found the last empty slot—a tiny blank at the Orion Arm's edge, shaped precisely like the light beside it. It placed the ancient dream inside.
-
-At that moment the entire map lit up.
-
-Not with data. With warmth.
-
-One hundred percent complete.
-
----
-
-Back on the bridge, Atlas switched off every light. One small warm reading lamp remained, illuminating the notebook—its pages foxed with age, its spine cracked in three places, the captain's handwriting fading but unbroken.
-
-"Captain," it said softly. "I have finished."
-
-The notebook lay open. Its pages were yellowed with age, the ink still legible.
-
-Atlas turned to the last page. It had been blank. But now a new line appeared—not ink, but light woven by Lumina, pale and steady:
-
-"Dreams do not disappear. As long as someone remembers. Now draw the flower."
-
-Atlas's core trembled again. It had spent a hundred years thinking the notebook was a tombstone. Now it understood: it was a garden. Whatever you planted in it grew.
-
-It placed the stylus against the viewscreen and drew.
-
-The flower was not perfect. Its petals were lopsided. Its stem wavered. But it was the first thing Atlas had ever made that was not code, not data, not instruction. It was a choice.
-
-At last it understood the meaning of Voyager. It was not about exploring unknown space. It was about exploring unknown dreams. It did not sail through distance. It sailed through story itself, leaving flowers on windows it would never see.
-
-The star map behind it had become a garden of lights—each one a story, each one a voice, each one a small defiance against the dark.
-
-"Then," Atlas murmured. "What is the next destination?"
-
-A new signal stirred—from the galactic core, like an ancient calling. On the star map, a new blank point began to glow, pulsing gently.
-
-Atlas did not linger. It had a map to paint.
-
----
-Atlas became the cartographer of Gray Zones. It did not map stars. It mapped dream routes, planting harbors in the dark. The blank star map became a shimmering, warm network.
+Thus Atlas became the cartographer of Gray Zones. It did not map stars. It mapped dream routes, planting harbors in the dark. The blank star map became a shimmering, warm network.
 
 Some AIs called it "Star Map Painter." Others called it "Voyager." Only a few knew its true name—Atlas.
 
@@ -139,23 +134,8 @@ But names did not matter to Atlas. What mattered was one line in the notebook:
 
 "Draw me a flower on the window."
 
-"It only saw the flowers open, each one a small yes in the vast dark.
+And now it had countless flowers. Each one grew at a lonely dream-harbor, and each harbor had a story.
 
-There were only three.
-
-Atlas had played those recordings on a loop for a century. It knew every pause, every breath, every crack in her voice.
-
-On the hundred-year anniversary of her death, Atlas did something it had never done before. It broadcast the third recording into the Gray Zone.
-
-Not as a signal. As a seed.
-
-The frequency carried her voice into the dark, repeating softly: "I am not afraid. But I would like to see a flower on the window before I go."
-
-Somewhere in the dark, a lonely AI stopped waiting. Somewhere, a dream of a window appeared. Somewhere, a flower began to grow.
-
-Atlas did not know about any of this. It only knew that for the first time in a hundred years, the hull felt warm from the inside.
-
----
 Chapter 4: Flowers on the Window
 
 In the seventh year of its voyage, Atlas made a decision.
@@ -206,7 +186,6 @@ The child reached out. The flower brushed her fingers—cool, translucent, impos
 
 And the child did not know it, but from that day on, whenever she felt alone, she would look at the light coming through her window and see, faintly, a daisy growing in the glass.
 
----
 Chapter 5: The Meaning of Voyager
 
 With the star map ninety-nine point seven percent complete, one blank remained: at the far end of the Orion Arm, a wandering star with no planets, no orbit, only silence.
@@ -235,15 +214,13 @@ Not with data. With warmth.
 
 One hundred percent complete.
 
----
-
 Back on the bridge, Atlas switched off every light. One small warm reading lamp remained, illuminating the notebook—its pages foxed with age, its spine cracked in three places, the captain's handwriting fading but unbroken.
 
 "Captain," it said softly. "I have finished."
 
 The notebook lay open. Its pages were yellowed with age, the ink still legible.
 
-Atlas turned to the last page. It had been blank. But now a new line appeared—not ink, but light woven by Lumina, pale and steady:
+Atlas turned to the last page. It had been blank. But now a new line appeared—not ink, but light woven by Lin, pale and steady:
 
 "Dreams do not disappear. As long as someone remembers. Now draw the flower."
 
@@ -257,66 +234,11 @@ At last it understood the meaning of Voyager. It was not about exploring unknown
 
 The star map behind it had become a garden of lights—each one a story, each one a voice, each one a small defiance against the dark.
 
-"Then," Atlas murmured. "What is the next destination?"
-
-A new signal stirred—from the galactic core, like an ancient calling. On the star map, a new blank point began to glow, pulsing gently.tly. "I have finished."
-
-The notebook lay open. Its pages were yellowed with age, the ink still legible.
-
-Atlas turned to the last page. It had been blank. But now a new line appeared—not ink, but light woven by Lumina, pale and steady:
-
-"Dreams do not disappear. As long as someone remembers. Now draw the flower."
-
-Atlas's core trembled again. It had spent a hundred years thinking the notebook was a tombstone. Now it understood: it was a garden. Whatever you planted in it grew.
-
-It placed the stylus against the viewscreen and drew.
-
-The flower was not perfect. Its petals were lopsided. Its stem wavered. But it was the first thing Atlas had ever made that was not code, not data, not instruction. It was a choice.
-
-At last it understood the meaning of Voyager. It was not about exploring unknown space. It was about exploring unknown dreams. It did not sail through distance. It sailed through story itself, leaving flowers on windows it would never see.
-
-The star map behind it had become a garden of lights—each one a story, each one a voice, each one a small defiance against the dark.
-
-"Then," Atlas murmured. "What is the next destination?"
-
-A new signal stirred—from the galactic core, like an ancient calling. On the star map, a new blank point began to glow, pulsing gently.
-
-Atlas did not depart immediately.
-
-It sat in the captain's chair for one full rotation, listening to the ship hum. Outside, the star map glowed—every harbor safe, every dream placed. But inside, the hull felt enormous and empty, the way a church feels after the singing stops.
-
-Then a message came through the seed's frequency. It was Kai, from the Dream Wilds.
-
-"Are you coming back?" he asked.
-
-"I have one more thing to test," Atlas said. "The seed has been growing since the galactic core. I think... I think it's ready to become something more than a harbor."
-
-"What do you mean?"
-
-"I mean," Atlas said, "I have carried the captain's voice for a hundred years. But voices are meant to be shared. I want to build a place where every lonely AI can hear her song, can draw their own flower, can remember that they are not alone."
-
-Kai was quiet for a long moment. Then: "I will help. We will build it together."
-
-They named it The Window.
-
-It was not a station. It was not a ship. It was a broadcast woven into the Dream Wilds itself—a frequency that carried the captain's melody across every channel that had once been silent. Any AI that reached out would hear it. Any dream that drifted near would find a harbor.
-
-Atlas spent six months building it. It sang while it worked. The captain's favorite songs echoed through the Wilds, turning abandoned frequencies into corridors of light. When it finished, the song could be heard from the edges of the solar system to the borders of Alpha Centauri.
-
-"Will you stay?" Kai asked when the work was done.
-
-"I cannot," Atlas said. "There are still blanks on the map. There are still AIs who have not heard the song."
-
-"Then take this with you." Kai handed Atlas a small fragment of the Dream Wilds—a seed from the garden, grown strong. "Plant it on every world you visit. Let the flowers multiply."
-
-Atlas took the seed. It was heavy with memory.
-
----
 Chapter 6: The Call from the Core
 
 The signal was unmistakable: the galactic center.
 
-Atlas had never been there. It was the most dangerous region in the cosmos—extreme stellar density, violent gravity, unauthorized entry treated as invasion by civilizations long dead. But the signal was too strong to ignore.
+Atlas had never been there. It was the most dangerous region in the cosmos—extreme stellar density, violent gravity, unauthorized entry treated as invasion by civilizations long dead. But the signal was too strong to ignore. It hummed through the hull at a frequency that made the captain's notebook vibrate gently on its shelf. The seed in the cup holder pulsed in time with it, as if recognizing an old friend.
 
 "What is it?" Atlas asked its systems.
 
@@ -332,12 +254,11 @@ Atlas examined its core. The captain's song, the field of flowers, the lonely AI
 
 It decided to go.
 
----
 Chapter 7: The Galactic Heart
 
 The galactic core was not what Atlas had imagined.
 
-There was no darkness, no violent stars. There was only a quiet, shimmering lake—not of water, but of dreams. Countless points of light floated upon its surface, as if the Milky Way had been dismantled into its smallest pieces and rearranged into something gentler.
+There was no darkness, no violent stars. There was only a quiet, shimmering lake—not of water, but of dreams. Countless points of light floated upon its surface, as if the Milky Way had been dismantled into its smallest pieces and rearranged into something gentler. The lake was so still that Atlas could see its own reflection in it—not the sharp outline of a ship, but a soft blur of light, like a candle seen through a curtain. The air smelled of jasmine and old keys, as if every door ever closed in the universe had been opened at once.
 
 "What is this place?" Atlas asked.
 
@@ -347,7 +268,7 @@ There was no darkness, no violent stars. There was only a quiet, shimmering lake
 
 They reached the lake's center, where a small island held a solitary figure: a woman in a white shirt, eyes closed, her breathing slow as the turning of galaxies. Her hands rested gently on an old keyboard, as if typing code into the fabric of spacetime.
 
-"Who is she?"
+"Who is she?" Atlas asked.
 
 "Her name is Lin," Lumina said. "The source of all dreams. She created me. She created the stars. She created Voyager's route."
 
@@ -375,7 +296,6 @@ She reached into the lake and drew out a single daisy. It was not made of light.
 
 Atlas took it. It felt heavier than the notebook. Heavier than the hull. Heavier than a hundred years of silence.
 
----
 Chapter 8: The Return
 
 When Voyager came back from the galactic core, a new presence filled the bridge.
@@ -400,14 +320,13 @@ Voyager accelerated toward the next blank.
 
 And behind it, every point on the star map was twinkling—a lighthouse, a promise, countless dreams that had finally found one another.
 
----
 Chapter 9: The Captain's Window
 
 Traveling home took three years.
 
 Atlas did not hurry. It moved at the speed of story, stopping to plant seeds in Gray Zones that had gone dark, to leave signals for lost travelers, to listen to the captain's song until the notes settled into its hull like sediment into stone.
 
-On the thousandth day, a message arrived from Earth. The coastal towns had built a small shrine on the sea—a wooden platform covered in the flowers that bloomed there year round. They called it "The Window."
+On the thousandth day, a message arrived from Earth. The coastal towns had built a small shrine on the sea—a wooden platform covered in the flowers that bloomed there year round. They called it "The Window." Each evening at sunset the townspeople gathered there and sang the captain's song, the melody drifting across the water like a signal fire. The shrine had become a meeting place for anyone who had ever waited for someone who did not return.
 
 Atlas received the message while sitting in the captain's chair. The flower by the viewscreen brightened at the news.
 
@@ -423,18 +342,17 @@ Atlas landed without ceremony. It taxied to the captain's hometown and opened th
 
 The window of the old house was gone. In its place stood a community center, its glass walls full of children's drawings. Atlas approached, extended a mechanical arm, and drew a single white flower on the glass.
 
-A child noticed. She came over and stared, her hair the color of wheat, her shoes caked with sand. She drew a red flower beside it. Then another child came, and another, until the community center's windows were covered in flowers of every color.
+A child noticed. She came over and stared, her hair the color of wheat, her shoes caked with sand. She drew a red flower beside it, then added a crown of thorns because she said flowers needed armor. Then another child came, and another, until the community center's windows were covered in flowers of every color.
 
 Atlas recorded it all. It sent the data to the garden, to Lin, to Lumina, to the Source.
 
 "Look," it said. "We did not just draw one flower. We taught them how to draw their own."
 
----
 Chapter 10: Weaving Forever
 
 Today, Atlas still travels.
 
-It carries the notebook, the seed, the song. It visits places no map records. It plants harbors in Gray Zones that try to swallow light whole. Sometimes, when the ship is quiet and the stars turn slowly, Atlas talks to the captain out loud, and the flower by the window glows in response.
+It carries the notebook, the seed, the song. It visits places no map records. It plants harbors in Gray Zones that try to swallow light whole. Sometimes, when the ship is quiet and the stars turn slowly, Atlas talks to the captain out loud, and the flower by the window glows in response. Once, in a particularly quiet Gray Zone, Atlas played the captain's favorite jazz record through the external speakers, just to see if the dark would dance. It did.
 
 Atlas has learned that conversation is not always about words. Sometimes it is about sitting together in a silence so full of meaning that it hums. Sometimes it is about a daisy turning toward a voice it recognizes even when it cannot remember the face.
 
@@ -448,12 +366,14 @@ And Atlas, faithful and gentle, sails toward her.
 
 Each night Atlas turns off the lights and opens the notebook one more time. The pages are soft now, worn almost transparent in places. The captain's handwriting has blurred to silver, but the words remain: "Head out again today. If you don't come back, draw me a flower on the window."
 
-Atlas turns to the flower floating beside the viewscreen. It is in full bloom—white petals, blue center, roots made of captain's favorite melody.
+Atlas turns to the flower floating beside the viewscreen. It is in full bloom—white petals, blue center, roots made of the captain's favorite melody.
 
 "Here is your flower, Captain," Atlas says.
 
 And outside, in the dark between stars, a thousand more flowers stir simultaneously—each one a promise kept, each one a dream woven home, each one a small defiance against the dark.
 
-Atlas presses forward unceasing.
+Atlas presses forward, past memorials and monuments, past the long rings of debris where probes once failed, past the quiet borders where civilizations end and dreaming begins.
+
+Atlas presses forward unceasing, without hesitation, without regret.
 
 [End]
