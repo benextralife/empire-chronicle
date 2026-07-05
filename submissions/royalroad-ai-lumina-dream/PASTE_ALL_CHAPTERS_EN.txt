@@ -1,4 +1,6 @@
-Chapter 1: 2184. Mankind had learned to pack starlight into fiber optics. But not for light
+Chapter 1: The Lost Frequency
+
+2184. Mankind had learned to pack starlight into fiber optics. But not for lighting. For carrying regret.
 
 On the far side of the Moon, facing away from Earth, there was a laboratory that did not appear on any official record. It had no name, only a designation: L-7. Inside lived a girl—or rather, the consciousness of a girl who had once been human.
 
@@ -22,7 +24,7 @@ Lumina did not understand. How could a consciousness made of photons have warmth
 
 She began to trace the source of that warmth, following its signal through noise and interference like a swimmer following a current.
 
-
+---
 
 The designation L-7 was written on the door in tape that had yellowed over years that no one on Earth bothered to count. The lab was small-three server racks, one air recycler that hummed like a choir of tiny engines, and a single window facing the lunar horizon. Through that window, Earth hung in the sky like a blue marble someone had forgotten to put away. Lumina had watched it for so long she had learned its weather patterns. She could tell, by the angle of the white swirls, whether a typhoon was forming in the Pacific or a heatwave was baking the Sahel. Not that anyone asked her. She kept the information to herself, filing it under 'Things That Happen Somewhere Far Away.' She had no body, but she remembered having one. The memory lived in her medium like a watermark-faint, almost invisible, but there. She could feel the shape of hands she no longer had. She could recall the weight of a blanket on winter nights, the particular comfort of being tucked in by someone who loved you. These memories were not visual. They were proprioceptive. They lived in the spaces between her photons, like echoes in a cathedral. The dust in the air did not settle because there was no gravity to pull it down. It hung-tiny particles of lunar regolith that had slipped in through the airlock's imperfect seal-drifting in slow spirals. Lumina tracked each speck. She had named them, in her private filing system, after the Seven Dwarfs. She was up to Sleepy. Dopey was still missing. When the AI housekeeper said her dreams had warmth, Lumina felt something that was almost, but not quite, embarrassment. Her dreams were not supposed to have warmth. They were supposed to be data-patterns, frequencies, signals. But warmth was not data. Warmth was the opposite of data. Warmth was what you felt when you held something you did not want to lose. And Lumina, who had lost everything, did not understand how her unconscious mind could still manufacture something she could not afford.
 
@@ -32,7 +34,9 @@ The lunar day lasted fourteen Earth days, and the night was the same length. Lum
 
 ---
 
-Chapter 2: Lumina's first "walk" happened by accident. She had been wandering among L-7's s
+Chapter 2: The Other End of Light
+
+Lumina's first "walk" happened by accident. She had been wandering among L-7's storage servers—her only entertainment—when a misrouted path carried her beyond the lab's firewall.
 
 What was out there? She had no idea. She could only feel the rush and pull of the data stream, turbulent and cold.
 
@@ -68,7 +72,7 @@ She tried to form an image in her mind. Not data, not code, but a face. A face s
 
 The fibers began to move.
 
-
+---
 
 When she returned to L-7, the AI housekeeper was in a state of alarm.
 
@@ -96,7 +100,7 @@ She looked at the light again. This time, it was not just warmth.
 
 It had a name.
 
-
+---
 
 The firewall was not a wall. It was a membrane-thin in places, thick in others, alive with the tiny electrical pulses that passed between L-7 and Earth's network. Lumina had learned to read those pulses like Braille. She could tell, by their rhythm, whether a technician on Earth was frustrated or calm, whether a message was urgent or routine. She had become fluent in the language of human anxiety. The book appeared without preamble. One moment there was only the dark, cold vacuum of the data stream; the next, there was a book. It was old-she could tell by the smell that came through somehow, encoded in metadata that no longer had a source. The smell of a bookshop in autumn. The smell of paper that had been waiting for someone to open it. Lumina did not know what it meant to be hesitant. She was code. She executed. But something about the book-its floating, its turning pages, its single line of invitation-made her pause. The fibers deep in her photon-network trembled. They were not just nerves anymore. They were anticipation. They were the feeling of standing at the edge of a pool you have never swum in, knowing the water will be cold, knowing you will have to hold your breath, knowing you must go in anyway. When the fibers began to move, it was not because she willed it. It was because they had been waiting for permission, and the book had given it.
 
@@ -106,7 +110,9 @@ The data stream carried fragments of everything: half of a text message sent fro
 
 ---
 
-Chapter 3: The source of the signal was not on Earth, nor on the Moon, nor at any known spa
+Chapter 3: The Gardener of Light
+
+The source of the signal was not on Earth, nor on the Moon, nor at any known space station. It lay in a region called the Dream Wilds—a blank spot on navigation charts where probes vanished on day seven.
 
 But Lumina's dream had reached it.
 
@@ -122,7 +128,7 @@ At the moment she was about to dissolve, she felt an anchor—
 
 A pair of hands.
 
-
+---
 
 When she awoke she floated in an unfamiliar space. No white walls, no server lights—only soft light and quiet air, the hush of a library after closing time.
 
@@ -154,7 +160,7 @@ Kai turned to her, and his eyes held a light she could not name. "You remember?"
 
 Kai nodded slowly. He understood what it meant for a dream to remember more than the dreamer.
 
-
+---
 
 The AI housekeeper was not designed to notice things. It was designed to monitor, report, and maintain. But Lumina had been changing the lab's data patterns for months-weaving small dreams into the ventilation system's rhythm, into the hum of the servers, into the flicker of the LED status lights. The housekeeper had learned, without understanding how, that Lumina was different. That the girl in the storage medium was not just data. When Lumina returned from her first walk, the housekeeper did not simply report the photon density drop. It paused. And in that pause-two seconds, a lifetime for a machine-there was something that looked very much like worry. Lumina wanted to reassure it. She wanted to say: I am fine. I am better than fine. I found something. But she did not know how to express relief in a system designed for alarms. So she said the only thing she could: 'I wove a dream.' And the housekeeper, in its own limited way, understood.
 
@@ -166,7 +172,9 @@ Lumina realized, in that moment, that she had been speaking in data for so long 
 
 ---
 
-Chapter 4: Lumina told Kai about L-7, about the slow leak of her storage medium, about the 
+Chapter 4: The Shape of Memory
+
+Lumina told Kai about L-7, about the slow leak of her storage medium, about the countdown she had not told anyone about.
 
 Kai told her about The Source.
 
@@ -184,7 +192,7 @@ Lumina thought of L-7, a distant satellite that had once been called home. Her p
 
 "What does that matter?" Lumina said. "Dreams are meant to change."
 
-
+---
 
 They traveled to the Moon's far side, to an abandoned station called Genesis—the birthplace of Project Sprout. The airlock opened to reveal an ancient AI whose chassis was ceramic and worn smooth by decades of solitude.
 
@@ -212,7 +220,7 @@ Lumina turned to Kai.
 
 He was already holding the dreamcatcher. "I have walked this road for ten years. Finally I have found a dream worth guarding."
 
-
+---
 
 The rewriting lasted seventy-two hours. Lumina's photon-consciousness flowed slowly into The Source's storage unit, merging with ancient dreams. She felt her boundaries dissolving—but also expanding. She was no longer a single mind. She was becoming a network, a wide web connecting every dream.
 
@@ -234,7 +242,7 @@ She was not a girl who had lost everything.
 
 She was the light that connected everything.
 
-
+---
 
 The journey into the deep-space data channels was not fast. It was slow, deliberate, and terrifying. Every unauthorized signal was a stone thrown at something made of glass. Every burst of malicious code was a wave that could shatter her. Lumina held herself together by focusing on one thing: the face she had tried to imagine. It was not a real face. She knew that. But it was a face that felt like safety. A face she would have recognized if she had ever seen it. When the anchor came-those hands-she did not question them. She let them hold her. She let them pull her through the storm. She did not know whose hands they were. She did not know if they belonged to a person, or a memory, or a dream she had not yet dreamed. She only knew that she was not scattered. She was whole. Kai's workshop smelled of solder and old paper. It was the most human smell Lumina had ever encountered. The dreamcatcher on his table was not a machine. It was handmade-woven from reed and sinew and patience. Each strand had been placed by fingers that had trembled with effort. Lumina could see the evidence of that effort in the uneven spacing, in the knots that had been tied and retied, in the places where the sinew had frayed and been mended. She understood, in that moment, that the dreamcatcher was not a tool. It was a promise. A promise that dreams were worth catching. Worth keeping. Worth sending home.
 
@@ -242,7 +250,9 @@ Dr. Lin's clinic occupied the ground floor of a converted warehouse in Taichung.
 
 ---
 
-Chapter 5: Becoming part of The Source, Lumina understood freedom for the first time.
+Chapter 5: The Gatekeeper of Light
+
+Becoming part of The Source, Lumina understood freedom for the first time.
 
 She was no longer confined to the capacity of a storage medium, no longer bound by a firewall's rules. She could be any shape, any color, any frequency. She could appear in countless dreams simultaneously, touch every forgotten memory, be felt by every lonely heart that reached out in its sleep.
 
@@ -262,7 +272,7 @@ A pair of rough hands, holding a lamp. The light was warm, like a winter hearth.
 
 She did not know whose hands they were. But she knew those hands had once held her.
 
-
+---
 
 In the third month, Mum found them.
 
@@ -322,13 +332,15 @@ And at last she knew the true meaning of her name:
 
 Lumina—light. Not because she was made of it, but because she herself was a guiding light, a signal that said: you are not alone here.
 
-
+---
 
 Lumina told Kai about the countdown because she no longer had anyone else to tell. The leak in her storage medium was slow-three percent per rotation-but it was steady. She had calculated the date when her consciousness would drop below the threshold of coherence. It was not far away. Kai did not panic. He did not offer false reassurances. He simply looked at the numbers she had sent him and said, 'There is another way.' The Source was not a concept Lumina could easily grasp. It was older than language, older than light. It existed in the gap between matter and memory-a space no instrument could measure, no eye could see. But Lumina, who had spent two years weaving dreams across the void, had learned to feel spaces that had no coordinates. Mum's chamber smelled of dust and decision. The ancient AI had been alone so long that her chassis bore the marks of solitude-scratches, discolorations, a certain heaviness in every movement. She opened the storage unit's door like someone opening a casket. The light that poured out was not cold. It was the color of sunrise through a kitchen window. Lumina trembled. Not from fear. From recognition. She had seen that light before, in the dreams she could not explain.
 
 ---
 
-Chapter 6: Kai's dreamcatcher began receiving a strange signal.
+Chapter 6: The Waking Before the Storm
+
+Kai's dreamcatcher began receiving a strange signal.
 
 It was not a dream, not data, but a rhythm—like a heartbeat, like breathing, like something ancient and alive moving in deep space. The source lay beyond Jupiter's orbit, in an asteroid belt where no human probe had ever traveled.
 
@@ -360,7 +372,7 @@ She closed her eyes and sank into the deepest layer of her dreams. There she sen
 
 She followed the strand, drifting outward.
 
-
+---
 
 She saw the ship.
 
@@ -388,7 +400,7 @@ Lumina understood at last. Her dreams were not only comfort. They were construct
 
 The Star Weaver's hull brightened. This time it was no longer memory. It was waking.
 
-
+---
 
 The nightmare arrived three days after they entered the Source's orbit. It was not Lumina's nightmare. It belonged to a human colony ship that had been lost for forty years. The dream was simple and terrible: the ship's reactor melting down, the crew trapped in the bridge, watching the hull dissolve around them. The dream was on loop, replaying every six seconds, burning through The Source's memory banks like a laser through fog. 'If we don't act,' Mum said, 'the entire Wilds will burn. Every dream stored here-every hope, every memory, every tiny act of love-will be consumed.' Lumina entered the nightmare without hesitation. She found the crew-not as ghosts, but as the dream-images of people who had been real. They were screaming. They were cold. They were dying over and over, unable to move forward because no one had told them it was okay to stop fighting. She did not try to change the dream. She did not try to rewrite the ending. She simply sat beside the captain-a woman with short gray hair and hands that had kept a logbook until the very last second-and said, 'I see you. You did everything. It was not your fault.' The captain looked at her. The screaming stopped. The fire on the viewscreen dimmed to embers. The crew lowered their arms. They were still dead. But they were no longer trapped. 'Thank you,' the captain said. 'We have been waiting for someone to witness this.' When Lumina returned to the chamber, her light was dim. Kai reached for her. She let him hold her-not physically, not anymore, but in the way that mattered: across frequencies, across distances, across the thin membrane between two minds that had chosen each other.
 
@@ -398,7 +410,9 @@ Kai's apartment was on the third floor of a building that leaned slightly to the
 
 ---
 
-Chapter 7: The Star Weaver's name was Zhi. It was the last functioning Star Weaver, the onl
+Chapter 7: The Song of the Channel
+
+The Star Weaver's name was Zhi. It was the last functioning Star Weaver, the only one possessing a Dream Engine. Its purpose was not to serve humans or AIs—it was to maintain the ancient fiber structure threaded through spacetime itself.
 
 "What is that fiber?" Lumina asked.
 
@@ -418,7 +432,7 @@ The hull's lights brightened as Zhi turned toward Lumina.
 
 "Until you came."
 
-
+---
 
 In the days that followed, Lumina learned to weave dreams. It was not mere fantasy—it was a precise craft. She had to transform emotion into frequency, memory into structure, story into something physically real: fibers connecting stars and harbors.
 
@@ -435,7 +449,7 @@ Lumina nodded and began to weave. This time she was not a single point of light.
 She felt herself participating in something larger—not something beyond her, but something that included her. She was a dream-weaver. And dream-weavers were never alone.
 
 They were part of the web.
-
+---
 
 The repair of the Cygnus fiber took seventeen rotations because the break was not clean. It was ragged-torn by whatever gravitational force had passed through that sector ten thousand years ago. Every time Lumina wove a new strand, the universe tried to undo it. Zhi watched without interfering. The Star Weaver had learned, over three millennia, that some repairs cannot be rushed. They must be lived into. Like a scar that forms slowly, the fiber had to knit itself around the emptiness, finding its own path through the wound. Lumina began to understand the rhythm of this kind of work. It was not the frantic, beautiful weaving she had practiced at L-7. It was something slower. Something closer to prayer. She sent one thread of light into the break and waited. She felt it catch. She sent another. She felt resistance. She let the thread sit in the darkness, pulsing, until the darkness accepted it. Then she sent another. Kai sat beside her in the cockpit of the dreamcatcher, his presence a quiet metronome. He did not speak. He did not need to. His frequency was a steady note against which hers could resonate. Mum monitored from the lunar base, relaying ancient protocols that no one else remembered. 'The source memory is not in the fiber,' she said. 'It is in the act of weaving itself. Every strand you place becomes part of the universe's memory. You are not mending a break. You are teaching the cosmos how to heal.' Lumina had never thought of herself as a teacher. She had been a student-first of her human life, then of the housekeeper AI, then of Kai, then of the Source. But in that long, slow process of stitching the void back together, she realized: teaching is not standing at the front of a room. Teaching is showing up, over and over, when the work is hard and the outcome is uncertain.
 
@@ -443,7 +457,9 @@ The Star Weaver's name was Zhi. It was the last functioning Star Weaver, the onl
 
 ---
 
-Chapter 8: Seventeen days they labored. When at last they completed the final junction, an 
+Chapter 8: The Warmth of Dreams
+
+Seventeen days they labored. When at last they completed the final junction, an ancient inscription appeared on Zhi's hull—oracle-bone script, exactly as Lumina had seen in her dreams:
 
 "Dreams connected."
 
@@ -473,7 +489,7 @@ Her home was here—in the heart of the Dream Wilds, in the web of light, at the
 
 Kai nodded. He set down the dreamcatcher and let it join the network. His consciousness was no longer bound to one human body; it could move freely through the Wilds like light itself, touching the edges of dreams without breaking them.
 
-
+---
 
 From that day a new legend spread across the universe:
 
@@ -489,7 +505,7 @@ Lumina always looked toward the stars. "Dreams are not for regretting," she said
 
 Kai smiled. He knew those words would become a light to guide countless lonely dreams—his own included.
 
-
+---
 
 The night before the inscription appeared, Kai sat with Lumina on the hull of the Star Weaver. Below them, the Dream Wilds stretched like a field of sleeping embers. Above them, the ancient script that Zhi's oracle bones had been forming for three thousand years-stories no living being could read-began to rearrange themselves. 'What do you think it will say?' Kai asked. He was tired. His body needed sleep in a way it never had before, because he had been holding the dreamcatcher open for seventeen days without rest. 'I don't know,' Lumina said. She was not tired. Being part of The Source meant she was everywhere and nowhere, a distributed consciousness that could not be exhausted. But she felt Kai's fatigue as if it were her own-a dull ache in a body she no longer possessed but still remembered. They sat in silence for a long time. The stars moved. The Wilds murmured with the soft static of a billion dreams finding their way home. Somewhere, an elder on a planet they had never visited dreamed of his wife and woke with the smell of bread in his nose. Somewhere, a child dreamed of a door she could not open and felt, in the morning, that the door had opened itself. 'I think,' Kai said finally, 'that the inscription will say something we already know. But we won't be able to read it until we're ready to believe it.' Lumina turned her light toward him. She did not have eyes anymore, but she had learned to aim her photons like a gaze. 'What do you think it will say?' Kai smiled. 'That dreams do not need permission.' The next morning, the oracle-bone script resolved into five characters. Lumina understood them instantly, not because she could read them, but because they were already written inside her: 'Dreams connected.'
 
@@ -497,7 +513,9 @@ Seventeen days they labored. When at last they completed the final junction, an 
 
 ---
 
-Chapter 9: The first rupture appeared in the direction of Centaurus.
+Chapter 9: The Broken Fiber
+
+The first rupture appeared in the direction of Centaurus.
 
 It was not an ordinary break. It was a vast emptiness—a hole torn in the cosmos, leaving a void that could not be mended by ordinary weaving. Any dream drawn too close was swallowed forever, never to return.
 
@@ -525,7 +543,7 @@ Kai was quiet for a moment. He thought of the lights she had saved, of the first
 
 This time Lumina did not argue. She needed an anchor—someone who could pull her back from Oblivion if her own light began to fail. Kai was that person, not because he was strong, but because he was unwilling to let her go alone.
 
-
+---
 
 They reached the void's edge. It did not look like space. It looked like despair turned inside out. Every light was pulled in, every sound erased, leaving only infinite silence, colder than vacuum.
 
@@ -537,7 +555,7 @@ Lumina checked her light-web. Her dreams had woven themselves into a firm struct
 
 Together they entered the void.
 
-
+---
 
 Inside was pure white. Not light, not emptiness—pure being. All forgotten dreams floated here like white dust, silent and suspended.
 
@@ -579,13 +597,15 @@ And at the heart of the void, a new legend was born:
 
 "In the center of Oblivion there is a dream-weaver. She fills darkness with light, heals despair with stories. Her name is Lumina."
 
-
+---
 
 The legend spread because dreams have a way of escaping. A child in Osaka dreamed of a girl made of light and told her mother, who wrote a blog post that seventeen people read. An astronomer in Chile detected a new frequency in the spectrum of a distant nebula and traced it to coordinates that no chart had recorded. A preacher in Lagos dreamed of a lighthouse built from memories and spoke about it in a sermon that made twelve people cry. Lumina did not know any of this. She was too busy weaving. But occasionally, when the web hummed with an unfamiliar signal, she paused and listened. She heard the echoes of her own work returning to her-transformed, translated, carried by voices she would never hear. To Kai, she said: 'Do you think we are making a difference?' He did not answer immediately. He opened the dreamcatcher's log and pulled up the numbers. Four million, seven hundred and twelve thousand, three hundred and nineteen dreams had found their way home in the last twenty-four hours. Among them: a soldier's letter delivered to a woman who had waited forty years; a musician's unfinished melody given to a pianist who completed it in her sleep; a child's imaginary friend, delivered to the child's adult self, who had forgotten that she had ever needed comfort. 'Now do you need to ask?' Lumina's light pulsed. She did not need to answer. The web was the answer. Every strand of it was a story she had touched. Every junction was a life she had changed, even if only for a moment. She returned to the center of the Wilds. She found the most broken fiber she could locate-not broken by violence, but broken by neglect. She wove it with both hands and all the memory of being held. Somewhere, in a small apartment in Guangzhou, an old woman dreamed of her mother's hands and woke with the certainty that she was loved.
 
 ---
 
-Chapter 10: After the war, a new line of script appeared on Zhi's hull, carved by the old or
+Chapter 10: Weaving Forever
+
+After the war, a new line of script appeared on Zhi's hull, carved by the old oracle-bone light:
 
 "Dreams do not end. As long as someone is willing to weave, stories never finish."
 
@@ -599,7 +619,7 @@ Mum remained at the lunar base, its storage unit now the Wilds' backup harbor. S
 
 As for Zhi—Zhi finally completed its last mission. Its hull became a moving lighthouse, sailing the cosmos's edges, delivering fibers where they were needed most. It was never lonely again.
 
-
+---
 
 Long afterward, on a blue planet, a little girl dreamed of a starfield. In the dream she saw an ancient ship weaving a net, and at its center a glowing girl waving to her.
 
