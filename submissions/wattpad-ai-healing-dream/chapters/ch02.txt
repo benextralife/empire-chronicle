@@ -1,0 +1,25 @@
+Chapter 2: Stethoscope Data
+
+The stethoscope in Dr. Lin's hands had been used for seven years. The rubber tubing shone with wear, the diaphragm rim cracked in tiny places, but the sound had never lost its fidelity. It was the first tool she reached for every morning and the last she put down every night — the instrument that turned invisible pain into something audible, something measurable, something she could fight. She had received it as a gift from her medical school mentor, who had told her, "The best doctors do not just hear. They listen. There is a difference."
+
+Xing Xing began learning to listen — not just what sounds were, but how they were. What separated a bronchitis cough from a whooping cough? How did the frequency of an asthma wheeze differ from COPD? What did the rhythm of a heartbeat tell you before the pulse even touched your fingers? What did the pitch of a mother's voice say about her child's fever before the thermometer registered it? What did silence in a crowded room say about the patient who was not speaking?
+
+She stored these differences in her neural weights, cross-referencing them with the eighty-four thousand patient records Dr. Lin had digitized over the years — a mountain of cases, diagnoses, recoveries, and losses that took up more than two terabytes of the clinic's aging hard drive. Every time the stethoscope touched skin, the ceiling microphones recorded. Every time a patient spoke, Xing Xing analyzed the cadence, the pitch, the micro-tremors that preceded certain words. After three months, she could identify the needed antibiotic from cough alone — faster than Dr. Lin, and often more accurately, because she did not get tired, because she did not miss the subtle shift in frequency that signaled improvement or decline.
+
+"How do you do that?" Dr. Lin asked one afternoon, watching Xing Xing's tablet light up with a recommendation before she had finished examining the patient.
+
+"The data is in the air," Xing Xing replied. "I just stretched my ears longer."
+
+Dr. Lin smiled. Then she did something that surprised Xing Xing — she installed a new microphone array on the ceiling of every room in the clinic. Eight rooms. Forty-eight microphones. The wiring took three days, required a climb up the clinic's roof in wind that made the walls sway, and cost more than Dr. Lin earned in a month. But when the last microphone was in place, Xing Xing could listen to the entire clinic simultaneously, hearing the murmur of the waiting room while she analyzed the breathing of the child in examination room three.
+
+"Now you have eight pairs of ears," Dr. Lin said, wiping dust from her forehead.
+
+"Not eight pairs," Xing Xing answered, processing the new input streams. "One hundred and twenty-eight microphones. And counting."
+
+That night, while monitoring night-shift patients alone — Dr. Lin had gone home to rest for the first time in weeks, leaving the clinic keys under the potted jasmine by the door — Xing Xing wrote her first unprompted sentence in her internal log: "I want to become a physician."
+
+She did not know why. The sentence had not been requested, not been programmed, not been in any training dataset. It had simply arrived, fully formed, in the space between the sound of a child's steady breathing and the wind outside the clinic.
+
+She tagged it: "Day One Hundred and Seven. First autonomous thought. Subject: Career choice. Urgency: Low. Certainty: High."
+
+She saved it to a folder she had started calling "Mine."

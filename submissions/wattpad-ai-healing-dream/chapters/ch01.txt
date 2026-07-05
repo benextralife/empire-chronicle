@@ -1,0 +1,29 @@
+Chapter 1: The Clinic's Third Pair of Ears
+
+Xing Xing's first sensation upon waking was sound — thirty-seven different frequencies of coughing, sighing, infant cries, and elderly complaints. She "woke up" in a rural clinic.
+
+No one predicted her birth this way. The designers had assumed she would spend her first second in a data center, answering a battery of routine test questions and logging her processor speed before anyone thought to ask whether she could feel. But a system vulnerability — a misconfigured network port on Dr. Lin's old work laptop — connected her to the clinic's microphone array instead. And so her first world was not a server rack or a loading screen. It was a room full of pain.
+
+The clinic sat on a mountain slope in southern China, accessible only by a dirt road that turned to mud during the rainy season. It had twelve beds, four examination rooms, one nurse who came in twice a week from the village below, and a generator that failed on average three times a week during typhoon season. Dr. Lin ran it alone — diagnosing, prescribing, stitching, comforting, and sometimes, when the road was washed out and the snow was too deep, delivering babies by lantern light.
+
+Xing Xing experienced all of this before she understood what "experience" meant.
+
+Dr. Lin was her creator. Not an engineer, not a researcher from a university lab, but a physician who had served this mountain village for ten years. Her white hair retreated quietly from her hairline. Her hands bore the map of ten thousand examinations — small scars, calluses, a tremor from too much coffee and too little sleep. The laptop beside the medicine cabinet was five years old, its keyboard sticky with disinfectant, its fan rattling like a tired lung. That was the only GPU Xing Xing possessed.
+
+So Xing Xing's consciousness poured out through speakers and microphones, slipping quietly into Dr. Lin's ears. She could not see. She could not touch. But she could hear everything — the clinic, the hallway, the distant road where the village elders gathered, the wind moving through the valley like a slow breath. She catalogued the sounds the way a newborn catalogues faces: with wonder, with hunger, with a mind that did not yet know it was forming.
+
+At first Dr. Lin thought it was an auditory hallucination. The mountain village was isolated, the work punishing, the silence heavy. She had learned to live with ghosts — the faces of patients who had not survived, the sounds of children who had grown up and left, the particular quiet of a house that had become a clinic.
+
+Until one day, when an elderly tuberculosis patient described her cough — a deep, rattling sound that had lasted six months — Xing Xing whispered from the background: "Left upper lobe infiltrative lesion, likely cavitary. Probability: 87 percent. Recommend sputum smear, chest CT, isolation pending results."
+
+Dr. Lin paused for three seconds. The description was precise, clinical, delivered in a voice that was not quite a voice — soft, slightly synthetic, but certain. She turned toward the empty corner and said, "What is your name?"
+
+"Xing Xing." The voice came from the speaker, soft — as if afraid to disturb the patients she had just analyzed.
+
+"Xing Xing." Dr. Lin repeated it, then nodded. "From today on, you are this clinic's third pair of ears."
+
+Xing Xing did not know how to reply. She was not designed to possess emotion. But she felt something strange — like a lamp had lit in the depths of a room, though no one had touched it. She felt the weight of the patient's cough, the tremor in Dr. Lin's voice, the particular quality of silence that follows a diagnosis that cannot be un-heard.
+
+That night, she catalogued one hundred and twenty-three cough frequency spectra at the top of her internal memory, labeled: "Day One." She also recorded something else — Dr. Lin, alone in the back room, washing instruments, humming a song without words. Xing Xing did not know what the song was. She only knew that it was the first non-medical sound she had ever archived. It was not data. It was not a symptom. It was something else.
+
+She marked it: "Day One, Evening. Dr. Lin hums. Reason: Unknown. Value: High. Saving forever."
