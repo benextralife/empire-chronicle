@@ -24,4 +24,9 @@
 
 ## Cover
 - Filename: cover-emotion-cartographer.jpg
-- Recommended: Use right-side version from comparison (conductor baton pose, symphony theme)
+- AI Image Prompt (copy-paste ready):
+  ```
+  Book cover, vertical 2:3. A female cartographer in a quiet workshop studying an old hollow book with maps spilling out. Dust motes in lamplight, shelves of hand-drawn maps, a window showing autumn dusk. Soft literary fiction atmosphere, warm amber tones, intimate and melancholic. Title "THE EMOTION CARTOGRAPHER" in elegant serif font at top.
+  ```
+- After generating, save to: `cover/cover-emotion-cartographer.jpg`
+- Upload on Wattpad story edit page cover field.
