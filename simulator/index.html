@@ -258,20 +258,16 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
 </header>
 
 <div class="controls">
-  <button class="btn" id="pauseBtn">⏸ Pause</button>
   <button class="btn" id="speedBtn">⚡ Speed: 1x</button>
   <button class="btn" id="eventBtn">📜 Event</button>
-  <button class="btn btn-actor" id="actorBtn" style="display:none;">⭐ Add Actor</button>
-  <button class="btn" id="saveBtn">💾 Save</button>
-  <button class="btn" id="resetBtn">🔄 Reset</button>
   <span style="color:#64748b;font-size:0.8rem;margin-left:8px;" id="autoLabel">Auto: 10s</span>
-  <span style="color:#64748b;font-size:0.8rem;" id="popLabel">👥 15</span>
-</div>
+  <span style="color:#64748b;font-size:0.8rem;" id="popLabel">👥 120</span>
+  </div>
 
-<div class="main-grid">
-  <div class="panel" style="grid-column: span 2;">
-    <h2 id="facTitle">🏛 Factions & Map</h2>
-    <div style="font-size:0.75rem;color:#94a3b8;margin-bottom:4px;">8×8 Territory — click to claim</div>
+  <div class="main-grid">
+    <div class="panel" style="grid-column: span 2;">
+      <h2 id="facTitle">🏛 Factions & Map</h2>
+      <div style="font-size:0.75rem;color:#94a3b8;margin-bottom:4px;">8×8 Territory — click to claim</div>
     <div class="map-container" style="max-width:100%;">
       <canvas class="map-canvas" id="mapCanvas" width="800" height="800"></canvas>
     </div>
@@ -531,16 +527,27 @@ function initState() {
   const agents = [];
   for (let i = 0; i < 120; i++) agents.push(createAgent(i));
     return {
-      tick: 0, day: 1, hour: 6, minute: 0, nextId: 120,
-      resources: { money: 1250000, food: 850000, materials: 670000, energy: 920000, influence: 450000, population: 120 },
-    economy: { gdp: 4200000, inflation: 0.02, unemployment: 0.08, marketTrend: 'stable' },
-    factions: factionIds.map((id, idx) => ({
-      id, color: factionColors[id], members: agents.filter(a => a.faction === id).length, territory: randInt(20) + 10
-    })),
-    agents, events: [],
-    territory: Array.from({ length: MAP_SIZE * MAP_SIZE }, () => ({ owner: null, contested: false })),
-    paused: false, speed: 1
-  };
+        tick: 0, day: 1, hour: 6, minute: 0, nextId: 120,
+        resources: { money: 1250000, food: 850000, materials: 670000, energy: 920000, influence: 450000, population: 120 },
+        economy: { gdp: 4200000, inflation: 0.02, unemployment: 0.08, marketTrend: 'stable' },
+        factions: factionIds.map((id, idx) => ({
+          id, color: factionColors[id], members: agents.filter(a => a.faction === id).length, territory: randInt(20) + 10
+        })),
+        agents, events: [],
+        territory: (() => {
+          const t = Array.from({ length: MAP_SIZE * MAP_SIZE }, () => ({ owner: null, contested: false }));
+          factionIds.forEach(id => {
+            const owned = randInt(12) + 8;
+            for (let i = 0; i < owned; i++) {
+              const idx = randInt(t.length);
+              t[idx].owner = id;
+              t[idx].contested = Math.random() < 0.2;
+            }
+          });
+          return t;
+        })(),
+        paused: false, speed: 1
+      };
 }
 
 function loadState() {
@@ -810,7 +817,7 @@ function drawTerritoryMap(state) {
   const canvas = document.getElementById('mapCanvas');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
-  const size = 320;
+  const size = Math.max(canvas.offsetWidth, canvas.offsetHeight, 800);
   canvas.width = size;
   canvas.height = size;
   const cellSize = size / MAP_SIZE;
@@ -910,12 +917,10 @@ function viewArchiveIndex(i) {
 // CONTROLS
 // ============================================================
 
-const pauseBtn = document.getElementById('pauseBtn');
 const speedBtn = document.getElementById('speedBtn');
 const speeds = [1, 2, 5, 10];
 let speedIdx = 0;
 
-pauseBtn.addEventListener('click', () => { state.paused = !state.paused; applyLang(); });
 speedBtn.addEventListener('click', () => {
   speedIdx = (speedIdx + 1) % speeds.length;
   state.speed = speeds[speedIdx];
@@ -927,9 +932,6 @@ document.getElementById('eventBtn').addEventListener('click', () => {
   state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, ...evt });
   saveState(state); render(state);
 });
-document.getElementById('actorBtn').addEventListener('click', addNextUnusedActor);
-document.getElementById('saveBtn').addEventListener('click', () => { saveArchive(state); });
-document.getElementById('resetBtn').addEventListener('click', resetState);
 document.getElementById('langEn').addEventListener('click', () => { lang = 'en'; localStorage.setItem(LANG_KEY, lang); applyLang(); render(state); });
 document.getElementById('langZh').addEventListener('click', () => { lang = 'zh'; localStorage.setItem(LANG_KEY, lang); applyLang(); render(state); });
 document.getElementById('tabLive').addEventListener('click', () => { currentTab = 'live'; document.getElementById('tabLive').classList.add('active'); document.getElementById('tabPast').classList.remove('active'); render(state); });
@@ -946,13 +948,9 @@ function applyLang() {
   document.getElementById('agtTitle').textContent = t.agtTitle;
   document.getElementById('evtTitle').textContent = t.evtTitle;
   document.getElementById('archiveTitle').textContent = t.archiveTitle;
-  pauseBtn.textContent = state.paused ? t.resume : t.pause;
   speedBtn.textContent = t.speed(state.speed);
   document.getElementById('autoLabel').textContent = t.autoLabel;
   document.getElementById('eventBtn').textContent = t.trigger;
-  document.getElementById('saveBtn').textContent = t.save;
-  document.getElementById('resetBtn').textContent = t.reset;
-  document.getElementById('actorBtn').textContent = t.actor;
   document.getElementById('langEn').classList.toggle('active', lang === 'en');
   document.getElementById('langZh').classList.toggle('active', lang === 'zh');
 }
