@@ -677,7 +677,7 @@ function render(state) {
   // Citizens
   document.getElementById('agentList').innerHTML = alive.slice(0, 60).map(a => {
     const tx = translateAgentText(a);
-    const gIcon = a.gender === 'male' ? '♂' : '♀';
+    const gIcon = a.gender === 'male' ? '♂' : (a.gender === 'female' ? '♀' : (Math.random() < 0.5 ? '♂' : '♀'));
     return `
     <div class="agent-card">
       <div class="agent-name"><span class="status-dot status-alive"></span>${tx.name} <span style="opacity:0.6;font-size:0.85em;">${gIcon}</span></div>
@@ -697,7 +697,7 @@ function render(state) {
   if (dead.length > 0) {
     document.getElementById('agentList').innerHTML += '<div style="margin-top:8px;color:#64748b;font-size:0.75rem;">Recently deceased:</div>';
     document.getElementById('agentList').innerHTML += dead.slice(-5).map(a => {
-      const dg = a.gender === 'male' ? '♂' : '♀';
+      const dg = a.gender === 'male' ? '♂' : (a.gender === 'female' ? '♀' : '♀');
       return `
       <div class="agent-card dead">
         <div class="agent-name"><span class="status-dot status-dead"></span>${a.name} <span style="opacity:0.6;font-size:0.85em;">${dg}</span> <span class="badge">${t.dead}</span></div>
