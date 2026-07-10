@@ -199,6 +199,42 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
 }
 .tab-btn.active { background: #2563eb; color: white; border-color: #3b82f6; }
 
+/* NEWS */
+.news-view {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 10px;
+  max-height: 380px;
+  overflow-y: auto;
+  font-size: 0.78rem;
+}
+.news-day {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #334155;
+}
+.news-day:last-child { border-bottom: none; }
+.news-day-title {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #60a5fa;
+  margin-bottom: 6px;
+}
+.news-item {
+  padding: 3px 0;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+.news-item .news-time {
+  color: #64748b;
+  font-size: 0.7rem;
+  margin-right: 4px;
+}
+.news-item .news-icon {
+  margin-right: 4px;
+}
+</style>
 /* ARCHIVES */
 .archive-timeline {
   display: flex;
@@ -280,6 +316,13 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
   </div>
 
   <!-- EVENTS -->
+  <div class="panel">
+    <h2 id="evtTitle">📜 Daily News</h2>
+    <div class="news-view" id="newsView">
+      <div style="font-size:0.8rem;color:#94a3b8;">No news yet. Events will appear here after the first tick.</div>
+    </div>
+  </div>
+
   <div class="panel">
     <h2 id="evtTitle">📜 Events</h2>
     <div class="tab-bar">
@@ -692,6 +735,34 @@ function render(state) {
 
   renderArchives();
   drawTerritoryMap(state);
+  renderDailyNews(state);
+}
+
+function renderDailyNews(state) {
+  const el = document.getElementById('newsView');
+  if (!el) return;
+  const days = {};
+  state.events.forEach(e => {
+    const key = `Day ${e.day}`;
+    if (!days[key]) days[key] = [];
+    days[key].push(e);
+  });
+  const keys = Object.keys(days).sort((a, b) => {
+    const da = parseInt(a.replace('Day ', ''));
+    const db = parseInt(b.replace('Day ', ''));
+    return db - da;
+  });
+  if (keys.length === 0) {
+    el.innerHTML = '<div style="font-size:0.8rem;color:#94a3b8;">No news yet. Events will appear here after the first tick.</div>';
+    return;
+  }
+  el.innerHTML = keys.slice(0, 5).map(day => {
+    const items = days[day].slice(0, 8).map(e => {
+      const hh = String(e.hour).padStart(2, '0');
+      return `<div class="news-item"><span class="news-time">${hh}:00</span><span class="news-icon">${e.icon}</span>${e.msg}</div>`;
+    }).join('');
+    return `<div class="news-day"><div class="news-day-title">📰 ${day} — ${days[day].length} events</div>${items}${days[day].length > 8 ? `<div style="font-size:0.7rem;color:#64748b;">...and ${days[day].length - 8} more</div>` : ''}</div>`;
+  }).join('');
 }
 
 // ============================================================
