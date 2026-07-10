@@ -450,7 +450,7 @@ function randInt(n) { return Math.floor(Math.random() * Math.max(1, n)); }
 
 function createAgent(id) {
   return {
-    id, name: randomName(), title: null,
+    id, name: randomName(), gender: Math.random() < 0.5 ? 'male' : 'female', title: null,
     faction: factionIds[randInt(4)],
     age: Math.floor(Math.random() * 40) + 18,
     health: Math.floor(Math.random() * 60) + 40,
@@ -677,11 +677,12 @@ function render(state) {
   // Citizens
   document.getElementById('agentList').innerHTML = alive.slice(0, 60).map(a => {
     const tx = translateAgentText(a);
+    const gIcon = a.gender === 'male' ? '♂' : '♀';
     return `
     <div class="agent-card">
-      <div class="agent-name"><span class="status-dot status-alive"></span>${tx.name}</div>
+      <div class="agent-name"><span class="status-dot status-alive"></span>${tx.name} <span style="opacity:0.6;font-size:0.85em;">${gIcon}</span></div>
       <div class="agent-meta">${t.mood}: ${tx.mood} · ${t.wealth}: $${a.wealth.toLocaleString()}</div>
-      <div class="agent-meta">${t.age}: ${Math.floor(a.age)} · ${t.health}: ${a.health}</div>
+      <div class="agent-meta">${t.age}: ${Math.floor(a.age)} · ${t.health}: ${a.health} · ${gIcon}</div>
       <div class="chart-bar"><div class="chart-fill" style="width:${a.health}%;background:${a.health>70?'#34d399':a.health>30?'#fbbf24':'#ef4444'}"></div></div>
       <div class="agent-action">→ ${tx.action}</div>
     </div>
@@ -695,12 +696,14 @@ function render(state) {
   const dead = state.agents.filter(a => !a.alive);
   if (dead.length > 0) {
     document.getElementById('agentList').innerHTML += '<div style="margin-top:8px;color:#64748b;font-size:0.75rem;">Recently deceased:</div>';
-    document.getElementById('agentList').innerHTML += dead.slice(-5).map(a => `
+    document.getElementById('agentList').innerHTML += dead.slice(-5).map(a => {
+      const dg = a.gender === 'male' ? '♂' : '♀';
+      return `
       <div class="agent-card dead">
-        <div class="agent-name"><span class="status-dot status-dead"></span>${a.name} <span class="badge">${t.dead}</span></div>
-        <div class="agent-meta">${t.age}: ${Math.floor(a.age)} · Died Day ${a.deathDay}</div>
+        <div class="agent-name"><span class="status-dot status-dead"></span>${a.name} <span style="opacity:0.6;font-size:0.85em;">${dg}</span> <span class="badge">${t.dead}</span></div>
+        <div class="agent-meta">${t.age}: ${Math.floor(a.age)} · ${dg} · Died Day ${a.deathDay}</div>
       </div>
-    `).join('');
+    `;}).join('');
   }
 
   // Population label
@@ -931,28 +934,7 @@ function drawTerritoryMap(state) {
   };
   canvas.onmouseleave = () => { tooltip.style.display = 'none'; };
 
-  canvas.onclick = (evt) => {
-    const r = canvas.getBoundingClientRect();
-    const mx = evt.clientX - r.left;
-    const my = evt.clientY - r.top;
-    const zx = Math.floor(mx / (r.width / MAP_SIZE));
-    const zy = Math.floor(my / (r.height / MAP_SIZE));
-    const idx = zy * MAP_SIZE + zx;
-    if (idx >= 0 && idx < state.territory.length) {
-      if (state.territory[idx].owner) {
-        state.territory[idx].owner = null;
-        state.territory[idx].contested = false;
-      } else {
-        const aliveFactions = factionIds.filter(id => state.agents.some(a => a.alive && a.faction === id));
-        if (aliveFactions.length > 0) {
-          state.territory[idx].owner = aliveFactions[randInt(aliveFactions.length)];
-          state.territory[idx].contested = Math.random() < 0.3;
-        }
-      }
-      saveState(state); render(state);
-    }
-  };
-
+  // Visitors watch only. Territory changes are AI-driven (onclick removed).
   // Legend
   const factionLabels = lang === 'zh'
     ? { gov: '王室', corp: '商會', research: '學院', black: '暗市' }
