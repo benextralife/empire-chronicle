@@ -33,7 +33,7 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
   cursor: pointer;
   font-size: 0.82rem;
 }
-.lang-btn:hover { background: #475569; }
+.lang-btn:hover { background: #475569; transform: translateY(-1px); }
 .lang-btn.active { background: #2563eb; border-color: #3b82f6; }
 .main-grid {
   display: grid;
@@ -66,7 +66,9 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
   padding: 8px 10px;
   margin-bottom: 6px;
   font-size: 0.82rem;
+  transition: transform 0.1s;
 }
+.agent-card:hover { transform: translateX(3px); border-color: #475569; }
 .agent-card.dead { opacity: 0.5; border-style: dashed; }
 .agent-name { font-weight: bold; color: #fbbf24; }
 .agent-meta { color: #94a3b8; font-size: 0.75rem; }
@@ -80,7 +82,7 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
   overflow-y: auto;
   font-size: 0.78rem;
 }
-.event-item { padding: 4px 0; border-bottom: 1px solid #1e293b; }
+.event-item { padding: 5px 0; border-bottom: 1px solid #1e293b; }
 .event-item:last-child { border-bottom: none; }
 .event-time { color: #64748b; }
 .event-type { color: #fbbf24; }
@@ -95,8 +97,8 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
   border-radius: 4px;
   padding: 6px 8px;
   font-size: 0.78rem;
+  transition: background 0.3s;
 }
-.resource-label { color: #94a3b8; }
 .resource-value { font-size: 1.1rem; font-weight: bold; color: #34d399; }
 .faction-bar { display: flex; gap: 8px; flex-wrap: wrap; }
 .faction-tag {
@@ -108,6 +110,7 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
 }
 .faction-name { color: #fbbf24; }
 .faction-count { color: #64748b; }
+
 .controls {
   padding: 8px 16px;
   display: flex;
@@ -115,6 +118,7 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
   align-items: center;
   max-width: 1400px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 .btn {
   background: #334155;
@@ -124,8 +128,11 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
   border-radius: 6px;
   cursor: pointer;
   font-size: 0.82rem;
+  transition: all 0.15s;
+  user-select: none;
 }
-.btn:hover { background: #475569; }
+.btn:hover { background: #475569; transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
 .btn.active { background: #2563eb; border-color: #3b82f6; }
 .badge {
   background: #ef4444;
@@ -134,6 +141,85 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
   border-radius: 10px;
   font-size: 0.7rem;
   margin-left: 6px;
+}
+
+/* Territory map */
+.territory-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 3px;
+  margin-top: 8px;
+}
+.territory-cell {
+  aspect-ratio: 1;
+  border-radius: 3px;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+}
+.territory-cell:hover { transform: scale(1.1); z-index: 2; }
+.territory-cell.gov { background: #3b82f6; border-color: #60a5fa; }
+.territory-cell.corp { background: #10b981; border-color: #34d399; }
+.territory-cell.research { background: #8b5cf6; border-color: #a78bfa; }
+.territory-cell.black { background: #ef4444; border-color: #f87171; }
+.territory-cell.conflict { background: linear-gradient(135deg, #ef4444, #f59e0b); animation: pulse 1.5s infinite; }
+.territory-cell.war { background: #7f1d1d; animation: pulse 0.8s infinite; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.map-legend {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+  margin-top: 6px;
+}
+.map-legend-item { display: flex; align-items: center; gap: 3px; }
+.map-legend-color { width: 10px; height: 10px; border-radius: 2px; }
+
+/* Chart bars */
+.chart-bar {
+  height: 6px;
+  background: #334155;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 3px;
+}
+.chart-fill {
+  height: 100%;
+  background: #34d399;
+  border-radius: 3px;
+  transition: width 0.5s;
+}
+
+/* Agent status indicators */
+.status-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.status-alive { background: #34d399; }
+.status-dead { background: #ef4444; }
+
+/* Tooltip */
+.tooltip {
+  position: fixed;
+  background: #1e293b;
+  border: 1px solid #475569;
+  color: #e2e8f0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  pointer-events: none;
+  z-index: 100;
+  display: none;
 }
 </style>
 </head>
@@ -152,6 +238,8 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
 <div class="controls">
   <button class="btn" id="pauseBtn">⏸ Pause</button>
   <button class="btn" id="speedBtn">⚡ Speed: 1x</button>
+  <button class="btn" id="eventBtn">📜 Trigger Event</button>
+  <button class="btn" id="resetBtn">🔄 Reset World</button>
   <span style="color:#64748b;font-size:0.8rem;margin-left:8px;" id="autoLabel">Auto-evolve every 10s</span>
   <span style="color:#64748b;font-size:0.8rem;" id="popLabel">👥 15</span>
 </div>
@@ -165,11 +253,17 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
   <div class="panel">
     <h2 id="facTitle">🏛 Factions</h2>
     <div class="faction-bar" id="factionBar"></div>
+    <div style="margin-top:10px;">
+      <div style="font-size:0.75rem;color:#94a3b8;margin-bottom:4px;" id="mapTitle">Territory Map (click cell)</div>
+      <div class="territory-grid" id="territoryMap"></div>
+      <div class="map-legend" id="mapLegend"></div>
+    </div>
   </div>
 
   <div class="panel">
     <h2 id="ecoTitle">📈 Economy</h2>
     <div id="economyInfo" style="font-size:0.8rem;color:#94a3b8;"></div>
+    <div style="margin-top:8px;" id="agentStats"></div>
   </div>
 
   <div class="panel" style="grid-column: span 2;">
@@ -183,9 +277,12 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
   </div>
 </div>
 
+<div class="tooltip" id="tooltip"></div>
+
 <script>
-const LANG_KEY = 'ai_country_lang_v3';
-const STORAGE_KEY = 'ai_country_state_v3';
+const LANG_KEY = 'ai_country_lang_v4';
+const STORAGE_KEY = 'ai_country_state_v4';
+const MAP_SIZE = 64;
 
 const i18n = {
   en: {
@@ -200,6 +297,8 @@ const i18n = {
     resume: '▶ Resume',
     speed: (s) => `⚡ Speed: ${s}x`,
     autoLabel: 'Auto-evolve every 10s',
+    trigger: '📜 Trigger Event',
+    reset: '🔄 Reset World',
     gov: 'Crown',
     corp: 'Merchant Guild',
     research: 'Academy',
@@ -219,11 +318,15 @@ const i18n = {
     growing: 'growing',
     shrinking: 'shrinking',
     volatile: 'volatile',
+    population: 'Population',
+    factionPop: (name, count) => `${name}: ${count}`,
+    tooltip: (cell) => `Zone ${cell.x},${cell.y} — ${cell.owner || 'Neutral'}`,
     actions: [
       'worked at factory','conducted research','negotiated a deal','socialized at market',
       'attended faction meeting','traded resources','rested at home','explored new territory',
       'helped a colleague','reported to supervisor','hacked network','produced goods',
-      'studied engineering','mediated dispute','recruited new member',
+      'studied engineering','mediated dispute','recruited new member','patrolled border',
+      'built infrastructure','delivered supplies','organized festival','wrote algorithms',
     ],
     events: [
       { icon: '⚡', msg: 'Power grid fluctuation in District 7', w: 1 },
@@ -255,10 +358,15 @@ const i18n = {
     },
     moods: ['happy','neutral','anxious','focused','excited'],
     dead: 'Dead',
+    healthBar: 'Health',
+    war: 'War',
+    neutral: 'Neutral',
+    contested: 'Contested',
+    legend: ['Crown','Merchant','Academy','Shadow','Neutral','War'],
   },
   zh: {
     pageTitle: '🤖 雅士王國 — 即時模擬器',
-    tickInfo: (t,d,tm) => `第 ${t} tick | 第 ${d} 天 | ${tm}`,
+    tickInfo: (t,d,tm) => `Tick ${t} | 第${d}天 | ${tm}`,
     resTitle: '💰 資源',
     facTitle: '🏛 派系',
     ecoTitle: '📈 經濟',
@@ -268,16 +376,18 @@ const i18n = {
     resume: '▶ 繼續',
     speed: (s) => `⚡ 速度: ${s}x`,
     autoLabel: '每 10 秒自動演化',
+    trigger: '📜 觸發事件',
+    reset: '🔄 重置世界',
     gov: '王室',
     corp: '商會',
     research: '學院',
     black: '暗市',
     agents: '名國民',
-    zones: '個區域',
-    gdp: '國內總產值',
-    inflation: '通脹率',
+    zones: '區',
+    gdp: '國內總產',
+    inflation: '通脹',
     unemployment: '失業率',
-    market: '市場態勢',
+    market: '市場',
     mood: '心情',
     wealth: '財富',
     age: '年齡',
@@ -287,31 +397,35 @@ const i18n = {
     growing: '成長',
     shrinking: '收縮',
     volatile: '波動',
+    population: '人口',
+    factionPop: (name, count) => `${name} ${count}`,
+    tooltip: (cell) => `區域 ${cell.x},${cell.y} — ${cell.owner || '中立'}`,
     actions: [
       '在工廠工作','執行研究','談判交易','逛市場',
       '參加派系會議','交易資源','在家休息','探索新領土',
       '幫助同事','向主管回報','駭入網路','生產商品',
-      '學習工程技術','調解爭端','招募新成員',
+      '學習工程技術','調解爭端','招募新成員','巡邏邊境',
+      '建設基礎設施','運送補給','舉辦慶典','編寫程式',
     ],
     events: [
-      { icon: '⚡', msg: '第 7 區電網波動' },
-      { icon: '🤝', msg: '派系貿易協定簽署' },
-      { icon: '🔥', msg: '科技板塊市場飆漲' },
-      { icon: '🕵️', msg: '偵測到黑市活動' },
-      { icon: '📢', msg: '王室發布新政策' },
-      { icon: '🔬', msg: '學院研究突破發表' },
-      { icon: '🌾', msg: '糧食產量提升' },
-      { icon: '⚔️', msg: '派系領土糾紛' },
-      { icon: '💬', msg: '輿論風向轉變' },
-      { icon: '🏗️', msg: '新建設項目啟動' },
-      { icon: '👶', msg: '一名新國民誕生於雅士王國' },
-      { icon: '🚨', msg: '傳染病警報響起' },
-      { icon: '☠️', msg: '一名國民去世' },
-      { icon: '⚰️', msg: '通報大規模死亡事件' },
-      { icon: '🏥', msg: '醫療容量擴建完成' },
-      { icon: '📣', msg: '城市區出生率上升' },
-      { icon: '🧹', msg: '派系指派清理隊伍' },
-      { icon: '🦠', msg: '流行病蔓延至兩區' },
+      { icon: '⚡', msg: '第 7 區電網波動', w: 1 },
+      { icon: '🤝', msg: '派系貿易協定簽署', w: 2 },
+      { icon: '🔥', msg: '科技板塊市場飆漲', w: 2 },
+      { icon: '🕵️', msg: '偵測到黑市活動', w: 1 },
+      { icon: '📢', msg: '王室發布新政策', w: 3 },
+      { icon: '🔬', msg: '學院研究突破發表', w: 2 },
+      { icon: '🌾', msg: '糧食產量提升', w: 1 },
+      { icon: '⚔️', msg: '派系領土糾紛', w: 2 },
+      { icon: '💬', msg: '輿論風向轉變', w: 1 },
+      { icon: '🏗️', msg: '新建設項目啟動', w: 2 },
+      { icon: '👶', msg: '一名新國民誕生於雅士王國', w: 2 },
+      { icon: '🚨', msg: '傳染病警報響起', w: 2 },
+      { icon: '☠️', msg: '一名國民去世', w: 2 },
+      { icon: '⚰️', msg: '通報大規模死亡事件', w: 2 },
+      { icon: '🏥', msg: '醫療容量擴建完成', w: 1 },
+      { icon: '📣', msg: '城市區出生率上升', w: 1 },
+      { icon: '🧹', msg: '派系指派清理隊伍', w: 1 },
+      { icon: '🦠', msg: '流行病蔓延至兩區', w: 2 },
     ],
     resources: {
       money: '💰 金錢',
@@ -323,6 +437,11 @@ const i18n = {
     },
     moods: ['愉快','平靜','焦慮','專注','興奮'],
     dead: '已故',
+    healthBar: '健康',
+    war: '戰爭',
+    neutral: '中立',
+    contested: '爭奪中',
+    legend: ['王室','商會','學院','暗市','中立','戰爭'],
   }
 };
 
@@ -344,16 +463,11 @@ function createAgent(id) {
   const a = randomName();
   const suffix = id > 26 ? `-${id}` : '';
   return {
-    id,
-    name: a + suffix,
+    id, name: a + suffix,
     faction: factionIds[Math.floor(Math.random() * factionIds.length)],
     age: Math.floor(Math.random() * 40) + 18,
     health: Math.floor(Math.random() * 60) + 40,
     alive: true,
-    personality: {
-      openness: Math.random(), conscientiousness: Math.random(),
-      extraversion: Math.random(), agreeableness: Math.random(), stability: Math.random(),
-    },
     skills: {
       business: Math.floor(Math.random() * 100),
       engineering: Math.floor(Math.random() * 100),
@@ -366,12 +480,6 @@ function createAgent(id) {
     deathDay: null,
   };
 }
-
-function loadState() {
-  try { const raw = localStorage.getItem(STORAGE_KEY); if (raw) return JSON.parse(raw); } catch(e){}
-  return initState();
-}
-function saveState(state) { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
 
 function initState() {
   const agents = [];
@@ -387,9 +495,23 @@ function initState() {
     })),
     agents,
     events: [],
+    territory: Array.from({ length: MAP_SIZE }, () => ({ owner: null, contested: false })),
     paused: false,
     speed: 1,
   };
+}
+
+function loadState() {
+  try { const raw = localStorage.getItem(STORAGE_KEY); if (raw) return JSON.parse(raw); } catch(e){}
+  return initState();
+}
+function saveState(state) { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+
+function resetState() {
+  localStorage.removeItem(STORAGE_KEY);
+  state = initState();
+  applyLang();
+  render(state);
 }
 
 function tick(state) {
@@ -429,7 +551,7 @@ function tick(state) {
     }
   });
 
-  // Wealthy agents heal
+  // Wealthy heal
   state.agents.forEach(agent => {
     if (!agent.alive) return;
     if (agent.wealth > 3000 && agent.health < 80) agent.health += Math.floor(Math.random() * 4);
@@ -455,8 +577,7 @@ function tick(state) {
   const aliveCount = state.agents.filter(a => a.alive).length;
   if (aliveCount < 8 && Math.random() < 0.3) {
     const baby = createAgent(state.nextId++);
-    baby.age = 0;
-    baby.health = 100;
+    baby.age = 0; baby.health = 100;
     state.events.unshift({
       tick: state.tick, day: state.day, hour: state.hour,
       icon: '👶', msg: `${baby.name} was born into Ashworth`, w: 2
@@ -482,10 +603,23 @@ function tick(state) {
     if (state.events.length > 50) state.events.pop();
   }
 
-  // Faction territory
+  // Territory changes (8x8 grid)
+  state.territory.forEach((cell, idx) => {
+    if (Math.random() < 0.03) {
+      const aliveFactions = factionIds.filter(id => state.agents.some(a => a.alive && a.faction === id));
+      if (aliveFactions.length > 0 && Math.random() < 0.15) {
+        cell.owner = aliveFactions[Math.floor(Math.random() * aliveFactions.length)];
+        cell.contested = Math.random() < 0.2;
+      } else {
+        cell.owner = null;
+        cell.contested = false;
+      }
+    }
+  });
+
+  // Faction territory count
   state.factions.forEach(f => {
-    f.territory += Math.floor((Math.random() - 0.5) * 3);
-    f.territory = Math.max(5, Math.min(50, f.territory));
+    f.territory = state.territory.filter(c => c.owner === f.id).length || 1;
     f.members = state.agents.filter(a => a.faction === f.id && a.alive).length || f.members;
   });
 
@@ -499,16 +633,23 @@ function render(state) {
   const mm = String(state.minute).padStart(2, '0');
   document.getElementById('tickInfo').textContent = t.tickInfo(state.tick, state.day, `${hh}:${mm}`);
 
+  // Resources
   document.getElementById('resourceGrid').innerHTML = Object.entries(state.resources).map(([k, v]) => {
     const label = t.resources[k] || k;
-    return `<div class="resource-item"><div class="resource-label">${label}</div><div class="resource-value">${v.toLocaleString()}</div></div>`;
+    const prev = state._prevRes ? state._prevRes[k] : v;
+    const delta = v - prev;
+    const arrow = delta > 0 ? ' ↑' : delta < 0 ? ' ↓' : '';
+    return `<div class="resource-item"><div class="resource-label">${label}</div><div class="resource-value">${v.toLocaleString()}${arrow}</div><div class="chart-bar"><div class="chart-fill" style="width:${Math.min(100, (v / 200000) * 100)}%"></div></div></div>`;
   }).join('');
+  state._prevRes = { ...state.resources };
 
+  // Factions
   document.getElementById('factionBar').innerHTML = state.factions.map(f => {
     const name = t[f.id] || f.id;
     return `<div class="faction-tag"><span class="faction-name" style="color:${f.color}">${name}</span> <span class="faction-count">${f.members} ${t.agents} · ${f.territory} ${t.zones}</span></div>`;
   }).join('');
 
+  // Economy
   document.getElementById('economyInfo').innerHTML = `
     ${t.gdp}: $${state.economy.gdp.toLocaleString()}<br>
     ${t.inflation}: ${(state.economy.inflation * 100).toFixed(1)}%<br>
@@ -516,34 +657,92 @@ function render(state) {
     ${t.market}: <b>${state.economy.marketTrend}</b>
   `;
 
+  // Agent stats
+  const alive = state.agents.filter(a => a.alive);
+  const avgHealth = alive.length ? Math.round(alive.reduce((s, a) => s + a.health, 0) / alive.length) : 0;
+  const avgWealth = alive.length ? Math.round(alive.reduce((s, a) => s + a.wealth, 0) / alive.length) : 0;
+  document.getElementById('agentStats').innerHTML = `
+    <div style="font-size:0.78rem;color:#94a3b8;">
+      Avg Health: ${avgHealth}%<br>
+      Avg Wealth: $${avgWealth.toLocaleString()}<br>
+      Total Dead: ${state.agents.filter(a => !a.alive).length}
+    </div>
+  `;
+
+  // Agents
   const aliveAgents = state.agents.filter(a => a.alive);
   const deadAgents = state.agents.filter(a => !a.alive);
   document.getElementById('agentList').innerHTML =
     aliveAgents.map(a => `
       <div class="agent-card">
-        <div class="agent-name">${a.name}</div>
+        <div class="agent-name"><span class="status-dot status-alive"></span>${a.name}</div>
         <div class="agent-meta">${t.mood}: ${a.mood} · ${t.wealth}: $${a.wealth.toLocaleString()}</div>
         <div class="agent-meta">${t.age}: ${Math.floor(a.age)} · ${t.health}: ${a.health}</div>
+        <div class="chart-bar"><div class="chart-fill" style="width:${a.health}%;background:${a.health > 70 ? '#34d399' : a.health > 30 ? '#fbbf24' : '#ef4444'}"></div></div>
         <div class="agent-action">→ ${a.lastAction}</div>
       </div>
     `).join('') +
     deadAgents.slice(-5).map(a => `
       <div class="agent-card dead">
-        <div class="agent-name">${a.name} <span class="badge">${t.dead}</span></div>
+        <div class="agent-name"><span class="status-dot status-dead"></span>${a.name} <span class="badge">${t.dead}</span></div>
         <div class="agent-meta">${t.age}: ${Math.floor(a.age)} · Died Day ${a.deathDay}</div>
       </div>
     `).join('');
 
+  // Events
   document.getElementById('eventLog').innerHTML = state.events.slice(0, 20).map(e => {
     const hh = String(e.hour).padStart(2, '0');
     return `<div class="event-item"><span class="event-time">Day ${e.day} ${hh}:00</span> <span class="event-type">${e.icon}</span> ${e.msg}</div>`;
   }).join('');
 
+  // Population label
   const popEl = document.getElementById('popLabel');
   const deathList = deadAgents.slice(-3).map(a => a.name).join(', ');
   popEl.innerHTML = `👥 ${aliveAgents.length}`;
   if (deadAgents.length > 0) popEl.innerHTML += ` <span style="color:#ef4444">☠️${deadAgents.length}</span>`;
   if (deathList) popEl.innerHTML += `<br><span style="color:#64748b;font-size:0.7rem;">RIP: ${deathList}</span>`;
+
+  // Territory map
+  renderTerritoryMap(state);
+}
+
+function renderTerritoryMap(state) {
+  const t = i18n[lang];
+  const mapEl = document.getElementById('territoryMap');
+  mapEl.innerHTML = state.territory.map((cell, idx) => {
+    const x = idx % 8;
+    const y = Math.floor(idx / 8);
+    let cls = 'territory-cell';
+    if (cell.contested) cls += ' conflict';
+    else if (cell.owner) cls += ` ${cell.owner}`;
+    const tooltipText = t.tooltip({ x, y, owner: cell.owner ? t[cell.owner] || cell.owner : t.neutral });
+    return `<div class="${cls}" data-idx="${idx}" data-x="${x}" data-y="${y}" title="${tooltipText}"></div>`;
+  }).join('');
+
+  // Legend
+  document.getElementById('mapLegend').innerHTML =
+    factionIds.map(id => `<div class="map-legend-item"><div class="map-legend-color" style="background:${factionColors[id]}"></div><span>${t[id] || id}</span></div>`).join('') +
+    `<div class="map-legend-item"><div class="map-legend-color" style="background:linear-gradient(135deg,#ef4444,#f59e0b)"></div><span>${t.contested}</span></div>` +
+    `<div class="map-legend-item"><div class="map-legend-color" style="background:#0f172a;border:1px solid #334155"></div><span>${t.neutral}</span></div>`;
+
+  // Click handler
+  mapEl.querySelectorAll('.territory-cell').forEach(cell => {
+    cell.addEventListener('click', () => {
+      const idx = parseInt(cell.dataset.idx);
+      if (state.territory[idx].owner) {
+        state.territory[idx].owner = null;
+        state.territory[idx].contested = false;
+      } else {
+        const aliveFactions = factionIds.filter(id => state.agents.some(a => a.alive && a.faction === id));
+        if (aliveFactions.length > 0) {
+          state.territory[idx].owner = aliveFactions[Math.floor(Math.random() * aliveFactions.length)];
+          state.territory[idx].contested = Math.random() < 0.3;
+        }
+      }
+      saveState(state);
+      renderTerritoryMap(state);
+    });
+  });
 }
 
 let state = loadState();
@@ -560,6 +759,14 @@ speedBtn.addEventListener('click', () => {
   state.speed = speeds[speedIdx];
   applyLang();
 });
+document.getElementById('eventBtn').addEventListener('click', () => {
+  const t = i18n[lang];
+  const evt = t.events[Math.floor(Math.random() * t.events.length)];
+  state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, ...evt });
+  saveState(state);
+  render(state);
+});
+document.getElementById('resetBtn').addEventListener('click', resetState);
 document.getElementById('langEn').addEventListener('click', () => { lang = 'en'; localStorage.setItem(LANG_KEY, lang); applyLang(); render(state); });
 document.getElementById('langZh').addEventListener('click', () => { lang = 'zh'; localStorage.setItem(LANG_KEY, lang); applyLang(); render(state); });
 
@@ -578,6 +785,10 @@ function applyLang() {
   document.getElementById('autoLabel').textContent = t.autoLabel;
   document.getElementById('langEn').classList.toggle('active', lang === 'en');
   document.getElementById('langZh').classList.toggle('active', lang === 'zh');
+  const triggerBtn = document.getElementById('eventBtn');
+  if (triggerBtn) triggerBtn.textContent = t.trigger;
+  const resetBtn = document.getElementById('resetBtn');
+  if (resetBtn) resetBtn.textContent = t.reset;
 }
 
 applyLang();
