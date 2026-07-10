@@ -705,8 +705,8 @@ function drawTerritoryMap(state) {
 
   // Use actual rendered size for crisp display
   const rect = canvas.getBoundingClientRect();
-  const displayW = rect.width || 800;
-  const displayH = rect.height || 450;
+  const displayW = (rect.width && rect.width > 0) ? rect.width : 800;
+  const displayH = (rect.height && rect.height > 0) ? rect.height : 450;
   const dpr = window.devicePixelRatio || 1;
   canvas.width = displayW * dpr;
   canvas.height = displayH * dpr;
