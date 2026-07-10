@@ -690,7 +690,7 @@ function render(state) {
   }).join('');
 
   if (alive.length > 60) {
-    document.getElementById('agentList').innerHTML += `<div style="color:#64748b;font-size:0.75rem;padding:4px;">...and ${alive.length - 60} more citizens</div>`;
+    document.getElementById('agentList').innerHTML += `<div style="color:#64748b;font-size:0.75rem;padding:4px;">${lang === 'zh' ? `…另外還有 ${alive.length - 60} 位國民` : `...and ${alive.length - 60} more citizens`}</div>`;
   }
 
   const dead = state.agents.filter(a => !a.alive);
