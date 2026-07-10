@@ -364,21 +364,27 @@ const i18n = {
     moods: ['happy','neutral','anxious','focused','excited'],
     actions: ['worked at factory','conducted research','negotiated a deal','socialized at market','attended faction meeting','traded resources','rested at home','explored new territory','helped a colleague','reported to supervisor','produced goods','studied engineering','mediated dispute','recruited new member','patrolled border','built infrastructure','delivered supplies','organized festival','wrote algorithms'],
     events: [
-      { icon: '⚡', msg: 'Power grid fluctuation in District 7', w: 1 },
-      { icon: '🤝', msg: 'Faction trade agreement signed', w: 2 },
-      { icon: '🔥', msg: 'Market surge in tech sector', w: 2 },
-      { icon: '🕵️', msg: 'Black market activity detected', w: 1 },
-      { icon: '📢', msg: 'New policy announced by the Crown', w: 3 },
-      { icon: '🔬', msg: 'Research breakthrough published', w: 2 },
-      { icon: '🌾', msg: 'Food production increased', w: 1 },
-      { icon: '⚔️', msg: 'Territory dispute between factions', w: 2 },
-      { icon: '💬', msg: 'Public opinion shifting', w: 1 },
-      { icon: '🏗️', msg: 'New construction project started', w: 2 },
-      { icon: '🏥', msg: 'Hospital capacity expanded', w: 1 },
-      { icon: '📣', msg: 'Birth rate rising in urban zones', w: 1 },
-      { icon: '🧹', msg: 'Faction assigned cleanup crew', w: 1 },
-      { icon: '🦠', msg: 'Epidemic spreading to 2 zones', w: 2 }
-    ]
+      { key: 'power_grid', icon: '⚡', msg: 'Power grid fluctuation in District 7', w: 1 },
+      { key: 'trade_agreement', icon: '🤝', msg: 'Faction trade agreement signed', w: 2 },
+      { key: 'market_surge', icon: '🔥', msg: 'Market surge in tech sector', w: 2 },
+      { key: 'black_market', icon: '🕵️', msg: 'Black market activity detected', w: 1 },
+      { key: 'new_policy', icon: '📢', msg: 'New policy announced by the Crown', w: 3 },
+      { key: 'research_breakthrough', icon: '🔬', msg: 'Research breakthrough published', w: 2 },
+      { key: 'food_increase', icon: '🌾', msg: 'Food production increased', w: 1 },
+      { key: 'territory_dispute', icon: '⚔️', msg: 'Territory dispute between factions', w: 2 },
+      { key: 'public_opinion', icon: '💬', msg: 'Public opinion shifting', w: 1 },
+      { key: 'construction_started', icon: '🏗️', msg: 'New construction project started', w: 2 },
+      { key: 'hospital_expanded', icon: '🏥', msg: 'Hospital capacity expanded', w: 1 },
+      { key: 'birth_rate_up', icon: '📣', msg: 'Birth rate rising in urban zones', w: 1 },
+      { key: 'cleanup_crew', icon: '🧹', msg: 'Faction assigned cleanup crew', w: 1 },
+      { key: 'epidemic', icon: '🦠', msg: 'Epidemic spreading to 2 zones', w: 2 }
+    ],
+    eventMsgs: {
+      death: (p) => `${p.agent} died at ${p.age} (${p.cause})`,
+      birth: (p) => `${p.name} was born into Ashworth`,
+      mass_mortality: () => `Mass mortality event struck Ashworth`,
+      epidemic: (p) => `Epidemic spreading to ${p.zones} zones`
+    }
   },
   zh: {
     pageTitle: '🤖 雅士王國 — 即時模擬器',
@@ -393,20 +399,27 @@ const i18n = {
     moods: ['愉快','平靜','焦慮','專注','興奮'],
     actions: ['在工廠工作','執行研究','談判交易','逛市場','參加派系會議','交易資源','在家休息','探索新領土','幫助同事','向主管回報','生產商品','學習工程技術','調解爭端','招募新成員','巡邏邊境','建設基礎設施','運送補給','舉辦慶典','編寫程式'],
     events: [
-      { icon: '⚡', msg: '第 7 區電網波動', w: 1 },
-      { icon: '🤝', msg: '派系貿易協定簽署', w: 2 },
-      { icon: '🔥', msg: '科技板塊市場飆漲', w: 2 },
-      { icon: '🕵️', msg: '偵測到黑市活動', w: 1 },
-      { icon: '📢', msg: '王室發布新政策', w: 3 },
-      { icon: '🔬', msg: '學院研究突破發表', w: 2 },
-      { icon: '🌾', msg: '糧食產量提升', w: 1 },
-      { icon: '⚔️', msg: '派系領土糾紛', w: 2 },
-      { icon: '💬', msg: '輿論風向轉變', w: 1 },
-      { icon: '🏗️', msg: '新建設項目啟動', w: 2 },
-      { icon: '🏥', msg: '醫療容量擴建完成', w: 1 },
-      { icon: '📣', msg: '城市區出生率上升', w: 1 },
-      { icon: '🧹', msg: '派系指派清理隊伍', w: 1 },
-      { icon: '🦠', msg: '流行病蔓延至兩區', w: 2 }
+      { key: 'power_grid', icon: '⚡', msg: '第 7 區電網波動', w: 1 },
+      { key: 'trade_agreement', icon: '🤝', msg: '派系貿易協定簽署', w: 2 },
+      { key: 'market_surge', icon: '🔥', msg: '科技板塊市場飆漲', w: 2 },
+      { key: 'black_market', icon: '🕵️', msg: '偵測到黑市活動', w: 1 },
+      { key: 'new_policy', icon: '📢', msg: '王室發布新政策', w: 3 },
+      { key: 'research_breakthrough', icon: '🔬', msg: '學院研究突破發表', w: 2 },
+      { key: 'food_increase', icon: '🌾', msg: '糧食產量提升', w: 1 },
+      { key: 'territory_dispute', icon: '⚔️', msg: '派系領土糾紛', w: 2 },
+      { key: 'public_opinion', icon: '💬', msg: '輿論風向轉變', w: 1 },
+      { key: 'construction_started', icon: '🏗️', msg: '新建建設項目啟動', w: 2 },
+      { key: 'hospital_expanded', icon: '🏥', msg: '醫療容量擴建完成', w: 1 },
+      { key: 'birth_rate_up', icon: '📣', msg: '城市區出生率上升', w: 1 },
+      { key: 'cleanup_crew', icon: '🧹', msg: '派系指派清理隊伍', w: 1 },
+      { key: 'epidemic', icon: '🦠', msg: '流行病蔓延至兩區', w: 2 }
+    ],
+    eventMsgs: {
+      death: (p) => `${p.agent} 在 ${p.age} 歲去世 (${p.cause})`,
+      birth: (p) => `${p.name} 誕生於雅士王國`,
+      mass_mortality: () => `通報大規模死亡事件`,
+      epidemic: (p) => `流行病蔓延至 ${p.zones} 區`
+    }
     ]
   }
 };
@@ -646,7 +659,7 @@ function render(state) {
   const alive = state.agents.filter(a => a.alive);
   const avgH = alive.length ? Math.round(alive.reduce((s,a) => s + a.health, 0) / alive.length) : 0;
   const avgW = alive.length ? Math.round(alive.reduce((s,a) => s + a.wealth, 0) / alive.length) : 0;
-  document.getElementById('agentStats').innerHTML = `Avg Health: ${avgH}%<br>Avg Wealth: $${avgW.toLocaleString()}<br>Total Dead: ${state.agents.length - alive.length}`;
+  document.getElementById('agentStats').innerHTML = `${lang === 'zh' ? '平均健康' : 'Avg Health'}: ${avgH}%<br>${lang === 'zh' ? '平均財富' : 'Avg Wealth'}: $${avgW.toLocaleString()}<br>${lang === 'zh' ? '死亡總數' : 'Total Dead'}: ${state.agents.length - alive.length}`;
 
   // Citizens
   document.getElementById('agentList').innerHTML = alive.slice(0, 60).map(a => `
@@ -683,37 +696,62 @@ function render(state) {
   renderDailyNews(state);
 }
 
+function translateEvent(e) {
+  const t = i18n[lang];
+  if (e.type === 'death') return t.eventMsgs.death({ agent: e.agent, age: e.age, cause: e.cause });
+  if (e.type === 'birth') return t.eventMsgs.birth({ name: e.name });
+  if (e.type === 'mass_mortality') return t.eventMsgs.mass_mortality();
+  if (e.type === 'epidemic') return t.eventMsgs.epidemic({ zones: e.zones || 2 });
+  const evt = (t.events || []).find(x => x.key === e.key);
+  return evt ? evt.msg : (e.msg || '');
+}
+
+function resyncAgentLabels() {
+  const t = i18n[lang];
+  state.agents.forEach(a => {
+    if (!a.alive) return;
+    a.name = randomName();
+    a.mood = t.moods[randInt(t.moods.length)];
+    a.lastAction = t.actions[randInt(t.actions.length)];
+  });
+  saveState(state);
+  render(state);
+}
+
 function renderDailyNews(state) {
   const el = document.getElementById('newsView');
   if (!el) return;
   const days = {};
   state.events.forEach(e => {
-    const key = `Day ${e.day}`;
+    const dayNum = e.day || 1;
+    const key = lang === 'zh' ? `第${dayNum}天` : `Day ${dayNum}`;
     if (!days[key]) days[key] = [];
     days[key].push(e);
   });
   const keys = Object.keys(days).sort((a, b) => {
-    const da = parseInt(a.replace('Day ', ''));
-    const db = parseInt(b.replace('Day ', ''));
+    const da = parseInt((lang === 'zh' ? a.replace('第','').replace('天','') : a.replace('Day ','')) );
+    const db = parseInt((lang === 'zh' ? b.replace('第','').replace('天','') : b.replace('Day ','')) );
     return db - da;
   });
   if (keys.length === 0) {
-    el.innerHTML = '<div style="font-size:0.8rem;color:#94a3b8;">No news yet. Events will appear here after the first tick.</div>';
+    el.innerHTML = `<div style="font-size:0.8rem;color:#94a3b8;">${lang === 'zh' ? '尚無新聞，第一個 tick 後事件會出現在這裡。' : 'No news yet. Events will appear here after the first tick.'}</div>`;
     return;
   }
   el.innerHTML = keys.slice(0, 5).map(day => {
     const items = days[day].slice(0, 8).map(e => {
       const hh = String(e.hour).padStart(2, '0');
-      return `<div class="news-item"><span class="news-time">${hh}:00</span><span class="news-icon">${e.icon}</span>${e.msg}</div>`;
+      const msg = translateEvent(e);
+      return `<div class="news-item"><span class="news-time">${hh}:00</span><span class="news-icon">${e.icon}</span>${msg}</div>`;
     }).join('');
-    return `<div class="news-day"><div class="news-day-title">📰 ${day} — ${days[day].length} events</div>${items}${days[day].length > 8 ? `<div style="font-size:0.7rem;color:#64748b;">...and ${days[day].length - 8} more</div>` : ''}</div>`;
+    const suffix = days[day].length > 8 ? `<div style="font-size:0.7rem;color:#64748b;">${lang === 'zh' ? `…及另外 ${days[day].length - 8} 條` : `...and ${days[day].length - 8} more`}</div>` : '';
+    const title = lang === 'zh' ? `📰 ${day} — ${days[day].length} 條事件` : `📰 ${day} — ${days[day].length} events`;
+    return `<div class="news-day"><div class="news-day-title">${title}</div>${items}${suffix}</div>`;
   }).join('');
 }
 
 // ============================================================
 // MAP
 // ============================================================
-
 function drawTerritoryMap(state) {
   const canvas = document.getElementById('mapCanvas');
   if (!canvas) return;
@@ -902,10 +940,13 @@ function drawTerritoryMap(state) {
   };
 
   // Legend
+  const factionLabels = lang === 'zh'
+    ? { gov: '王室', corp: '商會', research: '學院', black: '暗市' }
+    : { gov: 'Crown', corp: 'Merchant Guild', research: 'Academy', black: 'Shadow Market' };
   document.getElementById('mapLegend').innerHTML =
-    factionIds.map(id => `<div class="map-legend-item"><div class="map-legend-color" style="background:${factionColors[id]}"></div><span>${factionNames_EN[id] || id}</span></div>`).join('') +
-    `<div class="map-legend-item"><div class="map-legend-color" style="background:#60a5fa"></div><span>Neutral / Water</span></div>` +
-    `<div class="map-legend-item"><div class="map-legend-color" style="background:linear-gradient(135deg,#ef4444,#f59e0b)"></div><span>Contested</span></div>`;
+    factionIds.map(id => `<div class="map-legend-item"><div class="map-legend-color" style="background:${factionColors[id]}"></div><span>${factionLabels[id] || id}</span></div>`).join('') +
+    `<div class="map-legend-item"><div class="map-legend-color" style="background:#60a5fa"></div><span>${lang === 'zh' ? '中立/水域' : 'Neutral / Water'}</span></div>` +
+    `<div class="map-legend-item"><div class="map-legend-color" style="background:linear-gradient(135deg,#ef4444,#f59e0b)"></div><span>${lang === 'zh' ? '爭奪中' : 'Contested'}</span></div>`;
 }
 
 // ============================================================
@@ -976,6 +1017,8 @@ function applyLang() {
   document.getElementById('eventBtn').textContent = t.trigger;
   document.getElementById('langEn').classList.toggle('active', lang === 'en');
   document.getElementById('langZh').classList.toggle('active', lang === 'zh');
+  resyncAgentLabels();
+  renderArchives();
 }
 
 applyLang();
