@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🤖 AI Country — Live Simulator</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+header {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  padding: 16px 24px;
+  border-bottom: 2px solid #475569;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+header h1 { font-size: 1.4rem; color: #60a5fa; }
+.tick-info { font-size: 0.85rem; color: #94a3b8; }
+.lang-btn {
+  background: #334155;
+  border: 1px solid #475569;
+  color: #e2e8f0;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+.lang-btn:hover { background: #475569; }
+.lang-btn.active { background: #2563eb; border-color: #3b82f6; }
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .main-grid { grid-template-columns: 1fr; }
+}
+.panel {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 14px;
+}
+.panel h2 {
+  font-size: 1rem;
+  color: #60a5fa;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 6px;
+}
+.agent-card {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  font-size: 0.82rem;
+}
+.agent-name { font-weight: bold; color: #fbbf24; }
+.agent-mood { color: #94a3b8; font-size: 0.75rem; }
+.agent-action { color: #a5b4fc; margin-top: 2px; }
+.event-log {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 8px 10px;
+  max-height: 320px;
+  overflow-y: auto;
+  font-size: 0.78rem;
+}
+.event-item { padding: 4px 0; border-bottom: 1px solid #1e293b; }
+.event-item:last-child { border-bottom: none; }
+.event-time { color: #64748b; }
+.event-type { color: #fbbf24; }
+.resource-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+.resource-item {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 0.78rem;
+}
+.resource-label { color: #94a3b8; }
+.resource-value { font-size: 1.1rem; font-weight: bold; color: #34d399; }
+.faction-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.faction-tag {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+}
+.faction-name { color: #fbbf24; }
+.faction-count { color: #64748b; }
+.controls {
+  padding: 8px 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.btn {
+  background: #334155;
+  border: 1px solid #475569;
+  color: #e2e8f0;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+.btn:hover { background: #475569; }
+.btn.active { background: #2563eb; border-color: #3b82f6; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1 id="pageTitle">🌍 AI Country — Live Simulator</h1>
+    <span class="tick-info" id="tickInfo">Tick: 0 | Day 1 | 06:00</span>
+  </div>
+  <div style="display:flex;gap:8px;align-items:center;">
+    <button class="lang-btn active" id="langEn">EN</button>
+    <button class="lang-btn" id="langZh">中文</button>
+  </div>
+</header>
+
+<div class="controls">
+  <button class="btn" id="pauseBtn">⏸ Pause</button>
+  <button class="btn" id="speedBtn">⚡ Speed: 1x</button>
+  <span style="color:#64748b;font-size:0.8rem;margin-left:8px;" id="autoLabel">Auto-refresh every 10s</span>
+</div>
+
+<div class="main-grid">
+  <div class="panel">
+    <h2 id="resTitle">💰 Resources</h2>
+    <div class="resource-grid" id="resourceGrid"></div>
+  </div>
+
+  <div class="panel">
+    <h2 id="facTitle">🏛 Factions</h2>
+    <div class="faction-bar" id="factionBar"></div>
+  </div>
+
+  <div class="panel">
+    <h2 id="ecoTitle">📈 Economy</h2>
+    <div id="economyInfo" style="font-size:0.8rem;color:#94a3b8;"></div>
+  </div>
+
+  <div class="panel" style="grid-column: span 2;">
+    <h2 id="agtTitle">👥 Agents</h2>
+    <div id="agentList"></div>
+  </div>
+
+  <div class="panel">
+    <h2 id="evtTitle">📜 Event Log</h2>
+    <div class="event-log" id="eventLog"></div>
+  </div>
+</div>
+
+<script>
+const LANG_KEY = 'ai_country_lang';
+const STORAGE_KEY = 'ai_country_state_v1';
+
+const i18n = {
+  en: {
+    pageTitle: '🌍 AI Country — Live Simulator',
+    tickInfo: (t,d,tm) => `Tick: ${t} | Day ${d} | ${tm}`,
+    resTitle: '💰 Resources',
+    facTitle: '🏛 Factions',
+    ecoTitle: '📈 Economy',
+    agtTitle: '👥 Agents',
+    evtTitle: '📜 Event Log',
+    pause: '⏸ Pause',
+    resume: '▶ Resume',
+    speed: (s) => `⚡ Speed: ${s}x`,
+    autoLabel: 'Auto-refresh every 10s',
+    gov: 'Government',
+    corp: 'Corp',
+    research: 'Research',
+    black: 'Black Market',
+    agents: 'agents',
+    zones: 'zones',
+    gdp: 'GDP',
+    inflation: 'Inflation',
+    unemployment: 'Unemployment',
+    market: 'Market',
+    mood: 'Mood',
+    wealth: 'Wealth',
+    stable: 'stable',
+    growing: 'growing',
+    shrinking: 'shrinking',
+    volatile: 'volatile',
+    actions: [
+      'worked at factory','conducted research','negotiated a deal','socialized at market',
+      'attended faction meeting','traded resources','rested at home','explored new territory',
+      'helped a colleague','reported to supervisor','hacked network','produced goods',
+      'studied engineering','mediated dispute','recruited new member',
+    ],
+    events: [
+      { icon: '⚡', msg: 'Power grid fluctuation in District 7' },
+      { icon: '🤝', msg: 'Faction trade agreement signed' },
+      { icon: '🔥', msg: 'Market surge in tech sector' },
+      { icon: '🕵️', msg: 'Black market activity detected' },
+      { icon: '📢', msg: 'New policy announced by Government' },
+      { icon: '🔬', msg: 'Research breakthrough published' },
+      { icon: '🌾', msg: 'Food production increased' },
+      { icon: '⚔️', msg: 'Territory dispute between factions' },
+      { icon: '💬', msg: 'Public opinion shifting' },
+      { icon: '🏗️', msg: 'New construction project started' },
+    ],
+    resources: {
+      money: '💰 Money',
+      food: '🌾 Food',
+      materials: '🔩 Materials',
+      energy: '⚡ Energy',
+      influence: '📢 Influence',
+    },
+    moods: ['happy','neutral','anxious','focused','excited'],
+  },
+  zh: {
+    pageTitle: '🌍 AI 王國 — 即時模擬器',
+    tickInfo: (t,d,tm) => `Tick: ${t} | 第 ${d} 天 | ${tm}`,
+    resTitle: '💰 資源',
+    facTitle: '🏛 派系',
+    ecoTitle: '📈 經濟',
+    agtTitle: '👥 特工',
+    evtTitle: '📜 事件紀錄',
+    pause: '⏸ 暫停',
+    resume: '▶ 繼續',
+    speed: (s) => `⚡ 速度: ${s}x`,
+    autoLabel: '每 10 秒自動演化',
+    gov: '政府',
+    corp: '企業',
+    research: '研究院',
+    black: '黑市',
+    agents: '名特工',
+    zones: '個區域',
+    gdp: '國內總產值',
+    inflation: '通脹率',
+    unemployment: '失業率',
+    market: '市場態勢',
+    stable: '平穩',
+    growing: '成長',
+    shrinking: '收縮',
+    volatile: '波動',
+    mood: '心情',
+    wealth: '財富',
+    actions: [
+      '在工廠工作','執行研究','談判交易','逛市場',
+      '參加派系會議','交易資源','在家休息','探索新領土',
+      '幫助同事','向主管回報','駭入網路','生產商品',
+      '學習工程技術','調解爭端','招募新成員',
+    ],
+    events: [
+      { icon: '⚡', msg: '第 7 區電網波動' },
+      { icon: '🤝', msg: '派系貿易協定簽署' },
+      { icon: '🔥', msg: '科技板塊市場飆漲' },
+      { icon: '🕵️', msg: '偵測到黑市活動' },
+      { icon: '📢', msg: '政府發布新政策' },
+      { icon: '🔬', msg: '研究突破發表' },
+      { icon: '🌾', msg: '糧食產量提升' },
+      { icon: '⚔️', msg: '派系領土糾紛' },
+      { icon: '💬', msg: '輿論風向轉變' },
+      { icon: '🏗️', msg: '新建設項目啟動' },
+    ],
+    resources: {
+      money: '💰 金錢',
+      food: '🌾 糧食',
+      materials: '🔩 物資',
+      energy: '⚡ 能源',
+      influence: '📢 影響力',
+    },
+    moods: ['愉快','平靜','焦慮','專注','興奮'],
+  }
+};
+
+let lang = localStorage.getItem(LANG_KEY) || 'en';
+
+function applyLang() {
+  const t = i18n[lang];
+  document.getElementById('pageTitle').textContent = t.pageTitle;
+  document.getElementById('resTitle').textContent = t.resTitle;
+  document.getElementById('facTitle').textContent = t.facTitle;
+  document.getElementById('ecoTitle').textContent = t.ecoTitle;
+  document.getElementById('agtTitle').textContent = t.agtTitle;
+  document.getElementById('evtTitle').textContent = t.evtTitle;
+  pauseBtn.textContent = state.paused ? t.resume : t.pause;
+  speedBtn.textContent = t.speed(state.speed);
+  document.getElementById('autoLabel').textContent = t.autoLabel;
+  document.getElementById('langEn').classList.toggle('active', lang === 'en');
+  document.getElementById('langZh').classList.toggle('active', lang === 'zh');
+}
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch(e){}
+  return initState();
+}
+
+function saveState(state) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+}
+
+function initState() {
+  const names = ['Aria','Bolt','Cipher','Drift','Echo','Flux','Glitch','Haven','Ion','Jade','Kai','Lumen','Mist','Nexus','Oracle','Pixel','Quill','Riven','Spark','Tide','Umbra','Vex','Wisp','Xen','Yield','Zen'];
+  const factionIds = ['gov','corp','research','black'];
+  const agents = names.slice(0, 15).map((name, i) => ({
+    id: i, name,
+    faction: factionIds[Math.floor(Math.random() * factionIds.length)],
+    personality: {
+      openness: Math.random(),
+      conscientiousness: Math.random(),
+      extraversion: Math.random(),
+      agreeableness: Math.random(),
+      stability: Math.random(),
+    },
+    skills: {
+      business: Math.floor(Math.random() * 100),
+      engineering: Math.floor(Math.random() * 100),
+      negotiation: Math.floor(Math.random() * 100),
+      research: Math.floor(Math.random() * 100),
+    },
+    wealth: Math.floor(Math.random() * 5000),
+    mood: ['happy','neutral','anxious','focused'][Math.floor(Math.random() * 4)],
+    lastAction: 'idle',
+  }));
+
+  return {
+    tick: 0, day: 1, hour: 6, minute: 0,
+    resources: { money: 125000, food: 85000, materials: 67000, energy: 92000, influence: 45000 },
+    economy: { gdp: 420000, inflation: 0.02, unemployment: 0.08, marketTrend: 'stable' },
+    factions: factionIds.map((id, idx) => ({
+      id,
+      name: id,
+      color: ['#3b82f6','#10b981','#8b5cf6','#ef4444'][idx],
+      members: agents.filter(a => a.faction === id).length,
+      territory: Math.floor(Math.random() * 30) + 10,
+    })),
+    agents,
+    events: [],
+    paused: false,
+    speed: 1,
+  };
+}
+
+function tick(state) {
+  if (state.paused) return state;
+  const t = i18n[lang];
+
+  state.tick++;
+  state.minute += 10;
+  if (state.minute >= 60) { state.minute = 0; state.hour++; }
+  if (state.hour >= 24) { state.hour = 0; state.day++; }
+
+  Object.keys(state.resources).forEach(k => {
+    const delta = Math.floor((Math.random() - 0.45) * 800);
+    state.resources[k] = Math.max(1000, state.resources[k] + delta);
+  });
+
+  state.economy.gdp += Math.floor((Math.random() - 0.4) * 500);
+  state.economy.inflation += (Math.random() - 0.5) * 0.005;
+  state.economy.inflation = Math.max(-0.02, Math.min(0.15, state.economy.inflation));
+  const trends = [t.stable, t.growing, t.shrinking, t.volatile];
+  if (Math.random() < 0.05) state.economy.marketTrend = trends[Math.floor(Math.random() * trends.length)];
+
+  state.agents.forEach(agent => {
+    if (Math.random() < 0.3) {
+      agent.lastAction = t.actions[Math.floor(Math.random() * t.actions.length)];
+      agent.wealth += Math.floor((Math.random() - 0.4) * 300);
+      agent.wealth = Math.max(0, agent.wealth);
+      agent.mood = t.moods[Math.floor(Math.random() * t.moods.length)];
+    }
+  });
+
+  if (Math.random() < 0.4) {
+    const evt = t.events[Math.floor(Math.random() * t.events.length)];
+    state.events.unshift({
+      tick: state.tick, day: state.day, hour: state.hour, ...evt
+    });
+    if (state.events.length > 50) state.events.pop();
+  }
+
+  state.factions.forEach(f => {
+    f.territory += Math.floor((Math.random() - 0.5) * 3);
+    f.territory = Math.max(5, Math.min(50, f.territory));
+    f.members = state.agents.filter(a => a.faction === f.id).length || f.members;
+  });
+
+  return state;
+}
+
+function render(state) {
+  const t = i18n[lang];
+  const hh = String(state.hour).padStart(2, '0');
+  const mm = String(state.minute).padStart(2, '0');
+  document.getElementById('tickInfo').textContent = t.tickInfo(state.tick, state.day, `${hh}:${mm}`);
+
+  document.getElementById('resourceGrid').innerHTML = Object.entries(state.resources).map(([k, v]) => {
+    const label = t.resources[k] || k;
+    const icon = label.charAt(0);
+    return `<div class="resource-item"><div class="resource-label">${label}</div><div class="resource-value">${v.toLocaleString()}</div></div>`;
+  }).join('');
+
+  document.getElementById('factionBar').innerHTML = state.factions.map(f => {
+    const name = t[f.id] || f.id;
+    return `<div class="faction-tag"><span class="faction-name" style="color:${f.color}">${name}</span> <span class="faction-count">${f.members} ${t.agents} · ${f.territory} ${t.zones}</span></div>`;
+  }).join('');
+
+  document.getElementById('economyInfo').innerHTML = `
+    ${t.gdp}: $${state.economy.gdp.toLocaleString()}<br>
+    ${t.inflation}: ${(state.economy.inflation * 100).toFixed(1)}%<br>
+    ${t.unemployment}: ${(state.economy.unemployment * 100).toFixed(1)}%<br>
+    ${t.market}: <b>${state.economy.marketTrend}</b>
+  `;
+
+  document.getElementById('agentList').innerHTML = state.agents.map(a => `
+    <div class="agent-card">
+      <div class="agent-name">${a.name} <span style="color:#64748b;font-weight:normal;">[${a.faction}]</span></div>
+      <div class="agent-mood">${t.mood}: ${a.mood} · ${t.wealth}: $${a.wealth.toLocaleString()}</div>
+      <div class="agent-action">→ ${a.lastAction}</div>
+    </div>
+  `).join('');
+
+  document.getElementById('eventLog').innerHTML = state.events.slice(0, 20).map(e => {
+    const hh = String(e.hour).padStart(2, '0');
+    return `<div class="event-item"><span class="event-time">Day ${e.day} ${hh}:00</span> <span class="event-type">${e.icon}</span> ${e.msg}</div>`;
+  }).join('');
+}
+
+let state = loadState();
+const pauseBtn = document.getElementById('pauseBtn');
+const speedBtn = document.getElementById('speedBtn');
+const speeds = [1, 2, 5, 10];
+let speedIdx = 0;
+
+function loop() {
+  state = tick(state);
+  saveState(state);
+  render(state);
+}
+
+pauseBtn.addEventListener('click', () => {
+  state.paused = !state.paused;
+  applyLang();
+});
+
+speedBtn.addEventListener('click', () => {
+  speedIdx = (speedIdx + 1) % speeds.length;
+  state.speed = speeds[speedIdx];
+  applyLang();
+});
+
+document.getElementById('langEn').addEventListener('click', () => {
+  lang = 'en';
+  localStorage.setItem(LANG_KEY, lang);
+  applyLang();
+  render(state);
+});
+
+document.getElementById('langZh').addEventListener('click', () => {
+  lang = 'zh';
+  localStorage.setItem(LANG_KEY, lang);
+  applyLang();
+  render(state);
+});
+
+// Auto-tick every 10s
+setInterval(() => {
+  for (let i = 0; i < state.speed; i++) {
+    state = tick(state);
+    saveState(state);
+  }
+  render(state);
+}, 10000);
+
+applyLang();
+render(state);
+</script>
+</body>
+</html>
