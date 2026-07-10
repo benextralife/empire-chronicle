@@ -364,7 +364,7 @@ const i18n = {
     tickInfo: (t,d,tm) => `Tick: ${t} | Day ${d} | ${tm}`,
     resTitle: '💰 Resources', facTitle: '🏛 Factions & Territory', ecoTitle: '📈 Economy',
     agtTitle: '👥 Citizens', evtTitle: '📜 Daily News', archiveTitle: '📚 Archives',
-    speed: (s) => `⚡ Speed: ${s}x`, autoLabel: 'Auto-evolve: 10s', trigger: '📜 Event',
+    speed: (s) => `⚡ Speed: ${s}x`, autoLabel: 'Auto-evolve: 10s', trigger: '📜 Event', townView: '🏘️ Town',
     gdp: 'GDP', inflation: 'Inflation', unemployment: 'Unemployment', market: 'Market',
     mood: 'Mood', wealth: 'Wealth', age: 'Age', health: 'Health',
     dead: 'Dead', stable: 'stable', growing: 'growing', shrinking: 'shrinking', volatile: 'volatile',
@@ -399,7 +399,7 @@ const i18n = {
     tickInfo: (t,d,tm) => `第${t}刻 | 第${d}天 | ${tm}`,
     resTitle: '💰 資源', facTitle: '🏛 派系與領土', ecoTitle: '📈 經濟',
     agtTitle: '👥 國民', evtTitle: '📜 每日新聞', archiveTitle: '📚 歷史存檔',
-    speed: (s) => `⚡ 速度: ${s}x`, autoLabel: '每 10 秒自動演化', trigger: '📜 觸發',
+    speed: (s) => `⚡ 速度: ${s}x`, autoLabel: '每 10 秒自動演化', trigger: '📜 觸發', townView: '🏘️ 小鎮',
     gdp: '國內總產值', inflation: '通脹', unemployment: '失業率', market: '市場',
     mood: '心情', wealth: '財富', age: '年齡', health: '健康',
     dead: '已故', stable: '平穩', growing: '成長', shrinking: '收縮', volatile: '波動',
@@ -1177,6 +1177,7 @@ function applyLang() {
   speedBtn.textContent = t.speed(state.speed);
   document.getElementById('autoLabel').textContent = t.autoLabel;
   document.getElementById('eventBtn').textContent = t.trigger;
+  document.getElementById('townViewBtn').textContent = t.townView;
   document.getElementById('langEn').classList.toggle('active', lang === 'en');
   document.getElementById('langZh').classList.toggle('active', lang === 'zh');
   resyncAgentLabels();
