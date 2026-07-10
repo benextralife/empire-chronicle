@@ -946,11 +946,15 @@ function drawTerritoryMap(state) {
     const idx = zy * MAP_SIZE + zx;
     if (idx >= 0 && idx < state.territory.length) {
       const cell = state.territory[idx];
-      const ownerName = cell.owner ? (factionNames_EN[cell.owner] || cell.owner) : 'Neutral';
+      const ownerName = cell.owner ? (factionNames_ZH[cell.owner] || factionNames_EN[cell.owner] || cell.owner) : 'Neutral';
       tooltip.style.display = 'block';
       tooltip.style.left = (evt.clientX + 10) + 'px';
       tooltip.style.top = (evt.clientY - 20) + 'px';
-      tooltip.textContent = `Zone [${zx},${zy}] — ${ownerName}${cell.contested ? ' (contested)' : ''}`;
+      const displayName = lang === 'zh'
+        ? (factionNames_ZH[cell.owner] || factionNames_EN[cell.owner] || cell.owner || '中立')
+        : (factionNames_EN[cell.owner] || cell.owner || 'Neutral');
+      const contestedText = cell.contested ? (lang === 'zh' ? ' (爭奪中)' : ' (contested)') : '';
+      tooltip.textContent = `Zone [${zx},${zy}] — ${displayName}${contestedText}`;
     }
   };
   canvas.onmouseleave = () => { tooltip.style.display = 'none'; };
@@ -1107,11 +1111,15 @@ function drawTown() {
     else ctx.fillRect(Math.min(r.x1,r.x2), r.y1-thickness/2, Math.abs(r.x2-r.x1), thickness);
   });
   // parks
-  TOWN_PARKS.forEach(p => {
+  TOWN_PARKS.forEach((p, pi) => {
     const px = p.x*(w/TOWN_W), py = p.y*(h/TOWN_H), pw = p.w*(w/TOWN_W), ph = p.h*(h/TOWN_H);
     ctx.fillStyle = '#bbf7d0'; ctx.fillRect(px,py,pw,ph);
     ctx.fillStyle = '#4ade80';
-    for (let i=0;i<6;i++) ctx.beginPath(), ctx.arc(px+Math.random()*pw, py+Math.random()*ph, 3,0,Math.PI*2), ctx.fill();
+    for (let i=0;i<6;i++) {
+      const gx = px + ((Math.sin(pi*6.28 + i*1.37) * 0.5 + 0.5) * pw * 0.9 + pw*0.05);
+      const gy = py + ((Math.cos(pi*3.14 + i*2.13) * 0.5 + 0.5) * ph * 0.9 + ph*0.05);
+      ctx.beginPath(); ctx.arc(gx, gy, 3, 0, Math.PI*2); ctx.fill();
+    }
   });
   // trees
   TOWN_TREES.forEach(t => {
