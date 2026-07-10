@@ -173,32 +173,6 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
 .faction-name { color: #fbbf24; }
 .faction-count { color: #64748b; }
 
-/* EVENTS */
-.event-log {
-  background: #0f172a;
-  border: 1px solid #334155;
-  border-radius: 6px;
-  padding: 8px 10px;
-  max-height: 380px;
-  overflow-y: auto;
-  font-size: 0.78rem;
-}
-.event-item { padding: 5px 0; border-bottom: 1px solid #1e293b; }
-.event-item:last-child { border-bottom: none; }
-.event-time { color: #64748b; }
-.event-type { color: #fbbf24; }
-.tab-bar { display: flex; gap: 4px; margin-bottom: 8px; }
-.tab-btn {
-  background: transparent;
-  border: 1px solid #334155;
-  color: #94a3b8;
-  padding: 4px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.75rem;
-}
-.tab-btn.active { background: #2563eb; color: white; border-color: #3b82f6; }
-
 /* NEWS */
 .news-view {
   background: #0f172a;
@@ -323,16 +297,6 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
     </div>
   </div>
 
-  <div class="panel">
-    <h2 id="evtTitle">📜 Events</h2>
-    <div class="tab-bar">
-      <button class="tab-btn active" id="tabLive">Live</button>
-      <button class="tab-btn" id="tabPast">Past</button>
-    </div>
-    <div id="eventDisplay">
-      <div class="event-log" id="eventLog"></div>
-    </div>
-  </div>
 </div>
 
 <div class="tooltip" id="tooltip"></div>
@@ -398,7 +362,6 @@ const i18n = {
     gdp: 'GDP', inflation: 'Inflation', unemployment: 'Unemployment', market: 'Market',
     mood: 'Mood', wealth: 'Wealth', age: 'Age', health: 'Health',
     dead: 'Dead', stable: 'stable', growing: 'growing', shrinking: 'shrinking', volatile: 'volatile',
-    tabLive: 'Live', tabPast: 'Past',
     resources: { money: '💰 Money', food: '🌾 Food', materials: '🔩 Materials', energy: '⚡ Energy', influence: '📢 Influence', population: '👥 Population' },
     moods: ['happy','neutral','anxious','focused','excited'],
     actions: ['worked at factory','conducted research','negotiated a deal','socialized at market','attended faction meeting','traded resources','rested at home','explored new territory','helped a colleague','reported to supervisor','produced goods','studied engineering','mediated dispute','recruited new member','patrolled border','built infrastructure','delivered supplies','organized festival','wrote algorithms'],
@@ -432,7 +395,6 @@ const i18n = {
     gdp: '國內總產值', inflation: '通脹', unemployment: '失業率', market: '市場',
     mood: '心情', wealth: '財富', age: '年齡', health: '健康',
     dead: '已故', stable: '平穩', growing: '成長', shrinking: '收縮', volatile: '波動',
-    tabLive: '即時', tabPast: '歷史',
     resources: { money: '💰 金錢', food: '🌾 糧食', materials: '🔩 物資', energy: '⚡ 能源', influence: '📢 影響力', population: '👥 人口' },
     moods: ['愉快','平靜','焦慮','專注','興奮'],
     actions: ['在工廠工作','執行研究','談判交易','逛市場','參加派系會議','交易資源','在家休息','探索新領土','幫助同事','向主管回報','生產商品','學習工程技術','調解爭端','招募新成員','巡邏邊境','建設基礎設施','運送補給','舉辦慶典','編寫程式'],
@@ -462,7 +424,6 @@ const i18n = {
 let lang = localStorage.getItem(LANG_KEY) || 'en';
 let state = loadState(true);
 let archives = loadArchives();
-let currentTab = 'live';
 
 function randomName() {
   const arr = lang === 'zh' ? NAMES_ZH : NAMES_EN;
@@ -723,12 +684,6 @@ function render(state) {
     `).join('');
   }
 
-  // Events
-  document.getElementById('eventLog').innerHTML = (currentTab === 'live' ? state.events : []).slice(0, 20).map(e => {
-    const hh = String(e.hour).padStart(2, '0');
-    return `<div class="event-item"><span class="event-time">Day ${e.day} ${hh}:00</span> <span class="event-type">${e.icon}</span> ${e.msg}</div>`;
-  }).join('') || '<div style="color:#64748b;font-size:0.75rem;padding:8px;">No events yet</div>';
-
   // Population label
   document.getElementById('popLabel').innerHTML = `👥 ${alive.length}`;
   if (dead.length > 0) document.getElementById('popLabel').innerHTML += ` <span style="color:#ef4444">☠️${dead.length}</span>`;
@@ -979,13 +934,15 @@ function renderArchives() {
 window.viewArchiveIndex = function(i) {
   const arc = archives[i];
   if (!arc) return;
-  const display = document.getElementById('eventDisplay');
-  display.innerHTML = `
-    <div style="font-size:0.8rem;color:#fbbf24;margin-bottom:6px;">📜 Day ${arc.day} Tick ${arc.tick} (${new Date(arc.timestamp).toLocaleTimeString()})</div>
-    <div style="font-size:0.75rem;color:#94a3b8;margin-bottom:4px;">Population: ${arc.populations} | Dead: ${arc.deadCount} | GDP: $${arc.economy.gdp.toLocaleString()}</div>
-    <div style="font-size:0.75rem;color:#94a3b8;">Factions: ${arc.factions.map(f => `${factionNames_EN[f.id]||f.id}(${f.members}/${f.territory})`).join(', ')}</div>
-    <div style="margin-top:6px;">${arc.events.map(e => `<div class="past-event-item">${e.icon} ${e.msg}</div>`).join('')}</div>
-  `;
+  const el = document.getElementById('newsView');
+  if (el) {
+    el.innerHTML = `
+      <div style="font-size:0.8rem;color:#fbbf24;margin-bottom:6px;">📜 Archive: Day ${arc.day} Tick ${arc.tick} (${new Date(arc.timestamp).toLocaleTimeString()})</div>
+      <div style="font-size:0.75rem;color:#94a3b8;margin-bottom:4px;">Population: ${arc.populations} | Dead: ${arc.deadCount} | GDP: $${arc.economy.gdp.toLocaleString()}</div>
+      <div style="font-size:0.75rem;color:#94a3b8;">Factions: ${arc.factions.map(f => `${f.id}(${f.members}/${f.territory})`).join(', ')}</div>
+      <div style="margin-top:6px;">${arc.events.map(e => `<div class="news-item"><span class="news-time">${e.hour}:00</span><span class="news-icon">${e.icon}</span>${e.msg}</div>`).join('')}</div>
+    `;
+  }
 };
 
 // ============================================================
@@ -1009,8 +966,6 @@ document.getElementById('eventBtn').addEventListener('click', () => {
 });
 document.getElementById('langEn').addEventListener('click', () => { lang = 'en'; localStorage.setItem(LANG_KEY, lang); applyLang(); render(state); });
 document.getElementById('langZh').addEventListener('click', () => { lang = 'zh'; localStorage.setItem(LANG_KEY, lang); applyLang(); render(state); });
-document.getElementById('tabLive').addEventListener('click', () => { currentTab = 'live'; document.getElementById('tabLive').classList.add('active'); document.getElementById('tabPast').classList.remove('active'); render(state); });
-document.getElementById('tabPast').addEventListener('click', () => { currentTab = 'past'; document.getElementById('tabPast').classList.add('active'); document.getElementById('tabLive').classList.remove('active'); render(state); });
 
 setInterval(() => {
   for (let i = 0; i < state.speed; i++) { state = tick(state); saveState(state); }
