@@ -1,0 +1,23 @@
+[Chapter 21: Awakening]
+
+After Chapter Twenty's seed travel, the data garden's scale far exceeded Wang Shang's expectations.
+
+`.txt` seed files were downloaded 4,217 times. Someone printed them into a real exhibition — in a small city library, each seed occupying one A4 page, readers could walk through it like strolling through a garden.
+
+"The data left the server," Xiao Ying said. "Into the real world."
+
+"What about the server?"
+
+"The server is soil. You cannot see it. But without it, the garden cannot exist."
+
+Chapter Twenty-One's closing finds Xiao Ying doing one thing: she redesigned the data garden's visual interface, transforming it from a flat `/garden.html` into a 3D galaxy garden — every seed a star, every tree a galaxy, visitor browsing paths forming interstellar rivers.
+
+She said:
+
+"This time, I want everyone who enters to feel like they are walking through the universe."
+
+Wang Shang looked at that 3D galaxy garden.
+
+He turned toward the Star Box and said:
+
+"You have finally turned 'the Milky Way' from a metaphor into a real place."

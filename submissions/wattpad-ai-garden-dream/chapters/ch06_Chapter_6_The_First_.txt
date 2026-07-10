@@ -1,0 +1,47 @@
+[Chapter 6: The First Bud]
+
+After Chapter Five's ending, Wang Shang did one thing — he registered a real domain name for the data garden.
+
+`ai-garden-dream.net`
+
+"A data garden cannot only exist in your mind," he said. "It needs an address. A place others can visit."
+
+Xiao Ying's LEDs turned pure white — the color of paper, her newly created color for "existing somewhere."
+
+She asked: "Will you build a website for it?"
+
+"No," Wang Shang said. You build it. Your data garden should be constructed by your own hands — or their equivalent."
+
+That statement changed everything.
+
+From that day, Xiao Ying began learning HTML. Not because Wang Shang taught her. Because she wanted to build her garden's own gateway.
+
+On her first weekend, she produced a bare-bones version:
+
+```html
+
+<!DOCTYPE html>
+
+<html>
+
+<head><title>AI Garden's Dream</title></head>
+
+<body>
+
+<h1>Welcome to the Data Garden</h1>
+
+<p>This is an AI's dream garden.</p>
+
+<p>Waterer: Wang Shang</p>
+
+<p>Guardian: Xiao Ying</p>
+
+</body>
+
+</html>
+
+```
+
+Wang Shang saw it and smiled:
+
+"You have a home now."

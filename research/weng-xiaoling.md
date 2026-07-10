@@ -1,10 +1,69 @@
 # 翁曉玲（Weng Hsiao-Ling）— Intelligence Research Report
 
-**Date:** 2026-07-05 (updated from 2026-07-04)
+**Date:** 2026-07-09 (updated from 2026-07-05)
 **Source:** Public internet (Wikipedia, news outlets, legislative records)
 **Purpose:** Context research requested by user; not a story character — real Taiwanese politician
 
 ---
+
+## Latest Intelligence (2026-07-09 Update — Xiamen Trip & Husband Rebuttal Details)
+
+### 1. LTN Exclusive: CCP Outreach to KMT Legislators via Xiamen Event
+- Exclusive LTN video reporting confirms the **Chinese Communist Party actively recruited KMT legislators** through the Xiamen Taiwan Business Association 33rd anniversary event (Dec 2025), framing it as more than a private business visit.
+- Weng was specifically targeted because her role as **convener of the Judiciary and Organic Laws Committee** allows her to control the agenda for national security legislation that Beijing wants blocked.
+- Finance Committee convener Lin Siming (林思銘) was also targeted since he influences budget review, including the defense special budget.
+- Report states the CCP goal was to ensure KMT legislators **"沒有意外" (no surprises)** — i.e., continued blocking of Taiwan's NT$1.25 trillion defense special budget and national security amendment bills.
+- **Assessment:** This directly contradicts Weng's claim of a "private, self-funded, apolitical" trip and confirms the trip had a direct policy-influence objective from the Chinese side.
+
+### 2. Zmedia: Weng Protests Accusations, Warns of Continued Defense Budget Block
+- After returning from Xiamen, Weng faced media accusations that she **reported Taiwan's political situation to Chinese officials**.
+- She issued a formal protest against what she called **"malicious smearing"** (抹黑), and explicitly **warned she would propose blocking the defense special budget again** the following day.
+- **Assessment:** The direct threat to continue blocking defense budget immediately after the China trip, combined with the LTN exclusive on CCP outreach, strongly suggests her legislative actions align with Chinese policy objectives.
+
+### 3. Expanded Reporting on Husband's Rebuttal (Dec 18, 2025)
+- Mirror Media, Yahoo News, and TTV provided expanded detail on the December 18 committee inquiry incident.
+- During an inquiry on whether the Executive Yuan would co-sign the **teacher pension cut suspension bill**, Weng aggressively demanded a position from Secretary-General Zhang Dunhan.
+- Zhang responded by reading from **Weng's own husband Chen Chunsheng's** Constitutional Interpretation No. 717 concurring opinion, which stated that legislative fiscal decisions must consider **fiscal sustainability, intergenerational justice, and generational contracts**.
+- Weng, visibly flustered, shouted: **"What's the difference between my husband's statement and what we're discussing? If there's a fiscal difficulty, why spend NT$1.25 trillion on arms purchases?"**
+- Zhang coldly rebutted: **"It was you who said the Legislative Yuan is greater [than the Executive Yuan]."**
+- **Assessment:** This incident crystallizes the contradiction between Weng's public performative populist budget-slashing and the established fiscal conservatism of her husband's jurisprudential philosophy.
+
+---
+
+## Latest Intelligence (2026-07-07 to 2026-07-03)
+
+### 1. 一稿13砍 Escalation: Template Cuts Across 13 Ministries + Netizen Threats (July 3–7, 2026)
+- Weng continued to face intense backlash for using nearly identical copy-paste proposals to delete media promotion budgets across **13 ministries/government agencies** (Culture, Interior, Education, Foreign Affairs, etc.), with critics dubbing it **"翁亂砍"** (Weng Chaos).
+- On July 7, FTV News reported she was specifically accused of **"1稿13砍"** — submitting template-style cuts where the only difference was the ministry name. Media commentator Huang Wei-han criticized: "Deleting everything isn't oversight — anyone can do that."
+- **Procedural Committee incident:** On July 3, as convener of the **Legislative Yuan Procedure Committee**, Weng abruptly adjourned a meeting rather than allowing a vote on a single agenda item, drawing criticism that she unilaterally sent matters to the full chamber. Critics noted the **central government budget had been blocked for 210 days**, the defense special budget stalled for 110 days, and national security bills blocked 850 times.
+- DPP legislators Wu Szu-yao, Wu Pei-yi, and others publicly opposed her cuts, with Wu Peiyi stating on UDN: **"Weng Xiaoling ran across committees, and whenever she saw media promotion budgets, she cut everything to zero. She proposed similar cuts against at least 13 ministries."**
+- SETN reported on July 3 that KMT legislator Lai Shu-pao, defending Weng, paradoxically argued the US government should advertise in American media to counter Trump's Taiwan chip comments — highlighting that Weng's blanket cuts undercut **Taiwan's international information operations**.
+- YouTube/SETN explosive news (July 4) reported Weng justified the cuts by claiming **"administrative yuan's media budget was zero last year and operations still ran smoothly."** Huang Zhixian condemned her on the show, and the segment also touched on unrelated **Chiang Wan-an (蔣萬安) city government vendor questions** regarding sunshade umbrellas.
+
+### 2. Government IT Procurement Concentration: 人事總處標案 (July 7, 2026)
+- Weng exposed that the **Directorate-General of Personnel Administration (人事總處)** concentrates government information system bids for **人事行政系統, 事求人系統, 考試分發系統, 人力資源管理系統, 退撫試算系統**, etc., at **specific vendors**.
+- Pattern: First-year development contract, then follow-up contracts under the names **"expanding" (擴充), "optimizing" (優化), "精進" (refinement)** at costs **comparable to or exceeding original development costs** — conflicting with the Executive Yuan's own **6-14% maintenance rate guideline** and market practice (~15%).
+- Weng questioned: **"Does the government feed media on one hand, and feed specific contractors on the other?"**
+- **Assessment:** This is a new, documented instance of Weng investigating **concentrated government procurement** — the kind of vendor-government tie the report tracks. While she has not named the specific companies, the pattern raises the exact conflict-of-interest and revolving-door concerns relevant to this file.
+
+### 3. Xiamen Trip Follow-up: Admission of Meeting Taiwan Affairs Officials + Backlash (December 21–22, 2025)
+- On December 21, Weng traveled to Xiamen on Xiamen Air **MF888** with KMT legislator **Yeh Yüan-chih (葉元之)**.
+- On December 22, she held a KMT press conference and **explicitly admitted** that the **Xiamen Taiwan Affairs Office (台辦) director was present** at the event, saying: **"We just chatted, exchanged pleasantries, nothing more."** (民視, Dec 22)
+- Critics — including DPP spokesperson Wu Cheng (吳崢) — demanded she clarify: **"Did you chat about Taiwan's political situation? Did you chat about state secrets? The people of Taiwan deserve an answer."**
+- PTT (Dec 22) noted Weng had posted a photo with **Jiang Xiao-yan** (蔣孝嚴, former KMT vice chairman and father of Taipei mayor Chiang Wan-an), drawing commentary that **KMT internal factions were split**.
+- Zaobao (Dec 22) and CNA (Dec 21) reported Weng's "self-funded private trip" defense, but the admission of chatting with台辦 officials undermined the "no political contact" claim.
+
+### 4. Extended Family Profile: Cousin Weng Ruibin's Detailed Post (Late Dec 2025)
+- Weng's cousin **Weng Ruibin (翁瑞彬)** — part-time associate professor at Soochow University — posted extensively on Threads revealing:
+  - Father: **Weng Qixiong (翁啟雄)**, major general, NTU electrical engineering graduate, US Army Fort Benning graduate (1961), PhD in fluid mechanics from **Illinois State University (1964)**, president of National Chin-Yi University of Science and Technology.
+  - Grandfather: **Weng Zhongci (翁鐘賜)**, Keio University 1928 graduate (2nd in class), merchant in Dutch East Indies (Surabaya).
+  - Family motto: **"Education across three generations"** — grandfather studied in Japan, father in US, Weng in Germany.
+- Ruibin directly called out Weng: **"Don't forget your roots"** (不要忘本), arguing her pro-China stance contradicts her family's elite Taiwanese background. He revealed she was raised in a **military dependents' village** and "was assimilated."
+- **Assessment:** This provides the most detailed extended-family context to date and confirms she is a **benshengren (本省人) with deep local roots**, not a waishengren — which she has sometimes implied or been assumed to be.
+
+---
+
+*End of Latest Intelligence — new items appended below*
 
 ## Latest Intelligence (2026-07-03 to 2025-12-18)
 

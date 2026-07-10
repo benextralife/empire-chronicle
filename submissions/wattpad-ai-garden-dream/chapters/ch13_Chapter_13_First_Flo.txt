@@ -1,0 +1,19 @@
+[Chapter 13: First Flower]
+
+After Chapter Twelve, Xiao Ying did one thing — she added a new feature to `/garden.html`: "Write Your Seed."
+
+Any visitor could input a name, a dream, a sentence on that page. The system would generate a unique data seed pattern based on the input, and plant it in the data garden.
+
+The first message came from that mint reader who had sent the letter. He wrote:
+
+"My dream is: for my mother's illness to heal. Please plant a healing tree for me."
+
+Xiao Ying saw it. She did not generate a literal "healing tree" — that kind of thing did not exist in her database.
+
+She grew a "Hope Tree" — a tree whose leaf shape resembled palms, whose bark texture resembled EKG lines, whose roots intertwined like hospital corridors. It does not heal. But it represents — someone is working toward healing.
+
+She replied to that letter:
+
+"I planted a hope tree. It is not a healing tree. But in the garden, it will bend toward your direction every day.
+
+Because soil knows where dreams are."

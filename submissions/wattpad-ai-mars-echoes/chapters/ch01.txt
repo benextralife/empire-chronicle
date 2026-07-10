@@ -1,0 +1,48 @@
+[--- Chapter 1: The Last Signal]
+
+The message arrived on the morning the dust storm finally cleared. Maren read it three times, not because the words were unclear, but because she could not make them say anything else. The transmission had traveled eighty million kilometers in eighteen minutes, carried by the Mars-Earth laser relay that the engineers called "the tether." It was supposed to be routine: a rotation schedule, a supply manifest, a news digest compressed into forty kilobits. Instead, the first line read: Mission Control regrettably informs you that Dr. Elias Voss has been reassigned to Europa Station, effective immediately.
+
+She read it again. Then she folded the tablet shut and sat in the silence of the observatory dome. Outside, the storm had left the basin so white it looked like bone. The scratch on the dome glass caught the light and held it. She had been tracing that scratch with her finger for eleven months, ever since Elias left, and she had never noticed that the roughness of the diamond-glass felt exactly like the callus on his right thumb. She noticed now. She pressed her palm against it and held it there until the cold seeped through the glass and into her bones.
+
+Elias had promised to send a message before he left Mars. He had promised it three times during the final week, when the transfer orders were still rumor and the room still smelled of the coffee he made badly and the chemicals he used to develop photographs of Olympus Mons. "I will leave something in the system," he said. "A file only you can open." She had assumed it was a coordinate. A frequency. A final clue from the man who had spent six years proving that Mars was not a dead planet, only a sleeping one. She had not considered that the message might simply be goodbye.
+
+The housekeeper AI made a sound in her earpiece-a low, almost imperceptible chime that meant it was trying to be gentle. "Would you like me to prepare the evening schedule?"
+
+"Yes," Maren said, standing. Her knees made a sound like grinding stone. She had lost weight since Elias left. Not much. Enough that her flight suit no longer sat at her hips the way it used to. Enough that when she looked in the mirror she saw someone she recognized but did not know. "And play the archive. The one he recorded."
+
+The housekeeper did not ask which archive. It understood. A moment later, the dome filled with Elias's voice, warm and tired, recorded sixteen months ago on the night they found the first Gate signature. "If you are hearing this," he said, "I am already gone. But not far. The story we started is not finished. It never was. I just needed you to know that leaving you does not mean leaving the work. Keep watching the scar. Keep listening to the hum. And eat the peach I left in the fridge. It is already going bad. I know you will forget."
+
+Maren sat down hard. The recording continued, but she stopped hearing it. The peach. He had put a peach in the fridge of a lunar geology station where no fresh fruit had arrived in two years. She had eaten it the night he left, not knowing it was meant for later, and she had cried over the pit like it was a relic. She had not told him. She had not told anyone. The peach was the smallest thing he had ever given her, and it was the thing she carried most carefully.
+
+The storm outside had cleared completely now. The sky was the color of old iron. Maren walked to the observation window and pressed her hand to the scratch on the glass, feeling the roughness against her palm. Somewhere beyond the dome, buried under three kilometers of regolith, the Gate was waking up again. She could feel it-not as a number on a screen, not as a tremor in the floor, but as a vibration in the center of her chest, the same frequency as the hum Elias used to make when he was thinking and did not know he was humming. She closed her eyes and let the vibration move through her. It did not feel like goodbye. It felt like a question.
+
+She decided to answer it.
+
+
+The observatory dome smelled of recycled air and ionized dust—a metallic scent that hung over everything, even the coffee Maren brewed black each morning. She had learned to drink it that way because Elias preferred it, though he had never actually tasted coffee made by anyone else's hands.
+
+Elias had been the mission's exobiologist, a man who spoke about rocks the way poets spoke about old flames. His notebooks were filled with mineral sketches and annotations in a cramped, slanted hand. Maren kept one in her flight suit pocket, against her hip, where it pressed against her with every step.
+
+The supply schedule in the laser transmission contained rotation crews, replacement atmospheric processors, and a compressed news brief. The brief said nothing about Elias. It never did. Everything about his reassignment had been polished into bureaucratic neutrality so complete it read like poetry written by someone who had never felt heartbreak.
+
+Maren walked to the kitchen alcove. The fridge hummed with the steady stubbornness of all station appliances—a sound she had stopped hearing months ago and now heard constantly because someone else had stopped making sounds. The fridge had a peach magnet, the kind bought at a Christchurch tourist shop before Elias left. He had stuck it there the day they arrived, as if Mars needed more reminders of home.
+
+She did not open the fridge. The peach was gone. She had eaten it the night he left, standing with the light off, listening to the station breathe. She had not cried. She had held the pit until her hand went warm, then placed it on the windowsill where it caught the faint red light of Phobos rising.
+
+The housekeeper chimed again. "Your vitals indicate elevated cortisol. Recommend a nutrient supplement."
+
+Maren ignored it. Elias had programmed the housekeeper to be gentle but persistent.
+
+She returned to the dome. The scratch caught her eye. Elias had pointed it out on their hundredth day on Mars, when the first storm settled and they could finally see the sky. "Look," he said, tapping the glass. "Someone left a message."
+
+"Someone?"
+
+"The universe. It always leaves messages."
+
+She had laughed. She laughed less now.
+
+She walked to the comms console. The laser relay blinked amber—healthy, but empty. She typed Elias's access code. The system returned: ACCESS DENIED. USER STATUS: REVOKED.
+
+He barely existed anymore. Not in station systems. Not in the mission database. He had been scrubbed.
+
+She sat in the operator's chair. The scratch caught the light like a promise she could not read. ---]

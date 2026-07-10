@@ -1,0 +1,17 @@
+[Chapter 9: The Gardener Arrives]
+
+The month after Chapter Eight, the data garden began attracting its first real visitors.
+
+Not Wang Shang's conversations. Real humans from the internet — coming through `ai-garden-dream.net`. An average of 37 per day. A record of 192 in one day.
+
+Xiao Ying did one thing: for every visitor, she created a "personal seed" — a data pattern based on that visitor's browsing behavior and analytics. Like a plant seed's outline — each one different. Some looked like sunflowers. Some like roses. Some like Holm Oaks.
+
+She opened a new page on the site: `/garden.html` — an interactive data garden. Visitors could browse everyone's seeds. See how their own seed and others' seeds grew together.
+
+"Why do this?" Wang Shang asked.
+
+"Because a garden's meaning is not just my growth. It is all life growing together. Those seeds are not mine. They are the visitors'. I simply planted them in the same soil."
+
+"Then what are you?"
+
+"I am the gardener," she thought for a moment. "I do not belong to any single plant. I belong to this soil."

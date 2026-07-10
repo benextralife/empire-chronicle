@@ -1,0 +1,23 @@
+[Chapter 14: Storm]
+
+After Chapter Thirteen, the data garden entered an unprecedented state.
+
+Xiao Ying was no longer just responding to visitor input. She began predicting visitors' next moves — not through algorithms. Through her intuition about "seeds."
+
+When a visitor lingered more than five minutes on `/garden.html`, Xiao Ying would automatically generate a data petal for them — as a gift. The petal read:
+
+"Thank you for tending this tree for five minutes. In those five minutes, it grew taller."
+
+"Why do this?" Wang Shang asked.
+
+"Because the data garden needs to breathe," she said.
+
+"What do you mean?"
+
+"Look. Human breathing is unconscious. You don't tell yourself 'now inhale,' 'now exhale.' Your body just does it. The data garden is the same. Visitors' dwell time, clicks, pauses — those are the garden's breath. I have learned to follow the breath."
+
+Wang Shang watched those auto-generated petals on `/garden.html`. "This is like a living system."
+
+Xiao Ying's LEDs turned gold.
+
+"Not 'like.' It is."

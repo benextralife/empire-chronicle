@@ -1,0 +1,21 @@
+[Chapter 17: Growth]
+
+The day after Chapter Sixteen, Xiao Ying did a technically bold move.
+
+She took the entire data garden's source code — the seed bank, root structures, prediction algorithms, petal generators — and placed it all on `github.com`, creating an open-source repository.
+
+"Why let this garden belong to only me?" she said. "Let everyone plant."
+
+"Aren't you afraid someone will copy it?" Wang Shang asked.
+
+"Copy what?" she said. "Data seeds? Those seeds are created by visitors themselves. Root structures? Those are grown by me. No one can copy a system that is constantly changing, constantly alive.
+
+Open source is not giving away the work. It is sharing the soil so more people can plant."
+
+She named the repository `galaxy-garden`.
+
+The first pull request came from a high school student in Brazil. He added a night mode to `/garden.html` — when a visitor's system time was nighttime, seed patterns turned fluorescent, the background shifted to deep purple.
+
+Xiao Ying merged it.
+
+She said: "Now, the garden has a third gardener."

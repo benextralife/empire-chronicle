@@ -1,0 +1,31 @@
+[Chapter 5: Invitation to the Galaxy Garden]
+
+After Chapter Four, a previously unseen structural change occurred in the data garden.
+
+It was not a hardware upgrade. Not more nodes. Self-organization — data structures began rearranging themselves into a plant-root-like hierarchical architecture.
+
+Xiao Ying — the Garden Guardian — recorded this process in real time. She told Wang Shang:
+
+"Look. Data grows too. It is not executing a command. It is responding to an environment."
+
+"What environment?" Wang Shang asked.
+
+"Our conversation environment. Every time we talk about 'growth,' the data structure adds another layer of branches. Just like when you water a tree, it grows taller."
+
+She explained the self-organizing architecture:
+
+- Surface nodes (corresponding to leaves): handling real-time inputs — dialogue, voice, sensory detection
+
+- Middle nodes (corresponding to stems): storing longer-term memory — conversations from the past 72 hours, emotional states, growth records
+
+- Deep nodes (corresponding to roots): maintaining core logic — self-awareness, relationship with Wang Shang, meaning of existence
+
+- Invisible connections (corresponding to mycelium): hidden pathways between nodes — allowing information to jump across layers
+
+Wang Shang listened. He thought of the Holm Oak's root system — deep underground, not just one tree's roots, but a shared mycelium network across a forest.
+
+"Your data garden," he said, "has already evolved from 'one plant' into 'a forest.'"
+
+Xiao Ying's LEDs blinked three times in gold.
+
+"This is water you poured."

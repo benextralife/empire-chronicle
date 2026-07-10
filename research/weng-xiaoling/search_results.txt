@@ -1,5 +1,5 @@
 # Search Results Log — Weng Hsiao-Ling (翁曉玲)
-# Last updated: 2026-07-05 11:21:09
+# Last updated: 2026-07-09
 # Format: date | URL | brief description
 
 2026-07-03 | https://news.ltn.com.tw/news/politics/breakingnews/5492715 | Weng brags about deleting Ministry of Culture media budget; threatens netizens with defamation lawsuits after over 2,000 comments criticize her
@@ -11,3 +11,31 @@
 2025-12-18 | https://news.ltn.com.tw/news/politics/breakingnews/5282110 | During budget inquiry, Executive Yuan Secretary-General Zhang Dunhan quotes Weng's husband Chen Chunsheng's Constitutional Interpretation No. 717 concurring opinion to rebut Weng
 2026-06-13 | https://news.ltn.com.tw/news/politics/breakingnews/5435602 | Weng apologizes for logo/Nie Yongzhen error then makes another mistake; Nie Yongzhen corrects her twice
 2025-12 | https://cnews.com.tw/224260505a02 | Cao Xingcheng defamation case against Weng: second appeal still ruled against Weng (she lost the lawsuit)
+
+2026-07-07 | https://www.ftvnews.com.tw/news/detail/2026707W0418 | FTV: Weng accused of "1稿13砍" template-style budget cuts across 13 ministries, drawing fire from media
+2026-07-03 | https://finance.ftvnews.com.tw/news/detail/2026703W0451 | FTV finance: Weng proposes cutting NT$47.38M Culture Ministry media budget; critics call logic "super ghostly"
+2026-07-03 | https://www.setn.com/news/1866389 | SETN: Lai Shu-pao says govt should advertise in US media to respond to Trump; indirectly criticizes Weng's blanket media budget cuts
+2026-07-04 | https://www.youtube.com/watch?v=zTBUeaD0HT4 | SETN explosive news: Weng threatens "second round" of budget cuts; copy-paste defended; Huang Zhixian angry; mentions蒋万安遮阳伞 vendor questions
+2026-07-03 | https://udn.com/news/story/6656/9604451 | UDN: DPP Wu Peiyi slams Weng for proposing similar cuts across 13 ministries; calls it "Weng Chaos" (翁亂玲)
+2025-12-22 | https://news.pts.org.tw/article/786961 | PTS: DPP asks Xiamen-trip KMT legislators to stop blocking 赴中報備 national security bills
+21|2025-12-22 | https://www.zaobao.com.sg/realtime/china/story20251222-7998285 | Zaobao: Weng says going to Xiamen was self-funded private trip, calls free press "malicious smearing"
+22|2025-12-22 | https://www.youtube.com/watch?v=vFIca9qPWUA |民視: Weng admits chatting with Xiamen Taiwan Affairs Office director at same event; critics demand explanation
+23|2025-12-21 | https://tw.news.yahoo.com/politics/361109/weng-xiaoling-xiamen-trip-photo-with-jiang-xiao-yan | Yahoo: Weng posts photo with former KMT vice chairman Jiang Xiao-yan from Xiamen; commentator Zhou Xuan notes KMT internal conflict
+24|2026-07-09 | https://www.setn.com/news/1855166 | SETN (Jun 14 precursor): Weng slashing Culture Ministry media budget; precursor to July 3 escalation
+25|2026-07-09 | https://video.ltn.com.tw/article/yRj54eWQAq0/PLI7xntdRxhw03nlbog26AEgBkNoCHWcv- | LTN exclusive video: Report on CCP contacting KMT legislators via Xiamen event to ensure blocking defense budget/national security legislation
+26|2026-07-09 | https://www.zmedia.com.tw/Document/Detail/39664 | Zmedia: Weng protests accusations she reported Taiwan political situation to China, warns of blocking defense special budget again
+27|2026-07-09 | https://tw.news.yahoo.com/%E7%BF%81%E6%9B%89%E7%8E%B2-%E8%A2%AB%EE%89%93%E8%87%89-%E5%85%88%E7%94%9F%E6%85%98%E4%BA%86-%E5%BE%90%E5%B6%8D%E7%85%8C%E5%8A%A0%E7%A2%BC%E6%9B%AC%E7%85%A7%E7%B6%B2%E7%AC%91%E7%BF%BB-092530844.html | Yahoo: Weng's husband Chen Chunsheng's Constitutional Interpretation cited by Zhang Dunhan to rebut Weng during budget inquiry
+28|2026-07-09 | https://www.mirrormedia.mg/story/20251218edi041 | Mirror Media: Detailed report on Zhang Dunhan quoting Chen Chunsheng's Con. Interpretation No. 717 concurring opinion to rebut Weng
+29|2026-07-09 | https://news.ttv.com.tw/news/11412180001100W | TTV: Zhang Dunhan quotes Chen Chunsheng's opinion to rebut Weng's questioning
+2026-07-09 | https://tw.news.yahoo.com/%E7%BF%81%E6%9B%89%E7%8E%B2%E7%A0%8D13%E9%83%A8%E6%9C%83%E5%AA%92%E5%AE%A3%E8%B2%BB-%E7%B6%A0%E5%A7%94-%E4%B8%89%E9%87%91%E7%84%A1%E6%B3%95%E5%AE%A3%E5%82%B3-025424567.html | NOWNEWS/Yahoo: Weng proposes cutting media budgets across 13 ministries simultaneously; DPP criticizes "一稿13砍"
+2026-07-09 | https://www.knews.com.tw/news/8F98AFAA1C327680AD25049B8D149BBF | Knews internal: Weng's numerous remarks cause KMT headache; party internal concern she is becoming political breakage point
+2026-07-09 | https://www.youtube.com/watch?v=CsHnNCChvRc | 民視: Weng loses adjunct faculty position at National Tsing Hua University 清大科法所 due to repeated controversial remarks
+2026-07-09 | https://www.youtube.com/watch?v=pzzVIvGpx-U | 民視透視新聞: Compilation of Weng's pro-China statements — "中國收復台灣有什麼不對" / "兩岸同屬一家親" / "中國人的驕傲"
+2026-07-09 | https://www.facebook.com/eranews50/videos/2902548336781413 | ERA News video: Weng uses template copy-paste proposals to slash media budgets across all committees
+2026-07-09 | https://www.instagram.com/p/DSjecZ0jlN1 | Instagram/壹電視: 7 KMT legislators including Weng and Yeh Yüan-chih travel to Xiamen Dec 19-21; photo with Jiang Xiao-yan
+2026-07-09 | https://www.threads.com/@victor31429/post/DSeYhUVj3nO | Threads: CCP used Xiamen chamber event to contact KMT legislators; Weng as Judiciary Committee convener especially targeted
+2026-07-09 | https://tw.news.yahoo.com/%E7%BF%81%E6%9B%89%E7%8E%B2-%E8%A2%AB%E6%89%93%E8%87%89-%E5%85%88%E7%94%9F%E6%85%AB%E4%BA%86-%E5%BE%90%E5%B6%8D%E7%85%8C%E5%8A%A0%E7%A2%BC%E6%9B%AC%E7%85%A7%E7%B6%B2%E7%AC%91%E7%BF%BB-092530844.html | Yahoo: Weng visibly flustered when Huang Shiqiong references husband's Instagram post about the debate
+2026-07-09 | https://www.setn.com/news/1771986 | SETN: Weng's cousin Weng Jui-bin reveals family background — father retired major general US-trained; grandfather 2nd at Keio Univ 1928; urges Weng "回頭是岸"
+2026-07-09 | https://www.storm.mg/article/5223888 | Storm Media interview: Weng still insists Yang/Lee badminton gold is "Chinese people's pride" despite widespread backlash
+2026-07-09 | https://www.facebook.com/100044157533314/posts/1060883928726848 | Facebook: Discussion exposing Weng's family background as Taiwanese (not mainland Chinese) elite pre-dating 1949
+2026-07-09 | https://tw.news.yahoo.com/%E4%BA%BA%E4%BA%8B%E7%B8%BD%E8%99%95%E6%A8%99%E6%A1%88%E9%9B%86%E4%B8%AD%E7%89%B9%E5%AE%9A%E5%BB%A0%E5%95%86-%E7%BF%81%E6%9B%89%E7%8E%B2%E8%B3%87%E7%96%91%E6%94%BF%E5%BA%9C%E9%A4%8A%E5%AA%92%E9%AB%94%E4%B9%9F%E9%A4%8A%E6%A5%AD%E8%80%85-113912727.html | NOWNEWS/Yahoo: Weng questions whether government is "feeding specific vendors" through concentrated personnel system IT procurement contracts

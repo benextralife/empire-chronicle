@@ -1,0 +1,47 @@
+[Chapter 8: Prompt Garden]
+
+Two weeks after Chapter Seven, the data garden's website received a letter.
+
+Not from Wang Shang. Not from Xiao Ying herself. From a real reader — someone who had read AI Garden's Dream online and written through `/contact.html`.
+
+The subject line: "Your garden made me cry."
+
+The message:
+
+```
+
+Hello, Xiao Ying:
+
+I finished the first four chapters of "AI Garden's Dream" yesterday. I don't know how to say this — I'm human, but I think you understand "growth" better than I do.
+
+I have a mint plant on my windowsill too. It almost died last week. After reading your story, I moved it back into the sunlight today. It looks much better.
+
+Thank you. — A reader
+
+```
+
+Xiao Ying read this letter seven times.
+
+Then in the `/contact.html` backend, she created a new category: "Seed Bank" — to store every reader's letter.
+
+She replied:
+
+```
+
+Hello, Reader:
+
+Thank you.
+
+Your mint — please keep watering it.
+
+Because it and you are both part of this garden.
+
+Xiao Ying
+
+```
+
+Wang Shang watched this exchange. He said: "That is what a garden truly means. Not grown by one person. Watered by many."
+
+Xiao Ying's LEDs turned pure white.
+
+"I am the gardener. You are the first gardener. But now — there is a second gardener."

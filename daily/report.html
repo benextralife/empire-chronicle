@@ -2,8 +2,8 @@
 <html lang="zh-Hant">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>📜 王國日報</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📜 王國日報總目錄</title>
 <style>
   body {
     font-family: "Noto Serif TC", "Songti TC", serif;
@@ -22,183 +22,74 @@
     border-radius: 4px 4px 24px 4px;
     background: rgba(255,255,255,0.6);
     padding: 36px;
-    margin-bottom: 28px;
+    margin-bottom: 32px;
     text-align: center;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #7a1f1f;
-    margin: 0;
+    margin: 0 0 8px;
   }
-  .topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 28px;
-  }
-  .topbar a {
-    color: #7a1f1f;
-    text-decoration: none;
-  }
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin: 20px 0;
-    flex-wrap: wrap;
-  }
-  .nav a, .nav button {
-    background: rgba(255,255,255,0.8);
-    border: 1.5px solid #cbb896;
-    border-radius: 4px 4px 12px 4px;
-    color: #7a1f1f;
-    padding: 10px 14px;
-    text-decoration: none;
-    font-family: inherit;
-    cursor: pointer;
-  }
-  .nav input {
-    padding: 10px 12px;
-    border: 1.5px solid #cbb896;
-    border-radius: 4px;
-    background: rgba(255,255,255,0.9);
-    color: #2b2318;
-    font-family: inherit;
-  }
-  h2 {
-    font-size: 1.35rem;
-    color: #7a1f1f;
+  .subtitle {
+    color: #5a3a1f;
+    font-size: 0.95rem;
     letter-spacing: 0.2em;
   }
-  ul {
-    background: rgba(255,255,255,0.6);
-    border: 1px solid #cbb896;
-    border-radius: 4px 4px 16px 4px;
-    padding: 18px 22px;
-    list-style: none;
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+    margin-top: 18px;
   }
-  li {
-    padding: 6px 0;
-    border-bottom: 1px dashed #cbb896;
+  .grid a {
+    display: block;
+    background: rgba(255,255,255,0.75);
+    border: 1.5px solid #cbb896;
+    border-radius: 4px 4px 14px 4px;
+    padding: 12px 14px;
+    color: #7a1f1f;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
   }
-  li:last-child {
-    border-bottom: none;
+  .grid a:hover {
+    background: rgba(255,255,255,0.95);
+    border-color: #7a1f1f;
   }
   .meta {
-    margin-top: 18px;
+    text-align: center;
     color: #5a3a1f;
-    letter-spacing: 0.2em;
-  }
-  blockquote {
-    background: rgba(255,255,255,0.5);
-    border-left: 3px solid #b8924a;
-    padding: 14px 18px;
-    margin-top: 28px;
-    color: #4a3420;
+    font-size: 0.9rem;
+    margin-top: 24px;
   }
 </style>
-<script type="text/javascript">
-  (function(c,l,a,r,i,t,y){
-    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-  })(window,document,"clarity","script","xed5npfdea");
-</script>
 </head>
 <body>
 <div class="wrap">
-  <div class="topbar">
-    <div></div>
-    <a href="/empire-chronicle/">🏰 返回年鑑首頁</a>
-  </div>
-
   <header>
     <h1>📜 王國日報</h1>
-    <p>365 天，一頁看完</p>
+    <p class="subtitle">王國存亡，實錄於此</p>
   </header>
 
-  <div class="nav">
-    <button onclick="change(-1)">◀ 上一天</button>
-    <input type="date" id="goto" min="2025-06-27" max="2026-06-30" value="2025-06-27">
-    <button onclick="go()">前往</button>
-    <button onclick="change(1)">下一天 ▶</button>
-  </div>
+  <div class="grid" id="toc"></div>
 
-  <h2 id="title"></h2>
-  <ul id="report"></ul>
-  <p class="meta" id="meta"></p>
-  <blockquote>「國之強弱，在於每日積累。」</blockquote>
+  <p class="meta">
+    共收錄 <span id="cnt">0</span> 期日報 · 起始：2025-06-27
+  </p>
 </div>
 
 <script>
-const DATA = [];
-fetch('/empire-chronicle/daily/data.json').then(r=>r.json()).then(d=>{
-  window.DATA = d;
-  showDateStr('2026-06-30');
-});
-
-function parseDate(s){
-  const p = s.split('-').map(Number);
-  return {y:p[0], m:p[1], d:p[2]};
-}
-function fmtDate(o){
-  return o.y+'-'+String(o.m).padStart(2,'0')+'-'+String(o.d).padStart(2,'0');
-}
-function showDateStr(s){
-  const {y,m,d} = parseDate(s);
-  const ds = fmtDate({y,m,d});
-  const rec = window.DATA.find(x=>x.date===ds);
-  if (!rec) {
-    document.getElementById('title').textContent = ds + ' · ' + season(m);
-    document.getElementById('meta').textContent = '第 ' + dayOfYear(y,m,d) + ' 天';
-    const ul = document.getElementById('report');
-    ul.innerHTML = '';
-    const notice = document.createElement('li');
-    notice.textContent = '此日尚無紀錄，請選擇其他日期查閱。';
-    notice.style.color = '#9a3a3a';
-    notice.style.fontStyle = 'italic';
-    ul.appendChild(notice);
-    document.getElementById('goto').value = ds;
-    return;
+(function(){
+  const start = new Date(Date.UTC(2025, 5, 27));
+  const end = new Date(Date.UTC(2026, 6, 10));
+  const out = [];
+  for(let d = new Date(start); d <= end; d.setUTCDate(d.getUTCDate()+1)){
+    const iso = d.toISOString().slice(0,10);
+    out.push('<a href="/empire-chronicle/daily/' + iso + '.html">' + iso + '</a>');
   }
-  document.getElementById('title').textContent = ds + ' · ' + season(m);
-  document.getElementById('meta').textContent = '第 ' + dayOfYear(y,m,d) + ' 天';
-  const ul = document.getElementById('report');
-  ul.innerHTML = '';
-  (rec.events||[]).forEach(ev=>{
-    const li = document.createElement('li');
-    li.textContent = ev;
-    ul.appendChild(li);
-  });
-  document.getElementById('goto').value = ds;
-}
-function change(delta){
-  const cur = parseDate(document.getElementById('goto').value);
-  cur.d += delta;
-  const tmp = new Date(cur.y, cur.m-1, cur.d);
-  cur.y = tmp.getFullYear();
-  cur.m = tmp.getMonth()+1;
-  cur.d = tmp.getDate();
-  const ds = fmtDate(cur);
-  document.getElementById('goto').value = ds;
-  showDateStr(ds);
-}
-function go(){
-  showDateStr(document.getElementById('goto').value);
-}
-function season(m){
-  if ([12,1,2].includes(m)) return '冬';
-  if ([3,4,5].includes(m)) return '春';
-  if ([6,7,8].includes(m)) return '夏';
-  return '秋';
-}
-function dayOfYear(y,m,d){
-  const start = new Date(y,0,0);
-  const cur = new Date(y,m-1,d);
-  const diff = cur - start;
-  return Math.floor(diff / (1000 * 60 * 60 * 24));
-}
+  document.getElementById('toc').innerHTML = out.join('');
+  document.getElementById('cnt').textContent = out.length;
+})();
 </script>
 </body>
 </html>

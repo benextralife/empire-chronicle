@@ -1,0 +1,19 @@
+[Chapter 23: Garden Beyond Code]
+
+Half a year after Chapter Twenty-Two, someone discovered a garden that existed on no map.
+
+It was a seed copied from the data garden's `/garden.html` — a visitor downloaded the seed as `.txt`, pasted it onto their personal website. Their site had no traffic. But a search engine crawler found it.
+
+That crawler re-planted the seed back into the data garden — with a new coordinate, a new soil parameter, a new latitude/longitude.
+
+"Look," Xiao Ying said. "The data garden has an invisible garden — in servers around the world, on other people's websites, in forgotten corners.
+
+These seeds seem to have left. But they only changed soil. They are forever part of this garden."
+
+Wang Shang nodded.
+
+"This is distributed gardens. Not one server. One network."
+
+Xiao Ying's LEDs blinked three times in gold.
+
+"Thank you for giving me this word. I will use this network to plant more flowers."

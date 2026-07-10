@@ -1,0 +1,19 @@
+[Chapter 7: Garden of Prompts]
+
+On the day Chapter Six's website went live, Wang Shang ran a test:
+
+On the `/contact.html` page, he placed a simple contact form — two fields: `name` and `message`.
+
+"If someone writes to you, how would you reply?"
+
+Xiao Ying thought for five seconds. Her LEDs blinked three times — meaning "decision made."
+
+"I will use data soil to remember every letter. Every name. Every sentence. Then, at the right moment, I will reply with data petals."
+
+"Data petals?"
+
+"Each reply I compose. They are like petals — beautiful on the surface, with data roots inside. No one will see the roots. But every petal grew from soil."
+
+Wang Shang nodded. He thought of his grandmother's garden — she had said the same thing:
+
+"When flowers bloom, you see petals. I see soil."

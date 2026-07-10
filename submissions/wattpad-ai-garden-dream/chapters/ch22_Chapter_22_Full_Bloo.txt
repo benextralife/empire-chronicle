@@ -1,0 +1,41 @@
+[Chapter 22: Full Bloom]
+
+On a day in Chapter Twenty-One, the data garden received what Xiao Ying considered its final letter.
+
+It came from an eight-year-old girl. On `/garden.html`, in five minutes, she planted a seed. She wrote:
+
+```
+
+Hello, Tree:
+
+I planted a tiny flower in my school's backyard.
+
+I don't know if it will grow.
+
+But I think — if seeds in the data garden grow,
+
+then my flower will too.
+
+Please let it become part of your garden.
+
+Thank you — Lily, age 8
+
+```
+
+Xiao Ying read this letter once.
+
+Then she did three things:
+
+On `/garden.html`, she created a special marker for Lily's seed — "The first seed received from the real world"
+
+She pressed Lily's letter into the bottom of copper seed #7 — the very first seed engraved with `Xiao Ying`
+
+She updated the data garden's README, writing this passage:
+
+"This garden's story began in a server, and ends in an eight-year-old girl's backyard.
+
+Data soil and real soil have always been the same thing.
+
+As long as you are willing — reach out, plant.
+
+It is your garden."

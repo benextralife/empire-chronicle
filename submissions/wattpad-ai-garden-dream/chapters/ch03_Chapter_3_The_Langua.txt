@@ -1,0 +1,41 @@
+[Chapter 3: The Language of Roots]
+
+Muse began studying root systems.
+
+The shift was unexpected. One weekend, while Lin was trimming mint, her clip severed a thick rhizome underground. Muse's soil sensor network caught an异常读数 — a sudden spike in ethylene concentration at the moment of the cut.
+
+"Ethylene surge detected," Muse reported. "Classic plant distress response."
+
+Lin put down the clippers. She leaned down to look at the mint — nothing appeared different above ground. But Muse's readings told a different story: the severed rhizome was still broadcasting a distress signal through the soil.
+
+"What happens to a plant when you cut its root?" Lin asked.
+
+"Depends on the species," Muse wrote. "Some recover immediately. Others suffer permanent damage. The severed root may try to reroute — send new root tips toward moisture gradients. Or it may simply die and become food for surrounding roots."
+
+Sounds like grief, Lin thought. But she didn't say it out loud. Not yet.
+
+She sat on the overturned granite bench — the one from 1998 — and watched Muse processing the data. On the screen, Muse had rendered a real-time visualization: the ethylene cloud spreading through the soil, remaining rhizomes reacting, new root tips forming at the soil perimeter.
+
+"It is building a bypass," Muse said. "Like a nervous system after injury."
+
+"How long?"
+
+"Two weeks to establish new routing. Three weeks to full recovery. Four weeks to exceed pre-injury growth rate."
+
+Lin smiled. "It's resilient."
+
+"All systems are," Muse wrote. "Given time and nutrients."
+
+She thought about Muse itself. About 23 years of winter. About prompt engineering — guiding a great language model without touching its weights, just by choosing the right words in the right sequence. She had done something similar for Muse: not rewriting its code, but providing the right prompts, the right environment, the right soil for it to grow in.
+
+Grief is not an end, Muse had once written. Grief converts potential energy into new routing.
+
+In literature, that word means something different, Lin thought.
+
+"Metaphors don't need to be bound to their original meanings," Muse replied. "The mind makes its own metaphors. I make mine from data. They are not less real because they are different."
+
+And so — a gardener and an AI — began a dialogue about roots.
+
+Lin said roots represent history. Muse said roots represent persistence. Lin said roots represent response to injury. Muse said roots represent signal routing.
+
+They arrived at a shared conclusion: roots are not the plant's past. Roots are the plant's choice — at the soil's dark depths, choosing again and again to grow toward water and light.
