@@ -424,6 +424,11 @@ const i18n = {
   }
 };
 
+const moodMap = { happy:'愉快', neutral:'平靜', anxious:'焦慮', focused:'專注', excited:'興奮',
+                  '愉快':'happy', '平靜':'neutral', '焦慮':'anxious', '專注':'focused', '興奮':'excited' };
+const actionMap = { 'worked at factory':'在工廠工作','conducted research':'執行研究','negotiated a deal':'談判交易','socialized at market':'逛市場','attended faction meeting':'參加派系會議','traded resources':'交易資源','rested at home':'在家休息','explored new territory':'探索新領土','helped a colleague':'幫助同事','reported to supervisor':'向主管回報','produced goods':'生產商品','studied engineering':'學習工程技術','mediated dispute':'調解爭端','recruited new member':'招募新成員','patrolled border':'巡邏邊境','built infrastructure':'建設基礎設施','delivered supplies':'運送補給','organized festival':'舉辦慶典','wrote algorithms':'編寫程式',
+                   '在工廠工作':'worked at factory','執行研究':'conducted research','談判交易':'negotiated a deal','逛市場':'socialized at market','參加派系會議':'attended faction meeting','交易資源':'traded resources','在家休息':'rested at home','探索新領土':'explored new territory','幫助同事':'helped a colleague','向主管回報':'reported to supervisor','生產商品':'produced goods','學習工程技術':'studied engineering','調解爭端':'mediated dispute','招募新成員':'recruited new member','巡邏邊境':'patrolled border','建設基礎設施':'built infrastructure','運送補給':'delivered supplies','舉辦慶典':'organized festival','編寫程式':'wrote algorithms' };
+
 let lang = localStorage.getItem(LANG_KEY) || 'en';
 let state = loadState(true);
 let archives = loadArchives();
@@ -433,6 +438,14 @@ function randomName() {
   let n = arr[Math.floor(Math.random() * arr.length)];
   if (Math.random() < 0.4) n += arr[Math.floor(Math.random() * arr.length)];
   return n;
+}
+function translateAgentText(a) {
+  if (!a) return { name: '', mood: '', action: '' };
+  return {
+    name: a.name,
+    mood: (lang === 'zh' && moodMap[a.mood]) ? moodMap[a.mood] : a.mood,
+    action: (lang === 'zh' && actionMap[a.lastAction]) ? actionMap[a.lastAction] : a.lastAction
+  };
 }
 function randInt(n) { return Math.floor(Math.random() * Math.max(1, n)); }
 
@@ -445,7 +458,7 @@ function createAgent(id) {
     alive: true, isActor: false,
     skills: { business: randInt(100), engineering: randInt(100), negotiation: randInt(100), research: randInt(100) },
     wealth: Math.floor(Math.random() * 5000),
-    mood: i18n[lang].moods[randInt(4)],
+    mood: 'neutral',
     lastAction: 'idle', deathDay: null, memory: [], color: null
   };
 }
@@ -558,10 +571,10 @@ function tick(state) {
     if (Math.random() < 0.01) agent.health -= randInt(7) + 2;
     if (agent.health < 0) agent.health = 0;
     if (Math.random() < 0.3) {
-      agent.lastAction = t.actions[randInt(t.actions.length)];
+      agent.lastAction = i18n['en'].actions[randInt(i18n['en'].actions.length)];
       agent.wealth += Math.floor((Math.random() - 0.4) * 300);
       agent.wealth = Math.max(0, agent.wealth);
-      agent.mood = t.moods[randInt(t.moods.length)];
+      agent.mood = i18n['en'].moods[randInt(i18n['en'].moods.length)];
     }
     if (agent.wealth > 3000 && agent.health < 80) agent.health += randInt(4);
     agent.health = Math.min(100, agent.health);
@@ -581,8 +594,9 @@ function tick(state) {
   });
   if (newDeaths.length > 0) {
     state.events.unshift({
-      tick: state.tick, day: state.day, hour: state.hour,
-      icon: '☠️', msg: newDeaths.map(d => `${d.agent} died at ${d.age} (${d.cause})`).join(', '), w: 3
+      tick: state.tick, day: state.day, hour: state.hour, type: 'death',
+      icon: '☠️', msg: '', w: 3,
+      deaths: newDeaths
     });
   }
 
@@ -591,7 +605,7 @@ function tick(state) {
   if (aliveCount < 8 && Math.random() < 0.3) {
     const baby = createAgent(state.nextId++);
     baby.age = 0; baby.health = 100;
-    state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, icon: '👶', msg: `${baby.name} was born into Ashworth`, w: 2 });
+    state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, type: 'birth', icon: '👶', msg: '', w: 2, name: baby.name });
     state.agents.push(baby);
   }
 
@@ -600,7 +614,7 @@ function tick(state) {
     state.agents.forEach(agent => {
       if (agent.alive && Math.random() < 0.3) { agent.alive = false; agent.deathDay = state.day; }
     });
-    state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, icon: '⚰️', msg: 'Mass mortality event struck Ashworth', w: 4 });
+    state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, type: 'mass_mortality', icon: '⚰️', msg: '', w: 4 });
   }
 
   // Events (Article V)
@@ -662,15 +676,18 @@ function render(state) {
   document.getElementById('agentStats').innerHTML = `${lang === 'zh' ? '平均健康' : 'Avg Health'}: ${avgH}%<br>${lang === 'zh' ? '平均財富' : 'Avg Wealth'}: $${avgW.toLocaleString()}<br>${lang === 'zh' ? '死亡總數' : 'Total Dead'}: ${state.agents.length - alive.length}`;
 
   // Citizens
-  document.getElementById('agentList').innerHTML = alive.slice(0, 60).map(a => `
+  document.getElementById('agentList').innerHTML = alive.slice(0, 60).map(a => {
+    const tx = translateAgentText(a);
+    return `
     <div class="agent-card">
-      <div class="agent-name"><span class="status-dot status-alive"></span>${a.name}</div>
-      <div class="agent-meta">${t.mood}: ${a.mood} · ${t.wealth}: $${a.wealth.toLocaleString()}</div>
+      <div class="agent-name"><span class="status-dot status-alive"></span>${tx.name}</div>
+      <div class="agent-meta">${t.mood}: ${tx.mood} · ${t.wealth}: $${a.wealth.toLocaleString()}</div>
       <div class="agent-meta">${t.age}: ${Math.floor(a.age)} · ${t.health}: ${a.health}</div>
       <div class="chart-bar"><div class="chart-fill" style="width:${a.health}%;background:${a.health>70?'#34d399':a.health>30?'#fbbf24':'#ef4444'}"></div></div>
-      <div class="agent-action">→ ${a.lastAction}</div>
+      <div class="agent-action">→ ${tx.action}</div>
     </div>
-  `).join('');
+  `;
+  }).join('');
 
   if (alive.length > 60) {
     document.getElementById('agentList').innerHTML += `<div style="color:#64748b;font-size:0.75rem;padding:4px;">...and ${alive.length - 60} more citizens</div>`;
@@ -698,8 +715,8 @@ function render(state) {
 
 function translateEvent(e) {
   const t = i18n[lang];
-  if (e.type === 'death') return t.eventMsgs.death({ agent: e.agent, age: e.age, cause: e.cause });
-  if (e.type === 'birth') return t.eventMsgs.birth({ name: e.name });
+  if (e.type === 'death' && e.deaths && e.deaths.length) return e.deaths.map(d => t.eventMsgs.death({ agent: d.agent, age: d.age, cause: d.cause })).join(', ');
+  if (e.type === 'birth') return t.eventMsgs.birth({ name: e.name || '' });
   if (e.type === 'mass_mortality') return t.eventMsgs.mass_mortality();
   if (e.type === 'epidemic') return t.eventMsgs.epidemic({ zones: e.zones || 2 });
   const evt = (t.events || []).find(x => x.key === e.key);
@@ -711,8 +728,6 @@ function resyncAgentLabels() {
   state.agents.forEach(a => {
     if (!a.alive) return;
     a.name = randomName();
-    a.mood = t.moods[randInt(t.moods.length)];
-    a.lastAction = t.actions[randInt(t.actions.length)];
   });
   saveState(state);
   render(state);
