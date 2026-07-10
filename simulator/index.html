@@ -703,7 +703,6 @@ function drawTerritoryMap(state) {
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
 
-  // Use actual rendered size for crisp display
   const rect = canvas.getBoundingClientRect();
   const displayW = (rect.width && rect.width > 0) ? rect.width : 800;
   const displayH = (rect.height && rect.height > 0) ? rect.height : 450;
@@ -714,42 +713,135 @@ function drawTerritoryMap(state) {
 
   const cellW = displayW / MAP_SIZE;
   const cellH = displayH / MAP_SIZE;
-  const size = Math.max(cellW, cellH);
+  const padX = cellW * 0.12;
+  const padY = cellH * 0.15;
 
   ctx.clearRect(0, 0, displayW, displayH);
 
-  state.territory.forEach((cell, idx) => {
-    const x = idx % MAP_SIZE;
-    const y = Math.floor(idx / MAP_SIZE);
-    const px = x * cellW;
-    const py = y * cellH;
+  // Background ground
+  ctx.fillStyle = '#f5f0e6';
+  ctx.fillRect(0, 0, displayW, displayH);
+  // subtle texture dots
+  ctx.fillStyle = '#ebe5d5';
+  for (let i = 0; i < 200; i++) {
+    const gx = Math.random() * displayW;
+    const gy = Math.random() * displayH;
+    ctx.fillRect(gx, gy, 2, 2);
+  }
 
-    if (cell.owner) {
-      ctx.fillStyle = factionColors[cell.owner] || '#475569';
-      ctx.fillRect(px, py, cellW - 1, cellH - 1);
-      if (cell.contested) {
-        ctx.fillStyle = 'rgba(245, 158, 11, 0.4)';
-        ctx.fillRect(px, py, cellW - 1, cellH - 1);
-      }
-    } else {
-      ctx.fillStyle = '#1e293b';
-      ctx.fillRect(px, py, cellW - 1, cellH - 1);
-    }
-  });
-
-  // Grid lines
-  ctx.strokeStyle = '#334155';
+  // Roads: horizontal + vertical grid with margins
+  ctx.fillStyle = '#94a3b8';
+  const roadH = cellH * 0.18;
+  const roadV = cellW * 0.18;
+  for (let i = 0; i <= MAP_SIZE; i++) {
+    const yy = i * cellH - roadH / 2;
+    ctx.fillRect(0, yy, displayW, roadH);
+    const xx = i * cellW - roadV / 2;
+    ctx.fillRect(xx, 0, roadV, displayH);
+  }
+  // lane markings
+  ctx.strokeStyle = '#e2e8f0';
   ctx.lineWidth = 1;
-  for (let i = 1; i < MAP_SIZE; i++) {
-    ctx.beginPath();
-    ctx.moveTo(i * cellW, 0);
-    ctx.lineTo(i * cellW, displayH);
-    ctx.stroke();
+  ctx.setLineDash([4, 6]);
+  for (let i = 0; i <= MAP_SIZE; i++) {
     ctx.beginPath();
     ctx.moveTo(0, i * cellH);
     ctx.lineTo(displayW, i * cellH);
     ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(i * cellW, 0);
+    ctx.lineTo(i * cellW, displayH);
+    ctx.stroke();
   }
+  ctx.setLineDash([]);
+
+  // Zone content: buildings, trees, water
+  const seed = (state.tick % 100) + state.day;
+  function pseudoRand(x, y) { return ((Math.sin(x * 12.9898 + y * 78.233 + seed) * 43758.5453) % 1 + 1) % 1; }
+
+  state.territory.forEach((cell, idx) => {
+    const x = idx % MAP_SIZE;
+    const y = Math.floor(idx / MAP_SIZE);
+    const cx = x * cellW + cellW / 2;
+    const cy = y * cellH + cellH / 2;
+    const rx = cellW / 2 - padX;
+    const ry = cellH / 2 - padY;
+    const owner = cell.owner;
+
+    // Water feature (river/canal) through some neutral zones
+    if (!owner && pseudoRand(x, y) > 0.82) {
+      ctx.fillStyle = '#60a5fa';
+      ctx.fillRect(x * cellW + padX, y * cellH + padY, cellW - padX * 2, cellH - padY * 2);
+      ctx.fillStyle = '#3b82f6';
+      ctx.beginPath();
+      ctx.moveTo(x * cellW + padX + 4, y * cellH + cellH / 2);
+      ctx.quadraticCurveTo(cx, cy - 4, x * cellW + cellW - padX - 4, y * cellH + cellH / 2);
+      ctx.strokeStyle = '#3b82f6';
+      ctx.lineWidth = 3;
+      ctx.stroke();
+      return;
+    }
+
+    // Building(s)
+    const bCount = pseudoRand(x + 1, y + 1) > 0.7 ? 2 : 1;
+    for (let b = 0; b < bCount; b++) {
+      const bx = cx - rx / 2 + (b === 0 ? -rx * 0.2 : rx * 0.2);
+      const by = cy - ry / 2;
+      const bw = rx * (bCount === 1 ? 0.85 : 0.7);
+      const bh = ry * (bCount === 1 ? 0.7 : 0.55);
+      // wall
+      const wallColors = ['#e2e8f0', '#cbd5e1', '#f1f5f9', '#e2e8f0'];
+      ctx.fillStyle = wallColors[Math.floor(pseudoRand(x + b, y) * wallColors.length)];
+      ctx.fillRect(bx - bw / 2, by - bh / 2, bw, bh);
+      // roof
+      const roofHues = owner ? factionColors[owner] : '#64748b';
+      ctx.fillStyle = roofHues;
+      ctx.fillRect(bx - bw / 2 - 2, by - bh / 2 - 4, bw + 4, 6);
+      // windows
+      ctx.fillStyle = '#fbbf24';
+      const wSize = Math.max(2, bw * 0.12);
+      for (let wx = bx - bw / 2 + 3; wx < bx + bw / 2 - 3; wx += bw * 0.28) {
+        for (let wy = by - bh / 2 + 3; wy < by + bh / 2 - 3; wy += bh * 0.35) {
+          ctx.fillRect(wx, wy, wSize, wSize);
+        }
+      }
+    }
+
+    // Trees
+    if (pseudoRand(x + 2, y + 2) > 0.55) {
+      const tx = x * cellW + padX + pseudoRand(x, y) * (cellW - padX * 2);
+      const ty = y * cellH + padY + pseudoRand(x + 1, y + 1) * (cellH - padY * 2);
+      ctx.fillStyle = '#4ade80';
+      ctx.beginPath();
+      ctx.arc(tx, ty, Math.max(4, cellW * 0.12), 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = '#16a34a';
+      ctx.beginPath();
+      ctx.arc(tx - 1, ty - 1, Math.max(3, cellW * 0.08), 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // Vehicles (moving dots on roads)
+    if (pseudoRand(x + 3, y + 3) > 0.65) {
+      const vx = x * cellW + cellW * 0.5 + pseudoRand(x + 4, y) * cellW * 0.4;
+      const vy = y * cellH + cellH * 0.5 + pseudoRand(x, y + 4) * cellH * 0.4;
+      ctx.fillStyle = ['#ef4444', '#f59e0b', '#ffffff', '#1e293b'][Math.floor(pseudoRand(x + 5, y + 5) * 4)];
+      ctx.fillRect(vx - 2, vy - 1, 4, 2);
+    }
+
+    // Faction overlay tint when owned
+    if (owner) {
+      ctx.fillStyle = (factionColors[owner] || '#475569') + '22';
+      ctx.fillRect(x * cellW + padX, y * cellH + padY, cellW - padX * 2, cellH - padY * 2);
+      if (cell.contested) {
+        ctx.fillStyle = 'rgba(245, 158, 11, 0.25)';
+        ctx.fillRect(x * cellW + padX, y * cellH + padY, cellW - padX * 2, cellH - padY * 2);
+      }
+      // small flag
+      ctx.fillStyle = factionColors[owner] || '#475569';
+      ctx.fillRect(x * cellW + cellW - padX - 6, y * cellH + padY + 2, 5, 5);
+    }
+  });
 
   // Tooltip
   const tooltip = document.getElementById('tooltip');
@@ -796,8 +888,8 @@ function drawTerritoryMap(state) {
   // Legend
   document.getElementById('mapLegend').innerHTML =
     factionIds.map(id => `<div class="map-legend-item"><div class="map-legend-color" style="background:${factionColors[id]}"></div><span>${factionNames_EN[id] || id}</span></div>`).join('') +
-    `<div class="map-legend-item"><div class="map-legend-color" style="background:linear-gradient(135deg,#ef4444,#f59e0b)"></div><span>Contested</span></div>` +
-    `<div class="map-legend-item"><div class="map-legend-color" style="background:#1e293b;border:1px solid #334155"></div><span>Neutral</span></div>`;
+    `<div class="map-legend-item"><div class="map-legend-color" style="background:#60a5fa"></div><span>Neutral / Water</span></div>` +
+    `<div class="map-legend-item"><div class="map-legend-color" style="background:linear-gradient(135deg,#ef4444,#f59e0b)"></div><span>Contested</span></div>`;
 }
 
 // ============================================================
