@@ -999,48 +999,90 @@ window.viewArchiveIndex = function(i) {
 // TOWN VIEW
 // ============================================================
 const TOWN_ROADS = [
-  // horizontal
-  {x1:0,y1:140,x2:640,y2:140}, {x1:0,y1:260,x2:640,y2:260},
-  // vertical
-  {x1:200,y1:0,x2:200,y2:400}, {x1:440,y1:0,x2:440,y2:400}
+  {x1:0,y1:120,x2:640,y2:120}, {x1:0,y1:260,x2:640,y2:260}, {x1:0,y1:360,x2:640,y2:360},
+  {x1:160,y1:0,x2:160,y2:400}, {x1:320,y1:0,x2:320,y2:400}, {x1:480,y1:0,x2:480,y2:400}
 ];
 const TOWN_BUILDINGS = [
-  {x:40,y:40,w:120,h:90,label:'Town Hall',color:'#e2e8f0'},
-  {x:280,y:40,w:120,h:90,label:'Market',color:'#fef3c7'},
-  {x:510,y:40,w:100,h:90,label:'Inn',color:'#fce7f3'},
-  {x:40,y:170,w:130,h:70,label:'Workshop',color:'#e0e7ff'},
-  {x:280,y:170,w:130,h:70,label:'Library',color:'#f3e8ff'},
-  {x:510,y:170,w:100,h:70,label:'Forge',color:'#fee2e2'},
-  {x:40,y:290,w:120,h:70,label:'Farm',color:'#dcfce7'},
-  {x:280,y:290,w:130,h:70,label:'Clinic',color:'#e0f2fe'},
-  {x:510,y:290,w:100,h:70,label:'Cafe',color:'#fff7ed'}
+  {x:20,y:20,w:110,h:85,labelKey:'townHall',en:'Town Hall',zh:'市政廳',color:'#e2e8f0',roof:'#94a3b8'},
+  {x:200,y:20,w:90,h:70,labelKey:'market',en:'Market',zh:'市集',color:'#fef3c7',roof:'#f59e0b'},
+  {x:340,y:20,w:120,h:70,labelKey:'inn',en:'Inn',zh:'旅館',color:'#fce7f3',roof:'#ec4899'},
+  {x:510,y:20,w:100,h:70,labelKey:'temple',en:'Temple',zh:'神殿',color:'#ede9fe',roof:'#7c3aed'},
+  {x:20,y:150,w:110,h:60,labelKey:'workshop',en:'Workshop',zh:'工坊',color:'#e0e7ff',roof:'#3b82f6'},
+  {x:170,y:150,w:110,h:60,labelKey:'library',en:'Library',zh:'圖書館',color:'#f3e8ff',roof:'#8b5cf6'},
+  {x:350,y:150,w:100,h:60,labelKey:'forge',en:'Forge',zh:'鐵匠鋪',color:'#fee2e2',roof:'#ef4444'},
+  {x:510,y:150,w:90,h:60,labelKey:'cafe',en:'Cafe',zh:'咖啡館',color:'#fff7ed',roof:'#f97316'},
+  {x:20,y:290,w:100,h:70,labelKey:'farm',en:'Farm',zh:'農場',color:'#dcfce7',roof:'#22c55e'},
+  {x:170,y:290,w:110,h:70,labelKey:'clinic',en:'Clinic',zh:'診所',color:'#e0f2fe',roof:'#06b6d4'},
+  {x:350,y:290,w:100,h:70,labelKey:'bank',en:'Bank',zh:'銀行',color:'#fef9c3',roof:'#eab308'},
+  {x:510,y:290,w:90,h:70,labelKey:'bar',en:'Bar',zh:'酒吧',color:'#ffe4e6',roof:'#be123c'}
 ];
-const TOWN_PARKS = [{x:240,y:300,w:80,h:70},{x:230,y:60,w:60,h:60}];
+const TOWN_PARKS = [{x:200,y:370,w:100,h:25},{x:510,y:150,w:20,h:70},{x:20,y:90,w:50,h:20}];
+const TOWN_TREES = [
+  {x:15,y:115},{x:45,y:120},{x:135,y:118},{x:165,y:115},{x:305,y:118},{x:465,y:122},{x:635,y:119},
+  {x:18,y:255},{x:158,y:258},{x:318,y:257},{x:478,y:255},{x:638,y:256},
+  {x:12,y:395},{x:312,y:398},{x:472,y:396},{x:632,y:394}
+];
 
 function initTownAgents() {
   const alive = state.agents.filter(a => a.alive);
-  townAgents = alive.slice(0, 60).map((a, i) => {
+  townAgents = alive.slice(0, 80).map((a, i) => {
     const b = TOWN_BUILDINGS[i % TOWN_BUILDINGS.length];
     const angle = Math.random() * Math.PI * 2;
-    const speed = 0.3 + Math.random() * 0.6;
+    const speed = 0.2 + Math.random() * 0.5;
     return {
-      x: b.x + b.w/2 + (Math.random()-0.5)*b.w*0.8,
-      y: b.y + b.h/2 + (Math.random()-0.5)*b.h*0.8,
+      x: b.x + b.w/2 + (Math.random()-0.5)*b.w*0.9,
+      y: b.y + b.h/2 + (Math.random()-0.5)*b.h*0.9,
       angle,
       speed,
-      color: a.gender === 'male' ? '#60a5fa' : '#f472b6'
+      gender: a.gender
     };
   });
 }
 function updateTownAgents() {
-  const margin = 12;
+  const margin = 8;
   townAgents.forEach(agent => {
     agent.x += Math.cos(agent.angle) * agent.speed;
     agent.y += Math.sin(agent.angle) * agent.speed;
     if (agent.x < margin || agent.x > TOWN_W - margin) agent.angle = Math.PI - agent.angle;
     if (agent.y < margin || agent.y > TOWN_H - margin) agent.angle = -agent.angle;
-    if (Math.random() < 0.02) { agent.angle += (Math.random()-0.5)*1.5; }
+    if (Math.random() < 0.015) { agent.angle += (Math.random()-0.5)*1.8; }
   });
+}
+function drawBuilding(ctx, b, s, lang) {
+  const bx = b.x*s, by = b.y*s, bw = b.w*s, bh = b.h*s;
+  // shadow
+  ctx.fillStyle = 'rgba(0,0,0,0.25)'; ctx.fillRect(bx+5,by+5,bw,bh);
+  // wall
+  ctx.fillStyle = '#1e293b'; ctx.fillRect(bx+4,by+4,bw,bh);
+  ctx.fillStyle = b.color; ctx.fillRect(bx,by,bw,bh);
+  // roof triangle for some buildings
+  const roofH = Math.max(6, bw*0.18);
+  ctx.fillStyle = b.roof;
+  if (['Town Hall','市政廳','Temple','神殿'].includes(b.en) || ['Temple','神殿'].includes(b.zh)) {
+    ctx.beginPath(); ctx.moveTo(bx-4,by); ctx.lineTo(bx+bw/2,by-roofH); ctx.lineTo(bx+bw+4,by); ctx.fill();
+  } else {
+    ctx.fillRect(bx-3,by-roofH,bw+6,roofH);
+  }
+  // door
+  const dw = Math.max(5, bw*0.18), dh = Math.max(6, bh*0.22);
+  ctx.fillStyle = '#451a03';
+  ctx.fillRect(bx+bw/2-dw/2, by+bh-dh, dw, dh);
+  // windows
+  ctx.fillStyle = '#fef3c7';
+  const wSize = Math.max(2, bw*0.1);
+  const gap = bw*0.38;
+  for (let wx = bx + bw*0.2; wx < bx + bw*0.8; wx += gap) {
+    for (let wy = by + bh*0.15; wy < by + bh*0.7; wy += gap) {
+      ctx.fillRect(wx, wy, wSize, wSize);
+    }
+  }
+  // label
+  ctx.fillStyle = '#0f172a';
+  ctx.font = `bold ${Math.max(7, bw/8)}px sans-serif`;
+  ctx.textAlign = 'center';
+  const label = lang === 'zh' ? b.zh : b.en;
+  ctx.fillText(label, bx+bw/2, by+bh/2+2);
+  ctx.textAlign = 'start';
 }
 function drawTown() {
   const canvas = document.getElementById('townCanvas');
@@ -1053,9 +1095,10 @@ function drawTown() {
   ctx.setTransform(dpr,0,0,dpr,0,0);
   const w = rect.width || TOWN_W;
   const h = rect.height || TOWN_H;
+  const s = w / TOWN_W;
   ctx.clearRect(0,0,w,h);
   // ground
-  ctx.fillStyle = '#f5f0e6'; ctx.fillRect(0,0,w,h);
+  ctx.fillStyle = '#d6d3cd'; ctx.fillRect(0,0,w,h);
   // roads
   ctx.fillStyle = '#cbd5e1';
   TOWN_ROADS.forEach(r => {
@@ -1065,32 +1108,33 @@ function drawTown() {
   });
   // parks
   TOWN_PARKS.forEach(p => {
-    const px = p.x * (w/TOWN_W), py = p.y * (h/TOWN_H);
-    const pw = p.w * (w/TOWN_W), ph = p.h * (h/TOWN_H);
+    const px = p.x*(w/TOWN_W), py = p.y*(h/TOWN_H), pw = p.w*(w/TOWN_W), ph = p.h*(h/TOWN_H);
     ctx.fillStyle = '#bbf7d0'; ctx.fillRect(px,py,pw,ph);
     ctx.fillStyle = '#4ade80';
     for (let i=0;i<6;i++) ctx.beginPath(), ctx.arc(px+Math.random()*pw, py+Math.random()*ph, 3,0,Math.PI*2), ctx.fill();
   });
-  // buildings
-  TOWN_BUILDINGS.forEach(b => {
-    const bx = b.x * (w/TOWN_W), by = b.y * (h/TOWN_H);
-    const bw = b.w * (w/TOWN_W), bh = b.h * (h/TOWN_H);
-    ctx.fillStyle = '#334155'; ctx.fillRect(bx+4,by+4,bw,bh);
-    ctx.fillStyle = b.color; ctx.fillRect(bx,by,bw,bh);
-    ctx.fillStyle = '#1e293b';
-    ctx.font = `${Math.max(9, bw/7)}px sans-serif`;
-    ctx.fillText(b.label, bx+6, by+bh/2+3);
+  // trees
+  TOWN_TREES.forEach(t => {
+    const tx = t.x*s, ty = t.y*s;
+    ctx.fillStyle = '#15803d'; ctx.beginPath(); ctx.arc(tx, ty, 4*s, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = '#22c55e'; ctx.beginPath(); ctx.arc(tx, ty-1*s, 3*s, 0, Math.PI*2); ctx.fill();
   });
+  // buildings
+  TOWN_BUILDINGS.forEach(b => drawBuilding(ctx, b, s, lang));
   // citizens
   townAgents.forEach(a => {
-    ctx.fillStyle = a.color;
-    ctx.beginPath(); ctx.arc(a.x, a.y, 4, 0, Math.PI*2); ctx.fill();
+    // shadow
+    ctx.fillStyle = 'rgba(0,0,0,0.3)';
+    ctx.beginPath(); ctx.arc(a.x+1.5, a.y+2, 3.5, 0, Math.PI*2); ctx.fill();
+    // body
+    ctx.fillStyle = a.gender === 'male' ? '#60a5fa' : '#f472b6';
+    ctx.beginPath(); ctx.arc(a.x, a.y, 3.5, 0, Math.PI*2); ctx.fill();
+    // direction indicator
+    ctx.fillStyle = '#0f172a';
+    const ex = a.x + Math.cos(a.angle)*3.5, ey = a.y + Math.sin(a.angle)*3.5;
+    ctx.beginPath(); ctx.arc(ex, ey, 1.2, 0, Math.PI*2); ctx.fill();
   });
 }
-
-// ============================================================
-// ARCHIVES
-// ============================================================
 
 const speedBtn = document.getElementById('speedBtn');
 const speeds = [1, 2, 5, 10];
