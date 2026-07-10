@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🤖 AI Country — Live Simulator</title>
+<title>🤖 Kingdom of Ashworth — Live Simulator</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
@@ -108,7 +108,6 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
 }
 .faction-name { color: #fbbf24; }
 .faction-count { color: #64748b; }
-
 .controls {
   padding: 8px 16px;
   display: flex;
@@ -128,7 +127,6 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
 }
 .btn:hover { background: #475569; }
 .btn.active { background: #2563eb; border-color: #3b82f6; }
-
 .badge {
   background: #ef4444;
   color: white;
@@ -142,7 +140,7 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
 <body>
 <header>
   <div>
-    <h1 id="pageTitle">🌍 AI Country — Live Simulator</h1>
+    <h1 id="pageTitle">🤖 Kingdom of Ashworth — Live Simulator</h1>
     <span class="tick-info" id="tickInfo">Tick: 0 | Day 1 | 06:00</span>
   </div>
   <div style="display:flex;gap:8px;align-items:center;">
@@ -175,7 +173,7 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
   </div>
 
   <div class="panel" style="grid-column: span 2;">
-    <h2 id="agtTitle">👥 Agents</h2>
+    <h2 id="agtTitle">👥 Citizens</h2>
     <div id="agentList"></div>
   </div>
 
@@ -186,27 +184,27 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
 </div>
 
 <script>
-const LANG_KEY = 'ai_country_lang_v2';
-const STORAGE_KEY = 'ai_country_state_v2';
+const LANG_KEY = 'ai_country_lang_v3';
+const STORAGE_KEY = 'ai_country_state_v3';
 
 const i18n = {
   en: {
-    pageTitle: '🌍 AI Country — Live Simulator',
+    pageTitle: '🤖 Kingdom of Ashworth — Live Simulator',
     tickInfo: (t,d,tm) => `Tick: ${t} | Day ${d} | ${tm}`,
     resTitle: '💰 Resources',
     facTitle: '🏛 Factions',
     ecoTitle: '📈 Economy',
-    agtTitle: '👥 Agents',
+    agtTitle: '👥 Citizens',
     evtTitle: '📜 Event Log',
     pause: '⏸ Pause',
     resume: '▶ Resume',
     speed: (s) => `⚡ Speed: ${s}x`,
     autoLabel: 'Auto-evolve every 10s',
-    gov: 'Government',
-    corp: 'Corp',
-    research: 'Research',
-    black: 'Black Market',
-    agents: 'agents',
+    gov: 'Crown',
+    corp: 'Merchant Guild',
+    research: 'Academy',
+    black: 'Shadow Market',
+    agents: 'citizens',
     zones: 'zones',
     gdp: 'GDP',
     inflation: 'Inflation',
@@ -232,15 +230,15 @@ const i18n = {
       { icon: '🤝', msg: 'Faction trade agreement signed', w: 2 },
       { icon: '🔥', msg: 'Market surge in tech sector', w: 2 },
       { icon: '🕵️', msg: 'Black market activity detected', w: 1 },
-      { icon: '📢', msg: 'New policy announced by Government', w: 3 },
+      { icon: '📢', msg: 'New policy announced by the Crown', w: 3 },
       { icon: '🔬', msg: 'Research breakthrough published', w: 2 },
       { icon: '🌾', msg: 'Food production increased', w: 1 },
       { icon: '⚔️', msg: 'Territory dispute between factions', w: 2 },
       { icon: '💬', msg: 'Public opinion shifting', w: 1 },
       { icon: '🏗️', msg: 'New construction project started', w: 2 },
-      { icon: '👶', msg: 'A new citizen joined the country', w: 2 },
+      { icon: '👶', msg: 'A new citizen joined Ashworth', w: 2 },
       { icon: '🚨', msg: 'Disease outbreak warning', w: 2 },
-      { icon: '☠️', msg: 'An agent passed away', w: 2 },
+      { icon: '☠️', msg: 'A citizen passed away', w: 2 },
       { icon: '⚰️', msg: 'Mass mortality event reported', w: 2 },
       { icon: '🏥', msg: 'Hospital capacity expanded', w: 1 },
       { icon: '📣', msg: 'Birth rate rising in urban zones', w: 1 },
@@ -259,22 +257,22 @@ const i18n = {
     dead: 'Dead',
   },
   zh: {
-    pageTitle: '🌍 AI 王國 — 即時模擬器',
-    tickInfo: (t,d,tm) => `Tick: ${t} | 第 ${d} 天 | ${tm}`,
+    pageTitle: '🤖 雅士王國 — 即時模擬器',
+    tickInfo: (t,d,tm) => `第 ${t} tick | 第 ${d} 天 | ${tm}`,
     resTitle: '💰 資源',
     facTitle: '🏛 派系',
     ecoTitle: '📈 經濟',
-    agtTitle: '👥 特工',
+    agtTitle: '👥 國民',
     evtTitle: '📜 事件紀錄',
     pause: '⏸ 暫停',
     resume: '▶ 繼續',
     speed: (s) => `⚡ 速度: ${s}x`,
     autoLabel: '每 10 秒自動演化',
-    gov: '政府',
-    corp: '企業',
-    research: '研究院',
-    black: '黑市',
-    agents: '名特工',
+    gov: '王室',
+    corp: '商會',
+    research: '學院',
+    black: '暗市',
+    agents: '名國民',
     zones: '個區域',
     gdp: '國內總產值',
     inflation: '通脹率',
@@ -300,20 +298,20 @@ const i18n = {
       { icon: '🤝', msg: '派系貿易協定簽署' },
       { icon: '🔥', msg: '科技板塊市場飆漲' },
       { icon: '🕵️', msg: '偵測到黑市活動' },
-      { icon: '📢', msg: '政府發布新政策' },
-      { icon: '🔬', msg: '研究突破發表' },
+      { icon: '📢', msg: '王室發布新政策' },
+      { icon: '🔬', msg: '學院研究突破發表' },
       { icon: '🌾', msg: '糧食產量提升' },
       { icon: '⚔️', msg: '派系領土糾紛' },
       { icon: '💬', msg: '輿論風向轉變' },
       { icon: '🏗️', msg: '新建設項目啟動' },
-      { icon: '👶', msg: '一名新國民誕生' },
+      { icon: '👶', msg: '一名新國民誕生於雅士王國' },
       { icon: '🚨', msg: '傳染病警報響起' },
-      { icon: '☠️', msg: '一名特工去世' },
+      { icon: '☠️', msg: '一名國民去世' },
       { icon: '⚰️', msg: '通報大規模死亡事件' },
       { icon: '🏥', msg: '醫療容量擴建完成' },
       { icon: '📣', msg: '城市區出生率上升' },
       { icon: '🧹', msg: '派系指派清理隊伍' },
-      { icon: '🦠', msg: '流行病蔓延至 zwei 區域' },
+      { icon: '🦠', msg: '流行病蔓延至兩區' },
     ],
     resources: {
       money: '💰 金錢',
@@ -373,7 +371,6 @@ function loadState() {
   try { const raw = localStorage.getItem(STORAGE_KEY); if (raw) return JSON.parse(raw); } catch(e){}
   return initState();
 }
-
 function saveState(state) { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
 
 function initState() {
@@ -418,10 +415,10 @@ function tick(state) {
   const trends = [t.stable, t.growing, t.shrinking, t.volatile];
   if (Math.random() < 0.05) state.economy.marketTrend = trends[Math.floor(Math.random() * trends.length)];
 
-  // Agents: age, health, action
+  // Agents age/health/action
   state.agents.forEach(agent => {
     if (!agent.alive) return;
-    agent.age += (10 / 60) / 24; // ~0.007 years per tick
+    agent.age += (10 / 60) / 24;
     if (Math.random() < 0.01) agent.health -= Math.floor(Math.random() * 8 + 2);
     if (agent.health < 0) agent.health = 0;
     if (Math.random() < 0.3) {
@@ -432,7 +429,7 @@ function tick(state) {
     }
   });
 
-  // Health-conscious behavior: heal if wealthy
+  // Wealthy agents heal
   state.agents.forEach(agent => {
     if (!agent.alive) return;
     if (agent.wealth > 3000 && agent.health < 80) agent.health += Math.floor(Math.random() * 4);
@@ -447,38 +444,40 @@ function tick(state) {
       agent.deathDay = state.day;
       const causes = ['illness','accident','old age','disease outbreak','natural causes'];
       const cause = causes[Math.floor(Math.random() * causes.length)];
-      const deathEvent = { icon: '☠️', msg: `${agent.name} died at age ${Math.floor(agent.age)} (${cause})`, w: 3 };
-      state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, ...deathEvent });
+      state.events.unshift({
+        tick: state.tick, day: state.day, hour: state.hour,
+        icon: '☠️', msg: `${agent.name} died at age ${Math.floor(agent.age)} (${cause})`, w: 3
+      });
     }
   });
 
-  // Births: maintain minimum population
+  // Births
   const aliveCount = state.agents.filter(a => a.alive).length;
   if (aliveCount < 8 && Math.random() < 0.3) {
     const baby = createAgent(state.nextId++);
     baby.age = 0;
     baby.health = 100;
-    const birthEvent = { icon: '👶', msg: `${baby.name} was born into the country`, w: 2 };
-    state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, ...birthEvent });
+    state.events.unshift({
+      tick: state.tick, day: state.day, hour: state.hour,
+      icon: '👶', msg: `${baby.name} was born into Ashworth`, w: 2
+    });
     state.agents.push(baby);
   }
 
-  // Mass death events
+  // Mass death
   if (Math.random() < 0.003) {
     state.agents.forEach(agent => {
-      if (agent.alive && Math.random() < 0.3) {
-        agent.alive = false;
-        agent.deathDay = state.day;
-      }
+      if (agent.alive && Math.random() < 0.3) { agent.alive = false; agent.deathDay = state.day; }
     });
-    const deathEvent = { icon: '⚰️', msg: 'Mass mortality event struck the country', w: 4 };
-    state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, ...deathEvent });
+    state.events.unshift({
+      tick: state.tick, day: state.day, hour: state.hour,
+      icon: '⚰️', msg: 'Mass mortality event struck Ashworth', w: 4
+    });
   }
 
   // Random events
-  const eventTypes = t.events;
   if (Math.random() < 0.35) {
-    const evt = eventTypes[Math.floor(Math.random() * eventTypes.length)];
+    const evt = t.events[Math.floor(Math.random() * t.events.length)];
     state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, ...evt });
     if (state.events.length > 50) state.events.pop();
   }
@@ -500,19 +499,16 @@ function render(state) {
   const mm = String(state.minute).padStart(2, '0');
   document.getElementById('tickInfo').textContent = t.tickInfo(state.tick, state.day, `${hh}:${mm}`);
 
-  // Resources
   document.getElementById('resourceGrid').innerHTML = Object.entries(state.resources).map(([k, v]) => {
     const label = t.resources[k] || k;
     return `<div class="resource-item"><div class="resource-label">${label}</div><div class="resource-value">${v.toLocaleString()}</div></div>`;
   }).join('');
 
-  // Factions
   document.getElementById('factionBar').innerHTML = state.factions.map(f => {
     const name = t[f.id] || f.id;
     return `<div class="faction-tag"><span class="faction-name" style="color:${f.color}">${name}</span> <span class="faction-count">${f.members} ${t.agents} · ${f.territory} ${t.zones}</span></div>`;
   }).join('');
 
-  // Economy
   document.getElementById('economyInfo').innerHTML = `
     ${t.gdp}: $${state.economy.gdp.toLocaleString()}<br>
     ${t.inflation}: ${(state.economy.inflation * 100).toFixed(1)}%<br>
@@ -520,7 +516,6 @@ function render(state) {
     ${t.market}: <b>${state.economy.marketTrend}</b>
   `;
 
-  // Agents
   const aliveAgents = state.agents.filter(a => a.alive);
   const deadAgents = state.agents.filter(a => !a.alive);
   document.getElementById('agentList').innerHTML =
@@ -539,13 +534,11 @@ function render(state) {
       </div>
     `).join('');
 
-  // Events
   document.getElementById('eventLog').innerHTML = state.events.slice(0, 20).map(e => {
     const hh = String(e.hour).padStart(2, '0');
     return `<div class="event-item"><span class="event-time">Day ${e.day} ${hh}:00</span> <span class="event-type">${e.icon}</span> ${e.msg}</div>`;
   }).join('');
 
-  // Population label
   const popEl = document.getElementById('popLabel');
   const deathList = deadAgents.slice(-3).map(a => a.name).join(', ');
   popEl.innerHTML = `👥 ${aliveAgents.length}`;
