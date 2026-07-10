@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🤖 Kingdom of Ashworth — Live Simulator</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+header {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  padding: 16px 24px;
+  border-bottom: 2px solid #475569;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+header h1 { font-size: 1.4rem; color: #60a5fa; }
+.tick-info { font-size: 0.85rem; color: #94a3b8; }
+.lang-btn {
+  background: #334155;
+  border: 1px solid #475569;
+  color: #e2e8f0;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  transition: all 0.15s;
+  user-select: none;
+}
+.lang-btn:hover { background: #475569; transform: translateY(-1px); }
+.lang-btn.active { background: #2563eb; border-color: #3b82f6; }
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .main-grid { grid-template-columns: 1fr; }
+}
+.panel {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 14px;
+}
+.panel h2 {
+  font-size: 1rem;
+  color: #60a5fa;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 6px;
+}
+.agent-card {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  font-size: 0.82rem;
+  transition: all 0.15s;
+}
+.agent-card:hover { transform: translateX(3px); border-color: #475569; }
+.agent-card.dead { opacity: 0.5; border-style: dashed; }
+.agent-card.actor { border-color: #fbbf24; box-shadow: 0 0 6px rgba(251,191,36,0.2); }
+.agent-name { font-weight: bold; color: #fbbf24; }
+.agent-meta { color: #94a3b8; font-size: 0.75rem; }
+.agent-action { color: #a5b4fc; margin-top: 2px; font-size: 0.78rem; }
+.agent-title { color: #fbbf24; font-size: 0.7rem; font-style: italic; }
+.event-log {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 8px 10px;
+  max-height: 380px;
+  overflow-y: auto;
+  font-size: 0.78rem;
+}
+.event-item { padding: 5px 0; border-bottom: 1px solid #1e293b; }
+.event-item:last-child { border-bottom: none; }
+.event-time { color: #64748b; }
+.event-type { color: #fbbf24; }
+.resource-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+.resource-item {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  padding: 6px 8px;
+  font-size: 0.78rem;
+  transition: background 0.3s;
+}
+.resource-label { color: #94a3b8; }
+.resource-value { font-size: 1.1rem; font-weight: bold; color: #34d399; }
+.faction-bar { display: flex; gap: 8px; flex-wrap: wrap; }
+.faction-tag {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 4px 10px;
+  font-size: 0.75rem;
+}
+.faction-name { color: #fbbf24; }
+.faction-count { color: #64748b; }
+
+.controls {
+  padding: 8px 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.btn {
+  background: #334155;
+  border: 1px solid #475569;
+  color: #e2e8f0;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  transition: all 0.15s;
+  user-select: none;
+}
+.btn:hover { background: #475569; transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+.btn.active { background: #2563eb; border-color: #3b82f6; }
+.btn-actor { background: #78350f; border-color: #fbbf24; color: #fbbf24; }
+.btn-actor:hover { background: #92400e; }
+.badge {
+  background: #ef4444;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  margin-left: 6px;
+}
+
+/* Map */
+.map-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #0f172a;
+  border: 2px solid #334155;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.map-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: crosshair;
+}
+.map-legend {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+  margin-top: 6px;
+}
+.map-legend-item { display: flex; align-items: center; gap: 3px; }
+.map-legend-color { width: 10px; height: 10px; border-radius: 2px; }
+
+.chart-bar {
+  height: 6px;
+  background: #334155;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 3px;
+}
+.chart-fill {
+  height: 100%;
+  background: #34d399;
+  border-radius: 3px;
+  transition: width 0.5s;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.status-alive { background: #34d399; }
+.status-dead { background: #ef4444; }
+
+.tooltip {
+  position: fixed;
+  background: #1e293b;
+  border: 1px solid #475569;
+  color: #e2e8f0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  pointer-events: none;
+  z-index: 100;
+  display: none;
+  max-width: 200px;
+}
+
+.archive-timeline {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.archive-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #475569; cursor: pointer; transition: all 0.2s;
+}
+.archive-dot:hover { background: #60a5fa; transform: scale(1.3); }
+.archive-dot.has-data { background: #34d399; }
+.archive-dot.current { background: #fbbf24; border: 1px solid #f59e0b; }
+
+.tab-bar { display: flex; gap: 4px; margin-bottom: 8px; }
+.tab-btn {
+  background: transparent;
+  border: 1px solid #334155;
+  color: #94a3b8;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+.tab-btn.active { background: #2563eb; color: white; border-color: #3b82f6; }
+
+.actor-panel { max-height: 200px; overflow-y: auto; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1 id="pageTitle">🤖 Kingdom of Ashworth — Live Simulator</h1>
+    <span class="tick-info" id="tickInfo">Tick: 0 | Day 1 | 06:00</span>
+  </div>
+  <div style="display:flex;gap:8px;align-items:center;">
+    <button class="lang-btn active" id="langEn">EN</button>
+    <button class="lang-btn" id="langZh">中文</button>
+  </div>
+</header>
+
+<div class="controls">
+  <button class="btn" id="pauseBtn">⏸ Pause</button>
+  <button class="btn" id="speedBtn">⚡ Speed: 1x</button>
+  <button class="btn" id="eventBtn">📜 Event</button>
+  <button class="btn btn-actor" id="actorBtn" style="display:none;">⭐ Add Actor</button>
+  <button class="btn" id="saveBtn">💾 Save</button>
+  <button class="btn" id="resetBtn">🔄 Reset</button>
+  <span style="color:#64748b;font-size:0.8rem;margin-left:8px;" id="autoLabel">Auto: 10s</span>
+  <span style="color:#64748b;font-size:0.8rem;" id="popLabel">👥 15</span>
+</div>
+
+<div class="main-grid">
+  <div class="panel" style="grid-column: span 2;">
+    <h2 id="facTitle">🏛 Factions & Map</h2>
+    <div style="font-size:0.75rem;color:#94a3b8;margin-bottom:4px;">8×8 Territory — click to claim</div>
+    <div class="map-container" style="max-width:100%;">
+      <canvas class="map-canvas" id="mapCanvas" width="800" height="800"></canvas>
+    </div>
+    <div class="map-legend" id="mapLegend"></div>
+    <div style="margin-top:10px;">
+      <div style="font-size:0.75rem;color:#94a3b8;" id="archiveTitle">📚 Archives</div>
+      <div class="archive-timeline" id="archiveTimeline"></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2 id="resTitle">💰 Resources</h2>
+    <div class="resource-grid" id="resourceGrid"></div>
+    <h2 id="ecoTitle" style="margin-top:14px;">📈 Economy</h2>
+    <div id="economyInfo" style="font-size:0.8rem;color:#94a3b8;"></div>
+    <div id="agentStats" style="margin-top:8px;font-size:0.78rem;color:#94a3b8;"></div>
+  </div>
+
+  <div class="panel" style="grid-column: span 2;">
+    <h2 id="agtTitle">👥 Citizens <span style="font-size:0.75rem;color:#94a3b8;">(⭐ = Actor)</span></h2>
+    <div id="actorList" class="actor-panel"></div>
+    <div id="agentList" style="margin-top:8px;"></div>
+  </div>
+
+  <div class="panel">
+    <h2 id="evtTitle">📜 Events</h2>
+    <div class="tab-bar">
+      <button class="tab-btn active" id="tabLive">Live</button>
+      <button class="tab-btn" id="tabPast">Past</button>
+    </div>
+    <div id="eventDisplay">
+      <div class="event-log" id="eventLog"></div>
+    </div>
+  </div>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+// ============================================================
+// CONSTITUTION (Core Rules)
+// ============================================================
+const CONSTITUTION = {
+  I: 'Every agent has immutable name, mutable age/health/wealth, one faction, five personality dimensions, four skills, 20-step memory. Death at health≤0, old age, or mass-mortality event. Birth when population < 8.',
+  II: 'Four factions: Crown (blue, policy), Merchant Guild (green, trade), Academy (purple, research), Shadow Market (red, illicit). Compete for 8x8 territory. Strength = members + territory.',
+  III: 'Six resources: Money, Food, Materials, Energy, Influence, Population. Bounded random walk per tick, floor 1000.',
+  IV: 'GDP = faction productivity sum. Inflation ±0.5%/tick, clamped [-2%, +15%]. Market cycles: stable → growing → shrinking → volatile.',
+  V: 'Events generated 35% per tick, weighted severity 1-4. Categories: infrastructure, trade, policy, research, health, disaster, birth, death, epidemic.',
+  VI: '8x8 grid territory. Each zone has owner (faction id or null) and contested flag. Click map to claim/release.',
+  VII: '1 tick = 10 sim minutes. 6 ticks = 1 hour. 24 hours = 1 day. Agent age +0.007y/tick.',
+  VIII: 'Trust ↑ through cooperation. Distrust ↑ through conflict. Betrayal = long-term hostility. Shared goals = temporary alliances.',
+  IX: 'Visitors may click territory cells, trigger events, pause/speed/reset. Player actions logged with tick timestamp.',
+  X: 'State persisted to localStorage every tick. Archives every 6 ticks. No external calls.'
+};
+
+// ============================================================
+// WORLD BIBLE (Lore)
+// ============================================================
+const WORLD_BIBLE = {
+  name: 'Kingdom of Ashworth',
+  zones: '8x8 grid, 64 total',
+  keyLocations: [
+    { name: 'Ashworth Citadel', place: '[3,3]-[4,4]', faction: 'gov', desc: 'Seat of power' },
+    { name: 'Academy Spire', place: 'north [1,2]', faction: 'research', desc: 'Research hub' },
+    { name: 'Guild Docks', place: 'west [3,0]', faction: 'corp', desc: 'Trade center' },
+    { name: 'Factory Row', place: 'east [4,7]', faction: 'corp', desc: 'Industrial zone' },
+    { name: 'Bazaar of Whispers', place: 'south [6,4]', faction: 'black', desc: 'Black market HQ' }
+  ],
+  history: [
+    'Era 1: Founding — Four founders establish neutral research+trade nation.',
+    'Era 2: Expansion — Trade Wars between Crown and Merchant Guild.',
+    'Era 3: Industrial Age — Factory Row transforms eastern zones.',
+    'Era 4: Modern — Uneasy alliance. Public opinion shifts with policy.'
+  ],
+  creed: '"Knowledge is the light, trade is the blood, power is the shield, shadow is the necessary dark."'
+};
+
+// ============================================================
+// ACTOR DEFINITIONS (Master can add these)
+// ============================================================
+const ACTOR_DEFS = [
+  {
+    name: 'Seraphine', title: 'The Regent', faction: 'gov',
+    desc: 'De facto ruler. Order above all.',
+    skills: { leadership: 140, negotiation: 130, research: 60, business: 55 },
+    wealth: 28000, health: 85, age: 45, color: '#60a5fa'
+  },
+  {
+    name: 'Kael', title: 'The Architect', faction: 'research',
+    desc: 'Designed the original zone grid.',
+    skills: { engineering: 145, research: 135, business: 40, negotiation: 70 },
+    wealth: 8000, health: 72, age: 38, color: '#a78bfa'
+  },
+  {
+    name: 'Cassius', title: 'The Merchant Prince', faction: 'corp',
+    desc: 'Built empire from one stall. Everything has a price.',
+    skills: { business: 150, negotiation: 120, engineering: 50, research: 45 },
+    wealth: 45000, health: 68, age: 52, color: '#34d399'
+  },
+  {
+    name: 'Nyx', title: 'The Shadow Broker', faction: 'black',
+    desc: 'Mysterious head of the black economy.',
+    skills: { negotiation: 125, business: 110, engineering: 85, research: 90 },
+    wealth: 60000, health: 90, age: 99, color: '#f87171'
+  },
+  {
+    name: 'Maren', title: 'The Wandering Scholar', faction: null,
+    desc: 'Independent researcher tracking anomalies.',
+    skills: { research: 140, engineering: 100, negotiation: 85, business: 60 },
+    wealth: 3500, health: 78, age: 30, color: '#fbbf24'
+  },
+  {
+    name: 'Torian', title: 'The Iron General', faction: 'gov',
+    desc: 'Military leader. Security first.',
+    skills: { leadership: 130, engineering: 115, negotiation: 50, research: 40 },
+    wealth: 12000, health: 88, age: 48, color: '#94a3b8'
+  }
+];
+
+// ============================================================
+// SIMULATION ENGINE
+// ============================================================
+const MAP_SIZE = 8;
+const STORAGE_KEY = 'ai_country_state_v6';
+const LANG_KEY = 'ai_country_lang_v6';
+const ARCHIVE_KEY = 'ai_country_archives_v2';
+
+const factionIds = ['gov', 'corp', 'research', 'black'];
+const factionColors = { gov: '#3b82f6', corp: '#10b981', research: '#8b5cf6', black: '#ef4444' };
+const factionNames_EN = { gov: 'Crown', corp: 'Merchant Guild', research: 'Academy', black: 'Shadow Market' };
+const factionNames_ZH = { gov: '王室', corp: '商會', research: '學院', black: '暗市' };
+
+const NAMES_EN = ['Aria','Bolt','Cipher','Drift','Echo','Flux','Glitch','Haven','Ion','Jade','Kai','Lumen','Mist','Nexus','Oracle','Pixel','Quill','Riven','Spark','Tide','Umbra','Vex','Wisp','Xen','Yield','Zen'];
+const NAMES_ZH = ['雲','風','影','星','河','光','塵','焰','雷','玲','霄','辰','瑤','墨','楓','月','白','夜','竹','霜','銳','烽','雪','焰'];
+
+const ACTION_WEIGHTS = {
+  normal: ['worked at factory','conducted research','negotiated a deal','socialized at market','attended faction meeting','traded resources','rested at home','explored new territory','helped a colleague','reported to supervisor','produced goods','studied engineering','mediated dispute','recruited new member','patrolled border','built infrastructure','delivered supplies','organized festival','wrote algorithms'],
+  actor: ['issued a royal decree','convened the council','negotiated a trade empire','challenged a rival faction','unlocked research secrets','brokered a peace treaty','enforced martial law','hosted a grand feast','exposed a conspiracy','seized control of a zone','published a manifesto','funded a massive project','spread classified intelligence','disrupted the black market','called an emergency summit']
+};
+
+const i18n = {
+  en: {
+    pageTitle: '🤖 Kingdom of Ashworth — Live Simulator',
+    tickInfo: (t,d,tm) => `Tick: ${t} | Day ${d} | ${tm}`,
+    resTitle: '💰 Resources', facTitle: '🏛 Factions & Map', ecoTitle: '📈 Economy',
+    agtTitle: '👥 Citizens', evtTitle: '📜 Events', archiveTitle: '📚 Archives',
+    pause: '⏸ Pause', resume: '▶ Resume', speed: (s) => `⚡ Speed: ${s}x`,
+    autoLabel: 'Auto: 10s', trigger: '📜 Event', save: '💾 Save', reset: '🔄 Reset', actor: '⭐ Add Actor',
+    mood: 'Mood', wealth: 'Wealth', age: 'Age', health: 'Health',
+    gdp: 'GDP', inflation: 'Inflation', unemployment: 'Unemployment', market: 'Market',
+    dead: 'Dead', alive: 'alive', stable: 'stable', growing: 'growing', shrinking: 'shrinking', volatile: 'volatile',
+    actorAdded: (name) => `⭐ ${name} has entered the Kingdom`,
+    tabLive: 'Live', tabPast: 'Past',
+    events: [
+      { icon: '⚡', msg: 'Power grid fluctuation in District 7', w: 1 },
+      { icon: '🤝', msg: 'Faction trade agreement signed', w: 2 },
+      { icon: '🔥', msg: 'Market surge in tech sector', w: 2 },
+      { icon: '🕵️', msg: 'Black market activity detected', w: 1 },
+      { icon: '📢', msg: 'New policy announced by the Crown', w: 3 },
+      { icon: '🔬', msg: 'Research breakthrough published', w: 2 },
+      { icon: '🌾', msg: 'Food production increased', w: 1 },
+      { icon: '⚔️', msg: 'Territory dispute between factions', w: 2 },
+      { icon: '💬', msg: 'Public opinion shifting', w: 1 },
+      { icon: '🏗️', msg: 'New construction project started', w: 2 },
+      { icon: '👶', msg: 'A new citizen joined Ashworth', w: 2 },
+      { icon: '🚨', msg: 'Disease outbreak warning', w: 2 },
+      { icon: '☠️', msg: 'A citizen passed away', w: 2 },
+      { icon: '⚰️', msg: 'Mass mortality event struck Ashworth', w: 3 },
+      { icon: '🏥', msg: 'Hospital capacity expanded', w: 1 },
+      { icon: '📣', msg: 'Birth rate rising in urban zones', w: 1 },
+      { icon: '🧹', msg: 'Faction assigned cleanup crew', w: 1 },
+      { icon: '🦠', msg: 'Epidemic spreading to 2 zones', w: 2 },
+    ],
+    resources: { money: '💰 Money', food: '🌾 Food', materials: '🔩 Materials', energy: '⚡ Energy', influence: '📢 Influence', population: '👥 Population' },
+    moods: ['happy','neutral','anxious','focused','excited']
+  },
+  zh: {
+    pageTitle: '🤖 雅士王國 — 即時模擬器',
+    tickInfo: (t,d,tm) => `Tick ${t} | 第${d}天 | ${tm}`,
+    resTitle: '💰 資源', facTitle: '🏛 派系與地圖', ecoTitle: '📈 經濟',
+    agtTitle: '👥 國民', evtTitle: '📜 事件', archiveTitle: '📚 歷史存檔',
+    pause: '⏸ 暫停', resume: '▶ 繼續', speed: (s) => `⚡ 速度: ${s}x`,
+    autoLabel: '每 10 秒', trigger: '📜 觸發', save: '💾 存檔', reset: '🔄 重置', actor: '⭐ 加入演員',
+    mood: '心情', wealth: '財富', age: '年齡', health: '健康',
+    gdp: '國內總產值', inflation: '通脹', unemployment: '失業率', market: '市場',
+    dead: '已故', alive: '在世', stable: '平穩', growing: '成長', shrinking: '收縮', volatile: '波動',
+    actorAdded: (name) => `⭐ ${name} 踏入雅士王國`,
+    tabLive: '即時', tabPast: '歷史',
+    events: [
+      { icon: '⚡', msg: '第 7 區電網波動', w: 1 },
+      { icon: '🤝', msg: '派系貿易協定簽署', w: 2 },
+      { icon: '🔥', msg: '科技板塊市場飆漲', w: 2 },
+      { icon: '🕵️', msg: '偵測到黑市活動', w: 1 },
+      { icon: '📢', msg: '王室發布新政策', w: 3 },
+      { icon: '🔬', msg: '學院研究突破發表', w: 2 },
+      { icon: '🌾', msg: '糧食產量提升', w: 1 },
+      { icon: '⚔️', msg: '派系領土糾紛', w: 2 },
+      { icon: '💬', msg: '輿論風向轉變', w: 1 },
+      { icon: '🏗️', msg: '新建設項目啟動', w: 2 },
+      { icon: '👶', msg: '一名新國民誕生於雅士王國', w: 2 },
+      { icon: '🚨', msg: '傳染病警報響起', w: 2 },
+      { icon: '☠️', msg: '一名國民去世', w: 2 },
+      { icon: '⚰️', msg: '通報大規模死亡事件', w: 3 },
+      { icon: '🏥', msg: '醫療容量擴建完成', w: 1 },
+      { icon: '📣', msg: '城市區出生率上升', w: 1 },
+      { icon: '🧹', msg: '派系指派清理隊伍', w: 1 },
+      { icon: '🦠', msg: '流行病蔓延至兩區', w: 2 },
+    ],
+    resources: { money: '💰 金錢', food: '🌾 糧食', materials: '🔩 物資', energy: '⚡ 能源', influence: '📢 影響力', population: '👥 人口' },
+    moods: ['愉快','平靜','焦慮','專注','興奮']
+  }
+};
+
+let lang = localStorage.getItem(LANG_KEY) || 'en';
+let state = loadState();
+let archives = loadArchives();
+let currentTab = 'live';
+let usedActorDefs = new Set();
+
+function randomName() {
+  const arr = lang === 'zh' ? NAMES_ZH : NAMES_EN;
+  let n = arr[Math.floor(Math.random() * arr.length)];
+  if (Math.random() < 0.4) n += arr[Math.floor(Math.random() * arr.length)];
+  return n;
+}
+
+function randInt(n) { return Math.floor(Math.random() * Math.max(1, n)); }
+
+function createAgent(id, isActor = false, actorDef = null) {
+  if (isActor && actorDef) {
+    return {
+      id, name: actorDef.name, title: actorDef.title,
+      faction: actorDef.faction,
+      age: actorDef.age, health: actorDef.health,
+      alive: true, isActor: true,
+      skills: { ...actorDef.skills },
+      wealth: actorDef.wealth,
+      mood: i18n[lang].moods[randInt(5)],
+      lastAction: 'entered the Kingdom',
+      deathDay: null,
+      memory: [], color: actorDef.color
+    };
+  }
+  return {
+    id, name: randomName(), title: null,
+    faction: factionIds[randInt(4)],
+    age: Math.floor(Math.random() * 40) + 18,
+    health: Math.floor(Math.random() * 60) + 40,
+    alive: true, isActor: false, skills: { business: randInt(100), engineering: randInt(100), negotiation: randInt(100), research: randInt(100) },
+    wealth: Math.floor(Math.random() * 5000),
+    mood: i18n[lang].moods[randInt(4)],
+    lastAction: 'idle', deathDay: null, memory: [], color: null
+  };
+}
+
+function initState() {
+  const agents = [];
+  for (let i = 0; i < 120; i++) agents.push(createAgent(i));
+    return {
+      tick: 0, day: 1, hour: 6, minute: 0, nextId: 120,
+      resources: { money: 1250000, food: 850000, materials: 670000, energy: 920000, influence: 450000, population: 120 },
+    economy: { gdp: 4200000, inflation: 0.02, unemployment: 0.08, marketTrend: 'stable' },
+    factions: factionIds.map((id, idx) => ({
+      id, color: factionColors[id], members: agents.filter(a => a.faction === id).length, territory: randInt(20) + 10
+    })),
+    agents, events: [],
+    territory: Array.from({ length: MAP_SIZE * MAP_SIZE }, () => ({ owner: null, contested: false })),
+    paused: false, speed: 1
+  };
+}
+
+function loadState() {
+  try { const raw = localStorage.getItem(STORAGE_KEY); if (raw) return JSON.parse(raw); } catch(e){}
+  return initState();
+}
+
+function saveState(state) {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e){}
+}
+
+function loadArchives() {
+  try { const raw = localStorage.getItem(ARCHIVE_KEY); if (raw) return JSON.parse(raw); } catch(e){}
+  return [];
+}
+
+function saveArchives(archives) {
+  try { localStorage.setItem(ARCHIVE_KEY, JSON.stringify(archives)); } catch(e){}
+}
+
+function saveArchive(state) {
+  const archive = {
+    tick: state.tick, day: state.day, hour: state.hour, timestamp: Date.now(),
+    resources: { ...state.resources },
+    economy: { ...state.economy },
+    populations: state.agents.filter(a => a.alive).length,
+    deadCount: state.agents.filter(a => !a.alive).length,
+    factions: state.factions.map(f => ({ id: f.id, members: f.members, territory: f.territory })),
+    territory: state.territory.map(c => ({ owner: c.owner, contested: c.contested })),
+    events: state.events.slice(0, 10)
+  };
+  archives.push(archive);
+  if (archives.length > 50) archives = archives.slice(-50);
+  saveArchives(archives);
+  renderArchives();
+}
+
+function resetState() {
+  localStorage.removeItem(STORAGE_KEY);
+  localStorage.removeItem(ARCHIVE_KEY);
+  archives = [];
+  usedActorDefs.clear();
+  state = initState();
+  applyLang(); render(state); renderArchives();
+}
+
+function tick(state) {
+  if (state.paused) return state;
+  const t = i18n[lang];
+
+  state.tick++;
+  state.minute += 10;
+  if (state.minute >= 60) { state.minute = 0; state.hour++; }
+  if (state.hour >= 24) { state.hour = 0; state.day++; }
+
+  // Resources
+  Object.keys(state.resources).forEach(k => {
+    if (k === 'population') return;
+    const delta = Math.floor((Math.random() - 0.45) * 800);
+    state.resources[k] = Math.max(1000, state.resources[k] + delta);
+  });
+  state.resources.population = state.agents.filter(a => a.alive).length;
+
+  // Economy
+  state.economy.gdp += Math.floor((Math.random() - 0.4) * 500);
+  state.economy.inflation += (Math.random() - 0.5) * 0.005;
+  state.economy.inflation = Math.max(-0.02, Math.min(0.15, state.economy.inflation));
+  const trends = [t.stable, t.growing, t.shrinking, t.volatile];
+  if (Math.random() < 0.05) state.economy.marketTrend = trends[randInt(trends.length)];
+
+  // Agents
+  state.agents.forEach(agent => {
+    if (!agent.alive) return;
+    agent.age += (10 / 60) / 24;
+    if (Math.random() < 0.01) agent.health -= randInt(7) + 2;
+    if (agent.health < 0) agent.health = 0;
+    if (Math.random() < 0.3) {
+      const pool = agent.isActor ? ACTION_WEIGHTS.actor : ACTION_WEIGHTS.normal;
+      agent.lastAction = pool[randInt(pool.length)];
+      agent.wealth += Math.floor((Math.random() - 0.4) * (agent.isActor ? 600 : 300));
+      agent.wealth = Math.max(0, agent.wealth);
+      agent.mood = t.moods[randInt(t.moods.length)];
+    }
+
+    // Wealthy heal
+    if (agent.wealth > 3000 && agent.health < 80) agent.health += randInt(4);
+    agent.health = Math.min(100, agent.health);
+
+    // Memory decay
+    if (agent.memory.length > 20) agent.memory = agent.memory.slice(-20);
+  });
+
+  // Deaths
+  const newDeaths = [];
+  state.agents.forEach(agent => {
+    if (!agent.alive) return;
+    if (agent.health <= 0 || Math.random() < 0.0005 || agent.age > 80 + Math.random() * 30) {
+      agent.alive = false;
+      agent.deathDay = state.day;
+      const causes = ['illness','accident','old age','disease outbreak','natural causes'];
+      newDeaths.push({ agent: agent.name, age: Math.floor(agent.age), cause: causes[randInt(causes.length)] });
+    }
+  });
+  if (newDeaths.length > 0) {
+    state.events.unshift({
+      tick: state.tick, day: state.day, hour: state.hour,
+      icon: '☠️', msg: newDeaths.map(d => `${d.agent} died at ${d.age} (${d.cause})`).join(', '), w: 3
+    });
+  }
+
+  // Births
+  const aliveCount = state.agents.filter(a => a.alive).length;
+  if (aliveCount < 8 && Math.random() < 0.3) {
+    const baby = createAgent(state.nextId++);
+    baby.age = 0; baby.health = 100;
+    state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, icon: '👶', msg: `${baby.name} was born into Ashworth`, w: 2 });
+    state.agents.push(baby);
+  }
+
+  // Mass death
+  if (Math.random() < 0.003) {
+    state.agents.forEach(agent => {
+      if (agent.alive && Math.random() < 0.3) { agent.alive = false; agent.deathDay = state.day; }
+    });
+    state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, icon: '⚰️', msg: 'Mass mortality event struck Ashworth', w: 4 });
+  }
+
+  // Events
+  if (Math.random() < 0.35) {
+    const evt = t.events[randInt(t.events.length)];
+    state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, ...evt });
+    if (state.events.length > 50) state.events.pop();
+  }
+
+  // Territory
+  state.territory.forEach((cell, idx) => {
+    if (Math.random() < 0.03) {
+      const aliveFactions = factionIds.filter(id => state.agents.some(a => a.alive && a.faction === id));
+      if (aliveFactions.length > 0 && Math.random() < 0.15) {
+        cell.owner = aliveFactions[randInt(aliveFactions.length)];
+        cell.contested = Math.random() < 0.2;
+      } else {
+        cell.owner = null; cell.contested = false;
+      }
+    }
+  });
+
+  // Faction stats
+  state.factions.forEach(f => {
+    f.territory = state.territory.filter(c => c.owner === f.id).length || 1;
+    f.members = state.agents.filter(a => a.faction === f.id && a.alive).length || f.members;
+  });
+
+  return state;
+}
+
+// ============================================================
+// RENDER
+// ============================================================
+
+function render(state) {
+  const t = i18n[lang];
+  const hh = String(state.hour).padStart(2, '0');
+  const mm = String(state.minute).padStart(2, '0');
+  document.getElementById('tickInfo').textContent = t.tickInfo(state.tick, state.day, `${hh}:${mm}`);
+
+  document.getElementById('resourceGrid').innerHTML = Object.entries(state.resources).map(([k, v]) => {
+    const label = t.resources[k] || k;
+    return `<div class="resource-item"><div class="resource-label">${label}</div><div class="resource-value">${v.toLocaleString()}</div><div class="chart-bar"><div class="chart-fill" style="width:${Math.min(100, (v / 200000) * 100)}%"></div></div></div>`;
+  }).join('');
+
+  document.getElementById('factionBar').innerHTML = state.factions.map(f => {
+    const name = t[f.id] || factionNames_EN[f.id] || f.id;
+    return `<div class="faction-tag"><span class="faction-name" style="color:${f.color}">${name}</span> <span class="faction-count">${f.members} citizens · ${f.territory} zones</span></div>`;
+  }).join('');
+
+  document.getElementById('economyInfo').innerHTML = `
+    ${t.gdp}: $${state.economy.gdp.toLocaleString()}<br>
+    ${t.inflation}: ${(state.economy.inflation * 100).toFixed(1)}%<br>
+    ${t.unemployment}: ${(state.economy.unemployment * 100).toFixed(1)}%<br>
+    ${t.market}: <b>${state.economy.marketTrend}</b>
+  `;
+
+  const alive = state.agents.filter(a => a.alive);
+  const avgH = alive.length ? Math.round(alive.reduce((s,a) => s + a.health, 0) / alive.length) : 0;
+  const avgW = alive.length ? Math.round(alive.reduce((s,a) => s + a.wealth, 0) / alive.length) : 0;
+  document.getElementById('agentStats').innerHTML = `Avg Health: ${avgH}%<br>Avg Wealth: $${avgW.toLocaleString()}<br>Total Dead: ${state.agents.length - alive.length}`;
+
+  // Separ actors
+  const actors = alive.filter(a => a.isActor);
+  const normalAgents = alive.filter(a => !a.isActor);
+  document.getElementById('actorList').innerHTML = actors.map(a => `
+    <div class="agent-card actor">
+      <div class="agent-name">⭐ ${a.name}</div>
+      <div class="agent-title">${a.title || ''} · ${a.faction ? (t[f.action]||'') : 'Unaffiliated'}</div>
+      <div class="agent-meta">${t.mood}: ${a.mood} · ${t.wealth}: $${a.wealth.toLocaleString()}</div>
+      <div class="agent-meta">${t.age}: ${Math.floor(a.age)} · ${t.health}: ${a.health}</div>
+      <div class="chart-bar"><div class="chart-fill" style="width:${a.health}%;background:${a.health>70?'#34d399':a.health>30?'#fbbf24':'#ef4444'}"></div></div>
+      <div class="agent-action">→ ${a.lastAction}</div>
+    </div>
+  `).join('') || '<div style="color:#64748b;font-size:0.75rem;padding:4px;">No actors yet. Click ⭐ Add Actor.</div>';
+
+  document.getElementById('agentList').innerHTML = normalAgents.slice(0, 20).map(a => `
+    <div class="agent-card">
+      <div class="agent-name"><span class="status-dot status-alive"></span>${a.name}</div>
+      <div class="agent-meta">${t.mood}: ${a.mood} · ${t.wealth}: $${a.wealth.toLocaleString()}</div>
+      <div class="agent-meta">${t.age}: ${Math.floor(a.age)} · ${t.health}: ${a.health}</div>
+      <div class="chart-bar"><div class="chart-fill" style="width:${a.health}%;background:${a.health>70?'#34d399':a.health>30?'#fbbf24':'#ef4444'}"></div></div>
+      <div class="agent-action">→ ${a.lastAction}</div>
+    </div>
+  `).join('');
+
+  const deadAgents = state.agents.filter(a => !a.alive);
+  if (deadAgents.length > 0) {
+    document.getElementById('agentList').innerHTML += '<div style="margin-top:8px;color:#64748b;font-size:0.75rem;">Recently deceased:</div>';
+    document.getElementById('agentList').innerHTML += deadAgents.slice(-5).map(a => `
+      <div class="agent-card dead">
+        <div class="agent-name"><span class="status-dot status-dead"></span>${a.name} <span class="badge">${t.dead}</span></div>
+        <div class="agent-meta">${t.age}: ${Math.floor(a.age)} · Died Day ${a.deathDay}</div>
+      </div>
+    `).join('');
+  }
+
+  // Events
+  document.getElementById('eventLog').innerHTML = (currentTab === 'live' ? state.events : []).slice(0, 20).map(e => {
+    const hh = String(e.hour).padStart(2, '0');
+    return `<div class="event-item"><span class="event-time">Day ${e.day} ${hh}:00</span> <span class="event-type">${e.icon}</span> ${e.msg}</div>`;
+  }).join('') || '<div style="color:#64748b;font-size:0.75rem;padding:8px;">No events yet</div>';
+
+  const popEl = document.getElementById('popLabel');
+  popEl.innerHTML = `👥 ${alive.length}`;
+  if (deadAgents.length > 0) popEl.innerHTML += ` <span style="color:#ef4444">☠️${deadAgents.length}</span>`;
+
+  renderArchives();
+  drawTerritoryMap(state);
+}
+
+// ============================================================
+// ADD ACTOR (Master Control)
+// ============================================================
+
+function addNextUnusedActor() {
+  const t = i18n[lang];
+  const available = ACTOR_DEFS.filter((_, idx) => !usedActorDefs.has(idx));
+  if (available.length === 0) {
+    alert('All actors have entered the Kingdom!'); return;
+  }
+  const pick = available[randInt(available.length)];
+  const defIdx = ACTOR_DEFS.indexOf(pick);
+  usedActorDefs.add(defIdx);
+
+  const actor = createAgent(state.nextId++, true, pick);
+  state.agents.push(actor);
+  state.events.unshift({
+    tick: state.tick, day: state.day, hour: state.hour,
+    icon: '⭐', msg: t.actorAdded(actor.name), w: 4
+  });
+  saveState(state);
+  render(state);
+}
+
+// ============================================================
+// MAP
+// ============================================================
+
+function drawTerritoryMap(state) {
+  const canvas = document.getElementById('mapCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const size = 320;
+  canvas.width = size;
+  canvas.height = size;
+  const cellSize = size / MAP_SIZE;
+
+  state.territory.forEach((cell, idx) => {
+    const x = idx % MAP_SIZE;
+    const y = Math.floor(idx / MAP_SIZE);
+    const px = x * cellSize;
+    const py = y * cellSize;
+
+    if (cell.owner) {
+      ctx.fillStyle = factionColors[cell.owner] || '#475569';
+      ctx.fillRect(px, py, cellSize - 1, cellSize - 1);
+      if (cell.contested) {
+        ctx.fillStyle = 'rgba(245, 158, 11, 0.4)';
+        ctx.fillRect(px, py, cellSize - 1, cellSize - 1);
+      }
+    } else {
+      ctx.fillStyle = '#1e293b';
+      ctx.fillRect(px, py, cellSize - 1, cellSize - 1);
+    }
+  });
+
+  const tooltip = document.getElementById('tooltip');
+  canvas.onmousemove = (evt) => {
+    const rect = canvas.getBoundingClientRect();
+    const mx = evt.clientX - rect.left;
+    const my = evt.clientY - rect.top;
+    const zx = Math.floor(mx / (rect.width / MAP_SIZE));
+    const zy = Math.floor(my / (rect.height / MAP_SIZE));
+    const idx = zy * MAP_SIZE + zx;
+    if (idx >= 0 && idx < state.territory.length) {
+      const cell = state.territory[idx];
+      const ownerName = cell.owner ? (factionNames_EN[cell.owner] || cell.owner) : 'Neutral';
+      tooltip.style.display = 'block';
+      tooltip.style.left = (evt.clientX + 10) + 'px';
+      tooltip.style.top = (evt.clientY - 20) + 'px';
+      tooltip.textContent = `Zone [${zx},${zy}] — ${ownerName}${cell.contested ? ' (contested)' : ''}`;
+    }
+  };
+  canvas.onmouseleave = () => { tooltip.style.display = 'none'; };
+
+  canvas.onclick = (evt) => {
+    const rect = canvas.getBoundingClientRect();
+    const mx = evt.clientX - rect.left;
+    const my = evt.clientY - rect.top;
+    const zx = Math.floor(mx / (rect.width / MAP_SIZE));
+    const zy = Math.floor(my / (rect.height / MAP_SIZE));
+    const idx = zy * MAP_SIZE + zx;
+    if (idx >= 0 && idx < state.territory.length) {
+      if (state.territory[idx].owner) {
+        state.territory[idx].owner = null;
+        state.territory[idx].contested = false;
+      } else {
+        const aliveFactions = factionIds.filter(id => state.agents.some(a => a.alive && a.faction === id));
+        if (aliveFactions.length > 0) {
+          state.territory[idx].owner = aliveFactions[randInt(aliveFactions.length)];
+          state.territory[idx].contested = Math.random() < 0.3;
+        }
+      }
+      saveState(state); render(state);
+    }
+  };
+
+  document.getElementById('mapLegend').innerHTML =
+    factionIds.map(id => `<div class="map-legend-item"><div class="map-legend-color" style="background:${factionColors[id]}"></div><span>${factionNames_EN[id] || id}</span></div>`).join('') +
+    `<div class="map-legend-item"><div class="map-legend-color" style="background:linear-gradient(135deg,#ef4444,#f59e0b)"></div><span>Contested</span></div>` +
+    `<div class="map-legend-item"><div class="map-legend-color" style="background:#1e293b;border:1px solid #334155"></div><span>Neutral</span></div>`;
+}
+
+// ============================================================
+// ARCHIVES
+// ============================================================
+
+function renderArchives() {
+  const el = document.getElementById('archiveTimeline');
+  if (!el) return;
+  el.innerHTML = archives.map((arc, i) => {
+    const hh = String(arc.hour).padStart(2, '0');
+    return `<div class="archive-dot ${i === archives.length - 1 ? 'current' : 'has-data'}" title="Day ${arc.day} ${hh}:00 T${arc.tick}" onclick="viewArchiveIndex(${i})"></div>`;
+  }).join('');
+}
+
+function viewArchiveIndex(i) {
+  const arc = archives[i];
+  if (!arc) return;
+  const display = document.getElementById('eventDisplay');
+  display.innerHTML = `
+    <div style="font-size:0.8rem;color:#fbbf24;margin-bottom:6px;">📜 Day ${arc.day} Tick ${arc.tick} (${new Date(arc.timestamp).toLocaleTimeString()})</div>
+    <div style="font-size:0.75rem;color:#94a3b8;margin-bottom:4px;">Population: ${arc.populations} | Dead: ${arc.deadCount} | GDP: $${arc.economy.gdp.toLocaleString()}</div>
+    <div style="font-size:0.75rem;color:#94a3b8;">Factions: ${arc.factions.map(f => `${factionNames_EN[f.id]||f.id}(${f.members}/${f.territory})`).join(', ')}</div>
+    <div style="margin-top:6px;">${arc.events.map(e => `<div class="past-event-item">${e.icon} ${e.msg}</div>`).join('')}</div>
+  `;
+}
+
+// ============================================================
+// CONTROLS
+// ============================================================
+
+const pauseBtn = document.getElementById('pauseBtn');
+const speedBtn = document.getElementById('speedBtn');
+const speeds = [1, 2, 5, 10];
+let speedIdx = 0;
+
+pauseBtn.addEventListener('click', () => { state.paused = !state.paused; applyLang(); });
+speedBtn.addEventListener('click', () => {
+  speedIdx = (speedIdx + 1) % speeds.length;
+  state.speed = speeds[speedIdx];
+  applyLang();
+});
+document.getElementById('eventBtn').addEventListener('click', () => {
+  const t = i18n[lang];
+  const evt = t.events[randInt(t.events.length)];
+  state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, ...evt });
+  saveState(state); render(state);
+});
+document.getElementById('actorBtn').addEventListener('click', addNextUnusedActor);
+document.getElementById('saveBtn').addEventListener('click', () => { saveArchive(state); });
+document.getElementById('resetBtn').addEventListener('click', resetState);
+document.getElementById('langEn').addEventListener('click', () => { lang = 'en'; localStorage.setItem(LANG_KEY, lang); applyLang(); render(state); });
+document.getElementById('langZh').addEventListener('click', () => { lang = 'zh'; localStorage.setItem(LANG_KEY, lang); applyLang(); render(state); });
+document.getElementById('tabLive').addEventListener('click', () => { currentTab = 'live'; document.getElementById('tabLive').classList.add('active'); document.getElementById('tabPast').classList.remove('active'); render(state); });
+document.getElementById('tabPast').addEventListener('click', () => { currentTab = 'past'; document.getElementById('tabPast').classList.add('active'); document.getElementById('tabLive').classList.remove('active'); render(state); });
+
+setInterval(() => { for (let i = 0; i < state.speed; i++) { state = tick(state); saveState(state); } render(state); }, 10000);
+
+function applyLang() {
+  const t = i18n[lang];
+  document.getElementById('pageTitle').textContent = t.pageTitle;
+  document.getElementById('resTitle').textContent = t.resTitle;
+  document.getElementById('facTitle').textContent = t.facTitle;
+  document.getElementById('ecoTitle').textContent = t.ecoTitle;
+  document.getElementById('agtTitle').textContent = t.agtTitle;
+  document.getElementById('evtTitle').textContent = t.evtTitle;
+  document.getElementById('archiveTitle').textContent = t.archiveTitle;
+  pauseBtn.textContent = state.paused ? t.resume : t.pause;
+  speedBtn.textContent = t.speed(state.speed);
+  document.getElementById('autoLabel').textContent = t.autoLabel;
+  document.getElementById('eventBtn').textContent = t.trigger;
+  document.getElementById('saveBtn').textContent = t.save;
+  document.getElementById('resetBtn').textContent = t.reset;
+  document.getElementById('actorBtn').textContent = t.actor;
+  document.getElementById('langEn').classList.toggle('active', lang === 'en');
+  document.getElementById('langZh').classList.toggle('active', lang === 'zh');
+}
+
+window.viewArchiveIndex = viewArchiveIndex;
+applyLang();
+render(state);
+</script>
+</body>
+</html>
