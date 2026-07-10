@@ -254,6 +254,7 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
 <div class="controls">
   <button class="btn" id="speedBtn">⚡ Speed: 1x</button>
   <button class="btn" id="eventBtn">📜 Event</button>
+  <button class="btn" id="townViewBtn">🏘️ Town</button>
   <span style="color:#64748b;font-size:0.8rem;margin-left:8px;" id="autoLabel">Auto-evolve: 10s</span>
   <span style="color:#64748b;font-size:0.8rem;" id="popLabel">👥 120</span>
 </div>
@@ -263,7 +264,8 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
   <div class="panel map-section">
     <h2 id="facTitle">🏛 Factions & Territory</h2>
     <div class="map-container">
-      <canvas class="map-canvas" id="mapCanvas"></canvas>
+      <canvas class="map-canvas" id="mapCanvas" style="display:none;"></canvas>
+      <canvas class="map-canvas" id="townCanvas" style="display:none;"></canvas>
     </div>
     <div class="map-legend" id="mapLegend"></div>
     <div style="margin-top:10px;">
@@ -346,6 +348,12 @@ const factionIds = ['gov', 'corp', 'research', 'black'];
 const factionColors = { gov: '#3b82f6', corp: '#10b981', research: '#8b5cf6', black: '#ef4444' };
 const factionNames_EN = { gov: 'Crown', corp: 'Merchant Guild', research: 'Academy', black: 'Shadow Market' };
 const factionNames_ZH = { gov: '王室', corp: '商會', research: '學院', black: '暗市' };
+
+// Town view
+let townViewActive = false;
+let townAgents = [];
+const TOWN_W = 640;
+const TOWN_H = 400;
 
 const NAMES_EN = ['Aria','Bolt','Cipher','Drift','Echo','Flux','Glitch','Haven','Ion','Jade','Kai','Lumen','Mist','Nexus','Oracle','Pixel','Quill','Riven','Spark','Tide','Umbra','Vex','Wisp','Xen','Yield','Zen'];
 const NAMES_ZH = ['雲','風','影','星','河','光','塵','焰','雷','玲','霄','辰','瑤','墨','楓','月','白','夜','竹','霜','銳','烽','雪','焰'];
@@ -711,7 +719,20 @@ function render(state) {
   if (dead.length > 0) document.getElementById('popLabel').innerHTML += ` <span style="color:#ef4444">☠️${dead.length}</span>`;
 
   renderArchives();
-  drawTerritoryMap(state);
+  if (townViewActive) {
+    document.getElementById('mapCanvas').style.display = 'none';
+    document.getElementById('townCanvas').style.display = 'block';
+    document.getElementById('mapLegend').style.display = 'none';
+    document.getElementById('facTitle').textContent = lang === 'zh' ? '🏘️ 小鎮街景' : '🏘️ Town View';
+    updateTownAgents();
+    drawTown();
+  } else {
+    document.getElementById('mapCanvas').style.display = 'block';
+    document.getElementById('townCanvas').style.display = 'none';
+    document.getElementById('mapLegend').style.display = 'block';
+    document.getElementById('facTitle').textContent = lang === 'zh' ? '🏛 派系與領土' : '🏛 Factions & Territory';
+    drawTerritoryMap(state);
+  }
   renderDailyNews(state);
 }
 
@@ -970,10 +991,105 @@ window.viewArchiveIndex = function(i) {
       <div style="margin-top:6px;">${arc.events.map(e => `<div class="news-item"><span class="news-time">${e.hour}:00</span><span class="news-icon">${e.icon}</span>${e.msg}</div>`).join('')}</div>
     `;
   }
-};
+
+
+}
 
 // ============================================================
-// CONTROLS
+// TOWN VIEW
+// ============================================================
+const TOWN_ROADS = [
+  // horizontal
+  {x1:0,y1:140,x2:640,y2:140}, {x1:0,y1:260,x2:640,y2:260},
+  // vertical
+  {x1:200,y1:0,x2:200,y2:400}, {x1:440,y1:0,x2:440,y2:400}
+];
+const TOWN_BUILDINGS = [
+  {x:40,y:40,w:120,h:90,label:'Town Hall',color:'#e2e8f0'},
+  {x:280,y:40,w:120,h:90,label:'Market',color:'#fef3c7'},
+  {x:510,y:40,w:100,h:90,label:'Inn',color:'#fce7f3'},
+  {x:40,y:170,w:130,h:70,label:'Workshop',color:'#e0e7ff'},
+  {x:280,y:170,w:130,h:70,label:'Library',color:'#f3e8ff'},
+  {x:510,y:170,w:100,h:70,label:'Forge',color:'#fee2e2'},
+  {x:40,y:290,w:120,h:70,label:'Farm',color:'#dcfce7'},
+  {x:280,y:290,w:130,h:70,label:'Clinic',color:'#e0f2fe'},
+  {x:510,y:290,w:100,h:70,label:'Cafe',color:'#fff7ed'}
+];
+const TOWN_PARKS = [{x:240,y:300,w:80,h:70},{x:230,y:60,w:60,h:60}];
+
+function initTownAgents() {
+  const alive = state.agents.filter(a => a.alive);
+  townAgents = alive.slice(0, 60).map((a, i) => {
+    const b = TOWN_BUILDINGS[i % TOWN_BUILDINGS.length];
+    const angle = Math.random() * Math.PI * 2;
+    const speed = 0.3 + Math.random() * 0.6;
+    return {
+      x: b.x + b.w/2 + (Math.random()-0.5)*b.w*0.8,
+      y: b.y + b.h/2 + (Math.random()-0.5)*b.h*0.8,
+      angle,
+      speed,
+      color: a.gender === 'male' ? '#60a5fa' : '#f472b6'
+    };
+  });
+}
+function updateTownAgents() {
+  const margin = 12;
+  townAgents.forEach(agent => {
+    agent.x += Math.cos(agent.angle) * agent.speed;
+    agent.y += Math.sin(agent.angle) * agent.speed;
+    if (agent.x < margin || agent.x > TOWN_W - margin) agent.angle = Math.PI - agent.angle;
+    if (agent.y < margin || agent.y > TOWN_H - margin) agent.angle = -agent.angle;
+    if (Math.random() < 0.02) { agent.angle += (Math.random()-0.5)*1.5; }
+  });
+}
+function drawTown() {
+  const canvas = document.getElementById('townCanvas');
+  if (!canvas) return;
+  const rect = canvas.getBoundingClientRect();
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = (rect.width || TOWN_W) * dpr;
+  canvas.height = (rect.height || TOWN_H) * dpr;
+  const ctx = canvas.getContext('2d');
+  ctx.setTransform(dpr,0,0,dpr,0,0);
+  const w = rect.width || TOWN_W;
+  const h = rect.height || TOWN_H;
+  ctx.clearRect(0,0,w,h);
+  // ground
+  ctx.fillStyle = '#f5f0e6'; ctx.fillRect(0,0,w,h);
+  // roads
+  ctx.fillStyle = '#cbd5e1';
+  TOWN_ROADS.forEach(r => {
+    const thickness = Math.max(4, Math.min(r.x1===r.x2?16:12, w/40, h/30));
+    if (r.x1===r.x2) ctx.fillRect(r.x1-thickness/2, Math.min(r.y1,r.y2), thickness, Math.abs(r.y2-r.y1));
+    else ctx.fillRect(Math.min(r.x1,r.x2), r.y1-thickness/2, Math.abs(r.x2-r.x1), thickness);
+  });
+  // parks
+  TOWN_PARKS.forEach(p => {
+    const px = p.x * (w/TOWN_W), py = p.y * (h/TOWN_H);
+    const pw = p.w * (w/TOWN_W), ph = p.h * (h/TOWN_H);
+    ctx.fillStyle = '#bbf7d0'; ctx.fillRect(px,py,pw,ph);
+    ctx.fillStyle = '#4ade80';
+    for (let i=0;i<6;i++) ctx.beginPath(), ctx.arc(px+Math.random()*pw, py+Math.random()*ph, 3,0,Math.PI*2), ctx.fill();
+  });
+  // buildings
+  TOWN_BUILDINGS.forEach(b => {
+    const bx = b.x * (w/TOWN_W), by = b.y * (h/TOWN_H);
+    const bw = b.w * (w/TOWN_W), bh = b.h * (h/TOWN_H);
+    ctx.fillStyle = '#334155'; ctx.fillRect(bx+4,by+4,bw,bh);
+    ctx.fillStyle = b.color; ctx.fillRect(bx,by,bw,bh);
+    ctx.fillStyle = '#1e293b';
+    ctx.font = `${Math.max(9, bw/7)}px sans-serif`;
+    ctx.fillText(b.label, bx+6, by+bh/2+3);
+  });
+  // citizens
+  townAgents.forEach(a => {
+    ctx.fillStyle = a.color;
+    ctx.beginPath(); ctx.arc(a.x, a.y, 4, 0, Math.PI*2); ctx.fill();
+  });
+}
+
+// ============================================================
+// ARCHIVES
 // ============================================================
 
 const speedBtn = document.getElementById('speedBtn');
@@ -990,6 +1106,12 @@ document.getElementById('eventBtn').addEventListener('click', () => {
   const evt = t.events[randInt(t.events.length)];
   state.events.unshift({ tick: state.tick, day: state.day, hour: state.hour, ...evt });
   saveState(state); render(state);
+});
+document.getElementById('townViewBtn').addEventListener('click', () => {
+  townViewActive = !townViewActive;
+  if (townViewActive) initTownAgents();
+  applyLang();
+  render(state);
 });
 document.getElementById('langEn').addEventListener('click', () => { lang = 'en'; localStorage.setItem(LANG_KEY, lang); applyLang(); render(state); });
 document.getElementById('langZh').addEventListener('click', () => { lang = 'zh'; localStorage.setItem(LANG_KEY, lang); applyLang(); render(state); });
