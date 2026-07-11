@@ -59,6 +59,7 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
 .btn:hover { background: #475569; transform: translateY(-1px); }
 .btn:active { transform: translateY(0); }
 .btn.active { background: #2563eb; border-color: #3b82f6; }
+.btn.small { padding: 4px 10px; font-size: 0.75rem; }
 
 .main-grid {
   display: grid;
@@ -293,6 +294,10 @@ header h1 { font-size: 1.4rem; color: #60a5fa; }
   <!-- CITIZENS — full width below map -->
   <div class="panel" style="grid-column: span 2;">
     <h2 id="agtTitle">👥 Citizens</h2>
+    <div style="margin-bottom:6px;">
+      <button class="btn small" id="citizenToggle">Show all</button>
+      <span id="citizenCount" style="font-size:0.8rem;color:#94a3b8;margin-left:8px;"></span>
+    </div>
     <div id="actorList" style="margin-bottom:6px;"></div>
     <div id="agentList"></div>
   </div>
@@ -352,6 +357,7 @@ const factionNames_ZH = { gov: '王室', corp: '商會', research: '學院', bla
 // Town view
 let townViewActive = false;
 let townAgents = [];
+let showAllCitizens = false;
 const TOWN_W = 640;
 const TOWN_H = 400;
 
@@ -365,6 +371,7 @@ const i18n = {
     resTitle: '💰 Resources', facTitle: '🏛 Factions & Territory', ecoTitle: '📈 Economy',
     agtTitle: '👥 Citizens', evtTitle: '📜 Daily News', archiveTitle: '📚 Archives',
     speed: (s) => `⚡ Speed: ${s}x`, autoLabel: 'Auto-evolve: 10s', trigger: '📜 Event', townView: '🏘️ Town', mapView: '🗺️ Map',
+    citizenShowAll: 'Show all', citizenShowLess: 'Show less', citizenHidden: (n) => `...and ${n} more citizens`,
     gdp: 'GDP', inflation: 'Inflation', unemployment: 'Unemployment', market: 'Market',
     mood: 'Mood', wealth: 'Wealth', age: 'Age', health: 'Health',
     dead: 'Dead', stable: 'stable', growing: 'growing', shrinking: 'shrinking', volatile: 'volatile',
@@ -400,6 +407,7 @@ const i18n = {
     resTitle: '💰 資源', facTitle: '🏛 派系與領土', ecoTitle: '📈 經濟',
     agtTitle: '👥 國民', evtTitle: '📜 每日新聞', archiveTitle: '📚 歷史存檔',
     speed: (s) => `⚡ 速度: ${s}x`, autoLabel: '每 10 秒自動演化', trigger: '📜 觸發', townView: '🏘️ 小鎮', mapView: '🗺️ 地圖',
+    citizenShowAll: '顯示全部', citizenShowLess: '收起', citizenHidden: (n) => `…另外還有 ${n} 位國民`,
     gdp: '國內總產值', inflation: '通脹', unemployment: '失業率', market: '市場',
     mood: '心情', wealth: '財富', age: '年齡', health: '健康',
     dead: '已故', stable: '平穩', growing: '成長', shrinking: '收縮', volatile: '波動',
@@ -435,6 +443,8 @@ const moodMap = { happy:'愉快', neutral:'平靜', anxious:'焦慮', focused:'�
                   '愉快':'happy', '平靜':'neutral', '焦慮':'anxious', '專注':'focused', '興奮':'excited' };
 const actionMap = { 'worked at factory':'在工廠工作','conducted research':'執行研究','negotiated a deal':'談判交易','socialized at market':'逛市場','attended faction meeting':'參加派系會議','traded resources':'交易資源','rested at home':'在家休息','explored new territory':'探索新領土','helped a colleague':'幫助同事','reported to supervisor':'向主管回報','produced goods':'生產商品','studied engineering':'學習工程技術','mediated dispute':'調解爭端','recruited new member':'招募新成員','patrolled border':'巡邏邊境','built infrastructure':'建設基礎設施','delivered supplies':'運送補給','organized festival':'舉辦慶典','wrote algorithms':'編寫程式',
                    '在工廠工作':'worked at factory','執行研究':'conducted research','談判交易':'negotiated a deal','逛市場':'socialized at market','參加派系會議':'attended faction meeting','交易資源':'traded resources','在家休息':'rested at home','探索新領土':'explored new territory','幫助同事':'helped a colleague','向主管回報':'reported to supervisor','生產商品':'produced goods','學習工程技術':'studied engineering','調解爭端':'mediated dispute','招募新成員':'recruited new member','巡邏邊境':'patrolled border','建設基礎設施':'built infrastructure','運送補給':'delivered supplies','舉辦慶典':'organized festival','編寫程式':'wrote algorithms' };
+const marketTrendMap = { stable:'stable', growing:'growing', shrinking:'shrinking', volatile:'volatile',
+                         'stable':'平穩', 'growing':'成長', 'shrinking':'收縮', 'volatile':'波動' };
 
 let lang = localStorage.getItem(LANG_KEY) || 'en';
 let state = loadState(true);
@@ -674,7 +684,7 @@ function render(state) {
     ${t.gdp}: $${state.economy.gdp.toLocaleString()}<br>
     ${t.inflation}: ${(state.economy.inflation * 100).toFixed(1)}%<br>
     ${t.unemployment}: ${(state.economy.unemployment * 100).toFixed(1)}%<br>
-    ${t.market}: <b>${state.economy.marketTrend}</b>
+    ${t.market}: <b>${marketTrendMap[state.economy.marketTrend] || state.economy.marketTrend}</b>
   `;
 
   const alive = state.agents.filter(a => a.alive);
@@ -683,7 +693,8 @@ function render(state) {
   document.getElementById('agentStats').innerHTML = `${lang === 'zh' ? '平均健康' : 'Avg Health'}: ${avgH}%<br>${lang === 'zh' ? '平均財富' : 'Avg Wealth'}: $${avgW.toLocaleString()}<br>${lang === 'zh' ? '死亡總數' : 'Total Dead'}: ${state.agents.length - alive.length}`;
 
   // Citizens
-  document.getElementById('agentList').innerHTML = alive.slice(0, 60).map(a => {
+  const visibleCount = showAllCitizens ? alive.length : Math.min(60, alive.length);
+  document.getElementById('agentList').innerHTML = alive.slice(0, visibleCount).map(a => {
     const tx = translateAgentText(a);
     const gIcon = a.gender === 'male' ? '♂' : (a.gender === 'female' ? '♀' : (Math.random() < 0.5 ? '♂' : '♀'));
     return `
@@ -698,7 +709,12 @@ function render(state) {
   }).join('');
 
   if (alive.length > 60) {
-    document.getElementById('agentList').innerHTML += `<div style="color:#64748b;font-size:0.75rem;padding:4px;">${lang === 'zh' ? `…另外還有 ${alive.length - 60} 位國民` : `...and ${alive.length - 60} more citizens`}</div>`;
+    const ct = document.getElementById('citizenCount');
+    const hiddenN = alive.length - visibleCount;
+    if (ct) ct.textContent = t.citizenHidden(hiddenN);
+  } else {
+    const ct = document.getElementById('citizenCount');
+    if (ct) ct.textContent = '';
   }
 
   const dead = state.agents.filter(a => !a.alive);
@@ -1165,6 +1181,11 @@ document.getElementById('townViewBtn').addEventListener('click', () => {
   applyLang();
   render(state);
 });
+document.getElementById('citizenToggle').addEventListener('click', () => {
+  showAllCitizens = !showAllCitizens;
+  applyLang();
+  render(state);
+});
 document.getElementById('langEn').addEventListener('click', () => { lang = 'en'; localStorage.setItem(LANG_KEY, lang); applyLang(); render(state); });
 document.getElementById('langZh').addEventListener('click', () => { lang = 'zh'; localStorage.setItem(LANG_KEY, lang); applyLang(); render(state); });
 
@@ -1190,6 +1211,10 @@ function applyLang() {
     tvBtn.textContent = t.mapView;
   } else {
     tvBtn.textContent = t.townView;
+  }
+  const ctBtn = document.getElementById('citizenToggle');
+  if (ctBtn) {
+    ctBtn.textContent = showAllCitizens ? t.citizenShowLess : t.citizenShowAll;
   }
   document.getElementById('langEn').classList.toggle('active', lang === 'en');
   document.getElementById('langZh').classList.toggle('active', lang === 'zh');
