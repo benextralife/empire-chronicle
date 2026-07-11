@@ -1,8 +1,21 @@
 # 翁曉玲（Weng Hsiao-Ling）— Intelligence Research Report
 
-**Date:** 2026-07-09 (updated from 2026-07-05)
+**Date:** 2026-07-10 (updated from 2026-07-09)
 **Source:** Public internet (Wikipedia, news outlets, legislative records)
 **Purpose:** Context research requested by user; not a story character — real Taiwanese politician
+
+---
+
+## Latest Intelligence (2026-07-10 — Additional Procedural Abuse Instances)
+
+### 1. March 17, 2026 Procedure Committee Meeting Abruptly Adjourned
+- As convener of the **Legislative Yuan Procedure Committee**, Weng abruptly adjourned a meeting despite KMT having only 1 member present below the required quorum and despite DPP objections to a **T-POP/KMT legislator Tsai Chun-chou (蔡春綢)** proposal.
+- DPP legislators protested vehemently, chasing Weng out of the meeting room; KMT caucus subsequently defended the adjournment as "legal and compliant, not an exception."
+- **Assessment:** This incident reinforces the pattern of Weng unilaterally using her procedural powers to advance KMT agendas, including stalling the central government budget (already blocked >300 days) and defense/national security bills.
+
+### 2. May 31, 2026 Ministry of Justice Budget Irregularity
+- Post on Threads/2026-05-31 noted Weng, during review of the Ministry of Justice budget, criticized that **"facilities and mechanical equipment maintenance funds"** had been diverted to **"building construction maintenance,"** describing it as "digging east wall to patch west wall."
+- **Assessment:** This is another example of Weng using budget scrutiny as a weapon, a tactic she has escalated to broader "copy-paste" cuts across 13 ministries in July 2026.
 
 ---
 
