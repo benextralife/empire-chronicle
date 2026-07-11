@@ -1225,5 +1225,33 @@ function applyLang() {
 applyLang();
 render(state);
 </script>
+<button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">⬆️</button>
+<style>
+  #scrollTopBtn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    background: #334155;
+    border: 1px solid #475569;
+    color: #e2e8f0;
+    padding: 10px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    display: none;
+    transition: background 0.2s;
+  }
+  #scrollTopBtn:hover { background: #475569; }
+  #scrollTopBtn.visible { display: block; }
+</style>
+<script>
+  const _scrollBtn = document.getElementById('scrollTopBtn');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 600) _scrollBtn.classList.add('visible');
+    else _scrollBtn.classList.remove('visible');
+  });
+</script>
 </body>
 </html>
