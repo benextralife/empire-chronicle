@@ -69,6 +69,7 @@
   <header>
     <h1>📜 王國日報</h1>
     <p class="subtitle">王國存亡，實錄於此</p>
+    <p style="margin-top:10px;"><a href="/empire-chronicle/">🏰 返回年鑑首頁</a></p>
   </header>
 
   <div class="grid" id="toc"></div>
@@ -87,6 +88,7 @@
     const iso = d.toISOString().slice(0,10);
     out.push('<a href="/empire-chronicle/daily/' + iso + '.html">' + iso + '</a>');
   }
+  out.reverse();
   document.getElementById('toc').innerHTML = out.join('');
   document.getElementById('cnt').textContent = out.length;
 })();
