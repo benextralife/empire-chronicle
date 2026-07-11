@@ -441,10 +441,10 @@ const i18n = {
 
 const moodMap = { happy:'愉快', neutral:'平靜', anxious:'焦慮', focused:'專注', excited:'興奮',
                   '愉快':'happy', '平靜':'neutral', '焦慮':'anxious', '專注':'focused', '興奮':'excited' };
-const actionMap = { 'worked at factory':'在工廠工作','conducted research':'執行研究','negotiated a deal':'談判交易','socialized at market':'逛市場','attended faction meeting':'參加派系會議','traded resources':'交易資源','rested at home':'在家休息','explored new territory':'探索新領土','helped a colleague':'幫助同事','reported to supervisor':'向主管回報','produced goods':'生產商品','studied engineering':'學習工程技術','mediated dispute':'調解爭端','recruited new member':'招募新成員','patrolled border':'巡邏邊境','built infrastructure':'建設基礎設施','delivered supplies':'運送補給','organized festival':'舉辦慶典','wrote algorithms':'編寫程式',
-                   '在工廠工作':'worked at factory','執行研究':'conducted research','談判交易':'negotiated a deal','逛市場':'socialized at market','參加派系會議':'attended faction meeting','交易資源':'traded resources','在家休息':'rested at home','探索新領土':'explored new territory','幫助同事':'helped a colleague','向主管回報':'reported to supervisor','生產商品':'produced goods','學習工程技術':'studied engineering','調解爭端':'mediated dispute','招募新成員':'recruited new member','巡邏邊境':'patrolled border','建設基礎設施':'built infrastructure','運送補給':'delivered supplies','舉辦慶典':'organized festival','編寫程式':'wrote algorithms' };
-const marketTrendMap = { stable:'stable', growing:'growing', shrinking:'shrinking', volatile:'volatile',
-                         'stable':'平穩', 'growing':'成長', 'shrinking':'收縮', 'volatile':'波動' };
+const actionMap = { 'worked at factory':'在工廠工作','conducted research':'執行研究','negotiated a deal':'談判交易','socialized at market':'逛市場','attended faction meeting':'參加派系會議','traded resources':'交易資源','rested at home':'在家休息','explored new territory':'探索新領土','helped a colleague':'幫助同事','reported to supervisor':'向主管回報','produced goods':'生產商品','studied engineering':'學習工程技術','mediated dispute':'調解爭端','recruited new member':'招募新成員','patrolled border':'巡邏邊境','built infrastructure':'建設基礎設施','delivered supplies':'運送補給','organized festival':'舉辦慶典','wrote algorithms':'編寫程式','idle':'閒置',
+                   '在工廠工作':'worked at factory','執行研究':'conducted research','談判交易':'negotiated a deal','逛市場':'socialized at market','參加派系會議':'attended faction meeting','交易資源':'traded resources','在家休息':'rested at home','探索新領土':'explored new territory','幫助同事':'helped a colleague','向主管回報':'reported to supervisor','生產商品':'produced goods','學習工程技術':'studied engineering','調解爭端':'mediated dispute','招募新成員':'recruited new member','巡邏邊境':'patrolled border','建設基礎設施':'built infrastructure','運送補給':'delivered supplies','舉辦慶典':'organized festival','編寫程式':'wrote algorithms','閒置':'idle' };
+const marketTrendMap = { stable:'stable', growing:'growing', shrinking:'shrinking', volatile:'volatile' };
+const marketTrendMapZh = { stable:'平穩', growing:'成長', shrinking:'收縮', volatile:'波動' };
 
 let lang = localStorage.getItem(LANG_KEY) || 'en';
 let state = loadState(true);
@@ -578,7 +578,7 @@ function tick(state) {
   state.economy.gdp += Math.floor((Math.random() - 0.4) * 500);
   state.economy.inflation += (Math.random() - 0.5) * 0.005;
   state.economy.inflation = Math.max(-0.02, Math.min(0.15, state.economy.inflation));
-  const trends = [t.stable, t.growing, t.shrinking, t.volatile];
+  const trends = ['stable', 'growing', 'shrinking', 'volatile'];
   if (Math.random() < 0.05) state.economy.marketTrend = trends[randInt(trends.length)];
 
   // Agents (Article I, VII, VIII)
@@ -684,7 +684,7 @@ function render(state) {
     ${t.gdp}: $${state.economy.gdp.toLocaleString()}<br>
     ${t.inflation}: ${(state.economy.inflation * 100).toFixed(1)}%<br>
     ${t.unemployment}: ${(state.economy.unemployment * 100).toFixed(1)}%<br>
-    ${t.market}: <b>${marketTrendMap[state.economy.marketTrend] || state.economy.marketTrend}</b>
+    ${t.market}: <b>${lang === 'zh' ? (marketTrendMapZh[state.economy.marketTrend] || state.economy.marketTrend) : state.economy.marketTrend}</b>
   `;
 
   const alive = state.agents.filter(a => a.alive);
